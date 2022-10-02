@@ -5,8 +5,12 @@ Polygon = shape made only of lines, Polypath = shape made of lines and curves
 
 See the helppatches for a more detailed overview
 
----------------------
-#What can it do?#
+# What kind of things does it do? 
+
+![image](https://user-images.githubusercontent.com/4467208/193471641-538d34a3-54cb-481e-b99e-4a1eda421d92.png)
+
+Interactive Helppatches
+
 
 ![VL PolyTools FOV Calc](https://user-images.githubusercontent.com/4467208/193471193-00f37121-4291-4f5e-96b8-f6f1b4862b12.gif)
 
@@ -23,12 +27,13 @@ Visibility from a point inside a polygon
 
 Union of PolyPaths including internal compartment lines. 
 
------------------
-#To Install#
+Bonus see included 'SKPathUtils.vl' if you are looking for 
+
+# To Install
 TBA Nuget
 
------------------
-#Dependencies# 
+# Dependencies
+Made with vvvv Gamma 2021.4.10
 
 com.angusj.Clipper -Version 6.4.2
 https://sourceforge.net/projects/polyclipping/
@@ -41,7 +46,9 @@ https://github.com/speps/LibTessDotNet
 https://www.nuget.org/packages/LibTessDotNet
 credit https://github.com/speps/LibTessDotNet/graphs/contributors
 
-------------------
-#License# 
+# Special Thanks
+@Untone for help unlocking the SKPath verbs for use in vvvv gamma
+
+# License
 
 Boost 1.0
