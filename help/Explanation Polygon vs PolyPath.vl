@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Dxc6R0lxMXDMhbeSsNUXbe" LanguageVersion="2021.4.10.1043" Version="0.128">
+  <Patch Id="UKLjL9kZ7iBLmqKday2vyO">
+    <Canvas Id="JIjIbuxYwVmPYD8biUwGte" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="DvNBTlDX6VwP1HxxHPqZUB">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="RbXXqu62Q5CP6KFagmynKN">
+        <Canvas Id="OGXjS6iGw5EOttbftHgK5T" CanvasType="Group">
+          <Pad Id="Cq7vYb5KUfZMrWns75uPM5" Bounds="203,125,486,46" ShowValueBox="true" isIOBox="true" Value="What is a VL.PolyTools Polygon?">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">22</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="HRzJ2bxGSnKLVgKGUNM1q5" Bounds="203,175,792,478" ShowValueBox="true" isIOBox="true" Value="- 2D Shape&#xD;&#xA;- Consists of straight lines only&#xD;&#xA;- Internally a list of vector2 points &#xD;&#xA;&#xD;&#xA;Each Polygon object represents a discrete shape that:&#xD;&#xA;-Has an outer contour &#xD;&#xA;-Optionally can contain holes (inner contours) &#xD;&#xA;&#xD;&#xA;-Points can be transformed however there are some details to consider, see HowTo Transform Polygons &#xD;&#xA;&#xD;&#xA;-Can be convered to Skia Path (SKPath) and drawn in Skia.&#xD;&#xA;-Can technically be converted to PolyPath but will not 'vectorise' the curves, they will still be collections of straight lines. &#xD;&#xA;-Skia Path (SKPath) can be converted to Polygon if it only contains straight lines. However reccomend PolyPath for this. &#xD;&#xA;&#xD;&#xA;-Polygon clipping performed by fast and solid clipper.net library. Very few errors even on very complex clipping.  &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Can be rendered in stride as &#xD;&#xA;-a flat PolygonPlane &#xD;&#xA;-extruded with depth as a PolygonExtrude &#xD;&#xA;-extruded with depth as a PolygonWall where other polygons can act as paths defining the top and bottom edges&#xD;&#xA;&#xD;&#xA;Special Features: &#xD;&#xA;-Implements bonus functions from clipper libary including inflate, deflate.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Et6TNRuK4JGLUU67iFbSk0" Bounds="203,210,206,19" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TrMCdYU8FnhMFjQSTuWheo" Bounds="199,665,577,46" ShowValueBox="true" isIOBox="true" Value="What is a VL.PolyTools PolyPath?">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">22</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="700,128,65,26" Id="KYeaJPjKwVwN1Uio873LzU">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastSymbolSource="VL.PolyTools.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Polygon" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+            </p:NodeReference>
+            <Pin Id="HDKrIBfja8gLGJntP8KbEd" Name="Input" Kind="StateInputPin" />
+            <Pin Id="IUK0rrCBstzO3mjv1sL704" Name="OuterContour" Kind="OutputPin" />
+            <Pin Id="Bw9LiGTLkjeO7CjQCDqZoi" Name="HoleContours" Kind="OutputPin" />
+            <Pin Id="MArEcXAtKirMzJ0mJkBGXS" Name="Bounds" Kind="OutputPin" />
+            <Pin Id="CtCpWYLKgvDPwHA83qLYg2" Name="SuccessFindBounds" Kind="OutputPin" />
+          </Node>
+          <Pad Id="RQbJloAtUnpQA4rpiumDJl" Bounds="193,1334,577,46" ShowValueBox="true" isIOBox="true" Value="What about skia Native SKPath?">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">22</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IGJIlfcC5FkOO8j8nPdjdl" Bounds="195,1395,781,168" ShowValueBox="true" isIOBox="true" Value="-Is used interanlly by PolyTools for some things it does well, like reliable bounds and contains operation and of course high quality skia rendering. &#xD;&#xA;&#xD;&#xA;The main enhancement of PolyPath over SKPath is that operations (eg intersect, difference) on SKPath by default return only one SKPath object even if the output contains multiple discrete shapes. &#xD;&#xA;The PolyPath versions of these operations will return separate PolyPaths for each discrete shape.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LEnFM8eVcGrOj2EOPa4K0G" Bounds="201,711,794,552" ShowValueBox="true" isIOBox="true" Value="- 2D Shape&#xD;&#xA;- Consists of straight lines AND curves&#xD;&#xA;-Internally uses SKPath, which is list of commands (verbs) that represent either a line or a curve&#xD;&#xA;-Lines and control points for curves have vector2 accuracy&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Each PolyPath object represents a discrete shape that:&#xD;&#xA;-Has an outer contour &#xD;&#xA;-Optionally can contain holes (inner contours) &#xD;&#xA;-Optionally can contain 'compartments', see below special features&#xD;&#xA;&#xD;&#xA;-Points can be transformed however there are some details to consider, see HowTo Transform Polygons &#xD;&#xA;&#xD;&#xA;-Will convert to Polygon but this involves flattening curves to straight lines.&#xD;&#xA;&#xD;&#xA;-PolyPath clipping performed by native Skia SKPath operations. &#xD;&#xA;Performance is not as good as Polygon and more often gives incorrect resullts for complex intersecting paths. &#xD;&#xA;(But overall still quite good)&#xD;&#xA;The advantage is clipped PolyPaths retain full 'vector' information about curves and are not flattened to straight line points.&#xD;&#xA;&#xD;&#xA;-For 2D rendering Interally uses Skia Path (SKPath) so can be easily drawn in Skia&#xD;&#xA;-For 3D rendering a PolyPath must be flattened to straight lines (I.E a polygon) and then can be rendered in 3D using the polygon 3D rendering processes&#xD;&#xA;&#xD;&#xA;Special features: &#xD;&#xA;-Comes with some hitbox utility methods where you can check a point to determine what edge or vertice is is closest to.  &#xD;&#xA;-Has compartments which are internal paths, think of them as internall walls dividing rooms of a house.&#xD;&#xA;-Compartments can be broken down to their own PolyPaths for further processing ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="709,671,46,26" Id="DYmRut6MNzeMwy7CVQ1S7C">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastSymbolSource="VL.PolyTools.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="PolyPath" />
+              <Choice Kind="OperationCallFlag" Name="Split" />
+            </p:NodeReference>
+            <Pin Id="Lu3c4fqu8xsPTVnkovJjEm" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Jjxe4CxqcJxNshFUndi9Ka" Name="Output" Kind="OutputPin" />
+            <Pin Id="HrIU7clFjRyLH3snP6yBFj" Name="PrimaryPath" Kind="OutputPin" />
+            <Pin Id="D1NHuZHDTDJOiWe63tfhYN" Name="Bounds" Kind="OutputPin" />
+            <Pin Id="E54BL3pHtkjL6V97ess5Jd" Name="CompartmentLines" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="IIRkjlmddqSQMUmyhDKX63" Name="Create" />
+        <Patch Id="L5JnH9ILSZlLmFAvk7hJ74" Name="Update" />
+        <ProcessDefinition Id="Fb1h070oZLZLmgZzXuV9K9">
+          <Fragment Id="V2WC5H2BycGL0FF20SkCJz" Patch="IIRkjlmddqSQMUmyhDKX63" Enabled="true" />
+          <Fragment Id="EW1lnA5i9OzNqH2GMIrYb3" Patch="L5JnH9ILSZlLmFAvk7hJ74" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Sph8NRyrC7OP1DSrzMpMiQ" Location="VL.CoreLib" Version="2021.4.10" />
+  <NugetDependency Id="JAF0E6eb54MOScy21QwWb5" Location="VL.Skia" Version="2021.4.10" />
+  <DocumentDependency Id="NAFrJQ6EQPfOG9L8uZU1LM" Location="../VL.PolyTools.vl" />
+</Document>
