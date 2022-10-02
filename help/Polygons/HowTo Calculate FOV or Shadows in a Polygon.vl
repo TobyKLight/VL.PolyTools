@@ -198,7 +198,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="MVA5KqO7pP8LgQSPfjuSja" Name="Bounds" Kind="InputPin" DefaultValue="1160, 177, 270, 277" />
+            <Pin Id="MVA5KqO7pP8LgQSPfjuSja" Name="Bounds" Kind="InputPin" DefaultValue="1160, 176, 269, 276" />
             <Pin Id="OdB5xxeKXf6MzKAkT3guqH" Name="Input" Kind="InputPin" />
             <Pin Id="U1Uyedk2iRwPAVNpjfyOjk" Name="Color" Kind="InputPin" />
             <Pin Id="CzUsMyxzUkCPCvch7Ldaap" Name="Clear" Kind="InputPin" />
@@ -334,6 +334,34 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="777,1492,145,19" Id="MzvzC3alUaTQVschyE1suW">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.IO" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SVGWriter" />
+            </p:NodeReference>
+            <Pin Id="JgfugpvTtmuOJy1X4hHMCz" Name="Input" Kind="InputPin" />
+            <Pin Id="UKildlmzoC8P49bHmJ2vCu" Name="Path" Kind="InputPin" DefaultValue="..\..\..\..\..\Users\JACK_PEPSI\Downloads\SVGTest.SVG" />
+            <Pin Id="QcVow0pBf86PPUvKiOZhHg" Name="Color" Kind="InputPin" />
+            <Pin Id="CKdO7X3ySmON9dfPGMnoRu" Name="Enable Background" Kind="InputPin" />
+            <Pin Id="HecvnqN67NwMq4iRQm0Yet" Name="Space" Kind="InputPin" />
+            <Pin Id="B1AL6tHjgIhQcILbmYjPUB" Name="Width" Kind="InputPin" />
+            <Pin Id="CZf974CyXyCNmFbIP50k03" Name="Height" Kind="InputPin" />
+            <Pin Id="CGEUzfGNKeGNGqaMhnuium" Name="Write" Kind="InputPin" />
+          </Node>
+          <Pad Id="O8ucQi6kuR4LZOh59dgJkk" Comment="Path" Bounds="801,1450,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\..\Users\JACK_PEPSI\Downloads\SVGTest.SVG">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="IBPzbrHYDflNEXyefYTiXy" Comment="Write" Bounds="937,1479,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="SraEkB4PGZ7PwMtIwZ4EKc" Name="Create" />
         <Patch Id="UIfzGcuLX1LPSH1HBZ1ikR" Name="Update" />
@@ -370,6 +398,9 @@
         <Link Id="J7Vs71anolxOlGHJMwtba7" Ids="Ahwv0ECXmBIQWli2Vtyv4O,ARAoEEIcXkXLNr39SfYnxj" />
         <Link Id="MwHBiYdgCvOO12D6UoUbVc" Ids="HkIILv63Wp5LZKZOnjvuEf,Qlq5drAPqPbPW3UD3YJ8OZ" />
         <Link Id="CdxA7j2VG6FNr9C8QPs5qS" Ids="T4NdiwU4HwPMomfdRYULGq,RQu2K7PYIsvMyMKuPYfyxn" />
+        <Link Id="SArKbafJ1RqL64ecwLPSmA" Ids="AooAykm3zkYN4dUZ85NU2z,JgfugpvTtmuOJy1X4hHMCz" />
+        <Link Id="EbaO3puQSxnNVE3voIOQOU" Ids="O8ucQi6kuR4LZOh59dgJkk,UKildlmzoC8P49bHmJ2vCu" />
+        <Link Id="VbWEdtLPi9lNIcIUgdi214" Ids="IBPzbrHYDflNEXyefYTiXy,CGEUzfGNKeGNGqaMhnuium" />
       </Patch>
     </Node>
   </Patch>

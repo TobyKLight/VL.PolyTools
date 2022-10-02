@@ -33,7 +33,7 @@ Bonus see included 'SKPathUtils.vl' if you are looking for low level ways to ext
 Grey menu (top left)>Manage Nugets>Command Line 
 
 Type
-```nuget install VL.PolyTools -Version 1.0.1```
+```nuget install VL.PolyTools -Version 1.0.2```
 
 # Dependencies
 Made with vvvv Gamma 2021.4.10

@@ -51,7 +51,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="EzLTLCYQQ1zMhgCMeFQ9Gv" Name="Bounds" Kind="InputPin" DefaultValue="700, 28, 396, 252" />
+            <Pin Id="EzLTLCYQQ1zMhgCMeFQ9Gv" Name="Bounds" Kind="InputPin" DefaultValue="-25600, -25600, 159, 27" />
             <Pin Id="IjiwMO9LYySNTAO3OvRMo2" Name="Input" Kind="InputPin" />
             <Pin Id="GzYJfnAKiXWPufbD8B825Q" Name="Color" Kind="InputPin" />
             <Pin Id="KpEJyAR0lJUN6COJR6Z1l1" Name="Clear" Kind="InputPin" />
@@ -409,7 +409,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="QcJOwdoT6xyMVpbgdmim7E" Name="Bounds" Kind="InputPin" DefaultValue="1092, 284, 400, 272" />
+            <Pin Id="QcJOwdoT6xyMVpbgdmim7E" Name="Bounds" Kind="InputPin" DefaultValue="-25600, -25600, 159, 27" />
             <Pin Id="DmMWDELYOowPKJaQeCwtCj" Name="Input" Kind="InputPin" />
             <Pin Id="JMXwNHJncZPLTIOfDiyM9O" Name="Color" Kind="InputPin" />
             <Pin Id="KN7YB2cMM6uMHNYpk5vV24" Name="Clear" Kind="InputPin" />
@@ -605,8 +605,8 @@
             <Pin Id="DvNQHdYfGndOtraaKLRBqF" Name="Shader" Kind="InputPin" />
             <Pin Id="BxbRxGR7Fg1OJW9JSSvah1" Name="Output" Kind="OutputPin" />
           </Node>
-          <Overlay Id="Nf0EFjRszUbNbD0Fa7pSoE" Name="5. PolyPath Nearest Proportional Point" Bounds="2518,472,835,521" />
-          <Pad Id="R3pVFBIs0C4OjWTrNBhUDq" Bounds="2662,180,417,276" ShowValueBox="true" isIOBox="true" Value="5. NearestProportionalPoint on a polypath will return an aproximation of the nearest contour index and proportional value where 0-1.&#xD;&#xA;&#xD;&#xA;It has two proportional outputs. &#xD;&#xA;So 0.4 = 40% of the distance along the edge. This is a reverse of the input data used by SamplePoint. &#xD;&#xA;This is the most accurate way to find the nearest contour intersection, but least performant. &#xD;&#xA;If needed you can increase accuracy further at the cost of performance, check the hidden pins and documentation inside the node.&#xD;&#xA;">
+          <Overlay Id="Nf0EFjRszUbNbD0Fa7pSoE" Name="5. PolyPath Nearest Proportional Point (Proportonal on whole length)" Bounds="2518,472,835,521" />
+          <Pad Id="R3pVFBIs0C4OjWTrNBhUDq" Bounds="2662,178,550,248" ShowValueBox="true" isIOBox="true" Value="5. NearestProportionalPoint on a polypath will return an aproximation of the nearest contour index and proportional value where 0-1.&#xD;&#xA;&#xD;&#xA;It has two proportional outputs. &#xD;&#xA;So 0.4 = 40% of the distance along the edge. This is a reverse of the input data used by SamplePoint. &#xD;&#xA;This is the most accurate way to find the nearest contour intersection, but least performant. &#xD;&#xA;If needed you can increase accuracy further at the cost of performance, check the hidden pins and documentation inside the node.&#xD;&#xA;&#xD;&#xA;If you need to find the proprtional distance along an EDGE (not along the length of the whole contour) use NearestPointOnEdge (ContourSamplePoint)">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -653,7 +653,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="GEZnxJ3lQRGLqQlgRzy3ex" Name="Bounds" Kind="InputPin" DefaultValue="696, 548, 360, 264" />
+            <Pin Id="GEZnxJ3lQRGLqQlgRzy3ex" Name="Bounds" Kind="InputPin" DefaultValue="704, 548, 377, 268" />
             <Pin Id="H35rNsKZaPoLuAytf759Tu" Name="Input" Kind="InputPin" />
             <Pin Id="FZjNI4rbtyfNodCBKYAmfX" Name="Color" Kind="InputPin" />
             <Pin Id="SBhBIJcoK2vMMaLwzQCpaF" Name="Clear" Kind="InputPin" />
@@ -1029,7 +1029,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="JQnXZnBhhDhLMpD1O0utpe" Comment="IterationCounts" Bounds="3144,687,35,34" ShowValueBox="true" isIOBox="true" Value="0" />
-          <Pad Id="In8HgB7IpX8NjzFbfzifZC" Comment="DoContainsCheck" Bounds="2986,509,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="In8HgB7IpX8NjzFbfzifZC" Comment="DoContainsCheck" Bounds="2986,509,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -1047,7 +1047,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="JPTmy8QZyqXMTx7yia4uc9" Comment="ExcludeDistance" Bounds="3051,533,35,15" ShowValueBox="true" isIOBox="true" Value="0.15">
+          <Pad Id="JPTmy8QZyqXMTx7yia4uc9" Comment="ExcludeDistance" Bounds="3051,533,35,15" ShowValueBox="true" isIOBox="true" Value="0.5">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
