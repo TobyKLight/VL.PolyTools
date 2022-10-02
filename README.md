@@ -30,7 +30,10 @@ Union of PolyPaths including internal compartment lines.
 Bonus see included 'SKPathUtils.vl' if you are looking for 
 
 # To Install
-TBA Nuget
+Grey menu (top lefT)>Manage Nugets>Command Line 
+
+Type
+```nuget install VL.PolyTools -Version 1.0.0```
 
 # Dependencies
 Made with vvvv Gamma 2021.4.10
