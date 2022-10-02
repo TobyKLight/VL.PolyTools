@@ -30,7 +30,7 @@ Union of PolyPaths including internal compartment lines.
 Bonus see included 'SKPathUtils.vl' if you are looking for 
 
 # To Install
-Grey menu (top lefT)>Manage Nugets>Command Line 
+Grey menu (top left)>Manage Nugets>Command Line 
 
 Type
 ```nuget install VL.PolyTools -Version 1.0.0```
