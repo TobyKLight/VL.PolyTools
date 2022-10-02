@@ -27,7 +27,7 @@ Visibility from a point inside a polygon
 
 Union of PolyPaths including internal compartment lines. 
 
-Bonus see included 'SKPathUtils.vl' if you are looking for 
+Bonus see included 'SKPathUtils.vl' if you are looking for low level ways to extend SKPaths
 
 # To Install
 Grey menu (top left)>Manage Nugets>Command Line 
