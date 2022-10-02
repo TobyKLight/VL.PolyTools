@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="DxTilTyAQ1rOvayx3Mq2mi" LanguageVersion="2021.4.10.1043" Version="0.128">
+  <Patch Id="NCphwViXAISMFrevjYtgR0">
+    <Canvas Id="Sn7IQ4OYKYvPuRrO2TeCdW" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="V2NrjJN1KkfMTDqRt1M471">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="BzUu5Rin3OGMaRTB94lyOL">
+        <Canvas Id="GSOordLOHsfOKaePCQ6gVR" CanvasType="Group">
+          <Node Bounds="322,604,145,19" Id="QRQtjPDJI1KPnvFiH8sidg">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Renderer" />
+            </p:NodeReference>
+            <Pin Id="VNb3WV9s08bOsYJyIb7c3c" Name="Bounds" Kind="InputPin" DefaultValue="952, 24, 540, 378" />
+            <Pin Id="Pj8wSyatZBqMHD9TmyPxJO" Name="Input" Kind="InputPin" />
+            <Pin Id="KYyO6GiooY8Mh530gCmAUR" Name="Color" Kind="InputPin" />
+            <Pin Id="LALv2dfwBnBLVOnbIlPmqm" Name="Clear" Kind="InputPin" />
+            <Pin Id="JmXoa5lPfXHQM95TPnbMDy" Name="Space" Kind="InputPin" />
+            <Pin Id="QY6oti4gztVPS2QZoD0aRu" Name="Show Cursor" Kind="InputPin" />
+            <Pin Id="OEfmYp2nn8WMMlJZ3KV54j" Name="VSync" Kind="InputPin" />
+            <Pin Id="Le45Ur8YuanPz6QvC1SRbu" Name="Enabled" Kind="InputPin" />
+            <Pin Id="QuxpeFdF43GQYv2oGuHLQ0" Name="Form" Kind="OutputPin" />
+            <Pin Id="AJGytJt5VLkPl1HmdLlqpI" Name="ClientBounds" Kind="OutputPin" />
+            <Pin Id="VdNkrwVfQxVPGiQuf31ImA" Name="Render Time" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="339,536,105,19" Id="EO7ePBuZ54cLZnMQWsEbSl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastSymbolSource="VL.PolyTools.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DrawPolygon (Skia)" />
+            </p:NodeReference>
+            <Pin Id="FJeVJOeKR7nMghgk3m0wPi" Name="Polygon" Kind="InputPin" />
+            <Pin Id="Q9uwk2MvYq2OYgaUUOSLoj" Name="FillEnabled" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="Q7e3JmmcOjVNKqRYLqKgrT" Name="FillPaint" Kind="InputPin" />
+            <Pin Id="O7nDmcq8IQCPzHzUy1MHSk" Name="Close" Kind="InputPin" />
+            <Pin Id="NmSDyz5zK3vPMU5ALPZtEo" Name="StrokeEnabled" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="FAYAIRF6VO0QEF5xIJWLnS" Name="StrokePaint" Kind="InputPin" />
+            <Pin Id="DTp1QmPC5gDOUwq23Y5wAh" Name="Layer" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="429,501,105,19" Id="SIgm5qlwO6xMfXChzxjLXL">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Stroke" />
+            </p:NodeReference>
+            <Pin Id="SXuahX8PxgbLVNpsiE3cHv" Name="Input" Kind="InputPin" />
+            <Pin Id="Cl55FOSjGEoMs6astQvUR6" Name="Color" Kind="InputPin" DefaultValue="0.2000008, 0, 1, 1" />
+            <Pin Id="QCWm8lzs7yUNbnwuuzydrz" Name="Stroke Width" Kind="InputPin" />
+            <Pin Id="AUhrGQg3bzyNITkSnwxWdP" Name="Join" Kind="InputPin" />
+            <Pin Id="Laj2KcllurAP38IM8r5S3P" Name="Cap" Kind="InputPin" />
+            <Pin Id="LYnhCfyp7J6Ovg8yZ18f01" Name="Miter" Kind="InputPin" />
+            <Pin Id="UmIgCbwselaLIGX1VjiqGT" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="341,564,85,19" Id="GKfijLf7FHKNhyyHKRmkJi">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Group" />
+            </p:NodeReference>
+            <Pin Id="C1e0dTViZLZPiovPpfLvWT" Name="Input" Kind="InputPin" />
+            <Pin Id="URTXJT33x7bO2mE47Fxuf8" Name="Input 2" Kind="InputPin" />
+            <Pin Id="BjPNSmZwUflM8QZh0F177V" Name="Input 3" Kind="InputPin" />
+            <Pin Id="HD3xdoQvTPVOy1hMGN1lnO" Name="Debug" Kind="InputPin" />
+            <Pin Id="SkCrqQUKZYlNbaGktnSUkO" Name="Enabled" Kind="InputPin" />
+            <Pin Id="MZ0CG4zT9RXNq9kclCAuw9" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="400,300,60,26" Id="Pqw1ArYEA86L5Jq265qaSm">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastSymbolSource="VL.PolyTools.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Polygon" />
+              <Choice Kind="OperationCallFlag" Name="Perimeter" />
+            </p:NodeReference>
+            <Pin Id="MFqllkuQsxTMv7XtDGAbW0" Name="Input" Kind="StateInputPin" />
+            <Pin Id="DTybXue0pYSLpWm5FuKOxd" Name="Closed" Kind="InputPin" />
+            <Pin Id="GRA1t1KXzrQOU8ANb6aWbh" Name="OuterPerimeter" Kind="OutputPin" />
+            <Pin Id="GC6uMfepBKnPfGwkH5qu4E" Name="HolePerimeters" Kind="OutputPin" />
+          </Node>
+          <Pad Id="QQ6FK3XSIt7NFwIMPWb7T7" Comment="OuterPerimeter" Bounds="405,345,35,15" ShowValueBox="true" isIOBox="true" />
+          <Overlay Id="F1eDIMKJzt8Nnx5sy0jDPt" Name="Other ways to aprox calculate perimeter" Bounds="262,66,655,389" />
+          <Node Bounds="336,232,46,26" Id="AVSCa2buK6YNDnrEw9N313">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastSymbolSource="VL.PolyTools.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Polygon" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+              <CategoryReference Kind="RecordType" Name="Polygon" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="By0qjOo7A8eOR3e12KmYxt" Name="OuterContour" Kind="InputPin" />
+            <Pin Id="N7uQYed9aTdNNmChqnM2hF" Name="HoleContours" Kind="InputPin" />
+            <Pin Id="GC5upNtDfWiQGnEEJV9imC" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="SGNaNGKm0OnLnHjryMNCVv" Name="SuccessFindBounds" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="334,152,85,19" Id="E0GtxGVF8VUNlqzURFiddD">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="StarSpread" />
+            </p:NodeReference>
+            <Pin Id="HwBwf5yoOvuPwR3VyBve7V" Name="Center" Kind="InputPin" />
+            <Pin Id="Uw8QgBV1nNBOIZ6OFUqOO2" Name="Radius 1" Kind="InputPin" />
+            <Pin Id="EXuYFzipxTuMKi1pcyCyky" Name="Radius 2" Kind="InputPin" />
+            <Pin Id="ABIsZSnScYnLOJCh4WsVsr" Name="Phase" Kind="InputPin" />
+            <Pin Id="BNWvL7zmKqSPbB6McsClt0" Name="Spike Count" Kind="InputPin" DefaultValue="5" />
+            <Pin Id="H4cQleCk1IBNU9s0aAuGMx" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Cg7kbsOaDD2Pv0ZVxxqsEl" Comment="Close" Bounds="498,401,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BDeEWQ0lVJqNphISu76uIc" Comment="Closed" Bounds="495,255,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JvnhyRDxuEUNfVGQUDF3gZ" Bounds="427,175,411,19" ShowValueBox="true" isIOBox="true" Value="Remember to specify f you want to calculate as if the poly is closed">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="RbPe2ipMmJVPLixb5XkOsJ" Name="Create" />
+        <Patch Id="K5Be7UOrWVXPhwCXTCG0OA" Name="Update" ParticipatingElements="Pykto3hBYuWNMyaSNvNzRS" />
+        <ProcessDefinition Id="J8SeoRAezW3Lgmpmq0ltNH">
+          <Fragment Id="QhrSmt5oYfyNKgPM8l9zlz" Patch="RbPe2ipMmJVPLixb5XkOsJ" Enabled="true" />
+          <Fragment Id="FHo8JSQLYA4MlBXkpDEDwg" Patch="K5Be7UOrWVXPhwCXTCG0OA" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="HiX1djHBt9DPUnndmoRyWw" Ids="UmIgCbwselaLIGX1VjiqGT,FAYAIRF6VO0QEF5xIJWLnS" />
+        <Link Id="HrI4xdUDoUJPDHPYjLCW0j" Ids="MZ0CG4zT9RXNq9kclCAuw9,Pj8wSyatZBqMHD9TmyPxJO" />
+        <Link Id="UnKexFcjyyXNAY3oHI2feE" Ids="GRA1t1KXzrQOU8ANb6aWbh,QQ6FK3XSIt7NFwIMPWb7T7" />
+        <Link Id="HA0bSg5IyE6OP3QrtDjbaE" Ids="H4cQleCk1IBNU9s0aAuGMx,By0qjOo7A8eOR3e12KmYxt" />
+        <Link Id="HuN9hFKDqMJOKoGylIOmGc" Ids="GC5upNtDfWiQGnEEJV9imC,MFqllkuQsxTMv7XtDGAbW0" />
+        <Link Id="TKpMWCRDyiRMRFH4ybjWRb" Ids="DTp1QmPC5gDOUwq23Y5wAh,C1e0dTViZLZPiovPpfLvWT" />
+        <Link Id="VanPGUvc845O4BYL5EqtLE" Ids="GC5upNtDfWiQGnEEJV9imC,FJeVJOeKR7nMghgk3m0wPi" />
+        <Link Id="Vd7W4S4pAeHPrPoeMqZ6UP" Ids="Cg7kbsOaDD2Pv0ZVxxqsEl,O7nDmcq8IQCPzHzUy1MHSk" />
+        <Link Id="QNeHUMIizAMMTcuT366Q3H" Ids="BDeEWQ0lVJqNphISu76uIc,DTybXue0pYSLpWm5FuKOxd" />
+        <Link Id="Pykto3hBYuWNMyaSNvNzRS" Ids="BDeEWQ0lVJqNphISu76uIc,Cg7kbsOaDD2Pv0ZVxxqsEl" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Ftj3I9HL3WgPEf1t18itxs" Location="VL.CoreLib" Version="2021.4.10" />
+  <NugetDependency Id="GqaYMA1iqR8LzzAP3Zf2Ra" Location="VL.Skia" Version="2021.4.10" />
+  <DocumentDependency Id="UT9g8X23lxSQPoTuCseson" Location="../../VL.PolyTools.vl" />
+</Document>

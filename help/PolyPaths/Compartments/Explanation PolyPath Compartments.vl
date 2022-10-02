@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="JPEFtRxtdS2PaFjXJYILA7" LanguageVersion="2021.4.10.1043" Version="0.128">
+  <Patch Id="SAzNjKoSoPdLTJbEJ1WD9P">
+    <Canvas Id="V8S01f6CIZoPRPlRvmv1yQ" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="LFzcGRYR8tSPpfo5avJFud">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Ty6nHqJN9RVMjuxTEtOc5J">
+        <Canvas Id="J0TZGChC3G8LRpZviCVFaK" CanvasType="Group">
+          <Pad Id="Qb5b0RBARKnPa4XXfQyFXT" Bounds="447,278,389,19" ShowValueBox="true" isIOBox="true" Value="Compartments are an experimental feature of VL.Polytools ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="B4KppGcYubHOwvOdON6Fgg" Bounds="443,304,562,378" ShowValueBox="true" isIOBox="true" Value="Conceptually they are lines inside a PolyPath. A bit like lines defining rooms inside a house. The intention of this feature is to ensure CompartmentLines can survive operations like union, intersect, difference etc.  So you could intersect two house plans with each other. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Technically &#xD;&#xA;-Compartment lines are a type of contour inside a polypath (along with the outer contour and any hole contours). &#xD;&#xA;-Compartment lines should be in the fill area of polypaths, although with the manual add nodes you can create.&#xD;&#xA;-Compartment lines can intersect with other contours or have arbitrary points inside the Polypath. &#xD;&#xA;-When compartment lines intersect with other contours (including other compartment lines) to make enclosed spaces these are Compartments. &#xD;&#xA;-Compartments are spaces inside a PolyPath that can be extracted as separate polypaths. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Iph9p3cVJhsOD0iMThrICC" Bounds="449,395,443,76" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IPjLFRyha2TL8jUNuuKwiQ" Bounds="438,247,577,24" ShowValueBox="true" isIOBox="true" Value="Better to see a working example 'HowTo Manually create PolyPath Compartments.vl'">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OCFuB6uyM0yLdg1EviXQmR" Bounds="440,158,521,91" ShowValueBox="true" isIOBox="true" Value="What is a PolyPath Compartment Line?">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">22</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="Luw5qPIkSCJPYwmulSr46D" Name="Create" />
+        <Patch Id="B8c8bIn9tiIMItejXec3F2" Name="Update" />
+        <ProcessDefinition Id="DkOfIYlYqOwO5aCN83G4i9">
+          <Fragment Id="BwoH95P7m5sMGeShW0jL6l" Patch="Luw5qPIkSCJPYwmulSr46D" Enabled="true" />
+          <Fragment Id="OGwgmFCAmbhP0v9w4igt9T" Patch="B8c8bIn9tiIMItejXec3F2" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Jwi8Yae5PVeNF2HeL0W8W5" Location="VL.CoreLib" Version="2021.4.10" />
+</Document>
