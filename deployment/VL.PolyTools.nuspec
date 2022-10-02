@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.PolyTools</id>
+    <version>1.0.0</version>
+    <title>VL.PolyTools</title>
+    <authors>TobyKLight</authors>
+    <owners>TobyKLight</owners>
+    <projectUrl>https://github.com/TobyKLight/VL.PolyTools</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Tools for working with Polygons and Polypaths in vvvv Gamma</summary>
+    <description>Work with discrete 2D shapes with and without curves</description>
+    <tags>VL, vvvv, Roguelike, pathfinding, navigation, dice</tags>
+	<license type="expression">BSL-1.0</license>
+	<dependencies>
+      <dependency id="com.angusj.Clipper" version="[6.4.2]" />
+	  <dependency id="LibTessDotNet" version="[1.1.15]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+    <file src="..\help\**" target="help\" exclude="" />
+  </files>
+</package>
