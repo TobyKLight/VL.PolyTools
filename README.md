@@ -5,6 +5,9 @@ Polygon = shape made only of lines, Polypath = shape made of lines and curves
 
 See the helppatches for a more detailed overview
 
+---------------------
+#What can it do?#
+
 ![VL PolyTools FOV Calc](https://user-images.githubusercontent.com/4467208/193471193-00f37121-4291-4f5e-96b8-f6f1b4862b12.gif)
 
 Visibility from a point inside a polygon 
@@ -21,11 +24,11 @@ Visibility from a point inside a polygon
 Union of PolyPaths including internal compartment lines. 
 
 -----------------
-/To Install
+#To Install#
 TBA Nuget
 
 -----------------
-/Dependencies 
+#Dependencies# 
 
 com.angusj.Clipper -Version 6.4.2
 https://sourceforge.net/projects/polyclipping/
@@ -39,6 +42,6 @@ https://www.nuget.org/packages/LibTessDotNet
 credit https://github.com/speps/LibTessDotNet/graphs/contributors
 
 ------------------
-/License 
+#License# 
 
-Boost
+Boost 1.0
