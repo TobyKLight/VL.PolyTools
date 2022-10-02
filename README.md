@@ -5,6 +5,12 @@ Polygon = shape made only of lines, Polypath = shape made of lines and curves
 
 See the helppatches for a more detailed overview
 
+# To Install
+Grey menu (top left)>Manage Nugets>Command Line 
+
+Type
+```nuget install VL.PolyTools -Version 1.0.2```
+
 # What kind of things does it do? 
 
 ![image](https://user-images.githubusercontent.com/4467208/193471641-538d34a3-54cb-481e-b99e-4a1eda421d92.png)
@@ -27,26 +33,31 @@ Visibility from a point inside a polygon
 
 Union of PolyPaths including internal compartment lines. 
 
+
+![VL PolyTools Cutting A Poly into Compartments](https://user-images.githubusercontent.com/4467208/193478760-e1ad7721-a4ae-4d34-a3ba-d15dc5c67208.gif)
+
+Cutting a PolyPath into compartments
+
 Bonus see included 'SKPathUtils.vl' if you are looking for low level ways to extend SKPaths
 
-# To Install
-Grey menu (top left)>Manage Nugets>Command Line 
-
-Type
-```nuget install VL.PolyTools -Version 1.0.2```
 
 # Dependencies
 Made with vvvv Gamma 2021.4.10
 
 com.angusj.Clipper -Version 6.4.2
+
 https://sourceforge.net/projects/polyclipping/
+
 https://www.nuget.org/packages/com.angusj.Clipper
+
 credit Angus Johnson, gylee
  
 
 LibTessDotNet
 https://github.com/speps/LibTessDotNet
+
 https://www.nuget.org/packages/LibTessDotNet
+
 credit https://github.com/speps/LibTessDotNet/graphs/contributors
 
 # Special Thanks
