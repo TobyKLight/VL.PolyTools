@@ -9,7 +9,7 @@ See the helppatches for a more detailed overview
 Grey menu (top left)>Manage Nugets>Command Line 
 
 Type
-```nuget install VL.PolyTools -Version 1.0.2```
+```nuget install VL.PolyTools -Version 1.0.3```
 
 # What kind of things does it do? 
 
@@ -62,6 +62,19 @@ credit https://github.com/speps/LibTessDotNet/graphs/contributors
 
 # Special Thanks
 @Untone for help unlocking the SKPath verbs for use in vvvv gamma
+
+# Version History
+V1.0.3
+
+-Helppatch improvements
+
+-Consistent GetBounds method for Polygon and PolyPath
+
+-Added Splitting Circles Example patch kindly contributed by ██ ██
+
+-Added option to Compartments to avoid including outer stroke
+
+ 
 
 # License
 
