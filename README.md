@@ -64,6 +64,9 @@ credit https://github.com/speps/LibTessDotNet/graphs/contributors
 @Untone for help unlocking the SKPath verbs for use in vvvv gamma
 
 # Version History
+V1.0.6 
+Fixed bug in line intersects grid calculation 
+
 V1.0.5 
 Added second 'Does Line Intersect Grid cells' operation including all cells. 
 See helpatch 'HowTo Find Grid Cells Along A Line'
