@@ -64,6 +64,14 @@ credit https://github.com/speps/LibTessDotNet/graphs/contributors
 @Untone for help unlocking the SKPath verbs for use in vvvv gamma
 
 # Version History
+V1.0.4
+-Added function for finding grid cells along a line based on Bresenhams Line Algorithm
+See Helppatch 'HowTo Find Grid Cells Along A Line'
+
+-Added function for generating square-ish layout grids using a single count input. I say square-ish because it handles cases where the input count does not have a whole square root and a partial row/column might be needed.  
+See HelpPatch 'HowTo Generate a nearly Square GridSpread'
+
+
 V1.0.3
 
 -Helppatch improvements
