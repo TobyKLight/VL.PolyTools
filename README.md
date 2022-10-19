@@ -9,7 +9,7 @@ See the helppatches for a more detailed overview
 Grey menu (top left)>Manage Nugets>Command Line 
 
 Type
-```nuget install VL.PolyTools -Version 1.0.3```
+```nuget install VL.PolyTools```
 
 # What kind of things does it do? 
 
@@ -64,31 +64,31 @@ credit https://github.com/speps/LibTessDotNet/graphs/contributors
 @Untone for help unlocking the SKPath verbs for use in vvvv gamma
 
 # Version History
+V1.0.7 
+
+* Made the bugfix from V1.0.6 optional as 'Allow Perfect Diagonals' on  'HowTo Find Grid Cells Along A Line'
+
 V1.0.6 
-Fixed bug in line intersects grid calculation 
+
+* Fixed bug in line intersects grid calculation 
 
 V1.0.5 
-Added second 'Does Line Intersect Grid cells' operation including all cells. 
-See helpatch 'HowTo Find Grid Cells Along A Line'
+
+* Added second 'Does Line Intersect Grid cells' operation including all cells. See helpatch 'HowTo Find Grid Cells Along A Line'
 
 
 V1.0.4
--Added function for finding grid cells along a line based on Bresenhams Line Algorithm
-See Helppatch 'HowTo Find Grid Cells Along A Line'
 
--Added function for generating square-ish layout grids using a single count input. I say square-ish because it handles cases where the input count does not have a whole square root and a partial row/column might be needed.  
-See HelpPatch 'HowTo Generate a nearly Square GridSpread'
+* Added function for finding grid cells along a line based on Bresenhams Line Algorithm. See Helppatch 'HowTo Find Grid Cells Along A Line'
+* Added function for generating square-ish layout grids using a single count input. I say square-ish because it handles cases where the input count does not have a whole square root and a partial row/column might be needed.  See HelpPatch 'HowTo Generate a nearly Square GridSpread'
 
 
 V1.0.3
 
--Helppatch improvements
-
--Consistent GetBounds method for Polygon and PolyPath
-
--Added Splitting Circles Example patch kindly contributed by ██ ██
-
--Added option to Compartments to avoid including outer stroke
+*Helppatch improvements
+*Consistent GetBounds method for Polygon and PolyPath
+*Added Splitting Circles Example patch kindly contributed by ██ ██
+*Added option to Compartments to avoid including outer stroke
 
  
 
