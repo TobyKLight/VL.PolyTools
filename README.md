@@ -64,6 +64,10 @@ credit https://github.com/speps/LibTessDotNet/graphs/contributors
 @Untone for help unlocking the SKPath verbs for use in vvvv gamma
 
 # Version History
+V1.0.8 
+* Ensured compatibility with vvvv 2021.4.11-1313 (RC4) 
+* Fxed some helppatch windows potentially not opening 
+
 V1.0.7 
 
 * Made the bugfix from V1.0.6 optional as 'Allow Perfect Diagonals' on  'HowTo Find Grid Cells Along A Line'
