@@ -64,6 +64,10 @@ credit https://github.com/speps/LibTessDotNet/graphs/contributors
 @Untone for help unlocking the SKPath verbs for use in vvvv gamma
 
 # Version History
+V1.0.10
+* Minor improvement to 3D polygon plane and extrusion nodes and helppatch 
+* Can set custom bounding box depth for the 3D polygon plane 
+
 V1.0.9 
 * Stride dependencies moved to separate document VL.PolyTools.Stride 
 

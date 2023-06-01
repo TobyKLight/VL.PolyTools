@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="DaBk1MAo3IBNFmrnU8Tens" LanguageVersion="2021.4.10.1043" Version="0.128">
-  <NugetDependency Id="GmZvYDQlfDgLadHoOfKbjL" Location="VL.CoreLib" Version="2021.4.10" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="DaBk1MAo3IBNFmrnU8Tens" LanguageVersion="2023.5.0" Version="0.128">
+  <NugetDependency Id="GmZvYDQlfDgLadHoOfKbjL" Location="VL.CoreLib" Version="2023.5.0" />
   <Patch Id="NRqBjR01UVoL3WMooPDFbo">
     <Canvas Id="Iuf8pGx1T6FMVhvU2PioDQ" DefaultCategory="Clipper.Poly" CanvasType="FullCategory">
       <!--
@@ -9,19 +9,14 @@
 
 -->
       <Node Name="ToIntPoint (Vector2)" Bounds="437,360,129,245" Id="TOGF1lhCE6SOlb64kQmNn6">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="OperationDefinition" Name="Operation" />
         </p:NodeReference>
         <Patch Id="QoPWWW5q9eNPxSueD5kGxm">
-          <Pin Id="DUeKo5kJCBwLEjKUvs6kxq" Name="Input" Kind="InputPin">
-            <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="Vector2" />
-            </p:TypeAnnotation>
-          </Pin>
           <ControlPoint Id="ASIGnC2gatgL5fcs1nzyZv" Bounds="453,378" />
           <Link Id="HvIgxiTfVj9LyHyeLUgSxq" Ids="DUeKo5kJCBwLEjKUvs6kxq,ASIGnC2gatgL5fcs1nzyZv" IsHidden="true" />
           <Node Bounds="451,441,25,19" Id="HxDpEwINmdZL24rZ7CMXuo">
-            <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="*" />
             </p:NodeReference>
@@ -31,13 +26,13 @@
           </Node>
           <Link Id="AWhzwciqUdjPwUe7206chp" Ids="ASIGnC2gatgL5fcs1nzyZv,UMosvnM95fxOg8h5joNYoX" />
           <Pad Id="I4xRr4KRca4MD9zyuV66ra" Comment="" Bounds="483,407,51,28" ShowValueBox="true" isIOBox="true" Value="1000, 1000">
-            <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
           <Link Id="R1nEHFKPEIHPeCcXvN1xaG" Ids="I4xRr4KRca4MD9zyuV66ra,Iq684bqKId5LzQjWTjUPpu" />
           <Node Bounds="453,467,46,19" Id="Q1tIyWKrZQAQWnu6V2PI4G">
-            <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="2D.Vector2" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Vector2Type" Name="Vector2" />
               <Choice Kind="OperationCallFlag" Name="Vector (Split)" />
@@ -48,7 +43,7 @@
           </Node>
           <Link Id="QagAfe2PgDgL8vcGIJtQZx" Ids="HUJYVUFOEKoPis3SDJ4nfd,Hu8mLh8ye1kOrDQbhdIkQw" />
           <Node Bounds="449,499,52,26" Id="MgFRak2fd1OQcj9BCR0ZPz">
-            <p:NodeReference LastCategoryFullName="Primitive.Float32" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive.Float32" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Float32Type" Name="Float32" />
               <Choice Kind="OperationCallFlag" Name="ToInt64" />
@@ -58,7 +53,7 @@
           </Node>
           <Link Id="PA9mYTA2R6PMPgrgJ3ia02" Ids="TV1QVLrntA9OMzN6aPleXE,Iw00BQ87sWjNU0PML2xSiw" />
           <Node Bounds="502,500,52,26" Id="MDszDH5uUWkOMZtUUlD1jt">
-            <p:NodeReference LastCategoryFullName="Primitive.Float32" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive.Float32" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Float32Type" Name="Float32" />
               <Choice Kind="OperationCallFlag" Name="ToInt64" />
@@ -68,20 +63,19 @@
           </Node>
           <Link Id="PTP7L3R2nksMkYUDtwQ0bO" Ids="KTgEQn2j0tsLnjK7Yq5ck3,E2VUrHol2ZlLaJi1vxClGC" />
           <ControlPoint Id="Q65ZA5O1dmPORcIWej83MS" Bounds="453,588" />
-          <Pin Id="UyC01OudVWkL4pm367xapX" Name="Output" Kind="OutputPin" Bounds="604,542" />
           <Link Id="NV2pLluS2SkPyCCSQmwmqA" Ids="Q65ZA5O1dmPORcIWej83MS,UyC01OudVWkL4pm367xapX" IsHidden="true" />
           <Node Bounds="456,544,46,26" Id="CtbM39zRSduMxNLxiXghBJ">
-            <p:NodeReference LastCategoryFullName="ClipperLib.IntPoint" LastSymbolSource="clipper_library.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+            <p:NodeReference LastCategoryFullName="ClipperLib.IntPoint" LastDependency="clipper_library.dll" OverloadStrategy="AllPinsThatAreNotCommon">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Create" />
               <CategoryReference Kind="AssemblyCategory" Name="IntPoint" NeedsToBeDirectParent="true" />
               <PinReference Kind="InputPin" Name="X">
-                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System" LastSymbolSource="mscorlib.dll">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System" LastDependency="mscorlib.dll">
                   <Choice Kind="TypeFlag" Name="Int64" />
                 </p:DataTypeReference>
               </PinReference>
               <PinReference Kind="InputPin" Name="Y">
-                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System" LastSymbolSource="mscorlib.dll">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System" LastDependency="mscorlib.dll">
                   <Choice Kind="TypeFlag" Name="Int64" />
                 </p:DataTypeReference>
               </PinReference>
@@ -93,6 +87,12 @@
           <Link Id="VgPtV4TZabuMOC1IvdGyIb" Ids="O51deiHMIu0NKj3l3Il0Br,N5UryfWvmK4NFYiuMZj7Bu" />
           <Link Id="LVfXNAGGqsGMP0ZAAUaHGE" Ids="GDsZl5mebT5NDSm9Gq72u7,IWeARr8dO7NL13dQ3ucYAL" />
           <Link Id="DSY0CUEyTmRNEKCxvg2DU1" Ids="HLRImPrlszTL2DHtnRAdvl,Q65ZA5O1dmPORcIWej83MS" />
+          <Pin Id="DUeKo5kJCBwLEjKUvs6kxq" Name="Input" Kind="InputPin">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector2" />
+            </p:TypeAnnotation>
+          </Pin>
+          <Pin Id="UyC01OudVWkL4pm367xapX" Name="Output" Kind="OutputPin" Bounds="604,542" />
         </Patch>
       </Node>
       <!--
@@ -101,14 +101,14 @@
 
 -->
       <Node Name="FromIntPoint (Vector2)" Bounds="604,359,163,291" Id="UeQPTaY8U28PdJhCLiVc5v">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="OperationDefinition" Name="Operation" />
         </p:NodeReference>
         <Patch Id="PkT5GHsvZWuQTve3172GKd">
           <ControlPoint Id="IeuL9oB2hPGOJdU8dcI3Pa" Bounds="639,633" />
           <Link Id="Mu1LnzJE0l4MlqC69KvNjD" Ids="IeuL9oB2hPGOJdU8dcI3Pa,UxM1s81CKQBNpJBrPSV6sh" IsHidden="true" />
           <Node Bounds="638,542,46,19" Id="JqeXDsqVfdHQByTaWxIHjz">
-            <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="2D.Vector2" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Vector2Type" Name="Vector2" />
               <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
@@ -118,7 +118,7 @@
             <Pin Id="DCh3Jq0ySPvMI8kZXiYiPN" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="637,602,25,19" Id="Ur4TGWhIdDDQLi1EsjfGvS">
-            <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="/" />
             </p:NodeReference>
@@ -129,13 +129,13 @@
           <Link Id="Ox0u3oNouNTODpx7dhb08w" Ids="DCh3Jq0ySPvMI8kZXiYiPN,RgjSaNJr6NaMrTUl0myioF" />
           <Link Id="U2wfWDuk2hYM9I2seIHQ9v" Ids="ImO0c8zmFj3PgwavSS1zyZ,IeuL9oB2hPGOJdU8dcI3Pa" />
           <Pad Id="Pp1UNiewu6rNL9YQObhbFK" Comment="" Bounds="673,574,55,28" ShowValueBox="true" isIOBox="true" Value="1000, 1000">
-            <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
           <Link Id="PIpzWDRYZpDPPtWKR54VFN" Ids="Pp1UNiewu6rNL9YQObhbFK,Ighsv4IKtK8PNFP8aMG1El" />
           <Node Bounds="641,493,52,26" Id="JpNFDKvvHXjPMlJfPmrbO4">
-            <p:NodeReference LastCategoryFullName="Primitive.Float32" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive.Float32" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Float32Type" Name="Float32" />
               <Choice Kind="OperationCallFlag" Name="ToInt64" />
@@ -144,7 +144,7 @@
             <Pin Id="UOrI0Uheu1UPvi7peBikRf" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="703,491,52,26" Id="SiraXFhPFjBMBnW9bUgBJW">
-            <p:NodeReference LastCategoryFullName="Primitive.Float32" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive.Float32" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Float32Type" Name="Float32" />
               <Choice Kind="OperationCallFlag" Name="ToInt64" />
@@ -155,7 +155,7 @@
           <Link Id="GSlolw3m75SPNzPl36G9lb" Ids="UOrI0Uheu1UPvi7peBikRf,ASEAYFY3K5iPXGL3l06sb5" />
           <Link Id="NsAo4bFQiiZP7ZW0a4ZeOh" Ids="VHwJIMHUSVUOMAeOCbyuHH,Hw71ORcXUx2QCg7kCfNmKv" />
           <Node Bounds="616,401,44,26" Id="A0OnYPGdR5WOG8jTZKImCk">
-            <p:NodeReference LastCategoryFullName="ClipperLib.IntPoint" LastSymbolSource="clipper_library.dll">
+            <p:NodeReference LastCategoryFullName="ClipperLib.IntPoint" LastDependency="clipper_library.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="IntPoint" />
               <Choice Kind="OperationCallFlag" Name="X" />
@@ -169,7 +169,7 @@
           <Link Id="FT9kZ0svfHKLbmxg7gtG0e" Ids="Vd4vD1RyDhXMdih66X2TKb,MIyui0Jt3RiPjXlJ6UOvdr" />
           <Link Id="BSOjTEPTnS0LC1jbrAejby" Ids="Dwg183bTe2GMEvrS9Awyxt,Vd4vD1RyDhXMdih66X2TKb" IsHidden="true" />
           <Node Bounds="701,435,44,26" Id="OGMVLqxC3BuMwcFm29Vo8U">
-            <p:NodeReference LastCategoryFullName="ClipperLib.IntPoint" LastSymbolSource="clipper_library.dll">
+            <p:NodeReference LastCategoryFullName="ClipperLib.IntPoint" LastDependency="clipper_library.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Y" />
               <CategoryReference Kind="AssemblyCategory" Name="IntPoint" NeedsToBeDirectParent="true" />
@@ -190,7 +190,7 @@
 
 -->
       <Node Name="XOR" Category="Clipper.Poly" Bounds="808,492" Id="GJ2XkYMtbUqMWgeeYlNYEo">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="NeNFVxoo7nJMu2UZNkJ4zf">
@@ -200,7 +200,7 @@
             <ControlPoint Id="DI9uwM082z1LivfWjtkIfk" Bounds="1172,56" />
             <ControlPoint Id="PUD5p7fpn4MLUO47ozO5Xo" Bounds="1195,26" />
             <Node Bounds="1090,189" Id="U79Q60U5DwhP4hG26ZXBhG">
-              <p:NodeReference LastCategoryFullName="Clipper.Poly" LastSymbolSource="VL.Clipper.vl">
+              <p:NodeReference LastCategoryFullName="Clipper.Poly" LastDependency="VL.Clipper.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Execute" />
                 <CategoryReference Kind="Category" Name="Poly" NeedsToBeDirectParent="true" />
@@ -215,7 +215,7 @@
               <Pin Id="VcEyijUSusXPyuGEwDi0w3" Name="PolyTree" Kind="OutputPin" />
             </Node>
             <Pad Id="QbexmjM6lp6P6SDOu2txOq" Comment="ClipType" Bounds="1093,143,90,15" ShowValueBox="true" isIOBox="true" Value="ctXor">
-              <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastSymbolSource="clipper_library.dll">
+              <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastDependency="clipper_library.dll">
                 <Choice Kind="TypeFlag" Name="ClipType" />
               </p:TypeAnnotation>
             </Pad>
@@ -260,13 +260,13 @@
 
 -->
       <Node Name="Execute" Category="Clipper.Poly" Bounds="804,624" Id="PCNHA2Ycbe2OYpFAAZi29Q">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="J4zH1GfGORvMz8k9e1nDJ8">
           <Canvas Id="U0Z0StF4eNzNHP5I8yXhI3" CanvasType="Group">
             <Node Bounds="637,16,46,26" Id="RQ26vjbskMjPRV6HrgIxFR">
-              <p:NodeReference LastCategoryFullName="ClipperLib.Clipper" LastSymbolSource="clipper_library.dll">
+              <p:NodeReference LastCategoryFullName="ClipperLib.Clipper" LastDependency="clipper_library.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="Clipper" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -275,7 +275,7 @@
               <Pin Id="SZvR0NuNjacNFG6bMPgS5v" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Pad Id="Tn3s0M7i1yzPdVDnA9GrB5" Bounds="1111,552,98,19" ShowValueBox="true" isIOBox="true" Value="how to get out">
-              <p:TypeAnnotation>
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
               <p:ValueBoxSettings>
@@ -284,7 +284,7 @@
               </p:ValueBoxSettings>
             </Pad>
             <Node Bounds="800,130,373,228" Id="P2EakdQ9aeeOeGnLFtHpZf">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -298,7 +298,7 @@
                 <Patch Id="EveFegTwKm2LZctFgf8l8x" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="VlthXZvs2kNQbWs13xeLhb" Name="Dispose" ManuallySortedPins="true" />
                 <Node Bounds="822,312,70,26" Id="NoLAMBS4gKXNhp5Q9OGVru">
-                  <p:NodeReference LastCategoryFullName="ClipperLib.ClipperBase" LastSymbolSource="clipper_library.dll">
+                  <p:NodeReference LastCategoryFullName="ClipperLib.ClipperBase" LastDependency="clipper_library.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="AddPath" />
                     <CategoryReference Kind="AssemblyCategory" Name="ClipperBase" NeedsToBeDirectParent="true" />
@@ -311,23 +311,26 @@
                   <Pin Id="IhPvGEwV7CJPdk75IozcQ3" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Pad Id="DJzfC0ULCUGOSnanK6cPlj" Comment="Poly Type" Bounds="1024,264,71,15" ShowValueBox="true" isIOBox="true" Value="ptSubject">
-                  <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastSymbolSource="clipper_library.dll">
+                  <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastDependency="clipper_library.dll">
                     <Choice Kind="TypeFlag" Name="PolyType" />
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="852,150,151,122" Id="Bg7moatJiWmMWsByxO7lYp">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                     <FullNameCategoryReference ID="Primitive" />
                   </p:NodeReference>
                   <Pin Id="UWMyb8zUUM8QHUjelRfRWp" Name="Break" Kind="OutputPin" />
+                  <ControlPoint Id="VUjJRcLnDbBMqdAzYtAtrY" Bounds="867,254" Alignment="Bottom" />
+                  <ControlPoint Id="SdlJJ7fQGmsLFyV6ExrMqC" Bounds="867,186" Alignment="Top" />
+                  <ControlPoint Id="PbCvxf6lcjFQVxqRJ3slPY" Bounds="912,156" Alignment="Top" />
                   <Patch Id="QNVrOFNwR28O2iZkcBYGWd" ManuallySortedPins="true">
                     <Patch Id="Dh6gTSbciq8MeRceQTbpI3" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="EVbZ0mMZkITMXwq7MeCqWw" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="U7g8qzdaawaQK39cZjbE2T" Name="Dispose" ManuallySortedPins="true" />
                     <Node Bounds="864,215,57,26" Id="C4UaCZT3l9UO7ZXUAQOtNG">
-                      <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastSymbolSource="VL.Collections.vl">
+                      <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="MutableList" />
                         <Choice Kind="OperationCallFlag" Name="Add" />
@@ -337,7 +340,7 @@
                       <Pin Id="V63c0Xb0sinNvLYbgy5pUZ" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="906,175,16,19" Id="N5V5oaiCPsPMNEA8h6uteb">
-                      <p:NodeReference>
+                      <p:NodeReference LastCategoryFullName="Clipper.Poly" LastDependency="VL.Clipper.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ToIntPoint (Vector2)" />
                       </p:NodeReference>
@@ -345,16 +348,13 @@
                       <Pin Id="SD4wU4Q3vyvPQVplZqLgmS" Name="Output" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="VUjJRcLnDbBMqdAzYtAtrY" Bounds="867,254" Alignment="Bottom" />
-                  <ControlPoint Id="SdlJJ7fQGmsLFyV6ExrMqC" Bounds="867,186" Alignment="Top" />
-                  <ControlPoint Id="PbCvxf6lcjFQVxqRJ3slPY" Bounds="912,156" Alignment="Top" />
                 </Node>
               </Patch>
             </Node>
             <ControlPoint Id="OEwEwIzgfffL1p3YObvwZg" Bounds="912,51" />
             <Pad Id="Nx8LHQbwoRTQUMy0Syj49t" Comment="" Bounds="895,745,35,35" ShowValueBox="true" isIOBox="true" />
             <Pad Id="TeRXCSJnRQNNU6u2Ol4L6p" Bounds="1027,30,265,61" ShowValueBox="true" isIOBox="true" Value="Note the INTPOINT conversion potentially creates innaccuracies with very small numbers. Check it out.">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
               <p:ValueBoxSettings>
@@ -363,7 +363,7 @@
               </p:ValueBoxSettings>
             </Pad>
             <Node Bounds="1333,114,373,228" Id="A2XJTsMJqrDOy37galFYpY">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -377,7 +377,7 @@
                 <Patch Id="FnHisZADpcWNhREntOe1kB" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="CdTrE3WsACsPwU4kbpBZEZ" Name="Dispose" ManuallySortedPins="true" />
                 <Node Bounds="1355,296,70,26" Id="VF1hewi6kKCQLbIjqzWzX6">
-                  <p:NodeReference LastCategoryFullName="ClipperLib.ClipperBase" LastSymbolSource="clipper_library.dll">
+                  <p:NodeReference LastCategoryFullName="ClipperLib.ClipperBase" LastDependency="clipper_library.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="AddPath" />
                     <CategoryReference Kind="AssemblyCategory" Name="ClipperBase" NeedsToBeDirectParent="true" />
@@ -390,23 +390,26 @@
                   <Pin Id="AX32ZMglppZOaqAajzCYrh" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Pad Id="IraXGc8pmPPL1j8JYPsTKJ" Comment="Poly Type" Bounds="1557,248,71,15" ShowValueBox="true" isIOBox="true" Value="ptClip">
-                  <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastSymbolSource="clipper_library.dll">
+                  <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastDependency="clipper_library.dll">
                     <Choice Kind="TypeFlag" Name="PolyType" />
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="1385,134,151,112" Id="JPywZxlbwIDLYlHBOepbMu">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                     <FullNameCategoryReference ID="Primitive" />
                   </p:NodeReference>
                   <Pin Id="KXuDeS6yQh3Nn77TUTGuqY" Name="Break" Kind="OutputPin" />
+                  <ControlPoint Id="SlLH14koLeaMMWy21C1LlD" Bounds="1400,238" Alignment="Bottom" />
+                  <ControlPoint Id="TlnjbqVvCWWOqtQ7bCVJVe" Bounds="1400,170" Alignment="Top" />
+                  <ControlPoint Id="Gqd7IVQxWGiNrR9X7aXhfk" Bounds="1445,140" Alignment="Top" />
                   <Patch Id="UglZmQ4kAggLdJhyh0yz4E" ManuallySortedPins="true">
                     <Patch Id="La68uCm5Oh9OInhjmGE07c" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="Clxl9uSWQvyPzIgeKcsanN" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="T6sWHAoAdW8NCIbUdiVQKS" Name="Dispose" ManuallySortedPins="true" />
                     <Node Bounds="1397,199,57,26" Id="D48BpBp43g4QPr4vLG3Avv">
-                      <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastSymbolSource="VL.Collections.vl">
+                      <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="MutableList" />
                         <Choice Kind="OperationCallFlag" Name="Add" />
@@ -416,7 +419,7 @@
                       <Pin Id="M9HcnbQ24sPMxulQjbM4fw" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="1439,159,16,19" Id="Fw2Q08GVGMJPY34r2U7Tkm">
-                      <p:NodeReference>
+                      <p:NodeReference LastCategoryFullName="Clipper.Poly" LastDependency="VL.Clipper.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ToIntPoint (Vector2)" />
                       </p:NodeReference>
@@ -424,9 +427,6 @@
                       <Pin Id="AhLzwDgqVlsQIsjud1TLgB" Name="Output" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="SlLH14koLeaMMWy21C1LlD" Bounds="1400,238" Alignment="Bottom" />
-                  <ControlPoint Id="TlnjbqVvCWWOqtQ7bCVJVe" Bounds="1400,170" Alignment="Top" />
-                  <ControlPoint Id="Gqd7IVQxWGiNrR9X7aXhfk" Bounds="1445,140" Alignment="Top" />
                 </Node>
               </Patch>
             </Node>
@@ -436,7 +436,7 @@
             <ControlPoint Id="Gh0fr6tVuSJLAql3kbEZBn" Bounds="1549,574" />
             <Pad Id="HRsa9ZMrAoQPxtJSGbpMfk" Comment="Success" Bounds="931,639,35,35" ShowValueBox="true" isIOBox="true" />
             <Node Bounds="743,401,283,186" Id="AyxSh5YbtLpPU6qIKKgl7w">
-              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.Experimental.vl">
+              <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ProcessAppFlag" Name="Try (2Outputs)" />
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               </p:NodeReference>
@@ -455,7 +455,7 @@
                 <ControlPoint Id="SnXfC4lhgrcMdByrOgBF4z" Bounds="756,580" />
                 <ControlPoint Id="P4853CjIVtbOgmRrXDWO55" Bounds="860,572" />
                 <Node Bounds="758,472,48,19" Id="Jyb0UfN9wSgLAf3vYgtLe7">
-                  <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                  <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="CastAs" />
                   </p:NodeReference>
@@ -465,12 +465,12 @@
                   <Pin Id="NH7t2EG3akCPcsM9C9HNu2" Name="Success" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="755,531,85,26" Id="JQiCEYsEYZ9ODbpSSHP0Bw">
-                  <p:NodeReference LastCategoryFullName="ClipperLib.Clipper" LastSymbolSource="clipper_library.dll">
+                  <p:NodeReference LastCategoryFullName="ClipperLib.Clipper" LastDependency="clipper_library.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Execute" />
                     <CategoryReference Kind="AssemblyCategory" Name="Clipper" NeedsToBeDirectParent="true" />
                     <PinReference Kind="InputPin" Name="this">
-                      <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="ClipperLib" LastSymbolSource="clipper_library.dll">
+                      <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="ClipperLib" LastDependency="clipper_library.dll">
                         <Choice Kind="TypeFlag" Name="Clipper" />
                       </p:DataTypeReference>
                     </PinReference>
@@ -486,24 +486,24 @@
                   <Pin Id="SgVKsollovlOjBv7bpfoEE" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Pad Id="T8CHGRaRVIPNevE2qOEMIt" Comment="Clip Fill Type" Bounds="852,496,81,15" ShowValueBox="true" isIOBox="true" Value="pftEvenOdd">
-                  <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastSymbolSource="clipper_library.dll">
+                  <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastDependency="clipper_library.dll">
                     <Choice Kind="TypeFlag" Name="PolyFillType" />
                   </p:TypeAnnotation>
                 </Pad>
                 <Pad Id="A9PYnJ0FeMvMMmGU3xXD9X" Comment="Subj Fill Type" Bounds="837,467,81,15" ShowValueBox="true" isIOBox="true" Value="pftEvenOdd">
-                  <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastSymbolSource="clipper_library.dll">
+                  <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastDependency="clipper_library.dll">
                     <Choice Kind="TypeFlag" Name="PolyFillType" />
                   </p:TypeAnnotation>
                 </Pad>
                 <Pad Id="BnlGF72l2utPXIR36mYz2k" Comment="Clip Type" Bounds="779,429,90,15" ShowValueBox="true" isIOBox="true" Value="ctUnion">
-                  <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastSymbolSource="clipper_library.dll">
+                  <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastDependency="clipper_library.dll">
                     <Choice Kind="TypeFlag" Name="ClipType" />
                   </p:TypeAnnotation>
                 </Pad>
               </Patch>
             </Node>
             <Node Bounds="824,700,37,19" Id="GoAhM2RMWWlOg3hgE9ZsGQ">
-              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="AND" />
               </p:NodeReference>
@@ -514,7 +514,7 @@
             </Node>
             <ControlPoint Id="VwaEhkA6vCfNbtuBvtlw41" Bounds="774,379" />
             <Node Bounds="1110,392,47,26" Id="H7vPgKR6L0LNa4Lg2ojCKq">
-              <p:NodeReference LastCategoryFullName="ClipperLib.PolyTree" LastSymbolSource="clipper_library.dll">
+              <p:NodeReference LastCategoryFullName="ClipperLib.PolyTree" LastDependency="clipper_library.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="PolyTree" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -524,7 +524,7 @@
             <ControlPoint Id="KER6MVxQj9NLwcNPqSThQL" Bounds="1271,488" />
             <ControlPoint Id="Fh0n1mMNSn0Pu3TcXd4eoe" Bounds="966,89" />
             <Pad Id="DZl77jdy128Mm1vIir2ste" Bounds="1417,72,229,19" ShowValueBox="true" isIOBox="true" Value="PolyB (Shape to 'Clip') must be closed">
-              <p:TypeAnnotation>
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
               <p:ValueBoxSettings>
@@ -611,7 +611,7 @@
 
 -->
       <Node Name="Difference" Category="Clipper.Poly" Bounds="808,451" Id="Ti0P3fzE5g1PofQ8pxqgov">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="T4RkwdEvRkmNe2bcKtnFPt">
@@ -621,7 +621,7 @@
             <ControlPoint Id="D4uPf5PhzevOBFkrk2dHu0" Bounds="1171,62" />
             <ControlPoint Id="RjC6DID2qN3NoYTfNNV9uL" Bounds="1194,32" />
             <Node Bounds="1090,189" Id="FgUaLh8pIpdQDuZj0NfIVT">
-              <p:NodeReference LastCategoryFullName="Clipper.Poly" LastSymbolSource="VL.Clipper.vl">
+              <p:NodeReference LastCategoryFullName="Clipper.Poly" LastDependency="VL.Clipper.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Execute" />
                 <CategoryReference Kind="Category" Name="Poly" NeedsToBeDirectParent="true" />
@@ -636,7 +636,7 @@
               <Pin Id="K1PW4iiMbN8N6lEA6qmH3k" Name="PolyTree" Kind="OutputPin" />
             </Node>
             <Pad Id="Fbv7dtK2mS9QYuf1ngYpSk" Comment="ClipType" Bounds="1092,154,90,15" ShowValueBox="true" isIOBox="true" Value="ctDifference">
-              <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastSymbolSource="clipper_library.dll">
+              <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastDependency="clipper_library.dll">
                 <Choice Kind="TypeFlag" Name="ClipType" />
               </p:TypeAnnotation>
             </Pad>
@@ -681,7 +681,7 @@
 
 -->
       <Node Name="Intersect" Category="Clipper.Poly" Bounds="807,414" Id="Dq9ADV1RZxkMdObzaf6LgQ">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="Dwzxjh0QSyANsN5V5sS0wV">
@@ -691,7 +691,7 @@
             <ControlPoint Id="EZ5jpXMgUN5P7L3Li5qiEL" Bounds="1169,55" />
             <ControlPoint Id="VTuo31bccDoPFSX1IfRh0j" Bounds="1192,25" />
             <Node Bounds="1090,189" Id="CZQgNwRfRLHNiMDd8euEIN">
-              <p:NodeReference LastCategoryFullName="Clipper.Poly" LastSymbolSource="VL.Clipper.vl">
+              <p:NodeReference LastCategoryFullName="Clipper.Poly" LastDependency="VL.Clipper.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Execute" />
                 <CategoryReference Kind="Category" Name="Poly" NeedsToBeDirectParent="true" />
@@ -706,7 +706,7 @@
               <Pin Id="EKWu0bN8kdlMvBk3ZgLcn3" Name="PolyTree" Kind="OutputPin" />
             </Node>
             <Pad Id="I9Fd88HOSxaNMJkwZvB03G" Comment="ClipType" Bounds="1093,141,90,15" ShowValueBox="true" isIOBox="true" Value="ctIntersection">
-              <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastSymbolSource="clipper_library.dll">
+              <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastDependency="clipper_library.dll">
                 <Choice Kind="TypeFlag" Name="ClipType" />
               </p:TypeAnnotation>
             </Pad>
@@ -751,7 +751,7 @@
 
 -->
       <Node Name="Union" Category="Clipper.Poly" Bounds="807,374" Id="LQAtJPzncxeLa7vYfo0qC8">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="SSJzy0gPk8sNtyHfPgqFK0">
@@ -761,7 +761,7 @@
             <ControlPoint Id="ELv4vRp7fvZN1M4NqXRSoY" Bounds="681,329" />
             <ControlPoint Id="Mrkj4ds1sfZMV3TfpPawzv" Bounds="704,299" />
             <Node Bounds="601,467,85,19" Id="DnG4WGXenSIPkI4MPB3JrG">
-              <p:NodeReference LastCategoryFullName="Clipper.Poly" LastSymbolSource="VL.Clipper.vl">
+              <p:NodeReference LastCategoryFullName="Clipper.Poly" LastDependency="VL.Clipper.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Execute" />
                 <CategoryReference Kind="Category" Name="Poly" NeedsToBeDirectParent="true" />
@@ -776,7 +776,7 @@
               <Pin Id="RlpB1KyxFpyOdtb2F8jO89" Name="PolyTree" Kind="OutputPin" />
             </Node>
             <Pad Id="Qn6tWnGFuJLQMpbajjjo7C" Comment="ClipType" Bounds="604,421,90,15" ShowValueBox="true" isIOBox="true" Value="ctUnion">
-              <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastSymbolSource="clipper_library.dll">
+              <p:TypeAnnotation LastCategoryFullName="ClipperLib" LastDependency="clipper_library.dll">
                 <Choice Kind="TypeFlag" Name="ClipType" />
               </p:TypeAnnotation>
             </Pad>
@@ -816,7 +816,7 @@
         </Patch>
       </Node>
       <Pad Id="EmzbqRKr6iCOy4YLPm5l8a" Bounds="767,668,339,77" ShowValueBox="true" isIOBox="true" Value="SEE VL.PolyTools for the translation from Clipper PolyTree output to Polygons and points">
-        <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+        <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
           <Choice Kind="TypeFlag" Name="String" />
         </p:TypeAnnotation>
         <p:ValueBoxSettings>
@@ -839,13 +839,13 @@
 
 -->
       <Node Name="Offset" Category="Clipper.Poly" Bounds="802,567" Id="TSjnuOt4m3NOdaFY6VAloE">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="Ono0msf1CpMPd5Ief8e0jb">
           <Canvas Id="ODvfgLns1FOMs5ajstd7tm" CanvasType="Group">
             <Node Bounds="763,100,193,214" Id="MDU62sqx5yvN0UwcDPy3V7">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -859,18 +859,21 @@
                 <Patch Id="UDUgdgYMjzHOK0wjtnH2d7" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="VlaNai00UGqM2VkiUQurWb" Name="Dispose" ManuallySortedPins="true" />
                 <Node Bounds="815,121,129,112" Id="BPSt2zU6DI7LPHBCdQ7gY2">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                     <FullNameCategoryReference ID="Primitive" />
                   </p:NodeReference>
                   <Pin Id="V4khDcpuNRUNpQn05xXsen" Name="Break" Kind="OutputPin" />
+                  <ControlPoint Id="HQ4qjKwMR9WLop1jMeiDc9" Bounds="830,227" Alignment="Bottom" />
+                  <ControlPoint Id="KvPsmS6cacZPJKfosZLaNk" Bounds="830,127" Alignment="Top" />
+                  <ControlPoint Id="MyC1uj2eqOwL7zOnb6liwf" Bounds="875,127" Alignment="Top" />
                   <Patch Id="S5FFErCrSdLLwVUQTuixxh" ManuallySortedPins="true">
                     <Patch Id="IclUF2Ow6WkMiEZegHWzD2" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="G0UTQv3RVekP7fiG6S7Cpi" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="NiX14VZRBikL5WSQ4EkQdu" Name="Dispose" ManuallySortedPins="true" />
                     <Node Bounds="827,186,57,26" Id="L94cdyTtQ2qLGiDANBIbql">
-                      <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastSymbolSource="VL.Collections.vl">
+                      <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="MutableList" />
                         <Choice Kind="OperationCallFlag" Name="Add" />
@@ -880,7 +883,7 @@
                       <Pin Id="CEUQCCyOksZQRH5YTvXen9" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="869,146,63,19" Id="LYca7vlOaZRP9N80TutTrp">
-                      <p:NodeReference>
+                      <p:NodeReference LastCategoryFullName="Clipper.Poly" LastDependency="VL.Clipper.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ToIntPoint (Vector2)" />
                       </p:NodeReference>
@@ -888,12 +891,9 @@
                       <Pin Id="NuQJsLhOnYcNn1ZyOmiAHM" Name="Output" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="HQ4qjKwMR9WLop1jMeiDc9" Bounds="830,227" Alignment="Bottom" />
-                  <ControlPoint Id="KvPsmS6cacZPJKfosZLaNk" Bounds="830,127" Alignment="Top" />
-                  <ControlPoint Id="MyC1uj2eqOwL7zOnb6liwf" Bounds="875,127" Alignment="Top" />
                 </Node>
                 <Node Bounds="781,265,65,26" Id="Cy2cKgLhHMcLrF0Q57xyAo">
-                  <p:NodeReference LastCategoryFullName="ClipperLib.ClipperOffset" LastSymbolSource="clipper_library.dll">
+                  <p:NodeReference LastCategoryFullName="ClipperLib.ClipperOffset" LastDependency="clipper_library.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="ClipperOffset" />
                     <Choice Kind="OperationCallFlag" Name="AddPath" />
@@ -909,7 +909,7 @@
             <ControlPoint Id="DEuxkPrJaT5LIuzIWvDzBV" Bounds="748,33" />
             <Pad Id="MVtOQPRwRBONCjHtDqjY6x" Comment="" Bounds="807,643,35,35" ShowValueBox="true" isIOBox="true" />
             <Pad Id="HoYTqUTXxjVLQWVjllio2N" Bounds="990,1,265,61" ShowValueBox="true" isIOBox="true" Value="Note the INTPOINT conversion potentially creates innaccuracies with very small numbers. Check it out.">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
               <p:ValueBoxSettings>
@@ -920,7 +920,7 @@
             <ControlPoint Id="Rmxa3zxHuV8MLqQXyau7SZ" Bounds="808,703" />
             <ControlPoint Id="Gtyyn0ZvRXeMsIlV1332LI" Bounds="959,216" />
             <Node Bounds="752,538,129,69" Id="TyLUDlJHlViPw245cZZC0W">
-              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.Experimental.vl">
+              <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessStatefulRegion" Name="Try (1 Output)" />
               </p:NodeReference>
@@ -935,18 +935,18 @@
                 </Patch>
                 <ControlPoint Id="MMMj8faosjkLImDisIY7T1" Bounds="766,599" />
                 <Node Bounds="764,561,105,26" Id="Mmofpo1kAaEPVWZCBG0xA6">
-                  <p:NodeReference LastCategoryFullName="ClipperLib.ClipperOffset" LastSymbolSource="clipper_library.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                  <p:NodeReference LastCategoryFullName="ClipperLib.ClipperOffset" LastDependency="clipper_library.dll" OverloadStrategy="AllPinsThatAreNotCommon">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="ClipperOffset" />
                     <Choice Kind="OperationCallFlag" Name="Execute" />
                     <PinReference Kind="InputPin" Name="Solution" ParameterModifier="ref">
-                      <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System.Collections.Generic" LastSymbolSource="mscorlib.dll">
+                      <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System.Collections.Generic" LastDependency="mscorlib.dll">
                         <Choice Kind="TypeFlag" Name="List`1" />
                         <p:TypeArguments>
-                          <TypeReference LastCategoryFullName="System.Collections.Generic" LastSymbolSource="mscorlib.dll">
+                          <TypeReference LastCategoryFullName="System.Collections.Generic" LastDependency="mscorlib.dll">
                             <Choice Kind="TypeFlag" Name="List`1" />
                             <p:TypeArguments>
-                              <TypeReference LastCategoryFullName="ClipperLib" LastSymbolSource="Clipper.dll">
+                              <TypeReference LastCategoryFullName="ClipperLib" LastDependency="Clipper.dll">
                                 <Choice Kind="TypeFlag" Name="IntPoint" />
                               </TypeReference>
                             </p:TypeArguments>
@@ -966,29 +966,33 @@
             <ControlPoint Id="FS9bLhFlwqZQchPphXD3YH" Bounds="777,16" />
             <ControlPoint Id="FL1PvFPNWkUNlxgRsu0u5J" Bounds="991,754" />
             <Node Bounds="932,570,176,142" Id="HlAs9I1VnX4Nt2SBJbsKB7">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
               <Pin Id="FsKXxiGvQjnLBYUPNBBCPQ" Name="Break" Kind="OutputPin" />
+              <ControlPoint Id="CP7dNu2zblXPq4gVD8UFN7" Bounds="1014,576" Alignment="Top" />
+              <ControlPoint Id="SXOVlN84oOmQOE3gb4DoBb" Bounds="1010,706" Alignment="Bottom" />
               <Patch Id="Idj32RqyXADNil3uZqBMIn" ManuallySortedPins="true">
                 <Patch Id="PDi11jSxnoHOCQN5NfIGlJ" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="Q2QhyhqDFTsNphTaXvfKSW" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="Rt0OeVHQm5TLLGNpUTq0a3" Name="Dispose" ManuallySortedPins="true" />
                 <Node Bounds="996,606,100,86" Id="H9vyOzf45ZMQMWflQ6Wqbz">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
                   <Pin Id="Ln5yvxrpynNPUBHKqTwjHM" Name="Break" Kind="OutputPin" />
+                  <ControlPoint Id="MrBapjc7T2hPLA4TyK6ysE" Bounds="1011,612" Alignment="Top" />
+                  <ControlPoint Id="J77QiBZJYmKNF068xreHGE" Bounds="1010,686" Alignment="Bottom" />
                   <Patch Id="KuL2xwhqAFNNp7cxjy149s" ManuallySortedPins="true">
                     <Patch Id="MmwHfObUQrOL1lHD1TUhgo" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="IC4k276YOEXOTHjIzWOBDd" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="VVCHnaOXc8gOExde3nyuPO" Name="Dispose" ManuallySortedPins="true" />
                     <Node Bounds="1009,639,75,19" Id="Uuz3nNiUd8vNC3b8XfqzwP">
-                      <p:NodeReference LastCategoryFullName="Clipper.Poly" LastSymbolSource="VL.Clipper.vl">
+                      <p:NodeReference LastCategoryFullName="Clipper.Poly" LastDependency="VL.Clipper.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="FromIntPoint (Vector2)" />
                       </p:NodeReference>
@@ -996,15 +1000,11 @@
                       <Pin Id="Nt2ExLpwhsrMvHZbJp4jHV" Name="Output" Kind="OutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="MrBapjc7T2hPLA4TyK6ysE" Bounds="1011,612" Alignment="Top" />
-                  <ControlPoint Id="J77QiBZJYmKNF068xreHGE" Bounds="1010,686" Alignment="Bottom" />
                 </Node>
               </Patch>
-              <ControlPoint Id="CP7dNu2zblXPq4gVD8UFN7" Bounds="1014,576" Alignment="Top" />
-              <ControlPoint Id="SXOVlN84oOmQOE3gb4DoBb" Bounds="1010,706" Alignment="Bottom" />
             </Node>
             <Node Bounds="918,383" Id="KoujqycAqEnMBOqh6Ag0om">
-              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastSymbolSource="VL.Collections.vl">
+              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="MutableList" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -1012,7 +1012,7 @@
               <Pin Id="Q5druqWCk8aOUDPrcpOgal" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Node Bounds="776,59,64,26" Id="VBT71ZMEZjlOGUMFgmyHDp">
-              <p:NodeReference LastCategoryFullName="ClipperLib.ClipperOffset" LastSymbolSource="clipper_library.dll">
+              <p:NodeReference LastCategoryFullName="ClipperLib.ClipperOffset" LastDependency="clipper_library.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="ClipperOffset" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -1089,13 +1089,13 @@
 
 -->
       <Node Name="PointInPolygon" Bounds="801,759" Id="JF2SrVDEfrzOwBDSYzr7gU">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="G5Ts1CI4VRSPpVqaBm7TkZ">
           <Canvas Id="Lc8ahPEMyubLIlJMzcskG4" CanvasType="Group">
             <Node Bounds="373,498" Id="CiNguBWaaIFQJ7FcwSkH0A">
-              <p:NodeReference LastCategoryFullName="ClipperLib.Clipper" LastSymbolSource="clipper_library.dll">
+              <p:NodeReference LastCategoryFullName="ClipperLib.Clipper" LastDependency="clipper_library.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="PointInPolygon" />
                 <CategoryReference Kind="AssemblyCategory" Name="Clipper" NeedsToBeDirectParent="true" />
@@ -1105,7 +1105,7 @@
               <Pin Id="Ed7lAXddolsOTRvaUR6cw7" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="374,455,63,19" Id="TzSMrypdaHNLbZKxdb8aeb">
-              <p:NodeReference LastCategoryFullName="ParagonClipper.Poly" LastSymbolSource="VL.ParagonClipper.vl">
+              <p:NodeReference LastCategoryFullName="Clipper.Poly" LastDependency="VL.Clipper.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="ToIntPoint (Vector2)" />
               </p:NodeReference>
@@ -1115,7 +1115,7 @@
             <ControlPoint Id="Klpjl9KTxeQOZwUVyv0RQw" Bounds="375,408" />
             <ControlPoint Id="IgYSxpkfAHsQKntSpZ22Kp" Bounds="374,596" />
             <Node Bounds="509,258,57,26" Id="MgDaNRooTXKOwZsZ4HZNOl">
-              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastSymbolSource="VL.Collections.vl">
+              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="MutableList" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
@@ -1123,17 +1123,20 @@
               <Pin Id="VSI6Wm2dI5aLvtZIEm3bj4" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Node Bounds="497,352,141,108" Id="UVn1DPtzwkwLOYh5EYdKtM">
-              <p:NodeReference>
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <Pin Id="NmDhHwes48ePD3OLmlM7cs" Name="Break" Kind="OutputPin" />
+              <ControlPoint Id="QWK5bfeBb8XLpxnXOVkPeQ" Bounds="513,358" Alignment="Top" />
+              <ControlPoint Id="N6Dp1mafKKTLL5dLcgxTPf" Bounds="513,454" Alignment="Bottom" />
+              <ControlPoint Id="RtdY3IYIa9bPLXtcGc7txp" Bounds="570,358" Alignment="Top" />
               <Patch Id="LR3G36kENKFLqB39LlBHq3" ManuallySortedPins="true">
                 <Patch Id="NG9KASRkLWUP7KzMwdoEV8" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="AHSO5bL42jqLcP4ROhP2y8" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="U6swGo6JWVFPosQU3YVERz" Name="Dispose" ManuallySortedPins="true" />
                 <Node Bounds="509,409" Id="KKcx0BW2QlCLbug1za5IOW">
-                  <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastSymbolSource="VL.Collections.vl">
+                  <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableList" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="MutableList" />
                     <Choice Kind="OperationCallFlag" Name="Add" />
@@ -1143,7 +1146,7 @@
                   <Pin Id="HOQvnvL0Jj8MCst0cqhfxo" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="563,379,63,19" Id="JDpoFRzoE6bNFTenOuxv38">
-                  <p:NodeReference LastCategoryFullName="ParagonClipper.Poly" LastSymbolSource="VL.ParagonClipper.vl">
+                  <p:NodeReference LastCategoryFullName="Clipper.Poly" LastDependency="VL.Clipper.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToIntPoint (Vector2)" />
                   </p:NodeReference>
@@ -1151,9 +1154,6 @@
                   <Pin Id="NcxfeazcePgMzIICvAzmFc" Name="Output" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="QWK5bfeBb8XLpxnXOVkPeQ" Bounds="513,358" Alignment="Top" />
-              <ControlPoint Id="N6Dp1mafKKTLL5dLcgxTPf" Bounds="513,454" Alignment="Bottom" />
-              <ControlPoint Id="RtdY3IYIa9bPLXtcGc7txp" Bounds="570,358" Alignment="Top" />
             </Node>
             <ControlPoint Id="GoYxjrfHKfINpJDfYxTh8q" Bounds="572,321" />
           </Canvas>
@@ -1232,6 +1232,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="EoyAo43AoFCLGwSE2DqZ0b" Location="VL.CoreLib" Version="2021.4.10" />
+  <NugetDependency Id="EoyAo43AoFCLGwSE2DqZ0b" Location="VL.CoreLib" Version="2023.5.0" />
   <NugetDependency Id="Fl0uvBpfMouOiPaRpkKvBw" Location="com.angusj.Clipper" Version="6.4.2" />
 </Document>
