@@ -64,6 +64,12 @@ credit https://github.com/speps/LibTessDotNet/graphs/contributors
 @Untone for help unlocking the SKPath verbs for use in vvvv gamma
 
 # Version History
+V1.1.0
+* Tested in vvvv gamma 5.0-stable 
+* Added UV map to the ExtrudedPolygon. This is not intended for every usecase but should be a good starting point. 
+* Fixed another bug with bounding boxes of PolygonPlane and ExtrudedPolygons that caused incorrect culling. 
+* Minor breaking change due to new signature of PolygonPlane and ExtrudedPolygon nodes (so they go red). Just double click on them and recreate them and you should be good to go. 
+
 V1.0.10
 * Minor improvement to 3D polygon plane and extrusion nodes and helppatch 
 * Can set custom bounding box depth for the 3D polygon plane 
