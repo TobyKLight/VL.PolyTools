@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="FFG6RuAANjWLqZ6kcQmlKO" LanguageVersion="2023.5.2-0003-g9e885de500" Version="0.128">
+  <NugetDependency Id="VQvEwYfeSIVPcQoExw6XGY" Location="VL.CoreLib" Version="2023.5.2-0003-g9e885de500" />
+  <Patch Id="ESZltBFLPamOoABotTJXlI">
+    <Canvas Id="OfIztGOG64hLIkFBcmy56R" DefaultCategory="Main" CanvasType="FullCategory">
+      <Pad Id="HzW6oErbevPQIMfewR5NJe" Bounds="825,161,506,56" ShowValueBox="true" isIOBox="true" Value="This adds tangent generation to a dynamic mesh. It reuquires vertex position, normal, UV and index buffer to already be calculated.">
+        <p:TypeAnnotation>
+          <Choice Kind="TypeFlag" Name="String" />
+        </p:TypeAnnotation>
+        <p:ValueBoxSettings>
+          <p:fontsize p:Type="Int32">9</p:fontsize>
+          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+        </p:ValueBoxSettings>
+      </Pad>
+      <Pad Id="KQ6BfkaeIwXOJLCoPD9vuX" Bounds="826,285,140,19" ShowValueBox="true" isIOBox="true" Value="https://discourse.vvvv.org/t/add-tangent-generation-to-stride-dynamic-mesh/21537/2">
+        <p:TypeAnnotation>
+          <Choice Kind="TypeFlag" Name="String" />
+        </p:TypeAnnotation>
+        <p:ValueBoxSettings>
+          <p:fontsize p:Type="Int32">9</p:fontsize>
+          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+        </p:ValueBoxSettings>
+      </Pad>
+      <Pad Id="MEi27FUeF0sPrepyskRmfK" Bounds="828,211,506,56" ShowValueBox="true" isIOBox="true" Value="Hoepfully this is added to VL.StandardLibs at some point and this patch becomes obsolete. ">
+        <p:TypeAnnotation>
+          <Choice Kind="TypeFlag" Name="String" />
+        </p:TypeAnnotation>
+        <p:ValueBoxSettings>
+          <p:fontsize p:Type="Int32">9</p:fontsize>
+          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+        </p:ValueBoxSettings>
+      </Pad>
+      <!--
+
+    ************************ DynamicMesh (IndicesTangents) ************************
+
+-->
+      <Node Name="DynamicMesh (IndicesTangents)" Bounds="879,401" Id="Nei7gZEfXiMLiVLMC5qPfQ">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="M0aEiLBs9GPMhxXAENgcBt" IsGeneric="true">
+          <Canvas Id="LszcMlNFNAQLlENXhTZHRs" CanvasType="Group">
+            <Node Bounds="999,645,105,19" Id="NfL0qQz8T6eNpVgUenz4wV">
+              <p:NodeReference LastCategoryFullName="Stride.Models.Meshes" LastDependency="VL.Stride.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="DynamicMesh (Indexed)" />
+              </p:NodeReference>
+              <Pin Id="ILfLvNUF5TRPG9Nh6Vv1Sn" Name="Data" Kind="InputPin" />
+              <Pin Id="QiwOgLBuq3VQH4H3uadD4K" Name="Update Buffer" Kind="InputPin" />
+              <Pin Id="PTR7d8oqN0LLoU2r64l2In" Name="Vertex Declaration" Kind="InputPin" />
+              <Pin Id="JwGCn6vmdKiLFM0wph5qWm" Name="Topology" Kind="InputPin" />
+              <Pin Id="SY8LTDl5MLHMuCah1SxNZM" Name="Indices" Kind="InputPin" />
+              <Pin Id="O21bR8CYehzOYgouH1i1qu" Name="Bounding Box" Kind="InputPin" />
+              <Pin Id="UE7XBuW3OFzNWAw9kzUnvH" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="935,431,134,19" Id="MNM6qCaRHHeMnRA8bDObdM">
+              <p:NodeReference LastCategoryFullName="Stride.Graphics.VertexHelper" LastDependency="Stride.Graphics.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="VertexHelper" />
+                <Choice Kind="OperationCallFlag" Name="GenerateTangentBinormal" />
+              </p:NodeReference>
+              <Pin Id="I92UZNslOcNPXQ0tjUU0AR" Name="Vertex Declaration" Kind="InputPin" />
+              <Pin Id="DVIpQMnyrwiMwdz1JDCAgq" Name="Vertex Buffer Data" Kind="InputPin" />
+              <Pin Id="GbZsh1wjsdCNfuhTdS9g1O" Name="Index Buffer" Kind="InputPin" />
+              <Pin Id="P5XosaTaLpVPAI4DclLig6" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1087,387,83,26" Id="TH3HZZyDOSMPM3gjspdL2F">
+              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ArrayType" Name="MutableArray" />
+                <Choice Kind="OperationCallFlag" Name="FromSequence" />
+              </p:NodeReference>
+              <Pin Id="UIaiFayjgLTOOGZchODaTe" Name="Input" Kind="StateInputPin" />
+              <Pin Id="OPXVPuhqUj6PAeq4rNlyUM" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="993,384,83,26" Id="IZujl25QqnfMENt6Kbw8Hx">
+              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ArrayType" Name="MutableArray" />
+                <Choice Kind="OperationCallFlag" Name="FromSequence" />
+              </p:NodeReference>
+              <Pin Id="UaoXnhqOkOGL3giTcHG9yR" Name="Input" Kind="StateInputPin" />
+              <Pin Id="A5Jes3jwJurOnVkpaMGPOS" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="934,468,99,26" Id="GTVEuqf3deQPMGEoZdWfj4">
+              <p:NodeReference LastCategoryFullName="Stride.Graphics.VertexHelper.VertexTransformResult" LastDependency="Stride.Graphics.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="VertexTransformResult" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Layout" />
+              </p:NodeReference>
+              <Pin Id="Bg8H0gvclVLNVgYYtWwAo8" Name="Input" Kind="StateInputPin" />
+              <Pin Id="HAHCmsnCwuGQaLizrXiY10" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="T0Wk8Vi0LNRMfvjOEoROcK" Name="Layout" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="903,510,99,26" Id="BbqVblP2qwfL1Iyrq9zL3w">
+              <p:NodeReference LastCategoryFullName="Stride.Graphics.VertexHelper.VertexTransformResult" LastDependency="Stride.Graphics.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="VertexTransformResult" />
+                <Choice Kind="OperationCallFlag" Name="VertexBuffer" />
+              </p:NodeReference>
+              <Pin Id="HD7Jcpb7Ow2M8WWNWZC2aS" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Qf7aT9jyHivPFVdUPwqrDw" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="EBrHhnE14csNgRDtzU0xyE" Name="Vertex Buffer" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="DHIXymNkh5DNxdrQnIsChG" Bounds="1025,602" />
+            <ControlPoint Id="QpQJUeFOrIFQU9WT71pQm9" Bounds="1244,609" />
+            <ControlPoint Id="O2lULaAKyRyMYFraOBsHVG" Bounds="1332,606" />
+            <ControlPoint Id="KH6MN7iKxsrPBm9KpibXfj" Bounds="1403,614" />
+            <ControlPoint Id="M52JURIC2CkPylZbb1Xcxu" Bounds="999,694" />
+            <ControlPoint Id="ChZzx5IbL5EPyfUUgr174Z" Bounds="1089,335" />
+            <ControlPoint Id="Rixpd5WHGJ6OZlpxBJ2Ogv" Bounds="997,311" />
+            <ControlPoint Id="NZSzKStT3m9NYyAkXfWMng" Bounds="922,322" />
+          </Canvas>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="N9M2Ixo7InmLPVwHF7yNp5">
+            <Fragment Id="V5QmxTbxKAbNm1aXHdCzFI" Patch="FyF2MshOIIUNGLpEeF8fdg" Enabled="true" />
+            <Fragment Id="TKaE3FPKblqPE0CGoK2sW2" Patch="BhST4Npl5ErLGEbGNz27wF" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="F0ai6964xsYNrca3SACtkO" Ids="OPXVPuhqUj6PAeq4rNlyUM,GbZsh1wjsdCNfuhTdS9g1O" />
+          <Link Id="E0GkZucn4mxNTMnhLEceRm" Ids="A5Jes3jwJurOnVkpaMGPOS,DVIpQMnyrwiMwdz1JDCAgq" />
+          <Link Id="OPJHEbQ44IaLOEbz2DlT65" Ids="P5XosaTaLpVPAI4DclLig6,Bg8H0gvclVLNVgYYtWwAo8" />
+          <Link Id="CK2hHuXRDP3PQ960Gx2Nrs" Ids="HAHCmsnCwuGQaLizrXiY10,HD7Jcpb7Ow2M8WWNWZC2aS" />
+          <Link Id="JXgHTqznsv3OTLKGjuCG7O" Ids="IYd6mmcuYP3Obpe7oZHmjP,DHIXymNkh5DNxdrQnIsChG" IsHidden="true" />
+          <Link Id="DlAedQZvJcDO0iX4630JNy" Ids="DHIXymNkh5DNxdrQnIsChG,QiwOgLBuq3VQH4H3uadD4K" />
+          <Link Id="V7qT1pJrNA8L2H30Y2eRG6" Ids="AguknqJhElyN9TBP7QiqfT,QpQJUeFOrIFQU9WT71pQm9" IsHidden="true" />
+          <Link Id="KYPwG3KoZYYQXJpvjjvTGa" Ids="QpQJUeFOrIFQU9WT71pQm9,JwGCn6vmdKiLFM0wph5qWm" />
+          <Link Id="REnfOYSvws1PxRwgJn41s1" Ids="PsA5RiUOS8qMUpk9X7gf1G,O2lULaAKyRyMYFraOBsHVG" IsHidden="true" />
+          <Link Id="Lz1Owg3wbD1M2kge2sooo5" Ids="O2lULaAKyRyMYFraOBsHVG,SY8LTDl5MLHMuCah1SxNZM" />
+          <Link Id="MpTAxKyeQ5JL0z9vkgU0qb" Ids="DZFp4zl8QB7PKYgc9JVGDQ,KH6MN7iKxsrPBm9KpibXfj" IsHidden="true" />
+          <Link Id="FC450k8XacOQFkJR1fV4Ay" Ids="KH6MN7iKxsrPBm9KpibXfj,O21bR8CYehzOYgouH1i1qu" />
+          <Link Id="EYrkKy09wxKPPIGZ1GYj0t" Ids="M52JURIC2CkPylZbb1Xcxu,AVzmTuriCflLS2j9Ilvm6t" IsHidden="true" />
+          <Link Id="OTprn4eyUenPl2qD0zci8i" Ids="UE7XBuW3OFzNWAw9kzUnvH,M52JURIC2CkPylZbb1Xcxu" />
+          <Link Id="C0MYeFRrUzBPbfcOZSaiJV" Ids="EBrHhnE14csNgRDtzU0xyE,ILfLvNUF5TRPG9Nh6Vv1Sn" />
+          <Link Id="QC80bgf167PPqfwGw2lS7h" Ids="T0Wk8Vi0LNRMfvjOEoROcK,PTR7d8oqN0LLoU2r64l2In" />
+          <Link Id="M2e01ZioCBEPI5gWP1Lz1d" Ids="PsA5RiUOS8qMUpk9X7gf1G,ChZzx5IbL5EPyfUUgr174Z" IsHidden="true" />
+          <Link Id="Nsm2bBRCtQaNKo1rMfG4ie" Ids="ChZzx5IbL5EPyfUUgr174Z,UIaiFayjgLTOOGZchODaTe" />
+          <Link Id="EdZ3utTqEECLmr59R4knqB" Ids="Rixpd5WHGJ6OZlpxBJ2Ogv,UaoXnhqOkOGL3giTcHG9yR" />
+          <Link Id="TYDI6K4JR8HP0Ba9SlVTBs" Ids="NO1zzrLopqkNe0UQlKnO9c,Rixpd5WHGJ6OZlpxBJ2Ogv" IsHidden="true" />
+          <Link Id="GONC3e0aTW7QY2sVUK34xC" Ids="NZSzKStT3m9NYyAkXfWMng,I92UZNslOcNPXQ0tjUU0AR" />
+          <Link Id="CjyMWQlti7QQL4mozzrFiW" Ids="NuMpcUdoMCSNtqL0BubtAr,NZSzKStT3m9NYyAkXfWMng" IsHidden="true" />
+          <Patch Id="FyF2MshOIIUNGLpEeF8fdg" Name="Create" />
+          <Patch Id="BhST4Npl5ErLGEbGNz27wF" Name="Update">
+            <Pin Id="NuMpcUdoMCSNtqL0BubtAr" Name="Vertex Declaration" Kind="InputPin" Bounds="922,322" />
+            <Pin Id="NO1zzrLopqkNe0UQlKnO9c" Name="VertexBuffer" Kind="InputPin" Bounds="999,311" />
+            <Pin Id="IYd6mmcuYP3Obpe7oZHmjP" Name="Update Buffer" Kind="InputPin" />
+            <Pin Id="PsA5RiUOS8qMUpk9X7gf1G" Name="Indices" Kind="InputPin" />
+            <Pin Id="AguknqJhElyN9TBP7QiqfT" Name="Topology" Kind="InputPin" />
+            <Pin Id="DZFp4zl8QB7PKYgc9JVGDQ" Name="Bounding Box" Kind="InputPin" />
+            <Pin Id="AVzmTuriCflLS2j9Ilvm6t" Name="Output" Kind="OutputPin" />
+          </Patch>
+        </Patch>
+      </Node>
+      <Pad Id="RpXwgcVjVRdLQWQLEEFtoM" Bounds="816,319,485,19" ShowValueBox="true" isIOBox="true" Value="Directly references Stride.Graphics.dll in the vvvv gamma install folder. Not ideal.">
+        <p:TypeAnnotation>
+          <Choice Kind="TypeFlag" Name="String" />
+        </p:TypeAnnotation>
+        <p:ValueBoxSettings>
+          <p:fontsize p:Type="Int32">9</p:fontsize>
+          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+        </p:ValueBoxSettings>
+      </Pad>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="EeCqSRoG9sDQRx8wj0valG">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="MWwEGUAY5p3PoxhDeN8xAe">
+        <Canvas Id="Ge7YHosHTHHNjoBl81eZnE" CanvasType="Group" />
+        <Patch Id="EM2WmRR560mP6ttjCzxAcU" Name="Create" />
+        <Patch Id="D24lhmevtRTPkvAAviHvsz" Name="Update" />
+        <ProcessDefinition Id="PnSzW6HynALMYPsL5EUEhx">
+          <Fragment Id="BUTAwhk2yY4P4TFBSkbr7w" Patch="EM2WmRR560mP6ttjCzxAcU" Enabled="true" />
+          <Fragment Id="PvPdRXrKqvDPb7UJKeaxcG" Patch="D24lhmevtRTPkvAAviHvsz" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="KIdyhb6FnBRLwPwLvw4qej" Location="VL.Stride" Version="2023.5.2-0003-g9e885de500" />
+  <PlatformDependency Id="TmXNGq48GsrLg3XyXkTZvp" Location="../../../Program Files/vvvv/vvvv_gamma_5.2-0003-g9e885de500/packs/dependencies/Stride.Graphics.dll" />
+</Document>
