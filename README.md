@@ -64,6 +64,11 @@ credit https://github.com/speps/LibTessDotNet/graphs/contributors
 @Untone for help unlocking the SKPath verbs for use in vvvv gamma
 
 # Version History
+V1.1.1 
+* Rearranged and expanded the helppatches for PolygonPlane and PolygonExtrusions 
+* Added option to generate tangents, needed for normal (bump) mapping 
+* Added many options for texture mapping the 3D polygon objects 
+
 V1.1.0
 * Tested in vvvv gamma 5.0-stable 
 * Added UV map to the ExtrudedPolygon. This is not intended for every usecase but should be a good starting point. 
