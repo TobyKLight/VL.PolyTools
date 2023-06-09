@@ -38,11 +38,14 @@ Union of PolyPaths including internal compartment lines.
 
 Cutting a PolyPath into compartments
 
+![VL.PolyTools extruded polygon with normal mapping](https://github.com/TobyKLight/VL.PolyTools/assets/4467208/c90eb722-16ab-4c8d-8ff8-117dd71a29ac)
+
+An extruded Polygon with Normal mapping
+
 Bonus see included 'SKPathUtils.vl' if you are looking for low level ways to extend SKPaths
 
-
 # Dependencies
-Made with vvvv Gamma 2021.4.10
+Made with vvvv Gamma 5.0
 
 com.angusj.Clipper -Version 6.4.2
 
@@ -68,6 +71,8 @@ V1.1.1
 * Rearranged and expanded the helppatches for PolygonPlane and PolygonExtrusions 
 * Added option to generate tangents, needed for normal (bump) mapping 
 * Added many options for texture mapping the 3D polygon objects 
+* For those planning to make their own dynamic meshes or models in stride the PolygonPlane and PolygonExtrusion patches are reasonably well documented examples, including with UV coordinates, tangents and bounding boxes. 
+* Added some tools for debugging stride entities as wireframe, vertices, tangents etc
 
 V1.1.0
 * Tested in vvvv gamma 5.0-stable 
