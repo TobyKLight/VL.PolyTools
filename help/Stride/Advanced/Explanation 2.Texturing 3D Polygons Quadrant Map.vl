@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GPsUEETNaO3PCTYacyRT2N" LanguageVersion="2023.5.2-0003-g9e885de500" Version="0.128">
-  <NugetDependency Id="BPczxtF9Ui0NHOo8svL2ce" Location="VL.CoreLib" Version="2023.5.2-0003-g9e885de500" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="PNRSl6yeTcKOE39E00sRhK" LanguageVersion="2023.5.2-0036-gbdd7ddf8f9" Version="0.128">
+  <NugetDependency Id="BPczxtF9Ui0NHOo8svL2ce" Location="VL.CoreLib" Version="2023.5.2-0036-gbdd7ddf8f9" />
   <Patch Id="N6gk0oufwPCMKj0BJzCSTK">
     <Canvas Id="UjgJjNV8AqEO7o0beuJ2QM" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -232,7 +232,7 @@
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="195,1125,305,19" Id="SeCy1rCZDpdObtWNaavxjF">
+          <Node Bounds="195,1125,345,19" Id="SeCy1rCZDpdObtWNaavxjF">
             <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ExtrudedPolygon" />
@@ -241,14 +241,14 @@
             <Pin Id="GehEPLOGi8kQc4G7qOdfwB" Name="Height" Kind="InputPin" />
             <Pin Id="BBIJfCz4zIeQMEsXztLhs7" Name="ExtrudeDepth" Kind="InputPin" />
             <Pin Id="S8YU2TGTUU9OiwTXypkDTu" Name="BottomContour2DTransform" Kind="InputPin" />
-            <Pin Id="Adsx58gnDmFPXlSdVhnqiI" Name="SetOriginToCenter" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="Adsx58gnDmFPXlSdVhnqiI" Name="SetOriginToCenter" Kind="InputPin" />
             <Pin Id="OlHbW936YYUMU5shl2PTaY" Name="HeightDirection" Kind="InputPin" />
             <Pin Id="Q7ArEje4uJkMGb3nNiQ3Hw" Name="Transformation" Kind="InputPin" />
-            <Pin Id="LfPoduH2Z4OMGQxzgr5fSJ" Name="Is Shadow Caster" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="LfPoduH2Z4OMGQxzgr5fSJ" Name="Is Shadow Caster" Kind="InputPin" />
             <Pin Id="FGUt0eMNIEQQN5xmHsbmQE" Name="Material" Kind="InputPin" />
             <Pin Id="NiUEmvvFkFhOUpPsVVv4FF" Name="UVQuadrantMapping" Kind="InputPin" />
-            <Pin Id="FPSmUTBKcSfP0dk9V7Dr54" Name="SideExtraUScale" Kind="InputPin" DefaultValue="9.81" />
-            <Pin Id="HGeSKXxOomuOu0QNEHpkFV" Name="AdditionalSideTesselation" Kind="InputPin" DefaultValue="0, 0" />
+            <Pin Id="BuKca1a4GBvPdS9YXe5yIR" Name="SideExtraScale" Kind="InputPin" />
+            <Pin Id="HGeSKXxOomuOu0QNEHpkFV" Name="AdditionalSideTesselation" Kind="InputPin" />
             <Pin Id="Hx84BTATbvwOucZEAmQz42" Name="Components" Kind="InputPin" />
             <Pin Id="Ax7oFvSvkPRPryW4I6mcWo" Name="Children" Kind="InputPin" />
             <Pin Id="NK0b4m80lYIM37EbOCIiBq" Name="Name" Kind="InputPin" />
@@ -516,12 +516,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="FkajAqph4TEQH0T4Q7Ddtr" Comment="SideExtraUScale" Bounds="632,938,35,15" ShowValueBox="true" isIOBox="true" Value="1">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Float32" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="Du0Ugz3aIL2MRfJBCeDPJj" Bounds="758,941,494,107" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;You can combine with SideExtraUScale (turn it up) to get a non-stretched mapping on the sides. However this combines the lower left and lower right quadrants. This can be an acceptable as long as you don't need seperate texturing for the inner and outer sides.">
+          <Pad Id="Du0Ugz3aIL2MRfJBCeDPJj" Bounds="769,947,494,107" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;You can combine with SideExtraScale (turn it up) to get a non-stretched mapping on the sides. Increasing the first value combines the lower left and lower right quadrants. This can be an acceptable as long as you don't need seperate texturing for the inner and outer sides.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -529,6 +524,11 @@
               <p:fontsize p:Type="Int32">9</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="G5ZH9CBsYPUMb5SFwx4Jm9" Comment="SideExtraScale" Bounds="655,947,35,28" ShowValueBox="true" isIOBox="true" Value="1, 1">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector2" />
+            </p:TypeAnnotation>
           </Pad>
         </Canvas>
         <Patch Id="JvWOdPAlTTwLhEfN80iRdR" Name="Create" ParticipatingElements="FIXhV6I8h8ePTlxwGQybw0" />
@@ -577,10 +577,10 @@
         <Link Id="PxDw3hW4inSOo8ne7RcZmf" Ids="NURog5nMWUtP3HJnGgp8DG,Vx5k0nmPSQXQQu2jIDBvcZ" />
         <Link Id="MRPddRICXw3OsDJA8hXVrc" Ids="JBaAeqqrWenMljzpV2mJ4y,BvQsRTKIgGUQC79SxILajd" />
         <Link Id="TrpC5XoF5flQT1QjlCRlAn" Ids="DSYAFSa2kcCPczx1HR3XgT,NiUEmvvFkFhOUpPsVVv4FF" />
-        <Link Id="VyCKAdtyttHNyhuokr9zF7" Ids="FkajAqph4TEQH0T4Q7Ddtr,FPSmUTBKcSfP0dk9V7Dr54" />
+        <Link Id="M2TIeU7nBHgOJ3Gd7wVygo" Ids="G5ZH9CBsYPUMb5SFwx4Jm9,BuKca1a4GBvPdS9YXe5yIR" />
       </Patch>
     </Node>
   </Patch>
   <DocumentDependency Id="OnPpT8kwF4nNc5KX7i2Hru" Location="../../../VL.PolyTools.vl" />
-  <NugetDependency Id="S1eD4RcpUI1Py7l9iK3S2K" Location="VL.Stride" Version="2023.5.2-0003-g9e885de500" />
+  <NugetDependency Id="S1eD4RcpUI1Py7l9iK3S2K" Location="VL.Stride" Version="2023.5.2-0036-gbdd7ddf8f9" />
 </Document>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="D1E7ASPhcXfNhp0esbTb5d" LanguageVersion="2023.5.2-0003-g9e885de500" Version="0.128">
-  <NugetDependency Id="BPczxtF9Ui0NHOo8svL2ce" Location="VL.CoreLib" Version="2023.5.2-0003-g9e885de500" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="D1E7ASPhcXfNhp0esbTb5d" LanguageVersion="2023.5.2-0036-gbdd7ddf8f9" Version="0.128">
+  <NugetDependency Id="BPczxtF9Ui0NHOo8svL2ce" Location="VL.CoreLib" Version="2023.5.2-0036-gbdd7ddf8f9" />
   <Patch Id="N6gk0oufwPCMKj0BJzCSTK">
     <Canvas Id="UjgJjNV8AqEO7o0beuJ2QM" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -215,7 +215,7 @@
             <Pin Id="FGUt0eMNIEQQN5xmHsbmQE" Name="Material" Kind="InputPin" />
             <Pin Id="AYhIs1PGaLOMBcTyZ1pTBU" Name="SquareUVScaling" Kind="InputPin" />
             <Pin Id="STFJL5ib1U4PXWaFXp41K0" Name="UVScale" Kind="InputPin" />
-            <Pin Id="FPSmUTBKcSfP0dk9V7Dr54" Name="SideExtraUScale" Kind="InputPin" />
+            <Pin Id="MyZKJv7q8GrLbB0jS8CKgq" Name="SideExtraScale" Kind="InputPin" />
             <Pin Id="Hx84BTATbvwOucZEAmQz42" Name="Components" Kind="InputPin" />
             <Pin Id="Ax7oFvSvkPRPryW4I6mcWo" Name="Children" Kind="InputPin" />
             <Pin Id="NK0b4m80lYIM37EbOCIiBq" Name="Name" Kind="InputPin" />
@@ -607,6 +607,20 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="N0TDJZ68MPSQSusGYTdXhY" Comment="SideExtraScale" Bounds="718,839,35,28" ShowValueBox="true" isIOBox="true" Value="1, 1">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Vector2" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Q8wA8VP5mZWOMjiOLj8v0R" Bounds="816,850,510,23" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;And for the extrusion you can further modify the scale for the sides. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="JvWOdPAlTTwLhEfN80iRdR" Name="Create" />
         <Patch Id="OLoc3ndQZLHMNFIA2p15a4" Name="Update" ParticipatingElements="FIXhV6I8h8ePTlxwGQybw0" />
@@ -666,9 +680,10 @@
         <Link Id="OggiOJsJJeLOvtny20X6rx" Ids="P8v6XPvzyd8LfjMbcJiHs3,STFJL5ib1U4PXWaFXp41K0" />
         <Link Id="CgcjVJoGWQfQbmHEq54fUP" Ids="LsCHVdjENcbMUQoagdoTIn,AYhIs1PGaLOMBcTyZ1pTBU" />
         <Link Id="OjJfjsSEI7WQNfbPA1SeqY" Ids="OVSZV7XnYJmLL4X024F3Wd,EDHBLkJyXyOOnzL2PWibd0" />
+        <Link Id="ADXpbiE5J8pPx3KdNKlBVS" Ids="N0TDJZ68MPSQSusGYTdXhY,MyZKJv7q8GrLbB0jS8CKgq" />
       </Patch>
     </Node>
   </Patch>
   <DocumentDependency Id="OnPpT8kwF4nNc5KX7i2Hru" Location="../../../VL.PolyTools.vl" />
-  <NugetDependency Id="S1eD4RcpUI1Py7l9iK3S2K" Location="VL.Stride" Version="2023.5.2-0003-g9e885de500" />
+  <NugetDependency Id="S1eD4RcpUI1Py7l9iK3S2K" Location="VL.Stride" Version="2023.5.2-0036-gbdd7ddf8f9" />
 </Document>

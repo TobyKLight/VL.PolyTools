@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="H8ACoqCGbhyL98cPZz1lAQ" LanguageVersion="2023.5.2-0003-g9e885de500" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="H8ACoqCGbhyL98cPZz1lAQ" LanguageVersion="2023.5.2-0036-gbdd7ddf8f9" Version="0.128">
   <Patch Id="BDo2lPBhPTPOrb1O3Wd9Hn">
     <Canvas Id="RV6f8Bu0LzhLJOg1PW7oPp" DefaultCategory="Main" CanvasType="FullCategory">
       <Canvas Id="PLsUkkKYQfiOWYJ1zuabTy" Name="Polygon3D" Position="361,289">
@@ -1574,7 +1574,7 @@
                         <Pin Id="ByyuHvvahTxLpxwvwro9b9" Name="ContourIndex" Kind="InputPin" />
                         <Pin Id="MBam7VkfrNSQJI7Wz74ojA" Name="TopPolyArea" Kind="InputPin" />
                         <Pin Id="UFqZIev7b98PaZuFfJx9Jc" Name="UVScale" Kind="InputPin" />
-                        <Pin Id="HHQBUuSJad6NFZ2UpAaHw5" Name="SideExtraUScale" Kind="InputPin" />
+                        <Pin Id="HHQBUuSJad6NFZ2UpAaHw5" Name="SideExtraScale" Kind="InputPin" />
                         <Pin Id="E8nlrQ1ApU6MzAPYYK9Qo6" Name="SideExtraUOffset" Kind="InputPin" />
                         <Pin Id="DAcfWtyZZAlPFKRF6DGO97" Name="UVs" Kind="OutputPin" />
                       </Node>
@@ -2408,7 +2408,7 @@
     ************************ UVCoordsTopSurface (Internal) ************************
 
 -->
-              <Node Name="UVCoordsTopSurface (Internal)" Bounds="-1233,1096,715,379" Id="BwpYwXhkIhWOErHlGJEbYT">
+              <Node Name="UVCoordsTopSurface (Internal)" Bounds="-1233,1096,715,380" Id="BwpYwXhkIhWOErHlGJEbYT">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="OperationDefinition" Name="Operation" />
                 </p:NodeReference>
@@ -3312,16 +3312,6 @@
                   <Link Id="Gfotp6jlxMWNY0LPtc5Jqu" Ids="Gt04aZjS4aXPpOXI42z39r,PWCoN1KrbMQMmv6lZRF5F1" />
                   <ControlPoint Id="MCu0auJwK21QRZraxAD43p" Bounds="2810,1726" />
                   <Link Id="KlEGLSUcqHILp8HHzoL40b" Ids="EQ8gY48GU7iLLQLW3gfRdC,MCu0auJwK21QRZraxAD43p" IsHidden="true" />
-                  <Node Bounds="2834,1736,46,19" Id="VZDFty4di4QL6P1E0eIZFx">
-                    <p:NodeReference LastCategoryFullName="2D.Vector2" LastDependency="VL.CoreLib.vl">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <CategoryReference Kind="4043309057" Name="Vector2" />
-                      <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
-                    </p:NodeReference>
-                    <Pin Id="LBmO2J3K25hMuzDjuSTSzU" Name="X" Kind="InputPin" />
-                    <Pin Id="BduB2qHQyX3LJqEUvicM1w" Name="Y" Kind="InputPin" DefaultValue="1" />
-                    <Pin Id="UGYJQGCPCwyNB05oF9T7NH" Name="Output" Kind="StateOutputPin" />
-                  </Node>
                   <Node Bounds="2807,1764,25,19" Id="L3MUi9ckDj6OXJFFOVtYrj">
                     <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -3332,9 +3322,7 @@
                     <Pin Id="TMIhrMlVZSZLVdevRpGxCE" Name="Output" Kind="OutputPin" />
                   </Node>
                   <Link Id="BWpbah1RTuoOHRXmommvg1" Ids="MCu0auJwK21QRZraxAD43p,GqEPQ0rDDCnO2C26I0eGOm" />
-                  <Link Id="QxTLl2Zo95zN6LZrIIwTLq" Ids="UGYJQGCPCwyNB05oF9T7NH,DYI9b1CG4cTLnBtjRvmCit" />
-                  <ControlPoint Id="NKZU6NdMDYWNdkVVmgUdXw" Bounds="2838,1677" />
-                  <Link Id="I6m0GivoN6WLwAM5DFqS9e" Ids="NKZU6NdMDYWNdkVVmgUdXw,LBmO2J3K25hMuzDjuSTSzU" />
+                  <ControlPoint Id="NKZU6NdMDYWNdkVVmgUdXw" Bounds="2829,1745" />
                   <Link Id="TdpMzcLkdYuLCYMCmbsH1T" Ids="MC0TXsODg2vNAeMN9pEo0Q,NKZU6NdMDYWNdkVVmgUdXw" IsHidden="true" />
                   <Link Id="BmY8g7cB3hdQZoLVqtvFoN" Ids="TMIhrMlVZSZLVdevRpGxCE,NfoAWRqho0cNNr38xpAoTC" />
                   <Link Id="Pr1z72BlbGDLvV2R3iUSWk" Ids="LowKArmLWiHMaNdvgVKwru,Oml1m9YSfCBLDjnBCPrUft" />
@@ -3448,7 +3436,7 @@
                   </Pin>
                   <Pin Id="TBsQOuTIKKFOzDFV5Nq1nw" Name="TopPolyArea" Kind="InputPin" />
                   <Pin Id="EQ8gY48GU7iLLQLW3gfRdC" Name="UVScale" Kind="InputPin" Bounds="-1411,2989" DefaultValue="1, 1" />
-                  <Pin Id="MC0TXsODg2vNAeMN9pEo0Q" Name="SideExtraUScale" Kind="InputPin" Bounds="-1337,2904" DefaultValue="1" />
+                  <Pin Id="MC0TXsODg2vNAeMN9pEo0Q" Name="SideExtraScale" Kind="InputPin" Bounds="-1337,2904" DefaultValue="1" />
                   <Pin Id="Go2HeCrsYcTNTZiWw2DERm" Name="SideExtraUOffset" Kind="InputPin" />
                   <Pin Id="G601pZDGb2uNkugyFoRihY" Name="UVs" Kind="OutputPin">
                     <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
@@ -3463,13 +3451,9 @@
                   <Link Id="R0I31Wf3dGrQFzn3ulrCbW" Ids="Sz0QFK8JcaVL6VCafhtiFU,KOY1LJUThtbLH9ylslfdUD" />
                   <Link Id="OKFhH4kcD8UNgLPnwKlJ03" Ids="HnwIGS30rzrPV43Ew3syGb,F4h26IoveJhOXFQ3vPjBYg" />
                   <Link Id="JiUUQtWwfGaQQZtqcIZyib" Ids="HnwIGS30rzrPV43Ew3syGb,RbrrQWxjSRoLNLksPFzGtI" />
+                  <Link Id="DHy0h7DoUhuLqHKDfcOH9Y" Ids="NKZU6NdMDYWNdkVVmgUdXw,DYI9b1CG4cTLnBtjRvmCit" />
                 </Patch>
               </Node>
-              <Pad Id="UIULsotSJaQMSPgotez9Px" Comment="SideExtraUScale" Bounds="1687,-82,35,15" ShowValueBox="true" isIOBox="true" Value="1">
-                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="TypeFlag" Name="Float32" />
-                </p:TypeAnnotation>
-              </Pad>
               <Pad Id="J8aBgGERWzZOTP0ktHo6ZF" Comment="SideExtraUOffset" Bounds="1710,-22,35,15" ShowValueBox="true" isIOBox="true" Value="0">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Float32" />
@@ -3910,6 +3894,11 @@
                 </p:ValueBoxSettings>
               </Pad>
               <ControlPoint Id="Txa55UvtAB9Lahkfpq3bVs" Bounds="891,-31" />
+              <Pad Id="A6ffEl90m0BQW0TZsWJe57" Comment="" Bounds="1692,-83,35,28" ShowValueBox="true" isIOBox="true">
+                <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Vector2" />
+                </p:TypeAnnotation>
+              </Pad>
             </Canvas>
             <ProcessDefinition Id="SH0VID4P1Z9Mv28Br3I5LC">
               <Fragment Id="KW91t3LJ96AMw3i5PkB9YF" Patch="Or4QvgFiBZyPDbGIJkS5ve" Enabled="true" />
@@ -4147,7 +4136,7 @@
               <Pin Id="DeWPeBi7zV3NsMcCeyOxj2" Name="UVQuadrantMapping" Kind="InputPin" Bounds="1524,-234" DefaultValue="False" />
               <Pin Id="E7qbHWq4BQGORaCh5jpU3j" Name="SquareUVScaling" Kind="InputPin" Bounds="1575,-147" DefaultValue="False" />
               <Pin Id="GGF4NAMAvjYQMVMRAUoLTd" Name="UVScale" Kind="InputPin" Bounds="1640,-101" />
-              <Pin Id="IyR3gw3osgvPhVhrco0Qcl" Name="SideExtraUScale" Kind="InputPin" Bounds="1683,-64" />
+              <Pin Id="IyR3gw3osgvPhVhrco0Qcl" Name="SideExtraUScale" Kind="InputPin" Bounds="1683,-64" DefaultValue="1, 1" />
               <Pin Id="J7ukt2TcYyAMnaVDoRJ7bX" Name="SideExtraUOffset" Kind="InputPin" Bounds="1714,-57" />
               <Pin Id="HeSenYJ27bxPKHC3N0GEqw" Name="AdditionalSideTesselation" Kind="InputPin" Bounds="1839,-61" DefaultValue="0, 0" />
               <Pin Id="NsgD7biyZKJMwrv3U7cZvv" Name="ForceReverseWinding" Kind="InputPin" Bounds="472,-19" />
@@ -4183,7 +4172,6 @@
             <Link Id="KrCK7NPp98HK9aV2C9kjW7" Ids="NK9jYQmT1I0MY84fj5v2tp,ByyuHvvahTxLpxwvwro9b9" />
             <Link Id="TN1V3l0kj90M0GOy9HPyG0" Ids="J278nnN2nsHMPzUPgVBxG5,UFqZIev7b98PaZuFfJx9Jc" />
             <Link Id="AbQTeB98ZZALTbGN708pKs" Ids="FVnkDNUsJIzNaEuGZcQ65e,HHQBUuSJad6NFZ2UpAaHw5" />
-            <Link Id="DSDmoVQm5uNNDa6U1vRpSu" Ids="UIULsotSJaQMSPgotez9Px,FVnkDNUsJIzNaEuGZcQ65e" />
             <Link Id="QEVAthpjXRuPI7CcndY5WO" Ids="MUG5XkMjSKwM45siUqu4WY,E8nlrQ1ApU6MzAPYYK9Qo6" />
             <Link Id="BPvUtmr4jNiO6TsvKHKIu7" Ids="J8aBgGERWzZOTP0ktHo6ZF,MUG5XkMjSKwM45siUqu4WY" />
             <Link Id="U4OCiVW8eWhMubYWP9qUJJ" Ids="KhnnpGvNELMQFiTupxh7IP,RJWUNFEBsseLnsCktcfxHC,TjkTBv8dzToLbG1YCTVn7L" />
@@ -4197,7 +4185,6 @@
             <Link Id="EcaBAeC5y3aPb08AhIM7hR" Ids="E7qbHWq4BQGORaCh5jpU3j,SytM7dodoMLP0wbANRhV37" IsHidden="true" />
             <Link Id="Nbjb5xHSUvSOPuDCdaTb0x" Ids="EKgxDxKWRQVP2OODVOY63R,JCTXbQeJu4pMRwzu5deQSq" />
             <Link Id="KpXT1s3Ku6eMOnqRK6prjk" Ids="GGF4NAMAvjYQMVMRAUoLTd,EKgxDxKWRQVP2OODVOY63R" IsHidden="true" />
-            <Link Id="QFvnL4uH9KAPUbr4wiwMs4" Ids="U0UAPKYRqRQLxIPEH9TVWe,UIULsotSJaQMSPgotez9Px" />
             <Link Id="EBsUvbSbyYOLQt7mK2MbVj" Ids="IyR3gw3osgvPhVhrco0Qcl,U0UAPKYRqRQLxIPEH9TVWe" IsHidden="true" />
             <Link Id="H7aIdDE9ia9LtteYpKFlAI" Ids="NEcDYjRZe3TMrastbC4eac,J8aBgGERWzZOTP0ktHo6ZF" />
             <Link Id="OkyDHVjF1X1QD3MfQ7xCZh" Ids="J7ukt2TcYyAMnaVDoRJ7bX,NEcDYjRZe3TMrastbC4eac" IsHidden="true" />
@@ -4214,6 +4201,8 @@
             <Link Id="FMOZa0JlkX8NvNkDDaFqgA" Ids="R2MEPgL5oMeNOUYoyi5qJm,UWCALIUNoQsPunSsmImOXf" />
             <Link Id="HIyWAw4JJksNE31p5cJvup" Ids="Txa55UvtAB9Lahkfpq3bVs,R2MEPgL5oMeNOUYoyi5qJm" />
             <Link Id="F5PzKRD9sFzLuMQbyNjyoq" Ids="T5c56gFx2jxQI74cXjfr5c,Txa55UvtAB9Lahkfpq3bVs" IsHidden="true" />
+            <Link Id="DqVtAhLHt8xOju9kq7UPNB" Ids="A6ffEl90m0BQW0TZsWJe57,FVnkDNUsJIzNaEuGZcQ65e" />
+            <Link Id="BaHgtHvRwsYLbXmiTp1yOp" Ids="U0UAPKYRqRQLxIPEH9TVWe,A6ffEl90m0BQW0TZsWJe57" />
           </Patch>
         </Node>
         <!--
@@ -8968,9 +8957,9 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="BuhO7f2jL9qO4LIfXjcr2v" Location="VL.CoreLib" Version="2023.5.2-0003-g9e885de500" />
+  <NugetDependency Id="BuhO7f2jL9qO4LIfXjcr2v" Location="VL.CoreLib" Version="2023.5.2-0036-gbdd7ddf8f9" />
   <DocumentDependency Id="RM8QzwU6J9zOglqOgV13Uq" Location="./VL.PolyTools.vl" />
-  <NugetDependency Id="SSEyfsFhHKwLwkbx86KslM" Location="VL.Stride" Version="2023.5.2-0003-g9e885de500" />
+  <NugetDependency Id="SSEyfsFhHKwLwkbx86KslM" Location="VL.Stride" Version="2023.5.2-0036-gbdd7ddf8f9" />
   <NugetDependency Id="Shb6eYz1QYuMRFDUsWhz4k" Location="Stride.Engine" Version="4.1.0.1838" />
   <DocumentDependency Id="MtFW5Hr65REM31Pt9V3GCo" Location="./VL.Stride.DynamicMeshWithTangents.vl" />
   <DocumentDependency Id="FZvsCKcgpK9Pxba0WHS7nD" Location="./VL.Stride.ForceUpdateMeshModel.vl" />
