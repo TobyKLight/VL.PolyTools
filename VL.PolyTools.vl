@@ -39673,6 +39673,44 @@
           </Patch>
         </Patch>
       </Node>
+      <!--
+
+    ************************ Raycast (Stride Physics Advanced) ************************
+
+-->
+      <Node Name="Raycast (Stride Physics Advanced)" Bounds="2519,1336,129,80" Id="N8ELlH5fPGcL3VvZwIvWlF">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+          <Choice Kind="OperationDefinition" Name="Operation" />
+        </p:NodeReference>
+        <Patch Id="B6P8m39T1bTPkBFrfAIavh">
+          <Node Bounds="2531,1368,105,19" AutoConnect="true" Id="N5HExl7UKJ9LQNxs6ktiYR">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.MeshPhysics" LastDependency="VL.PolyTools.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Raycast" />
+            </p:NodeReference>
+            <Pin Id="Kg30Da3y0poLuTVLvX3sDV" Name="SceneWindow" Kind="InputPin" />
+            <Pin Id="FVWXVAj9FE2OqUOD2WWs0r" Name="Ray" Kind="InputPin" />
+            <Pin Id="L6UAaBfl5ZvMur46oywfCq" Name="Ray Length" Kind="InputPin" />
+            <Pin Id="KP0xm2624JPOJeUxlBbTRh" Name="Filter Group" Kind="InputPin" />
+            <Pin Id="OnAHogi2Wc4O2pb47WPnMk" Name="Filter Flags" Kind="InputPin" />
+            <Pin Id="Lr3O2UHkeGQPKzfBEgJPUG" Name="Hit Triggers" Kind="InputPin" />
+            <Pin Id="QCZ2734CDYUOqxvVvsbBwM" Name="Ishit" Kind="OutputPin" />
+            <Pin Id="Ntgr9umBGgdQEW1Wj3cQNM" Name="Hit Result" Kind="OutputPin" />
+            <Pin Id="KIU38TeGwC7Mdn7lpGfjQw" Name="Point" Kind="OutputPin" />
+            <Pin Id="LpKWldMpbkLMd2Ba6MSYOX" Name="Collider" Kind="OutputPin" />
+          </Node>
+          <Pin Id="SZesxeWf4KNQIbYM9XEiKG" Name="SceneWindow" Kind="InputPin" />
+          <Pin Id="IBzIvuioQ2XMNhQ1ZPAVZA" Name="Ray" Kind="InputPin" />
+          <Pin Id="UGamv4s4HvMQAIzi5B72V2" Name="Ray Length" Kind="InputPin" />
+          <Pin Id="LpoqkYP252NNo1GC0NYUdg" Name="Filter Group" Kind="InputPin" />
+          <Pin Id="ASRHpsPAAhaLeaM4zVoGVV" Name="Filter Flags" Kind="InputPin" />
+          <Pin Id="FXoQxeh0Cy4PcrHT7L5XuL" Name="Hit Triggers" Kind="InputPin" />
+          <Pin Id="LGKNlLBVsDbOOssk2aW3Is" Name="Ishit" Kind="OutputPin" />
+          <Pin Id="G9zF8oO160IPbidGbpFFsw" Name="Hit Result" Kind="OutputPin" />
+          <Pin Id="NOWwAJTzKbgOi0YR9bTLSJ" Name="Point" Kind="OutputPin" />
+          <Pin Id="F5PHPosYzZnO2KxcEClwvT" Name="Collider" Kind="OutputPin" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
@@ -39702,4 +39740,5 @@
   <DocumentDependency Id="N9ztkLQfFhJM6H2qvEv7dk" Location="./VL.Clipper.vl" />
   <NugetDependency Id="M8AENh9s7sjLHbCOq9V6y1" Location="com.angusj.Clipper" Version="6.4.2" />
   <DocumentDependency Id="LJaRxOStSJVQXyiDAE3QGG" Location="./VL.PolyTools.Stride.vl" />
+  <DocumentDependency Id="RMf7NGLg54eLzMeXx2715m" Location="./VL.Stride.MeshPhysics.vl" />
 </Document>
