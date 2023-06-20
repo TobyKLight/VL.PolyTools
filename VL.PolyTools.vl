@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="NrJhxaN5kJGMXrMjrdcqHO" LanguageVersion="2023.5.2-0036-gbdd7ddf8f9" Version="0.128">
-  <NugetDependency Id="Clt8NDArhZ1PV0JnIKvmtG" Location="VL.CoreLib" Version="2023.5.2-0036-gbdd7ddf8f9" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="NrJhxaN5kJGMXrMjrdcqHO" LanguageVersion="2023.5.3-0013-g452f82536f" Version="0.128">
+  <NugetDependency Id="Clt8NDArhZ1PV0JnIKvmtG" Location="VL.CoreLib" Version="2023.5.3-0013-g452f82536f" />
   <Patch Id="Pn8xbAjkJkdLqtaep8cZ49">
     <Canvas Id="JJ9dr6SpkYSNJQtaVFsFWr" DefaultCategory="VL.PolyTools" CanvasType="FullCategory">
       <Pad Id="JRe0nw7XuDkM3RNCGSMhUo" Bounds="719,202,386,78" ShowValueBox="true" isIOBox="true" Value="Needed this because different drawing routines and logic handles holes in polygons differently. Skias own path tools do a few things well, but clipper does other things better">
@@ -39673,44 +39673,6 @@
           </Patch>
         </Patch>
       </Node>
-      <!--
-
-    ************************ Raycast (Stride Physics Advanced) ************************
-
--->
-      <Node Name="Raycast (Stride Physics Advanced)" Bounds="2519,1336,129,80" Id="N8ELlH5fPGcL3VvZwIvWlF">
-        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-          <Choice Kind="OperationDefinition" Name="Operation" />
-        </p:NodeReference>
-        <Patch Id="B6P8m39T1bTPkBFrfAIavh">
-          <Node Bounds="2531,1368,105,19" AutoConnect="true" Id="N5HExl7UKJ9LQNxs6ktiYR">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.MeshPhysics" LastDependency="VL.PolyTools.Stride.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="Raycast" />
-            </p:NodeReference>
-            <Pin Id="Kg30Da3y0poLuTVLvX3sDV" Name="SceneWindow" Kind="InputPin" />
-            <Pin Id="FVWXVAj9FE2OqUOD2WWs0r" Name="Ray" Kind="InputPin" />
-            <Pin Id="L6UAaBfl5ZvMur46oywfCq" Name="Ray Length" Kind="InputPin" />
-            <Pin Id="KP0xm2624JPOJeUxlBbTRh" Name="Filter Group" Kind="InputPin" />
-            <Pin Id="OnAHogi2Wc4O2pb47WPnMk" Name="Filter Flags" Kind="InputPin" />
-            <Pin Id="Lr3O2UHkeGQPKzfBEgJPUG" Name="Hit Triggers" Kind="InputPin" />
-            <Pin Id="QCZ2734CDYUOqxvVvsbBwM" Name="Ishit" Kind="OutputPin" />
-            <Pin Id="Ntgr9umBGgdQEW1Wj3cQNM" Name="Hit Result" Kind="OutputPin" />
-            <Pin Id="KIU38TeGwC7Mdn7lpGfjQw" Name="Point" Kind="OutputPin" />
-            <Pin Id="LpKWldMpbkLMd2Ba6MSYOX" Name="Collider" Kind="OutputPin" />
-          </Node>
-          <Pin Id="SZesxeWf4KNQIbYM9XEiKG" Name="SceneWindow" Kind="InputPin" />
-          <Pin Id="IBzIvuioQ2XMNhQ1ZPAVZA" Name="Ray" Kind="InputPin" />
-          <Pin Id="UGamv4s4HvMQAIzi5B72V2" Name="Ray Length" Kind="InputPin" />
-          <Pin Id="LpoqkYP252NNo1GC0NYUdg" Name="Filter Group" Kind="InputPin" />
-          <Pin Id="ASRHpsPAAhaLeaM4zVoGVV" Name="Filter Flags" Kind="InputPin" />
-          <Pin Id="FXoQxeh0Cy4PcrHT7L5XuL" Name="Hit Triggers" Kind="InputPin" />
-          <Pin Id="LGKNlLBVsDbOOssk2aW3Is" Name="Ishit" Kind="OutputPin" />
-          <Pin Id="G9zF8oO160IPbidGbpFFsw" Name="Hit Result" Kind="OutputPin" />
-          <Pin Id="NOWwAJTzKbgOi0YR9bTLSJ" Name="Point" Kind="OutputPin" />
-          <Pin Id="F5PHPosYzZnO2KxcEClwvT" Name="Collider" Kind="OutputPin" />
-        </Patch>
-      </Node>
     </Canvas>
     <!--
 
@@ -39733,8 +39695,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="QHMsikI0sbsMA9Otyrcz7k" Location="VL.CoreLib" Version="2023.5.2-0036-gbdd7ddf8f9" />
-  <NugetDependency Id="IU1C3Us3gCGPChlTtXMEec" Location="VL.Skia" Version="2023.5.2-0036-gbdd7ddf8f9" />
+  <NugetDependency Id="QHMsikI0sbsMA9Otyrcz7k" Location="VL.CoreLib" Version="2023.5.3-0013-g452f82536f" />
+  <NugetDependency Id="IU1C3Us3gCGPChlTtXMEec" Location="VL.Skia" Version="2023.5.3-0013-g452f82536f" />
   <DocumentDependency Id="FXtqIXe8jXKP1SQoz5A1tb" Location="./VL.LibTessDotNet.vl" IsForward="true" />
   <DocumentDependency Id="RJ56rMVbalsLbKlFEHNOpj" Location="./VL.SKPathUtils.vl" />
   <DocumentDependency Id="N9ztkLQfFhJM6H2qvEv7dk" Location="./VL.Clipper.vl" />

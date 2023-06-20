@@ -67,6 +67,9 @@ credit https://github.com/speps/LibTessDotNet/graphs/contributors
 @Untone for help unlocking the SKPath verbs for use in vvvv gamma
 
 # Version History
+V1.1.3 
+* Removed stride physics Raycast function now there is a native one shipped with vvvv 5.3 
+
 V1.1.2 
 * PolygonExtrude now has an additional 2D UV scaling option for the sides of the extrude. (Was U only in last release) 
 
