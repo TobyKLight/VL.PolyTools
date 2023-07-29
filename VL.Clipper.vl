@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="DaBk1MAo3IBNFmrnU8Tens" LanguageVersion="2023.5.3-0013-g452f82536f" Version="0.128">
-  <NugetDependency Id="GmZvYDQlfDgLadHoOfKbjL" Location="VL.CoreLib" Version="2023.5.3-0013-g452f82536f" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="DaBk1MAo3IBNFmrnU8Tens" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
+  <NugetDependency Id="GmZvYDQlfDgLadHoOfKbjL" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
   <Patch Id="NRqBjR01UVoL3WMooPDFbo">
     <Canvas Id="Iuf8pGx1T6FMVhvU2PioDQ" DefaultCategory="Clipper.Poly" CanvasType="FullCategory">
       <!--
@@ -205,6 +205,7 @@
                 <Choice Kind="ProcessAppFlag" Name="Execute" />
                 <CategoryReference Kind="Category" Name="Poly" NeedsToBeDirectParent="true" />
               </p:NodeReference>
+              <Pin Id="U68F3GiqgKSNBEc1MigidM" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="CiLxtwoK0jJOkSANCutvFP" Name="ClipType" Kind="InputPin" />
               <Pin Id="FKYhQDhIEJSMaRz9djkb7b" Name="PolyAInput" Kind="InputPin" />
               <Pin Id="AvqyLilaPU4OxSCYv7VLV5" Name="PolyAClosed" Kind="InputPin" />
@@ -440,12 +441,6 @@
                 <Choice Kind="ProcessAppFlag" Name="Try (2Outputs)" />
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               </p:NodeReference>
-              <Pin Id="PMgCDBNlmiqPtaTph7o6my" Name="Default Output 1" Kind="InputPin" />
-              <Pin Id="RFvnBmfKAjoQUI4xdX1kHn" Name="Default Output 2" Kind="InputPin" />
-              <Pin Id="G2vDRK4s6wgMHRrzLOWlWU" Name="Output 1" Kind="OutputPin" />
-              <Pin Id="LAkbp5CJUrZPe1e74sDimA" Name="Output 2" Kind="OutputPin" />
-              <Pin Id="PapxLMPIhWFOjgapNxg7V2" Name="Success" Kind="OutputPin" />
-              <Pin Id="KrrGjs19QBpMmOA5H5u9F1" Name="Error Message" Kind="OutputPin" />
               <Patch Id="HDvJVOJG2tiNk5kC3vojxl" ManuallySortedPins="true">
                 <Patch Id="TDkrsaWSNIZOoiVAgLg0eS" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="Bo9lOv9EhILPyXnhh3IrDL" Name="Try" ManuallySortedPins="true">
@@ -501,6 +496,14 @@
                   </p:TypeAnnotation>
                 </Pad>
               </Patch>
+              <Pin Id="OixRwTo9OqlMf0TBzHbjdR" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="PMgCDBNlmiqPtaTph7o6my" Name="Default Output 1" Kind="InputPin" />
+              <Pin Id="RFvnBmfKAjoQUI4xdX1kHn" Name="Default Output 2" Kind="InputPin" />
+              <Pin Id="Q5LX4EXZwYIOoUGgnTl6QP" Name="Re Initialize" Kind="InputPin" IsHidden="true" />
+              <Pin Id="G2vDRK4s6wgMHRrzLOWlWU" Name="Output 1" Kind="OutputPin" />
+              <Pin Id="LAkbp5CJUrZPe1e74sDimA" Name="Output 2" Kind="OutputPin" />
+              <Pin Id="PapxLMPIhWFOjgapNxg7V2" Name="Success" Kind="OutputPin" />
+              <Pin Id="KrrGjs19QBpMmOA5H5u9F1" Name="Error Message" Kind="OutputPin" />
             </Node>
             <Node Bounds="824,700,37,19" Id="GoAhM2RMWWlOg3hgE9ZsGQ">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
@@ -626,6 +629,7 @@
                 <Choice Kind="ProcessAppFlag" Name="Execute" />
                 <CategoryReference Kind="Category" Name="Poly" NeedsToBeDirectParent="true" />
               </p:NodeReference>
+              <Pin Id="VdntkWCr5cMM5LHTfF02HX" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="JVnqAi1nikxNbdfW2hNfSb" Name="ClipType" Kind="InputPin" />
               <Pin Id="APQLP1wgUN4PB0zLl9tFmo" Name="PolyAInput" Kind="InputPin" />
               <Pin Id="Cm7taeefkSwOqjgLnvCI5R" Name="PolyAClosed" Kind="InputPin" />
@@ -696,6 +700,7 @@
                 <Choice Kind="ProcessAppFlag" Name="Execute" />
                 <CategoryReference Kind="Category" Name="Poly" NeedsToBeDirectParent="true" />
               </p:NodeReference>
+              <Pin Id="Fd8umk7A7TXMLwn40sSq9x" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="G0fMmIKukQrMO72aeoH02Y" Name="ClipType" Kind="InputPin" />
               <Pin Id="PokVNfH6ohlQC2ETijMI4N" Name="PolyAInput" Kind="InputPin" />
               <Pin Id="NsvoLtC6bitLWccEom5BYs" Name="PolyAClosed" Kind="InputPin" />
@@ -766,6 +771,7 @@
                 <Choice Kind="ProcessAppFlag" Name="Execute" />
                 <CategoryReference Kind="Category" Name="Poly" NeedsToBeDirectParent="true" />
               </p:NodeReference>
+              <Pin Id="MJx4MRZi2xuNRmy9ffND4g" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="OPqbHvNPJWQNMMmq5fO1bw" Name="ClipType" Kind="InputPin" />
               <Pin Id="OjlE7yHAg1CO979p3m6qDY" Name="PolyAInput" Kind="InputPin" />
               <Pin Id="Lncbqh4a4DeOrVF3PQ1yML" Name="PolyAClosed" Kind="InputPin" />
@@ -924,10 +930,6 @@
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessStatefulRegion" Name="Try (1 Output)" />
               </p:NodeReference>
-              <Pin Id="E6jrabcGW8wO9YaVvzW6F5" Name="Default Output" Kind="InputPin" />
-              <Pin Id="IdGDkbehsnoQFhTiYChzHy" Name="Result" Kind="OutputPin" />
-              <Pin Id="UFlsrdTR5CbPu8Z4ilgPAj" Name="Success" Kind="OutputPin" />
-              <Pin Id="G1Aho7PB6aEL577yo9zUoU" Name="Error Message" Kind="OutputPin" />
               <Patch Id="ITHYjUJL3cwNk5OVciYStl" ManuallySortedPins="true">
                 <Patch Id="EkaZAsaFGbpO78bAdcZwV1" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="MRchoXAkdiZLGmhDiwfXOP" Name="Try" ManuallySortedPins="true">
@@ -961,6 +963,12 @@
                   <Pin Id="VDX3gU7vsN4PhWQxqGurLI" Name="Output" Kind="OutputPin" />
                 </Node>
               </Patch>
+              <Pin Id="RRxdaJnOL6vLHbDHy9tZ4W" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="E6jrabcGW8wO9YaVvzW6F5" Name="Default Output" Kind="InputPin" />
+              <Pin Id="GuUb6N4GMabNoWc7ixL2sa" Name="Re Initialize" Kind="InputPin" IsHidden="true" />
+              <Pin Id="IdGDkbehsnoQFhTiYChzHy" Name="Result" Kind="OutputPin" />
+              <Pin Id="UFlsrdTR5CbPu8Z4ilgPAj" Name="Success" Kind="OutputPin" />
+              <Pin Id="G1Aho7PB6aEL577yo9zUoU" Name="Error Message" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="F4JFtx5Qso2N0mkfItsjRe" Bounds="866,500" />
             <ControlPoint Id="FS9bLhFlwqZQchPphXD3YH" Bounds="777,16" />
@@ -1232,6 +1240,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="EoyAo43AoFCLGwSE2DqZ0b" Location="VL.CoreLib" Version="2023.5.3-0013-g452f82536f" />
   <NugetDependency Id="Fl0uvBpfMouOiPaRpkKvBw" Location="com.angusj.Clipper" Version="6.4.2" />
 </Document>

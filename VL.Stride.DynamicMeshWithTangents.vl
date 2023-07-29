@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="FFG6RuAANjWLqZ6kcQmlKO" LanguageVersion="2023.5.3-0013-g452f82536f" Version="0.128">
-  <NugetDependency Id="VQvEwYfeSIVPcQoExw6XGY" Location="VL.CoreLib" Version="2023.5.3-0013-g452f82536f" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="FFG6RuAANjWLqZ6kcQmlKO" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
+  <NugetDependency Id="VQvEwYfeSIVPcQoExw6XGY" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
   <Patch Id="ESZltBFLPamOoABotTJXlI">
     <Canvas Id="OfIztGOG64hLIkFBcmy56R" DefaultCategory="Main" CanvasType="FullCategory">
       <Pad Id="HzW6oErbevPQIMfewR5NJe" Bounds="825,161,506,56" ShowValueBox="true" isIOBox="true" Value="This adds tangent generation to a dynamic mesh. It reuquires vertex position, normal, UV and index buffer to already be calculated.">
@@ -46,12 +46,15 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="DynamicMesh (Indexed)" />
               </p:NodeReference>
+              <Pin Id="SvAGyjQAaPiLCn6ScoRZPY" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="ILfLvNUF5TRPG9Nh6Vv1Sn" Name="Data" Kind="InputPin" />
               <Pin Id="QiwOgLBuq3VQH4H3uadD4K" Name="Update Buffer" Kind="InputPin" />
               <Pin Id="PTR7d8oqN0LLoU2r64l2In" Name="Vertex Declaration" Kind="InputPin" />
               <Pin Id="JwGCn6vmdKiLFM0wph5qWm" Name="Topology" Kind="InputPin" />
               <Pin Id="SY8LTDl5MLHMuCah1SxNZM" Name="Indices" Kind="InputPin" />
               <Pin Id="O21bR8CYehzOYgouH1i1qu" Name="Bounding Box" Kind="InputPin" />
+              <Pin Id="PU0a45N3FVrNtspgIaf1EZ" Name="Force Update" Kind="InputPin" IsHidden="true" />
+              <Pin Id="C28Ar3Q8NlgQMc8AhgcUfc" Name="SetBoundingBox" Kind="InputPin" />
               <Pin Id="UE7XBuW3OFzNWAw9kzUnvH" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="935,431,134,19" Id="MNM6qCaRHHeMnRA8bDObdM">
@@ -181,6 +184,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="KIdyhb6FnBRLwPwLvw4qej" Location="VL.Stride" Version="2023.5.3-0013-g452f82536f" />
+  <NugetDependency Id="KIdyhb6FnBRLwPwLvw4qej" Location="VL.Stride" Version="2023.5.3-0088-gd2b84ddcc4" />
   <PlatformDependency Id="TmXNGq48GsrLg3XyXkTZvp" Location="../../../Program Files/vvvv/vvvv_gamma_5.2-0003-g9e885de500/packs/dependencies/Stride.Graphics.dll" />
 </Document>
