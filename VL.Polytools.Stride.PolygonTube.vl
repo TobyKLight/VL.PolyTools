@@ -5,87 +5,6 @@
     <Canvas Id="GjyaNWo0cziPR8VBb97GYk" DefaultCategory="PolyTools.Stride" CanvasType="FullCategory">
       <!--
 
-    ************************ DiscTube ************************
-
--->
-      <Node Name="DiscTube" Bounds="1112,474" Id="OpNOrmPtgFNLEQdrkVWcKB">
-        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-          <Choice Kind="ContainerDefinition" Name="Process" />
-        </p:NodeReference>
-        <Patch Id="IVFPAsmNZMIOwg0Puuti38">
-          <Canvas Id="TmWHLyhThRvN3XfqkXiBLE" CanvasType="Group">
-            <Node Bounds="1361,844,145,19" Id="GkS9INPdpHCOFAmzwqyAPU">
-              <p:NodeReference LastCategoryFullName="Stride.Models" LastDependency="VL.Stride.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="MeshEntity" />
-              </p:NodeReference>
-              <Pin Id="EFUtNYc0WETMsVsy4EPqNn" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="I77Hop2v3ZWQLNLEZZFZMw" Name="Transformation" Kind="InputPin" />
-              <Pin Id="OkVEpHRD5QxK94sGb99bq1" Name="Mesh" Kind="InputPin" />
-              <Pin Id="Vxq3LxIZqsgMRbPiR0UpaG" Name="Force Update" Kind="InputPin" IsHidden="true" />
-              <Pin Id="UEiK7QBjqkzLqy2okBeHVx" Name="Material" Kind="InputPin" />
-              <Pin Id="NJEedY5wU0XN68euTtVerU" Name="Is Shadow Caster" Kind="InputPin" />
-              <Pin Id="Oy82OLSzycPObZpX54UAWB" Name="Components" Kind="InputPin" />
-              <Pin Id="REQj92kswn2N42cdcP8Bmc" Name="Children" Kind="InputPin" />
-              <Pin Id="MgD1jhTeP4ZQUyaKDunRqk" Name="Name" Kind="InputPin" />
-              <Pin Id="Lzh9hj2MeiwLhMZOkp95Iq" Name="Enabled" Kind="InputPin" />
-              <Pin Id="Sx8SfN4MlrGOuiPIHZWuQ4" Name="Entity" Kind="OutputPin" />
-            </Node>
-            <ControlPoint Id="R46ISoUjg6WOnHHY7S0xgT" Bounds="1364,889" />
-            <Node Bounds="1377,713,125,19" Id="H5ShXVfeihgLVKJvatGx55">
-              <p:NodeReference LastCategoryFullName="PolyTools.Stride" LastDependency="VL.Polytools.Stride.PolygonTube.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="PolyTubeMesh" />
-              </p:NodeReference>
-              <Pin Id="AlfNVcckyjkLDUXHVmgoT2" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="E3JXDcZa7YSM1JpJIU1tfg" Name="SpreadOf3DPolyPoints" Kind="InputPin" />
-              <Pin Id="Q38giw9tdYYMx28pDj4bnk" Name="UVCalcMode" Kind="InputPin" />
-              <Pin Id="AKJIMQjqU6MPBh2DCSYZc1" Name="UVOffset" Kind="InputPin" />
-              <Pin Id="LhcthOQzcexMjYrFoxCIZk" Name="ForceUseCompositeShapes" Kind="InputPin" />
-              <Pin Id="LXDTcNKszSDOEyPhC4LeDg" Name="AutoRotationCorrection" Kind="InputPin" />
-              <Pin Id="U7dUWnbTqUNM6btDf9WNO0" Name="AutoOriginCorrection" Kind="InputPin" />
-              <Pin Id="JWbkAuU2QycOcNbjQpfggW" Name="UVScale" Kind="InputPin" />
-              <Pin Id="P0k8i7i5p6fOeYzAhFuipl" Name="Output" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="1454,795,85,19" Id="GCzV3LxqMGHQKOsmDvAB0s">
-              <p:NodeReference LastCategoryFullName="Stride.Materials" LastDependency="VL.Stride.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="PBRMaterial" />
-              </p:NodeReference>
-              <Pin Id="Far8Nz90nTGQTsrzCDd6MF" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="UYefPpLeFFZPEuiMdG7tR6" Name="Color" Kind="InputPin" DefaultValue="0.91, 0.27299926, 0, 0.59000003" />
-              <Pin Id="TFNNKPB4YzfObuDGuLeM3Y" Name="Metalness" Kind="InputPin" />
-              <Pin Id="F32tsRQLm0TNp4SAz86n93" Name="Roughness" Kind="InputPin" />
-              <Pin Id="DnN3AL4n3pUOg8Y4vf0IeL" Name="Transparency" Kind="InputPin" />
-              <Pin Id="GFvkOTTrqr6Ph6SD5vTOXI" Name="Cull Mode" Kind="InputPin" />
-              <Pin Id="AiD3OihDN7PQKme57olBhe" Name="Output" Kind="OutputPin" />
-            </Node>
-            <Pad Id="AECypYivtLCL6REWlukHnZ" Bounds="1301,654,173,44" ShowValueBox="true" isIOBox="true" Value="TODO: Disc poly stack generator">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-              <p:ValueBoxSettings>
-                <p:fontsize p:Type="Int32">9</p:fontsize>
-                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-              </p:ValueBoxSettings>
-            </Pad>
-          </Canvas>
-          <Patch Id="OGfEQFyHjOUMC83auXvu7U" Name="Create" />
-          <Patch Id="ARNNC2BfMPfQOnSrHk30el" Name="Update">
-            <Pin Id="UaY933HGr50N7q8prop8WP" Name="Entity" Kind="OutputPin" Bounds="1359,900" />
-          </Patch>
-          <ProcessDefinition Id="VGg9TJcEzXpQXE6sQiVVJK">
-            <Fragment Id="HbtTGFpqLe1Ps9RM0sYeM0" Patch="OGfEQFyHjOUMC83auXvu7U" Enabled="true" />
-            <Fragment Id="Mc6GHZKjwaWQUkL395UsEV" Patch="ARNNC2BfMPfQOnSrHk30el" Enabled="true" />
-          </ProcessDefinition>
-          <Link Id="A0H35T1944KPSqG1q2nkM7" Ids="Sx8SfN4MlrGOuiPIHZWuQ4,R46ISoUjg6WOnHHY7S0xgT" />
-          <Link Id="TyY9evbPzhlLZOvgF7BdCp" Ids="R46ISoUjg6WOnHHY7S0xgT,UaY933HGr50N7q8prop8WP" IsHidden="true" />
-          <Link Id="Quys1smsM7PLmPdNUwxcsy" Ids="P0k8i7i5p6fOeYzAhFuipl,OkVEpHRD5QxK94sGb99bq1" />
-          <Link Id="CeNKFXLrLeiPHNMBhkFRD4" Ids="AiD3OihDN7PQKme57olBhe,UEiK7QBjqkzLqy2okBeHVx" />
-        </Patch>
-      </Node>
-      <!--
-
     ************************ PolyTubeMesh ************************
 
 -->
@@ -327,12 +246,12 @@
           <Patch Id="T8kHKSSRqRqLEw5Qvk6NGX" Name="Create" ParticipatingElements="J81nemTxggcOXdwPUjErSN" />
           <Patch Id="DSmh5Eq31NrM8XaofjVGpW" Name="Update" ManuallySortedPins="true">
             <Pin Id="PG7KlnPnwB4LxKDdNKms6o" Name="SpreadOf3DPolyPoints" Kind="InputPin" Bounds="1283,369" />
+            <Pin Id="Spj9CUjxXsUOgwg6Hx7oBg" Name="ForceUseCompositeShapes" Kind="InputPin" Bounds="1321,386" />
             <Pin Id="L177YBkO26xPY7gVLzf7RS" Name="UVCalcMode" Kind="InputPin" Bounds="1308,386" />
             <Pin Id="FnDcFYIxQDUNFGwE8Kzl4L" Name="UVOffset" Kind="InputPin" Bounds="1329,410" />
-            <Pin Id="Spj9CUjxXsUOgwg6Hx7oBg" Name="ForceUseCompositeShapes" Kind="InputPin" Bounds="1321,386" />
+            <Pin Id="PySrb6GDq7TLkwGoUNFQ96" Name="UVScale" Kind="InputPin" Bounds="1347,425" />
             <Pin Id="H6Z0uKv25s7OGIhWUDCMDx" Name="AutoRotationCorrection" Kind="InputPin" Bounds="1391,508" />
             <Pin Id="Tmeru21L8ZQQKPoar39Lfc" Name="AutoOriginCorrection" Kind="InputPin" Bounds="1354,494" />
-            <Pin Id="PySrb6GDq7TLkwGoUNFQ96" Name="UVScale" Kind="InputPin" Bounds="1347,425" />
             <Pin Id="BI8Z95v7n5iNpZLWetz12A" Name="Output" Kind="OutputPin" Bounds="1271,782" />
           </Patch>
         </Patch>
@@ -3704,172 +3623,15 @@
           <Link Id="P7Sh7GCtgz2MMAqA2ZdIcL" Ids="FDXA68XvlXlMGlrN1dIs5h,QCdEYiASRT3MhQxbbPhp4s,JkrqSe1Jy8wPalNMGkSlOH" />
         </Patch>
       </Node>
-      <!--
-
-    ************************ PolyTube (2D+Height) ************************
-
--->
-      <Node Name="PolyTube (2D+Height)" Bounds="1112,512" Id="SP98pJ1wznXNtvmulUVmvf">
-        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-          <Choice Kind="ContainerDefinition" Name="Process" />
-        </p:NodeReference>
-        <Patch Id="PSJ8Jr9uJxAMmcZLziI0p7">
-          <Canvas Id="L0BIXeITpDENYwuvk3FU3E" CanvasType="Group">
-            <Node Bounds="1268,841,145,19" AutoConnect="true" Id="QzGeOqwQpP6M2XRIba2WLL">
-              <p:NodeReference LastCategoryFullName="Stride.Models" LastDependency="VL.Stride.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="MeshEntity" />
-              </p:NodeReference>
-              <Pin Id="N7hCxHqYVoCNJwH147dF1X" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="U2iyXt0jAELOOSBt8wdJmY" Name="Transformation" Kind="InputPin" />
-              <Pin Id="F3Oi00go0mAMYOPM5QPV94" Name="Mesh" Kind="InputPin" />
-              <Pin Id="RBg2WApqHBtO4uWFOEUmpQ" Name="Force Update" Kind="InputPin" IsHidden="true" />
-              <Pin Id="DzTVJ1n3ImYN6r3YLpQcrW" Name="Material" Kind="InputPin" />
-              <Pin Id="CNEq8dD9u1NQEoTqr7nkQy" Name="Is Shadow Caster" Kind="InputPin" />
-              <Pin Id="TjPTW2FuIY4NuXqCZjV1rj" Name="Components" Kind="InputPin" />
-              <Pin Id="FktgxkLcQvPOuBkRGlHuAS" Name="Children" Kind="InputPin" />
-              <Pin Id="Rar4FASKDJDNs8L2GkDBZD" Name="Name" Kind="InputPin" />
-              <Pin Id="I7VgwEs125FOvkYmcdW5DA" Name="Enabled" Kind="InputPin" />
-              <Pin Id="T7Aa8ZBhzbGOzKfFqayMal" Name="Entity" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="1288,773,125,19" Id="MV9ZxFFMtCDMSVX3EgWQyP">
-              <p:NodeReference LastCategoryFullName="PolyTools.Stride" LastDependency="VL.Polytools.Stride.PolygonTube.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="PolyTubeMesh" />
-              </p:NodeReference>
-              <Pin Id="GSLwROGvpqROnJXFk7CRLW" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="SopsJfTEmNVPVKTctXklSQ" Name="SpreadOf3DPolyPoints" Kind="InputPin" />
-              <Pin Id="LOG0MSwiCOyOK8B9O3KzEv" Name="UVCalcMode" Kind="InputPin" />
-              <Pin Id="TPhNAwG6iXWOa5xyiGOsLx" Name="UVOffset" Kind="InputPin" />
-              <Pin Id="HxcfTacWiTdOlQkvOXxmLM" Name="ForceUseCompositeShapes" Kind="InputPin" />
-              <Pin Id="GhNlyJMYDWDOZKB8YmcySp" Name="AutoRotationCorrection" Kind="InputPin" />
-              <Pin Id="JuxsaK6ceDXNxhQ7QnXWEL" Name="AutoOriginCorrection" Kind="InputPin" />
-              <Pin Id="PsTtJdPrHeoNcEC93qpPwt" Name="UVScale" Kind="InputPin" />
-              <Pin Id="RgcqFdmanObMgFo51yhOYM" Name="Output" Kind="OutputPin" />
-            </Node>
-            <ControlPoint Id="PGLlI0LVE6eMGgbb1lrCqP" Bounds="1269,888" />
-            <Node Bounds="1222,469,137,176" Id="T0JyfE4QSPgMYK6xrgdA2w">
-              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-                <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
-              </p:NodeReference>
-              <Pin Id="NQISGYUIplzOgPKh9FJ0yz" Name="Break" Kind="OutputPin" />
-              <ControlPoint Id="CuUZJZbzLiuNcuXJYg4cSE" Bounds="1285,475" Alignment="Top" />
-              <ControlPoint Id="C7zwpiuFm5nOJrCW7Noh2X" Bounds="1291,639" Alignment="Bottom" />
-              <ControlPoint Id="FrTz5znip9dNlL4NXKCGO6" Bounds="1320,475" Alignment="Top" />
-              <Patch Id="Klj0LrzDc3KLSoVu6X36qR" ManuallySortedPins="true">
-                <Patch Id="B6rRhMU0ZhBLCTircPXz72" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="UQFXrvi9q1qMcMQqH5func" Name="Update" ManuallySortedPins="true" />
-                <Patch Id="Ol6iGDI0FJDPDfXU7Dv1RK" Name="Dispose" ManuallySortedPins="true" />
-                <Node Bounds="1282,495,65,26" Id="TO3AajaNC9bOEmtVYBw2kE">
-                  <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="Category" Name="Polygon" />
-                    <Choice Kind="OperationCallFlag" Name="Split" />
-                  </p:NodeReference>
-                  <Pin Id="TEgnP7QD58RNL1hVhThUrz" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="Kfwv82l3PwVPUXxYaNYZsC" Name="Output" Kind="OutputPin" IsHidden="true" />
-                  <Pin Id="F1ORO4OhiMAOjzHyREiwW6" Name="OuterContour" Kind="OutputPin" />
-                  <Pin Id="MzsvDzf7A7GOlgU1V6zMnX" Name="HoleContours" Kind="OutputPin" />
-                  <Pin Id="EesEjjsYXvnNUYuk0RBnG5" Name="Bounds" Kind="OutputPin" />
-                  <Pin Id="KAqdFgHFIhhLqKvlq0cmsq" Name="SuccessFindBounds" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="1274,534,58,91" Id="KTDcGpH4DM8NHlqaPY2aCf">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                    <CategoryReference Kind="Category" Name="Primitive" />
-                    <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
-                  </p:NodeReference>
-                  <Pin Id="RJISrmj6ajLPCr0s2CZlNt" Name="Break" Kind="OutputPin" />
-                  <Patch Id="Tglquk9OKwjPDKdYJ41t9K" ManuallySortedPins="true">
-                    <Patch Id="RNCIhsbcguRLBXHy1Aqg9J" Name="Create" ManuallySortedPins="true" />
-                    <Patch Id="IwtfA1mv3jmLrr5owYDg7p" Name="Update" ManuallySortedPins="true" />
-                    <Patch Id="FUofIWbWFOUPsV5KR1zGNF" Name="Dispose" ManuallySortedPins="true" />
-                    <Node Bounds="1287,586,33,19" Id="MBOSuG1S3YdPh41J43VMAB">
-                      <p:NodeReference LastCategoryFullName="2D.Vector2" LastDependency="VL.CoreLib.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="XyZ" />
-                      </p:NodeReference>
-                      <Pin Id="UM1Anbye85BLHv4JdZAqmv" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="I8HeyzIewHhLP19ztk0hwT" Name="Y" Kind="InputPin" />
-                      <Pin Id="Rv32O3EZdDFM8xJ9WZrEr4" Name="Output" Kind="StateOutputPin" />
-                    </Node>
-                  </Patch>
-                  <ControlPoint Id="FQRIEV3MkZ8NwypA3gQK7Y" Bounds="1288,540" Alignment="Top" />
-                  <ControlPoint Id="Tnp7z8IP2CzMS3C7qRQrSl" Bounds="1288,619" Alignment="Bottom" />
-                </Node>
-              </Patch>
-            </Node>
-            <ControlPoint Id="KY7IdwVwuOjLnxxu1ghLXy" Bounds="1283,441" />
-            <ControlPoint Id="Lywxg1vHJSsNLQpUNkp8qy" Bounds="1320,454" />
-            <ControlPoint Id="R9XHCDTVAlkOu42y6NnOc7" Bounds="1411,763" />
-            <ControlPoint Id="KqWSpw4TElSNGHYzVgVe1n" Bounds="1389,744" />
-            <ControlPoint Id="NgqZkkEH7BVNox3tYWzxeK" Bounds="1310,685" />
-            <ControlPoint Id="Hb1QBftLpkROSTzSK5U3XW" Bounds="1334,701" />
-            <ControlPoint Id="BdVqHj3RXTKLy9sAzSmdct" Bounds="1370,730" />
-            <ControlPoint Id="Tt3vpvc1RUvOrN1XkAYxQb" Bounds="1349,716" />
-          </Canvas>
-          <ProcessDefinition Id="RTyGimJ4POQPCdpBtLe5qI">
-            <Fragment Id="B92VEhIqa3ELx6f3hTaFwE" Patch="SI6pON9ez6rNJDuCo41olK" Enabled="true" />
-            <Fragment Id="KgnsXYlgIttMiVcnDnXRKV" Patch="EjLToHUmNq9M8fazNuJo4s" Enabled="true" />
-          </ProcessDefinition>
-          <Link Id="TKThpaWDx8yMFx4LedfOpH" Ids="RgcqFdmanObMgFo51yhOYM,F3Oi00go0mAMYOPM5QPV94" />
-          <Link Id="ALEq5uAhxMdPAkdaakh8gb" Ids="T7Aa8ZBhzbGOzKfFqayMal,PGLlI0LVE6eMGgbb1lrCqP" />
-          <Link Id="COOXIkr3cw4NexsA1rTTDc" Ids="PGLlI0LVE6eMGgbb1lrCqP,FmdCf15EopuLXZi86t93jh" IsHidden="true" />
-          <Link Id="Ey2BkiKO2QlQNyCUHQRwgJ" Ids="CuUZJZbzLiuNcuXJYg4cSE,TEgnP7QD58RNL1hVhThUrz" />
-          <Link Id="For4ryy2yGaOzpjv5Yv2XR" Ids="KY7IdwVwuOjLnxxu1ghLXy,CuUZJZbzLiuNcuXJYg4cSE" />
-          <Link Id="JcZpKAYQThFLQN7je6IVHQ" Ids="GAyGc66wqwgNDGqPp9awTU,KY7IdwVwuOjLnxxu1ghLXy" IsHidden="true" />
-          <Link Id="JQQqRMcYqw6OFwT1Ie7j1q" Ids="F1ORO4OhiMAOjzHyREiwW6,FQRIEV3MkZ8NwypA3gQK7Y" />
-          <Link Id="AHclOL2kX1zMGmmCXML96p" Ids="FQRIEV3MkZ8NwypA3gQK7Y,UM1Anbye85BLHv4JdZAqmv" />
-          <Link Id="DCnQuLMeiHhOJ7n0nnRtkb" Ids="Rv32O3EZdDFM8xJ9WZrEr4,Tnp7z8IP2CzMS3C7qRQrSl" />
-          <Link Id="IhpyQaSS0t6LyuogB2BOfY" Ids="Tnp7z8IP2CzMS3C7qRQrSl,C7zwpiuFm5nOJrCW7Noh2X" />
-          <Link Id="JpsHONcMz4rNBsGmSl95EI" Ids="C7zwpiuFm5nOJrCW7Noh2X,SopsJfTEmNVPVKTctXklSQ" />
-          <Link Id="Mf9hYG657cCOX3j2MpOgjR" Ids="FrTz5znip9dNlL4NXKCGO6,I8HeyzIewHhLP19ztk0hwT" />
-          <Link Id="EgFYpn5T8IRQSluLwIkK9I" Ids="Lywxg1vHJSsNLQpUNkp8qy,FrTz5znip9dNlL4NXKCGO6" />
-          <Link Id="CVs4A9X7WEGLflLc1ninhn" Ids="MfoGBcFQ9sWQdY1TuBCreK,Lywxg1vHJSsNLQpUNkp8qy" IsHidden="true" />
-          <Link Id="J8GVXcJKi4qOuO9DYFOLHn" Ids="R9XHCDTVAlkOu42y6NnOc7,JuxsaK6ceDXNxhQ7QnXWEL" />
-          <Link Id="AsLGKHODVfGNJHUYkJYMs0" Ids="NxUVWsvu67QLj6bV6cFcaT,R9XHCDTVAlkOu42y6NnOc7" IsHidden="true" />
-          <Link Id="OosltUyYHKiN0nDFWO6S9v" Ids="KqWSpw4TElSNGHYzVgVe1n,GhNlyJMYDWDOZKB8YmcySp" />
-          <Link Id="Hnr2hYM1WS8LIusOfzRWjQ" Ids="Ja0SURrtjCdLTgydXl0nfj,KqWSpw4TElSNGHYzVgVe1n" IsHidden="true" />
-          <Link Id="PYJcI5O7Q6VO9JVpxZtqmD" Ids="NgqZkkEH7BVNox3tYWzxeK,HxcfTacWiTdOlQkvOXxmLM" />
-          <Link Id="FcTvAxgZCjzOhDjtJQiJbs" Ids="FrwYTd0D6hTL9rVxqJDQrT,NgqZkkEH7BVNox3tYWzxeK" IsHidden="true" />
-          <Link Id="CkpGz9a2fXxN9erwsMGHIn" Ids="Hb1QBftLpkROSTzSK5U3XW,LOG0MSwiCOyOK8B9O3KzEv" />
-          <Link Id="ARPszjpBu0INpRf6G6jPIO" Ids="SVS9CQEuaZANFuw40mE7L4,Hb1QBftLpkROSTzSK5U3XW" IsHidden="true" />
-          <Link Id="BNiqT8TOL6WMn8FUkGN5uq" Ids="BdVqHj3RXTKLy9sAzSmdct,PsTtJdPrHeoNcEC93qpPwt" />
-          <Link Id="AYixlf9rRTXQSpCxVpOdyF" Ids="LomNzgyjAMaL9Rhmrwfa19,BdVqHj3RXTKLy9sAzSmdct" IsHidden="true" />
-          <Link Id="AAhY1drefFxO4GNa88fxz4" Ids="Tt3vpvc1RUvOrN1XkAYxQb,TPhNAwG6iXWOa5xyiGOsLx" />
-          <Link Id="SSkiB3Wz7A0LrPaBHn9FMb" Ids="LB3PA2x4lwHOi2tVuMsKxp,Tt3vpvc1RUvOrN1XkAYxQb" IsHidden="true" />
-          <Patch Id="SI6pON9ez6rNJDuCo41olK" Name="Create" />
-          <Patch Id="EjLToHUmNq9M8fazNuJo4s" Name="Update" ManuallySortedPins="true">
-            <Pin Id="GAyGc66wqwgNDGqPp9awTU" Name="Polygons" Kind="InputPin" Bounds="1287,439" />
-            <Pin Id="MfoGBcFQ9sWQdY1TuBCreK" Name="Heights" Kind="InputPin" Bounds="1354,437" />
-            <Pin Id="FrwYTd0D6hTL9rVxqJDQrT" Name="ForceUseCompositeShapes" Kind="InputPin" Bounds="1309,652" />
-            <Pin Id="SVS9CQEuaZANFuw40mE7L4" Name="UVCalcMode" Kind="InputPin" Bounds="1322,687" />
-            <Pin Id="LB3PA2x4lwHOi2tVuMsKxp" Name="UVOffset" Kind="InputPin" Bounds="1341,679" />
-            <Pin Id="LomNzgyjAMaL9Rhmrwfa19" Name="UVScale" Kind="InputPin" Bounds="1344,681" />
-            <Pin Id="Ja0SURrtjCdLTgydXl0nfj" Name="AutoRotationCorrection" Kind="InputPin" Bounds="1324,681" DefaultValue="False" />
-            <Pin Id="NxUVWsvu67QLj6bV6cFcaT" Name="AutoOriginCorrection" Kind="InputPin" Bounds="1369,687" DefaultValue="False" />
-            <Pin Id="DSJrDs5I27YMxpWbELJ9Lq" Name="Transformation" Kind="InputPin" />
-            <Pin Id="PpLAJNkrgiFQJjXTSRXiHY" Name="Material" Kind="InputPin" />
-            <Pin Id="QVd5MGeEsdTLsYAsIuGj7d" Name="Is Shadow Caster" Kind="InputPin" />
-            <Pin Id="H2uN3HEowdpPZPKCRmi5CE" Name="Components" Kind="InputPin" />
-            <Pin Id="FH98f1nXowpPYHCL4rfAWO" Name="Children" Kind="InputPin" />
-            <Pin Id="Mse6Iiop1zmQbRuijIystQ" Name="Name" Kind="InputPin" />
-            <Pin Id="JzudxFx0zo2LCzlRrPHNsd" Name="Enabled" Kind="InputPin" />
-            <Pin Id="FmdCf15EopuLXZi86t93jh" Name="Entity" Kind="OutputPin" Bounds="1263,877" />
-          </Patch>
-        </Patch>
-      </Node>
       <Overlay Id="PvwyioSnfSMOiVT0ojcPZc" Name="Entities" Bounds="1068,406,503,187" />
       <Overlay Id="TK1bYyXjGruMqMB3ndnM72" Name="Mesh" Bounds="1067,628,537,192" />
       <Overlay Id="Msu2QOnY5zUPQ1i8famBxq" Name="Internal" Bounds="1067,846,564,170" />
       <!--
 
-    ************************ PolyTube (3D) ************************
+    ************************ PolyTube ************************
 
 -->
-      <Node Name="PolyTube (3D)" Bounds="1112,552" Id="KwSxavqbyrxOVXKcdrhH8m">
+      <Node Name="PolyTube" Bounds="1113,486" Id="KwSxavqbyrxOVXKcdrhH8m">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -3892,29 +3654,56 @@
               <Pin Id="AgUFUdSMJ77OpiPngkBtXD" Name="Enabled" Kind="InputPin" />
               <Pin Id="D4Qc4IPdFZbLClLW9w3c8j" Name="Entity" Kind="OutputPin" />
             </Node>
-            <Node Bounds="1280,736,125,19" Id="NRNrfgTPvW4QKc40fnRxm3">
+            <Node Bounds="1319,743,125,19" Id="NRNrfgTPvW4QKc40fnRxm3">
               <p:NodeReference LastCategoryFullName="PolyTools.Stride" LastDependency="VL.Polytools.Stride.PolygonTube.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="PolyTubeMesh" />
               </p:NodeReference>
               <Pin Id="CSRkLVHkw6TO90QB3mohej" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="PEfhy9gN8WHMUu27eOGggO" Name="SpreadOf3DPolyPoints" Kind="InputPin" />
+              <Pin Id="B2oHfPaVVz6NenOIdpyXEy" Name="ForceUseCompositeShapes" Kind="InputPin" />
               <Pin Id="GmmO9STAsiuOs975I8Ajpt" Name="UVCalcMode" Kind="InputPin" />
               <Pin Id="RFUusCYsEzALhRoZwhJEVD" Name="UVOffset" Kind="InputPin" />
-              <Pin Id="B2oHfPaVVz6NenOIdpyXEy" Name="ForceUseCompositeShapes" Kind="InputPin" />
+              <Pin Id="KzSYXmc7FaFNSOUSWigYeV" Name="UVScale" Kind="InputPin" />
               <Pin Id="NXdbBp0liQgNGIjog5eWrX" Name="AutoRotationCorrection" Kind="InputPin" />
               <Pin Id="Mh5l4jO3SoAO9BUeWKHJg0" Name="AutoOriginCorrection" Kind="InputPin" />
-              <Pin Id="KzSYXmc7FaFNSOUSWigYeV" Name="UVScale" Kind="InputPin" />
               <Pin Id="GLC4jRqPntEPVi0HaNcyms" Name="Output" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="EBdCvzvG0BgQchWcy1S6Le" Bounds="1486,879" />
-            <ControlPoint Id="To1NfgLMc24MTleWeauE1o" Bounds="1403,726" />
-            <ControlPoint Id="NAncyvsUG7rM88gWQoo0Jm" Bounds="1381,707" />
-            <ControlPoint Id="JMRL4zlNZw2QLEDLipDNVF" Bounds="1302,648" />
-            <ControlPoint Id="Qt67uzOY4O8QMqqulNKDgG" Bounds="1326,664" />
-            <ControlPoint Id="V5Gx0A8u1K1N8WfX00RtkH" Bounds="1362,693" />
-            <ControlPoint Id="GXeNL0mTAPbQdA4w1gkKy8" Bounds="1341,679" />
-            <ControlPoint Id="BidFicrmG6jLrTPVcYsSrc" Bounds="1285,622" />
+            <ControlPoint Id="To1NfgLMc24MTleWeauE1o" Bounds="1435,729" />
+            <ControlPoint Id="NAncyvsUG7rM88gWQoo0Jm" Bounds="1420,714" />
+            <ControlPoint Id="JMRL4zlNZw2QLEDLipDNVF" Bounds="1341,655" />
+            <ControlPoint Id="Qt67uzOY4O8QMqqulNKDgG" Bounds="1365,671" />
+            <ControlPoint Id="V5Gx0A8u1K1N8WfX00RtkH" Bounds="1401,700" />
+            <ControlPoint Id="GXeNL0mTAPbQdA4w1gkKy8" Bounds="1380,686" />
+            <Node Bounds="1301,526,82,86" Id="TtyxXzvlE34OpI6nnUVvaU">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+              </p:NodeReference>
+              <Pin Id="OT0uM6Qidp1N2IZqRhMPyr" Name="Break" Kind="OutputPin" />
+              <ControlPoint Id="Rr7dBsopg3EOlqaTCaTZo1" Bounds="1315,532" Alignment="Top" />
+              <Patch Id="NrNpEIsVIKgLk0LHiPCNLD" ManuallySortedPins="true">
+                <Patch Id="SYuDQuaVWBBPFVgwhi7sZ7" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="MjHhfgml29qNKXY8XQvBoL" Name="Update" ManuallySortedPins="true" />
+                <Patch Id="OjDklIBRKFlPAsTAIgSyyM" Name="Dispose" ManuallySortedPins="true" />
+                <Node Bounds="1316,563,55,26" Id="QPj6MbKTvouQRb8dX95tIp">
+                  <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="RecordType" Name="Polygon3D" />
+                    <Choice Kind="OperationCallFlag" Name="SplitXYZ" />
+                  </p:NodeReference>
+                  <Pin Id="U3xWaROsg5fM05RyfG7COt" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Q2vRreNn9E8QM2nS5okwaU" Name="Output" Kind="OutputPin" IsHidden="true" />
+                  <Pin Id="OZJEBGMgHo2L96EqqaYhEz" Name="OuterContour" Kind="OutputPin" />
+                  <Pin Id="JghdNv1LPh9PvX7KMmguTs" Name="HoleContoursXYZ" Kind="OutputPin" />
+                  <Pin Id="G6Pr6LdYAOyOCJtPhopZEO" Name="HeightMode" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="VZhNPB3uYDMPWrBN8qBV9T" Bounds="1317,606" Alignment="Bottom" />
+            </Node>
+            <ControlPoint Id="Kmdr8JMwa62NWt0d2imCUP" Bounds="1315,467" />
           </Canvas>
           <ProcessDefinition Id="SeBwR87FlFvQRKvTlKGc3a">
             <Fragment Id="HD1fWVurFFROxHFjpl7GQp" Patch="J2oBxYhz0RiQREkd7NiomD" Enabled="true" />
@@ -3935,11 +3724,23 @@
           <Link Id="FEUA7kTwEJaP73GStFaAvy" Ids="AzJzFaslwapLYgIjyQYGQ7,V5Gx0A8u1K1N8WfX00RtkH" IsHidden="true" />
           <Link Id="GbJixiW2QFkOqVLJOREqbf" Ids="GXeNL0mTAPbQdA4w1gkKy8,RFUusCYsEzALhRoZwhJEVD" />
           <Link Id="KfUUfXOTu3TOJ06tLuA8M0" Ids="H9WlgfYJFFfPQTwonBynik,GXeNL0mTAPbQdA4w1gkKy8" IsHidden="true" />
-          <Link Id="VucqUmy2ixqLNtBDcTIFsZ" Ids="BidFicrmG6jLrTPVcYsSrc,PEfhy9gN8WHMUu27eOGggO" />
-          <Link Id="CULXbq93coNLt2v5xM9XoQ" Ids="RU2ahmhKxV1QaPwzI2ChWX,BidFicrmG6jLrTPVcYsSrc" IsHidden="true" />
+          <Link Id="OBAWnq3Xs7cLJptkAALqbW" Ids="Kmdr8JMwa62NWt0d2imCUP,Rr7dBsopg3EOlqaTCaTZo1" />
+          <Link Id="QFabMZVLfGGOZSyq33tEcp" Ids="RlnLabL659XNzKN4vHJwsu,Kmdr8JMwa62NWt0d2imCUP" IsHidden="true" />
+          <Link Id="Ppl4c4mjHxKO1GxvJwZyik" Ids="Rr7dBsopg3EOlqaTCaTZo1,U3xWaROsg5fM05RyfG7COt" />
+          <Link Id="I7e4vuBrMu6NVl1bA4vd1N" Ids="OZJEBGMgHo2L96EqqaYhEz,VZhNPB3uYDMPWrBN8qBV9T" />
+          <Link Id="QazlbDjOZugQFaagYnGJ1S" Ids="VZhNPB3uYDMPWrBN8qBV9T,PEfhy9gN8WHMUu27eOGggO" />
           <Patch Id="J2oBxYhz0RiQREkd7NiomD" Name="Create" />
           <Patch Id="BwSeOKYwVG7MSDpzGShsZi" Name="Update" ManuallySortedPins="true">
-            <Pin Id="RU2ahmhKxV1QaPwzI2ChWX" Name="SpreadOf3DPolyPoints" Kind="InputPin" Bounds="1278,611" />
+            <Pin Id="RlnLabL659XNzKN4vHJwsu" Name="Polygon3D" Kind="InputPin" Bounds="1522,474">
+              <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Spread" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="Polygon3D" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="NQryfSBZHBnNIymxRl5vIP" Name="ForceUseCompositeShapes" Kind="InputPin" Bounds="1309,652" />
             <Pin Id="CiEfeJjddTLNyXiGpckDkj" Name="UVCalcMode" Kind="InputPin" Bounds="1322,687" />
             <Pin Id="H9WlgfYJFFfPQTwonBynik" Name="UVOffset" Kind="InputPin" Bounds="1341,679" />
