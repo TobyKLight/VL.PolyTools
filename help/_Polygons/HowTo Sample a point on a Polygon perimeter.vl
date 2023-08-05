@@ -15,8 +15,8 @@
       </p:NodeReference>
       <Patch Id="F8dcyyUX7nlQDTTrsbqqL3">
         <Canvas Id="NqNlTpHKN5DMwdTCzVqTza" CanvasType="Group">
-          <Pad Id="DSgT9nA07Q2MHM2Wr5x8Jg" SlotId="VQuX7hbXdDGLVLor4EB04H" Bounds="786,477" />
-          <Node Bounds="781,291,85,19" Id="VRsw6kNcdUQOd62GuUEifo">
+          <Pad Id="DSgT9nA07Q2MHM2Wr5x8Jg" SlotId="VQuX7hbXdDGLVLor4EB04H" Bounds="632,479" />
+          <Node Bounds="630,293,85,19" Id="VRsw6kNcdUQOd62GuUEifo">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="StarSpread" />
@@ -29,10 +29,13 @@
             <Pin Id="Ij4v75Jbf5tMCcslR4Rjzd" Name="Spike Count" Kind="InputPin" DefaultValue="9" />
             <Pin Id="Hs7B0yMm1r0N12lRaexDAT" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="784,365,46,26" Id="GqHmlKlt67vOMH5Pb8NpIc">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
+          <Node Bounds="630,367,46,26" Id="GqHmlKlt67vOMH5Pb8NpIc">
+            <p:NodeReference LastCategoryFullName="PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon" />
+              <CategoryReference Kind="RecordType" Name="Polygon" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="PolyTools" NeedsToBeDirectParent="true" />
+              </CategoryReference>
               <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
             <Pin Id="Uqy6EI832ODOfK1fj5BEgH" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -41,7 +44,7 @@
             <Pin Id="AnwlbCT0pMvOxPZXggwiKK" Name="Output" Kind="StateOutputPin" />
             <Pin Id="NCAuWDy9qV0MpoT810s1pY" Name="SuccessFindBounds" Kind="OutputPin" />
           </Node>
-          <Node Bounds="784,427,64,26" Id="NgdyM94ypqpP71KKld09Ow">
+          <Node Bounds="630,429,64,26" Id="NgdyM94ypqpP71KKld09Ow">
             <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon" />
@@ -52,7 +55,7 @@
             <Pin Id="PCQ5eK12b7zMxULZ7AwfP3" Name="TransformHoles" Kind="InputPin" />
             <Pin Id="C9ZTJ9zndj6PHolYleEo1n" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="855,355,58,19" Id="EqqZthJnisZNyRqV20WUIL">
+          <Node Bounds="687,383,58,19" Id="EqqZthJnisZNyRqV20WUIL">
             <p:NodeReference LastCategoryFullName="2D.Transform" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Transform" NeedsToBeDirectParent="true">
@@ -147,7 +150,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="NJptbAh4D0UNZghF5nHkAC" Name="Bounds" Kind="InputPin" DefaultValue="340, 140, 613, 436" />
+            <Pin Id="NJptbAh4D0UNZghF5nHkAC" Name="Bounds" Kind="InputPin" DefaultValue="340, 140, 612, 436" />
             <Pin Id="Bn6JaDgy4NqQXlc5nAOKKE" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="M7x47FIurBmM7fdKT9eAcy" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="FgJVFBILAi9MXRZdA12nfQ" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -244,7 +247,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="VxCnZiQi2EEOKG9qhsnbQw" Comment="Success" Bounds="960,682,35,35" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="785,515,60,26" Id="RyqUO1Z3tDiMKq27Z87SHG">
+          <Node Bounds="630,517,60,26" Id="RyqUO1Z3tDiMKq27Z87SHG">
             <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon" />
@@ -256,8 +259,8 @@
             <Pin Id="E5QLKCiMu10PxlZfIPvh3g" Name="OuterPerimeter" Kind="OutputPin" />
             <Pin Id="JXqCFydCjMVMlDebwLXLsL" Name="HolePerimeters" Kind="OutputPin" />
           </Node>
-          <Pad Id="As4YR3IDHvGOiKxTBLdAX7" Comment="OuterPerimeter" Bounds="789,562,35,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="905,261,85,19" Id="BxQoaFTN8frNA3A17CakGz">
+          <Pad Id="As4YR3IDHvGOiKxTBLdAX7" Comment="OuterPerimeter" Bounds="632,564,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="737,289,85,19" Id="BxQoaFTN8frNA3A17CakGz">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="StarSpread" />
@@ -270,7 +273,7 @@
             <Pin Id="ETauZvbv5HeP7c2637bA67" Name="Spike Count" Kind="InputPin" DefaultValue="6" />
             <Pin Id="McBfiNVl25aPeuXaGEp0HD" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="904,299,65,19" Id="TP3CHEuPWRrMvtu37gNW8Y">
+          <Node Bounds="736,327,65,19" Id="TP3CHEuPWRrMvtu37gNW8Y">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -288,7 +291,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="G2DvykDHxpaN7gSy7tYqXg" Comment="SwitchToMethodB" Bounds="1028,835,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="G2DvykDHxpaN7gSy7tYqXg" Comment="SwitchToMethodB" Bounds="1028,835,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -315,7 +318,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="S0XZzYBhaXHOGzFmGceMot" Name="MethodB SampleByProportion" Bounds="1404,449,490,334" />
+          <Overlay Id="S0XZzYBhaXHOGzFmGceMot" Name="MethodB SampleByProportion (0 to 1)" Bounds="1404,449,490,334" />
           <Node Bounds="1496,629,107,26" Id="FUAqxRJUGdbQIZXtkn31Qg">
             <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -340,7 +343,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="JLgt4IJ7D1pQTjZ6SU7YU3" Comment="TargetProportion" Bounds="1602,587,35,15" ShowValueBox="true" isIOBox="true" Value="0.06">
+          <Pad Id="JLgt4IJ7D1pQTjZ6SU7YU3" Comment="TargetProportion" Bounds="1602,587,35,15" ShowValueBox="true" isIOBox="true" Value="0.16">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -378,6 +381,15 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="Uh4EHFtYkbFNA1cgbRFJXH" Bounds="1613,496,250,38" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Include the last closed line in the proportional value or not. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PiTTuUjGJ4QOaCKdj7TdSg" Bounds="751,561,93,61" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Note total perimeter length">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

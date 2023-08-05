@@ -2,13 +2,13 @@
 <Document xmlns:p="property" xmlns:r="reflection" Id="LUY797TBKrxMS2mRGwlVEh" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
   <NugetDependency Id="MHwNm1whE1IMA322J3P8zA" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
   <Patch Id="I4SGR5qx7AiLZmBNiLHSMO">
-    <Canvas Id="BNtYsV8P1T4Mq15oCW4uvb" DefaultCategory="VL.Stride.Line" CanvasType="FullCategory">
+    <Canvas Id="BNtYsV8P1T4Mq15oCW4uvb" DefaultCategory="Stride.Models" CanvasType="FullCategory">
       <!--
 
-    ************************ Line ************************
+    ************************ Line (Material) ************************
 
 -->
-      <Node Name="Line" Bounds="258,129" Id="NJm1UWq3U7BMsIPKWa5yTv">
+      <Node Name="Line (Material)" Bounds="258,129" Id="NJm1UWq3U7BMsIPKWa5yTv">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -137,6 +137,17 @@
               <ControlPoint Id="FNZG8h6ekyRLhuOqiR6Q3u" Bounds="273,195" Alignment="Bottom" />
             </Node>
             <ControlPoint Id="V3A6Wg2SJHcPLVuRszUCbz" Bounds="259,42" />
+            <Node Bounds="536,259,76,19" Id="VLHiGo0iIakOnjlEPEbrnU">
+              <p:NodeReference LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="3D" NeedsToBeDirectParent="true" />
+                <Choice Kind="ProcessAppFlag" Name="BoundingBox" />
+              </p:NodeReference>
+              <Pin Id="U3ZjRSLscMjPab7LBKCdID" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="Qijzr2QXhxePbw2ExRsZQE" Name="Minimum" Kind="InputPin" />
+              <Pin Id="FnCKKzImLboNycV53rmrGT" Name="Maximum" Kind="InputPin" />
+              <Pin Id="MoX1JWhatR1LB6JZhlKKIQ" Name="Output" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <ProcessDefinition Id="FLxQIWs9bXuPI7pnlK0VTH">
             <Fragment Id="CUAH6i8ZGvUPCllQyf3nXJ" Patch="Td38UVgEG9vLSPe49yWwxX" Enabled="true" />
@@ -187,6 +198,7 @@
           <Link Id="U3RffkzRlmbPOyV0ZgtPdj" Ids="DHR2MS84FB1MVMZDpsgpfv,NfZII94rYSHN1zsmWtWHJU" />
           <Link Id="HZBDUr1kuFMN1emp2eMYii" Ids="IX9B6l1bmovMOTTcfEvey4,FNZG8h6ekyRLhuOqiR6Q3u" />
           <Link Id="KFyJhjbGhcVPjFZ9hVatCj" Ids="IDuTvfrG1KoNYCDtXQ0uvE,GcxnlcXOYK0LkslfCBVnvZ" />
+          <Link Id="G8YUZyHDdrOOXuoZ0hYzy2" Ids="MoX1JWhatR1LB6JZhlKKIQ,Muh5wsAfUk8O7UBbv8o1Mr" />
         </Patch>
       </Node>
       <Pad Id="Hjez3C5mr2oPtQHaiglqG3" Bounds="265,177,234,19" ShowValueBox="true" isIOBox="true" Value="to do : Lines plural with MeshesEntity ">
@@ -207,6 +219,49 @@
           <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
         </p:ValueBoxSettings>
       </Pad>
+      <!--
+
+    ************************ Arrow ************************
+
+-->
+      <Node Name="Arrow" Bounds="256,166" Id="E00olB2auYSMuiIF5PLzof">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="ExIsCwltgR8PUbioZ97ktb">
+          <Canvas Id="Q7BhPFCmoEkOI8mpexWjcC" CanvasType="Group">
+            <Node Bounds="926,752,185,19" Id="JDLXo3FBbpHMpfF90kxWJs">
+              <p:NodeReference LastCategoryFullName="Stride.Models" LastDependency="VL.Stride.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Line" />
+              </p:NodeReference>
+              <Pin Id="GdiUof8xfrOMvi1sA5V7lD" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="Szz9BfnNOZdPJlaLyp3Iap" Name="Vertices" Kind="InputPin" />
+              <Pin Id="QVdaEuklbjJMIakR6Xsmtk" Name="Colors" Kind="InputPin" />
+              <Pin Id="V7hGDzCWMiRQGMTZMuOGx3" Name="Transformation" Kind="InputPin" />
+              <Pin Id="MyCtIPghPiyNbWlFkRLEfx" Name="Enabled" Kind="InputPin" />
+              <Pin Id="KFCapc1EdQDNckWqpzYRDw" Name="Entity" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1162,654,80,19" Id="RuAc3eZz4i7P5Re207AvRD">
+              <p:NodeReference LastCategoryFullName="Stride.Models.Meshes.GeometryUtils" LastDependency="VL.Stride.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="ArrowVertices" />
+              </p:NodeReference>
+              <Pin Id="QXuBNziCUKVP7zsxneE0TH" Name="From" Kind="InputPin" />
+              <Pin Id="MJTyes4N4aILE19hFL6NmM" Name="Color" Kind="InputPin" />
+              <Pin Id="S3ecnGjMyLKMmwDnBtds6Z" Name="To" Kind="InputPin" />
+              <Pin Id="Oxn9llMVtu3M5feiurq3Iz" Name="Scale" Kind="InputPin" />
+              <Pin Id="KJvUR6tyweJPgjuR8NIBWv" Name="Result" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="T1MIwAm9NTGMOcyIliWhOh" Name="Create" />
+          <Patch Id="Os9Pjd9X2PTPiGaRTnvOwX" Name="Update" />
+          <ProcessDefinition Id="HbKT864PZKsOXoWkoA4n5c">
+            <Fragment Id="UUpCejSm4y8PzNZlZPnh2B" Patch="T1MIwAm9NTGMOcyIliWhOh" Enabled="true" />
+            <Fragment Id="HtymEDnDBmfM1cWfDaQGMD" Patch="Os9Pjd9X2PTPiGaRTnvOwX" Enabled="true" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="VnUtfWejuFYLg89g99kYUr" LanguageVersion="2021.4.10.1043" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="VnUtfWejuFYLg89g99kYUr" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
   <Patch Id="Q1RFnZQKIeSMGzus6Sy4xY">
     <Canvas Id="MACKJPpW0VaMsjLy2UWjZC" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       <Patch Id="Vk4jnGHF5XHNVmDj5uBADX">
         <Canvas Id="T3dwTo32vIgN59DOJEjH1t" CanvasType="Group">
           <Node Bounds="623,541,128,26" Id="TUDCcLqpsnuMPoX8gFAXMS">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="PolyPath" />
               <Choice Kind="OperationCallFlag" Name="SampleProportionalPoint" />
@@ -25,13 +25,14 @@
             <Pin Id="MAnIzIWRZiJO2SxSjfvDFx" Name="ContourIndex" Kind="InputPin" />
             <Pin Id="Po0O0IZt9I2LSr4gJ29Iy3" Name="Res Scale" Kind="InputPin" />
             <Pin Id="BVZ2fBNUjUTLfjCLwr8Sm8" Name="ProportionalPosition" Kind="InputPin" />
+            <Pin Id="EzDY3FCSBGjPfWRn6nz2Pd" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="Ogr9nn4T6ZNMGrMImLeRcE" Name="IsFound" Kind="OutputPin" />
             <Pin Id="LZTqIfxfOLnPajH8Kbuz7t" Name="Position" Kind="OutputPin" />
             <Pin Id="TZMI1IN5JszP46j3I5H30p" Name="Tangent" Kind="OutputPin" />
             <Pin Id="O1ci5BKuZ0ANULkm9uOayC" Name="Success" Kind="OutputPin" />
           </Node>
           <Pad Id="VJrR2ZcupF6NbUegtGZoeI" Bounds="582,437,275,19" ShowValueBox="true" isIOBox="true" Value="It appears on many skia related nodes">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -40,13 +41,13 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="BILLcF0JkklNw1zxgD1C1E" Comment="Res Scale" Bounds="718,477,35,15" ShowValueBox="true" isIOBox="true" Value="1.5">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Overlay Id="FpSN5r0bZtuOICsW8hsC5Z" Name="What is Res Scale?" Bounds="547,280,587,571" />
           <Pad Id="EBX4Py8xJFvO9J0WdLIPpX" Bounds="570,359,534,37" ShowValueBox="true" isIOBox="true" Value="ResScale &quot;if &gt; 1, increase precision, else if (0 &lt; resScale &lt; 1) reduce precision to favor speed and size&quot;">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -55,7 +56,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="Smx9G9oaTH3PEvPFlaujyT" Bounds="572,400,554,19" ShowValueBox="true" isIOBox="true" Value="https://api.skia.org/classSkPaint.html#a9a252159ba57877a58b718b3ce016473">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -64,7 +65,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="QsemolGfHm2LfeqGF4WvpB" Bounds="571,320,490,38" ShowValueBox="true" isIOBox="true" Value="Res Scale is a Skia parameter that affects precision and performance. From the skia docs:">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -73,25 +74,28 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="778,551,85,19" Id="N4p6jcuVg7MPgGzGCP8j3a">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Union" />
               <CategoryReference Kind="RecordType" Name="PolyPath" NeedsToBeDirectParent="true" />
             </p:NodeReference>
+            <Pin Id="TPQcssRLQPyLEs8BVU2Dti" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="EhiCFhciOVlPoQjF8ITdGj" Name="PolyPathA" Kind="InputPin" />
             <Pin Id="IqmkUAluGyyLplAFi7JtBi" Name="PolyPathB" Kind="InputPin" />
             <Pin Id="IleZuRPqlA7MyHNSsmthwU" Name="MergeMode" Kind="InputPin" />
             <Pin Id="TmTqBtXbw7ELhBYmFp8a1u" Name="Res Scale" Kind="InputPin" />
             <Pin Id="R8YHP6z2N0AN67fV4JjxFI" Name="ReValidateCompartmentLineEndPoints" Kind="InputPin" />
+            <Pin Id="RiTWNyLt4VFLPFtBLN50r2" Name="EnableDebugLayer" Kind="InputPin" IsHidden="true" />
             <Pin Id="Mw1VYTPoINyMhoUN7CoLEA" Name="PolyPaths" Kind="OutputPin" />
+            <Pin Id="RxXdzEGnHmRPlgukPI1CpA" Name="DebugLayer" Kind="OutputPin" IsHidden="true" />
           </Node>
           <Pad Id="TtpHrIbqykuNTzpNKnaag1" Comment="Res Scale" Bounds="839,524,35,15" ShowValueBox="true" isIOBox="true" Value="1.5">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="933,549,65,19" Id="MFsUwwQCoTcMuP1uqus8G4">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetFIllPath" />
             </p:NodeReference>
@@ -101,12 +105,12 @@
             <Pin Id="LhKk428WHHwMGqigWt8XiB" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="Lcy6CNWBYbiLa6ZieMNkpQ" Comment="Res Scale" Bounds="994,510,35,15" ShowValueBox="true" isIOBox="true" Value="1.5">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="TQZ9rxeWs26Pjf50l3tS6h" Bounds="565,619,530,218" ShowValueBox="true" isIOBox="true" Value="We asked the Skia developers for more info and got this response&#xD;&#xA;&quot;It does control the level of subdivision for curves, but those changes may not be linear. (Essentially, things like stroking and path linearization try to hit a goal of being within one-pixel everywhere. Increasing the resScale will make that be true, if the path is drawn/linearized at that particular scale factor.) Internally, it's generally just determined by the larger scale factor (X or Y) from the matrix when doing a drawing operation.&quot;&#xD;&#xA;&#xD;&#xA;Long story short for now: if things dont look right try turning it up.&#xD;&#xA;In our experience values below 1.5 seem to cause weird results.">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -127,7 +131,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="DDYEH7aZNw4MlRFzVu1Mgq" Location="VL.CoreLib" Version="2021.4.10" />
-  <NugetDependency Id="FeRbDFfakMVOyXmN5cq6sR" Location="VL.Skia" Version="2021.4.10" />
+  <NugetDependency Id="DDYEH7aZNw4MlRFzVu1Mgq" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
+  <NugetDependency Id="FeRbDFfakMVOyXmN5cq6sR" Location="VL.Skia" Version="2023.5.3-0088-gd2b84ddcc4" />
   <DocumentDependency Id="SmQwuJL0syKNZjV3IK6WxZ" Location="../../VL.PolyTools.vl" />
 </Document>

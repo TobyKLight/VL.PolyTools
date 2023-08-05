@@ -169,8 +169,8 @@
             </p:NodeReference>
             <Pin Id="NW8BeSPSkXNOExcJmWaeUA" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="JVADZNpvBAOQICJDVyEfGg" Name="Center" Kind="InputPin" DefaultValue="0, 0" />
-            <Pin Id="AkR0nkRZ21WPG091KS9pmI" Name="Radius 1" Kind="InputPin" DefaultValue="0.74" />
-            <Pin Id="UD8TKbtUlcbMy70C62vKzt" Name="Radius 2" Kind="InputPin" DefaultValue="0.65" />
+            <Pin Id="AkR0nkRZ21WPG091KS9pmI" Name="Radius 1" Kind="InputPin" DefaultValue="0.49" />
+            <Pin Id="UD8TKbtUlcbMy70C62vKzt" Name="Radius 2" Kind="InputPin" DefaultValue="0.39" />
             <Pin Id="N5mswM93qthQbjQ2VbaVQw" Name="Phase" Kind="InputPin" DefaultValue="0" />
             <Pin Id="VuAlhKlecYuPUIgfLTZ7jK" Name="Spike Count" Kind="InputPin" DefaultValue="15" />
             <Pin Id="OB78kdfxcxtObylnIAEbxv" Name="Output" Kind="OutputPin" />
@@ -428,36 +428,37 @@
             <Pin Id="C8U7dYWbabGNmURGROtdkI" Name="Enabled" Kind="InputPin" />
             <Pin Id="E2C76hYZA4mNQKeoHTfQiF" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="358,1278,195,86" Id="C4v8aAZsBriLWWOLJcvws7">
+          <Node Bounds="358,1278,215,86" Id="C4v8aAZsBriLWWOLJcvws7">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Primitive" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
             </p:NodeReference>
             <Pin Id="UJhJEEABZtJOcfUDzSb3BQ" Name="Break" Kind="OutputPin" />
+            <ControlPoint Id="BY9EuYi8dtnPbs3y3jkxj4" Bounds="400,1358" Alignment="Bottom" />
+            <ControlPoint Id="H0lDNmdEv9UMaK4UzxwWxS" Bounds="396,1284" Alignment="Top" />
             <Patch Id="RnfQ7GI0B7aQFbBsgxhA9R" ManuallySortedPins="true">
               <Patch Id="AXMB7rMyJx6NJZpcshJbGr" Name="Create" ManuallySortedPins="true" />
               <Patch Id="CbqV3BF8Pe8PJmcWfHokaP" Name="Update" ManuallySortedPins="true" />
               <Patch Id="SW9aO9dszI4Nhh1DWpTOhD" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="396,1316,145,19" Id="Cj9377SK9v7PJGFbqOwkbq">
+              <Node Bounds="396,1316,165,19" Id="Cj9377SK9v7PJGFbqOwkbq">
                 <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride" LastDependency="VL.PolyTools.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="OutlinePolygon (Stride)" />
                 </p:NodeReference>
                 <Pin Id="A5WvAZQ5IreQTp6S0rnLNR" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="NsaS9nRObUHLxhHBUyooU1" Name="Polygon3D" Kind="InputPin" />
-                <Pin Id="OaStLh1R034PXiEAx5HKUA" Name="DoClose" Kind="InputPin" />
+                <Pin Id="OaStLh1R034PXiEAx5HKUA" Name="DoClose" Kind="InputPin" DefaultValue="False" />
                 <Pin Id="NQklzQQXDC4NyJXuV2unRQ" Name="Transformation" Kind="InputPin" />
                 <Pin Id="Vc3UYwwo7wCMBuXmM9KVLw" Name="Material" Kind="InputPin" />
                 <Pin Id="N7x53H3TnOQN6JC3ZVWPLo" Name="Components" Kind="InputPin" />
                 <Pin Id="BB8SGCuGRdJNgZsiiDyIxC" Name="Children" Kind="InputPin" />
                 <Pin Id="LYabdVqefxdOxkvOZQUjPz" Name="Name" Kind="InputPin" />
                 <Pin Id="Gh7ZdtlQ5ezNAFxsHN1Wjf" Name="Enabled" Kind="InputPin" />
+                <Pin Id="UGTJoxXSoF2Pn4iDvMP0xz" Name="ShowStartArrow" Kind="InputPin" />
                 <Pin Id="R3REY8kiHzgOuw7ZXeiP7J" Name="Entity" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="BY9EuYi8dtnPbs3y3jkxj4" Bounds="400,1358" Alignment="Bottom" />
-            <ControlPoint Id="H0lDNmdEv9UMaK4UzxwWxS" Bounds="396,1284" Alignment="Top" />
           </Node>
           <ControlPoint Id="Ud9E3bcvJjCQbjAcLeeohi" Bounds="434,894" />
           <Node Bounds="44,1447,80,19" Id="U3iOKm8KrF5MEIeblAP2mC">
@@ -507,9 +508,9 @@
             <p:Value>
               <Item>0, 0, 0</Item>
               <Item>0, 1, 0</Item>
-              <Item>-1, 1, 0</Item>
+              <Item>-1, 1, -0.41</Item>
               <Item>-1, 2, 0</Item>
-              <Item>-2.14, 2.05, 0</Item>
+              <Item>-2.14, 2.05, -0</Item>
               <Item>-1.96, 0.95, 0</Item>
             </p:Value>
           </Pad>
@@ -801,7 +802,7 @@
             <Pin Id="NvlSLl5QziIPmS2yodyt4S" Name="Up Vector" Kind="InputPin" DefaultValue="0, 1, 0" />
             <Pin Id="SUMjPZdsUWRODgmlIspoi9" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="ErkyOuKsUEDO7ivlf5LtOp" Bounds="1155,461,320,147" ShowValueBox="true" isIOBox="true" Value="TO DO: FIX this up so it uses appropraite 'look ahead' pairs for AlignToPath. ensure last one isn't monged up&#xD;&#xA;&#xD;&#xA;Then get different shapes at the generation with different counts, look in PolyTube and do the 'Height' averaging ">
+          <Pad Id="ErkyOuKsUEDO7ivlf5LtOp" Bounds="1189,343,381,525" ShowValueBox="true" isIOBox="true" Value="TO DO: &#xD;&#xA;&#xD;&#xA;Draw Arrows Stride3D line util&#xD;&#xA;&#xD;&#xA;Add helper arrows to start of polygonoutlines&#xD;&#xA;&#xD;&#xA;FIX this up so it uses appropraite 'look ahead' pairs for AlignToPath. ensure last one isn't monged up&#xD;&#xA;&#xD;&#xA;Add helper arrows on align to path points.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Then fix different shapes at the generation with different counts, look in PolyTube and do the 'Height' averaging ... if it even works there... maybe you have to transform afterwards. OR work on completely 3D polys&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Get control of the rotations... (by controlling the B-spline? Where do these come from? maybe need to make more conncious b-splines with specific twist.) .. Why does a direction have a twist... hmm. Maybe two b splines tells us about twist... ) watch the video again?&#xD;&#xA;&#xD;&#xA;make it useful for tree branches... try with data you expect to provide.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -810,7 +811,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="EMTbaR2j82hMyVbCak6jQv" Comment="Count" Bounds="492,113,35,15" ShowValueBox="true" isIOBox="true" Value="20">
+          <Pad Id="EMTbaR2j82hMyVbCak6jQv" Comment="Count" Bounds="492,113,35,15" ShowValueBox="true" isIOBox="true" Value="8">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -923,9 +924,9 @@
         <Link Id="I6JnHKn7oIYLDxou42m4Uu" Ids="SUMjPZdsUWRODgmlIspoi9,K521AJYFr1TN3FtW1KhlXF" />
         <Link Id="P6cyGEw0IT0OpNAVyXubcU" Ids="EMTbaR2j82hMyVbCak6jQv,Ly3V4OSUNwuOoZT7X6sl4M" />
         <Link Id="RZxBVUP1fJTLsJ4UDh5S3B" Ids="EMTbaR2j82hMyVbCak6jQv,HmyJhI0xytlLD9eKI2PQBi" />
-        <Link Id="JaWe4noIRv9MN2osuR3HA4" Ids="JYE6IeAvHzHLrjmDOaCppO,MQ67gKSyysCMC04GmDEQHc" />
         <Link Id="RZRpjjdOVwaPUm9ShHe05u" Ids="UVEfp748FdxO2QL04b8ROu,Q5tiGFlqvXdNrc3DaDGh9M" />
         <Link Id="VGwsI01EaE3MkRIsd0Jfib" Ids="Q5tiGFlqvXdNrc3DaDGh9M,EW7bsJjMyBTLHIfPspgqXp" />
+        <Link Id="GFBLIsmlfXGO5pmVXvYpZB" Ids="JYE6IeAvHzHLrjmDOaCppO,MQ67gKSyysCMC04GmDEQHc" />
       </Patch>
     </Node>
   </Patch>

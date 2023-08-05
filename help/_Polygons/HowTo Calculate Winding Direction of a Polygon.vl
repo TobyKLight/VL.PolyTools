@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="TRTI3yc0q99L935qCpbpow" LanguageVersion="2021.4.10.1043" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="TRTI3yc0q99L935qCpbpow" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
   <Patch Id="Ed55GgRfMEFOETbL8MnS8x">
     <Canvas Id="O4oLBMS1RBMMMjWiaXe65n" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,38 +15,49 @@
       <Patch Id="UHokDgUsvQMPFdnLp76JCk">
         <Canvas Id="EzeMGfZkXcSLaZnjoauakd" CanvasType="Group">
           <Node Bounds="804,387,46,26" Id="PyuEtfeWx9yMqPLDoGuAlL">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon" />
+              <CategoryReference Kind="RecordType" Name="Polygon" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="PolyTools" NeedsToBeDirectParent="true" />
+              </CategoryReference>
               <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
+            <Pin Id="MY0E8SxK3k6QW143zeHtAa" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="HsWSZZnIvVnOXUvXMsiTiB" Name="OuterContour" Kind="InputPin" />
             <Pin Id="AMeFiBRUfaoQDrap2W6J7C" Name="HoleContours" Kind="InputPin" />
             <Pin Id="GbOdYxpIk1wOQ572bLJTLE" Name="Output" Kind="StateOutputPin" />
             <Pin Id="GXhZHZxCy3HM4wXQ3uLhcu" Name="SuccessFindBounds" Kind="OutputPin" />
           </Node>
-          <Node Bounds="804,803,145,19" Id="AAWefQRgRE3PbhqIwQknyx">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+          <Node Bounds="784,938,145,19" Id="AAWefQRgRE3PbhqIwQknyx">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="VfSCOVWxLJvM1dLZB88Qpc" Name="Bounds" Kind="InputPin" DefaultValue="828, 28, 646, 460" />
+            <Pin Id="VfSCOVWxLJvM1dLZB88Qpc" Name="Bounds" Kind="InputPin" DefaultValue="828, 28, 645, 460" />
+            <Pin Id="FF6yFTrxpv5PWx4oGDjBKS" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SEr1rrMEjZ0N6YLBSUfu3Z" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DnPpF0WBiddL2B5j0Iw4SE" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Neisn8vVUrJQd96MhRj2VD" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="Quxi0bJrdQYNJy8MdJjhFZ" Name="Input" Kind="InputPin" />
             <Pin Id="CQGSGtWp7OCPoBhwShdZwQ" Name="Color" Kind="InputPin" />
             <Pin Id="VZLPANIM47XPAxTeBxkrhV" Name="Clear" Kind="InputPin" />
             <Pin Id="NzW06FSvaaGP953yzxsvaC" Name="Space" Kind="InputPin" />
             <Pin Id="Uq9bXgKTC1bQRDGAx2xvFL" Name="Show Cursor" Kind="InputPin" />
             <Pin Id="Kw7dU3Se1jpNFxf51KYkgm" Name="VSync" Kind="InputPin" />
+            <Pin Id="UF7Umf4ZuFJOFiyo2HRcUj" Name="Enable Keyboard Shortcuts" Kind="InputPin" IsHidden="true" />
             <Pin Id="R8S4m5byZJ7LgkuSa08vBH" Name="Enabled" Kind="InputPin" />
+            <Pin Id="E4js1cRdU15OuYDl6PSq0n" Name="Form Bounds Notifications" Kind="OutputPin" IsHidden="true" />
             <Pin Id="TiYn23gLyPRMsWSFv5xb9o" Name="Form" Kind="OutputPin" />
             <Pin Id="QpCtbsMjkeLMxswQpYOjHl" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="VkaIXCJmosmNcXIwexnKwY" Name="Render Time" Kind="OutputPin" />
           </Node>
           <Node Bounds="804,188,85,19" Id="Dkz327BAJ3cMbg3yt2Gas2">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="CircleSpread" />
             </p:NodeReference>
+            <Pin Id="OCk4xQXjQzQL2uzP2CH9zJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="SawOdBvET19OZDsLjhGIpU" Name="Center" Kind="InputPin" />
             <Pin Id="GNFe16qdC34Mz86WWiCA6F" Name="Width" Kind="InputPin" />
             <Pin Id="LDZNxeB9FMfOFDqPimaj2L" Name="Factor" Kind="InputPin" />
@@ -55,10 +66,11 @@
             <Pin Id="HgQH054J6PmOEN6QSnPPYJ" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="858,299,85,19" Id="R4KqAz48GtQOlKuqbkjQKE">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="StarSpread" />
             </p:NodeReference>
+            <Pin Id="UsZwWqmOAhVPs7lbIgGpnh" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="BE9zU2536DLNC8alcGPnAH" Name="Center" Kind="InputPin" />
             <Pin Id="B26FyC8qBATORkWFq2dXKr" Name="Radius 1" Kind="InputPin" DefaultValue="0.12" />
             <Pin Id="RE3pBvTJGq3N6EusdOYW1E" Name="Radius 2" Kind="InputPin" DefaultValue="0.35" />
@@ -67,7 +79,7 @@
             <Pin Id="QxgTEHHKf54MqLKmUW3p8U" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="858,362,65,19" Id="VSU7uScI0A5PELMidIBYTI">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="FromValue" />
               <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -75,21 +87,24 @@
             <Pin Id="IJpO3DIVziOL1Clsr0Fb3v" Name="Input" Kind="InputPin" />
             <Pin Id="EYMTiwgVDDnPUBzzqBuIk6" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="804,755,110,19" Id="DZgaitxu3xJMGj1iKnfxxx">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastSymbolSource="VL.PolyTools.vl">
+          <Node Bounds="805,853,145,19" Id="DZgaitxu3xJMGj1iKnfxxx">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawPolygonsDebug (Skia)" />
             </p:NodeReference>
+            <Pin Id="LxRX127yiO3OrYZZ8PBgrN" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Nh2vy9wZuUcLOu6Iuv5InZ" Name="Polygons" Kind="InputPin" />
             <Pin Id="Mqca99QmpZqQHubrdbVX27" Name="ShowFill" Kind="InputPin" />
             <Pin Id="S6qSPoNqW8sNIs9b5HYyGL" Name="ShowDirectionArrows" Kind="InputPin" DefaultValue="True" />
             <Pin Id="Cr7D05nMcBnL2vIBS9APmh" Name="ShowIndex" Kind="InputPin" />
             <Pin Id="GbaxG6AWrzxML4SRnepd2T" Name="ShowBounds" Kind="InputPin" />
             <Pin Id="IZzdk2AzH59PNLK4tyaDTV" Name="ShowPoints" Kind="InputPin" />
+            <Pin Id="EOnOggfbdXlN3hBBK76myT" Name="UseCustomHueSpread" Kind="InputPin" />
+            <Pin Id="Qacy25kzvCJLGW0P7LJ6kW" Name="CustomHueSpread" Kind="InputPin" />
             <Pin Id="Iv0jKwbHeihLYzpy91oBUs" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="804,711,65,19" Id="OF8dKXBaK8yLkv6hDVr1eB">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="FromValue" />
               <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -97,17 +112,19 @@
             <Pin Id="BC2K2u6Jb9DPD1AGi7vxeB" Name="Input" Kind="InputPin" />
             <Pin Id="NA400EMSpYjQQAe6QorGlZ" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="945,582,94,19" Id="OijrlxNErRsOUupbXVYdC9">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastSymbolSource="VL.PolyTools.vl">
+          <Node Bounds="1029,678,94,19" Id="OijrlxNErRsOUupbXVYdC9">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="WindingDirection" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="TlsEEKs6V20PtbNXkwB4hP" Name="PolygonPointSpread" Kind="InputPin" />
+            <Pin Id="KIqXleaGiRsNIMFyPzJDr5" Name="YIncreasesDownward" Kind="InputPin" />
+            <Pin Id="MSzWHSuK8NeOWGVIQEKSRu" Name="WindingSum" Kind="OutputPin" IsHidden="true" />
             <Pin Id="GjetQbzLVtUN2gn50enjTM" Name="IsClockwise" Kind="OutputPin" />
           </Node>
           <Node Bounds="858,328,51,26" Id="TDowJCnsaoZLB3F6CrU1Cq">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Reverse" />
               <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -117,7 +134,7 @@
             <Pin Id="C2HqO3fEiqgPBgPZdywDMj" Name="Apply" Kind="InputPin" />
           </Node>
           <Pad Id="VncTgegr7xWNsOv6mUHPla" Comment="ReverseHole" Bounds="963,293,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -126,7 +143,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="FolAz0FjgqjLOC6sMR2kmH" Comment="ReverseOuter" Bounds="869,225,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -135,7 +152,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="804,259,51,26" Id="LFEuNSgoqUHNA7fVasrjCh">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Reverse" />
               <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -144,20 +161,21 @@
             <Pin Id="PJ5ceTdeg02PbDIYowlXe8" Name="Output" Kind="StateOutputPin" />
             <Pin Id="OoLDGMPZ9TZLqF425fR4J5" Name="Apply" Kind="InputPin" />
           </Node>
-          <Node Bounds="945,455,65,26" Id="IhFqv0dFm9CN3kPPA66SOO">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastSymbolSource="VL.PolyTools.vl">
+          <Node Bounds="1034,465,65,26" Id="IhFqv0dFm9CN3kPPA66SOO">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon" />
               <Choice Kind="OperationCallFlag" Name="Split" />
             </p:NodeReference>
             <Pin Id="QoltYtj90eLNtrxA0bpAbD" Name="Input" Kind="StateInputPin" />
+            <Pin Id="E5K0KFRs2DsQLYvA3RZBhR" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="B7u9oIzcNV0LdHqmfijUjd" Name="OuterContour" Kind="OutputPin" />
             <Pin Id="VvEYICImOpRP9SbhD6GNbq" Name="HoleContours" Kind="OutputPin" />
             <Pin Id="GlD40t1aMRTOXW33y9onfs" Name="Bounds" Kind="OutputPin" />
             <Pin Id="T6yNUvMoYkIP9eKIxzEzbc" Name="SuccessFindBounds" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1110,503,56,26" Id="LY2cA0bUQ71O2K6XDZMKwj">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+          <Node Bounds="1144,500,56,26" Id="LY2cA0bUQ71O2K6XDZMKwj">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SplitFirst" />
               <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -167,16 +185,157 @@
             <Pin Id="FEfTpOYG9pTP5jNZaDfESY" Name="Output" Kind="StateOutputPin" />
             <Pin Id="D8B3UTz91laOqnNkVcuNs6" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="F1bK4NqFOVoL0RkZa64PHP" Comment="OuterIsClockwise" Bounds="945,619,35,35" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="1110,582,94,19" Id="OqPB6vKMJHQPuDN0s8igfb">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastSymbolSource="VL.PolyTools.vl">
+          <Pad Id="F1bK4NqFOVoL0RkZa64PHP" Comment="OuterIsClockwise" Bounds="1029,715,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="1194,678,94,19" Id="OqPB6vKMJHQPuDN0s8igfb">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="WindingDirection" />
             </p:NodeReference>
             <Pin Id="GKPC2gICe5OOcf3XYKRN3m" Name="PolygonPointSpread" Kind="InputPin" />
+            <Pin Id="APCAfndz52zL72qgsna7IE" Name="YIncreasesDownward" Kind="InputPin" />
+            <Pin Id="CXeJzoxI725LKpHu2QsTG0" Name="WindingSum" Kind="OutputPin" IsHidden="true" />
             <Pin Id="Dup08uhJ7icP5IvwK0s560" Name="IsClockwise" Kind="OutputPin" />
           </Node>
-          <Pad Id="F74gEDmLS7GOvYneURNuTS" Comment="HoleIsClockwise" Bounds="1110,619,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="F74gEDmLS7GOvYneURNuTS" Comment="HoleIsClockwise" Bounds="1194,715,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GwgceERu2LhP2WHXLoiGmH" Bounds="1263,32,140,19" ShowValueBox="true" isIOBox="true" Value="https://www.element84.com/blog/determining-the-winding-of-a-polygon-given-as-a-set-of-ordered-points#:~:text=Winding%20can%20be%20either%20clockwise,down%20at%20the%20coordinate%20plane.&amp;text=In%20figure%201%2C%20the%20vertices,CCW%20winding%20on%20the%20right.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CXpQZ4GUEFDNkQJLp0fKBZ" Bounds="1111,33,153,19" ShowValueBox="true" isIOBox="true" Value="Uses method from here:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Gdg4hAh1JKOOJHbgNQp884" Bounds="1112,59,451,57" ShowValueBox="true" isIOBox="true" Value="there are faster methods but this one should handle many complex polygons with self intersection etc.&#xD;&#xA;It still fails on some special cases like perfect figure 8.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="U2mXlVkgzhjNaZtbkRwglt" Bounds="1239,208,219,19" ShowValueBox="true" isIOBox="true" Value="in SKIA SPACE">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="V2SZ5Nu5grgODrPdhuHViY" Bounds="1253,228,221,19" ShowValueBox="true" isIOBox="true" Value="Y increases DOWNWARD">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TNBBsMjBHxkNiGwryqKu1i" Bounds="1235,162,281,51" ShowValueBox="true" isIOBox="true" Value="The formula is for a generic mathematical space where Y increases upward. ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MYRVuRGzpIMLtA1RZbmi9N" Bounds="1238,279,219,19" ShowValueBox="true" isIOBox="true" Value="in Stride space">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="B0ahX9oLgINNwe11SKHkeR" Bounds="1252,299,283,41" ShowValueBox="true" isIOBox="true" Value="XY where Y is 'ascending' then Y increases UPWARDS so use the result as is">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VQSjwpiqnB3MyReyyLqX1u" Bounds="1254,246,221,19" ShowValueBox="true" isIOBox="true" Value="so the result must be flipped">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="G9JuqwvXrgrM0TRCSVwJbO" Bounds="1252,360,311,70" ShowValueBox="true" isIOBox="true" Value="XZ when looking from above then Z increases DOWNARDS so result must be flipped&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Uxo3QPX5qFlORvoUOo1hZn" Bounds="1251,420,311,70" ShowValueBox="true" isIOBox="true" Value="ZY when looking from the side then Y increases UPWARDS so use the result as is">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QB9usUH25VHQcHliVn2T2C" Comment="YIncreasesDownward" Bounds="1121,580,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="T9x8JfrKTiHQB2d6HLQAiT" Comment="YIncreasesDownward" Bounds="1288,580,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="D7iOVwGfH3xOjiOlHqWvfg" Name="2. Set YIncreasesDownward appropriately for space" Bounds="1076,535,621,103" />
+          <Overlay Id="GPGiCNsH010ON6k7E19mHA" Name="1. Create Polygons" Bounds="770,124,333,320" />
+          <Pad Id="J7rov6o2rJbQRVertNlbil" Bounds="783,162,305,32" ShowValueBox="true" isIOBox="true" Value="optionally reverse the order to see result at step 3 change">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UQiS7VppSrnPFiiWoVKClA" Bounds="1563,552,70,19" ShowValueBox="true" isIOBox="true" Value="see above">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="AulmVAaP3ADO1pyShJP74h" Name="3. Get result" Bounds="998,650,621,103" />
+          <Overlay Id="PizwhHEjNW1O3aowkKqAeX" Name="4. Optionally visualise with DrawPolygonsDebug" Bounds="767,773,305,133" />
         </Canvas>
         <Patch Id="MZt2LNeMCGlPBRSiSJjuBM" Name="Create" />
         <Patch Id="KDLo0labcwKLEvSSaZD4He" Name="Update" />
@@ -200,10 +359,12 @@
         <Link Id="UIQQpyxVUbCMktyxJ7Vroa" Ids="B7u9oIzcNV0LdHqmfijUjd,TlsEEKs6V20PtbNXkwB4hP" />
         <Link Id="BZwMWJDJXK9P1omJbLGMNE" Ids="Dup08uhJ7icP5IvwK0s560,F74gEDmLS7GOvYneURNuTS" />
         <Link Id="Tml7y4moz7VODegczSTtFF" Ids="D8B3UTz91laOqnNkVcuNs6,GKPC2gICe5OOcf3XYKRN3m" />
+        <Link Id="RCLktApAktBLDpqBhzxZBL" Ids="QB9usUH25VHQcHliVn2T2C,KIqXleaGiRsNIMFyPzJDr5" />
+        <Link Id="GPDEtkvyeTONeGSYY5KdVv" Ids="T9x8JfrKTiHQB2d6HLQAiT,APCAfndz52zL72qgsna7IE" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="DRDbgs9P3x4L7NdkD91wYh" Location="VL.CoreLib" Version="2021.4.10" />
-  <NugetDependency Id="Mogp1CuJOEBPzbABXBIByf" Location="VL.Skia" Version="2021.4.10" />
+  <NugetDependency Id="DRDbgs9P3x4L7NdkD91wYh" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
+  <NugetDependency Id="Mogp1CuJOEBPzbABXBIByf" Location="VL.Skia" Version="2023.5.3-0088-gd2b84ddcc4" />
   <DocumentDependency Id="P9muvXCAZs3Nrl2NwbyXca" Location="../../VL.PolyTools.vl" />
 </Document>

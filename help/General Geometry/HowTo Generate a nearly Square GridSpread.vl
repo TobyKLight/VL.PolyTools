@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GU0R8DSvZEfPgflZY7JVbe" LanguageVersion="2021.4.11.1312" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="GU0R8DSvZEfPgflZY7JVbe" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
   <Patch Id="NkKuPohZX9fLN1apOOtNzh">
     <Canvas Id="KZ5dPqEdDs8Oj32LBtLdzS" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory">
       <!--
@@ -36,32 +36,39 @@
       <Patch Id="RIOydOcTB8SN5uXpZqy9fC">
         <Canvas Id="EIynkk7p9QEPvNmOludMCq" CanvasType="Group">
           <Pad Id="RsOTP8yadHWP1mbVGzYRTT" Comment="Count" Bounds="392,919,48,15" ShowValueBox="true" isIOBox="true" Value="8">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="247,1042,145,19" Id="IQxCbtLqfFXOh0QY9MtNv8">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="IPvio9cASL5LxtLPuHymyt" Name="Bounds" Kind="InputPin" DefaultValue="867, 17, 612, 436" />
+            <Pin Id="IPvio9cASL5LxtLPuHymyt" Name="Bounds" Kind="InputPin" DefaultValue="866, 16, 612, 436" />
+            <Pin Id="TX3aQIjyUeUMucCutTFs0H" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
+            <Pin Id="PxTCqNvgRJHOFzxQ3NJqZ4" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VUp1One9NpKQcyvn4rooYm" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Nkw3Y9plxJQQI0ndq69WZE" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="Low2XCCHcm0LFigRT4e1uQ" Name="Input" Kind="InputPin" />
             <Pin Id="FnDGbsOcmemP9B4ZwY4Rou" Name="Color" Kind="InputPin" />
             <Pin Id="H4NFwCgKq4nP1FQ1eTZXQC" Name="Clear" Kind="InputPin" />
             <Pin Id="IEzTTk8UIFQOF8vwRalS4D" Name="Space" Kind="InputPin" />
             <Pin Id="Hx8a2auVXOKMnkokxxXDdg" Name="Show Cursor" Kind="InputPin" />
             <Pin Id="J7MdMQrJhYRMgdmM99nVzF" Name="VSync" Kind="InputPin" />
+            <Pin Id="IMqtYfJ7g3bP4KFciMgqcL" Name="Enable Keyboard Shortcuts" Kind="InputPin" IsHidden="true" />
             <Pin Id="KoWobim6KdIMh5GjV6ATJ1" Name="Enabled" Kind="InputPin" />
+            <Pin Id="ASngPc2FWOPNnICRuByt9L" Name="Form Bounds Notifications" Kind="OutputPin" IsHidden="true" />
             <Pin Id="KkNuvxnrkxaPfipgZgdmMK" Name="Form" Kind="OutputPin" />
             <Pin Id="OJRwAtlycPVLTH0F9PYPHC" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="UX0Bzj3Na5kPD5I6i8DM4i" Name="Render Time" Kind="OutputPin" />
           </Node>
           <Node Bounds="268,1006,85,19" Id="OsrA4cvSNqDLXP0H2G0AAl">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Points" />
             </p:NodeReference>
+            <Pin Id="BVaclbPydSzLg0tGCKLQYu" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="QRCEKbUDBUnOHhQRV8rsNj" Name="Points" Kind="InputPin" />
             <Pin Id="L7dpsM8COmwNSBMmdFNn4B" Name="Size" Kind="InputPin" />
             <Pin Id="LTdQsvYmiZ6QKGhk3IydUT" Name="Shape" Kind="InputPin" />
@@ -70,7 +77,7 @@
             <Pin Id="DELgrf51pP6LmJPY792wdg" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="NBRAE0pE034MTskfKa4HZb" Bounds="223,447,398,252" ShowValueBox="true" isIOBox="true" Value="Purpose: Generate a grid based on a single count input, close to square as possible. &#xD;&#xA;Usecase: Auto position menu icons etc.&#xD;&#xA;&#xD;&#xA;Handles these cases:&#xD;&#xA;-Count has a whole integer square root. (Eg count of 9 makes a perfect 3 x 3 grid) &#xD;&#xA;-Otherwise has two modes: &#xD;&#xA;--Normal will do the smaller grid and an extra partial row (Eg count of 10 makes a 3 x 3 grid plus 1 more)&#xD;&#xA;--RoundUp mode will build a larger grid with potentially multiple partial rows. (Eg count of 10 makes a 4 x 4 grid with two partial rows)">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -79,10 +86,11 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="268,944,125,19" Id="Bm7FqZVc6QpOajhOiAq7fJ">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SquareGridSpread" />
             </p:NodeReference>
+            <Pin Id="N1jMgATXhaANNKIWYwVmid" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Q9WeN4YyN5WQOlU7GSnTe6" Name="Center" Kind="InputPin" />
             <Pin Id="De3Q9HJHfZEOvfeCEeOeEw" Name="Width" Kind="InputPin" />
             <Pin Id="LCbN4tXV6TbP56JToyVy7r" Name="Alignment" Kind="InputPin" />
@@ -93,12 +101,12 @@
             <Pin Id="Nna6Fu0oX3fME8CyrJrzgB" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="LgEyWYJdTstQP21U7USh7g" Comment="Width" Bounds="289,716,35,28" ShowValueBox="true" isIOBox="true" Value="1, -1">
-            <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="N3Ybf9fYc96PyW7eriFway" Bounds="341,726,285,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;use negative width to flip it in any direction">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -107,7 +115,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="OGm8cuRx5v3Ocdaiupa2jk" Bounds="485,915,103,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;single count">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -116,7 +124,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="USx097wLiE4QHbB1w7GoQM" Comment="RoundUp" Bounds="370,822,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -125,7 +133,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="Kzjioy7rin3MmewJo6jlAr" Comment="XYSwap" Bounds="353,778,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -134,7 +142,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="ScWIpMJPocPPToYtMiNnZ2" Bounds="414,788,171,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Rotate non square grids">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -143,7 +151,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="HLCr0K6qyIBNBHX2QSYrFA" Bounds="416,838,358,73" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;RoundUp the grid dimension. With RoundUp OFF count of 10 will result in a 3x3 grid plus 1. With RoundUp ON count of 10 will result in a 4x4 grid minus 6">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -152,7 +160,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="B3B0SjTvQNMMvh4JtqWZ5J" Bounds="223,382,381,19" ShowValueBox="true" isIOBox="true" Value="Originally an answer to this forum post by Szerg">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -161,7 +169,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="LGo539yT5ZyQGsxYRL7DrR" Bounds="223,403,140,19" ShowValueBox="true" isIOBox="true" Value="https://discourse.vvvv.org/t/int-to-grid-vec2/20909/6">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -185,7 +193,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JJuSS7rMWjHNac1CUXpW2W" Location="VL.CoreLib" Version="2021.4.11-1312-ga0521d8f1e" />
-  <NugetDependency Id="QY8gI5jPEKtLviRUb1mnzQ" Location="VL.Skia" Version="2021.4.11-1312-ga0521d8f1e" />
+  <NugetDependency Id="JJuSS7rMWjHNac1CUXpW2W" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
+  <NugetDependency Id="QY8gI5jPEKtLviRUb1mnzQ" Location="VL.Skia" Version="2023.5.3-0088-gd2b84ddcc4" />
   <DocumentDependency Id="AoD5tkg6G0oMlbVbCFSYtD" Location="../../VL.PolyTools.vl" />
 </Document>

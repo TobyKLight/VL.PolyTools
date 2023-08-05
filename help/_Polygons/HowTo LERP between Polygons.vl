@@ -40,9 +40,12 @@
           <Pad Id="DpJ2mByuXPzQIKMVnawU1D" SlotId="RpeMo7J0QCBOSox3w2IbBl" Bounds="227,465" />
           <Pad Id="CADEcq4rcDvQCRvcJ0Ijx5" SlotId="BB9LvMaxLVtNoN7hEnZxe7" Bounds="525,458" />
           <Node Bounds="520,349,46,26" Id="UJclGXmp4I5QPGDy05sqcZ">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon" />
+              <CategoryReference Kind="RecordType" Name="Polygon" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="PolyTools" NeedsToBeDirectParent="true" />
+              </CategoryReference>
               <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
             <Pin Id="CgBLbZmqIIBNio0PSzRHRd" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -123,9 +126,12 @@
             <Pin Id="TeymDJZMDSLO2ib697POFm" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="207,358,46,26" Id="HgMXj7UEs4NN657yCZDEtA">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon" />
+              <CategoryReference Kind="RecordType" Name="Polygon" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="PolyTools" NeedsToBeDirectParent="true" />
+              </CategoryReference>
               <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
             <Pin Id="Fb5X22zE811PkQU9WVMNDC" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -382,24 +388,26 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="4194,1026,245,19" Id="FYdat5CzGOjK961ftLkoV0">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="VL.Polytools.Stride.PolygonTube.vl">
+          <Node Bounds="4194,1026,305,19" Id="FYdat5CzGOjK961ftLkoV0">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="PolyTube (2D+Y)" />
+              <Choice Kind="ProcessAppFlag" Name="PolyTube" />
             </p:NodeReference>
-            <Pin Id="JxTYcGReu6hMbVUV5OuTXS" Name="Node Context" Kind="InputPin" />
+            <Pin Id="JxTYcGReu6hMbVUV5OuTXS" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="NVZksGuOeyFNujzFw8Gg6b" Name="Polygon3D" Kind="InputPin" />
+            <Pin Id="OTRifPqqCAILnsJzqqOCMQ" Name="ForceUseCompositeShapes" Kind="InputPin" />
+            <Pin Id="AWl6AXLdXEMPqaMS5hp52L" Name="UVCalcMode" Kind="InputPin" />
+            <Pin Id="FFqsMt6SeaRO32qIinDHPA" Name="UVOffset" Kind="InputPin" />
+            <Pin Id="StpDb7vD2j6MY4pbwvqGSa" Name="UVScale" Kind="InputPin" />
+            <Pin Id="QSnimhkZwjxOy2lD40jrgH" Name="AutoRotationCorrection" Kind="InputPin" />
+            <Pin Id="NaEEBxY8YyFO8MQiP5s2h6" Name="AutoOriginCorrection" Kind="InputPin" />
             <Pin Id="SzK5OeyrKttPN6hWsNF5TD" Name="Transformation" Kind="InputPin" />
             <Pin Id="H9thesDzqrXQKPzCXRj76W" Name="Material" Kind="InputPin" />
             <Pin Id="AzylnD3suCnL6jpb9bPMV4" Name="Is Shadow Caster" Kind="InputPin" />
-            <Pin Id="RvhSjoxqBsjOetodhFSREh" Name="Polygons" Kind="InputPin" />
             <Pin Id="R1tsJL5ZhlhOIbjqoHOtfx" Name="Components" Kind="InputPin" />
             <Pin Id="Da2IBYlglRBMdRCQvA4jni" Name="Children" Kind="InputPin" />
             <Pin Id="LihdyuhXFfWPxG1S4sdUVK" Name="Name" Kind="InputPin" />
             <Pin Id="InzxCHn6jIKLPlODN7By5D" Name="Enabled" Kind="InputPin" />
-            <Pin Id="DEd3FL1j788Nk0TdKii9pM" Name="Heights" Kind="InputPin" />
-            <Pin Id="OTRifPqqCAILnsJzqqOCMQ" Name="ForceUseCompositeShapes" Kind="InputPin" />
-            <Pin Id="QSnimhkZwjxOy2lD40jrgH" Name="AutoRotationCorrection" Kind="InputPin" />
-            <Pin Id="NaEEBxY8YyFO8MQiP5s2h6" Name="AutoOriginCorrection" Kind="InputPin" />
             <Pin Id="QvTF3iC56tfOVrPjaYP7JA" Name="Entity" Kind="OutputPin" />
           </Node>
           <Node Bounds="4165,1240,225,19" Id="EwhV83mk432NGjo0Orj5v1">
@@ -477,7 +485,7 @@
             <Pin Id="Nu6p5lfx39aLzPXEDYvuzJ" Name="Enabled" Kind="InputPin" />
             <Pin Id="OkBX3WquB8TPTLfzWQQDFU" Name="Entity" Kind="OutputPin" />
           </Node>
-          <Pad Id="FCLWF2O1tkfLeeDoDC4AXy" Comment="Heights" Bounds="4348,964,35,49" ShowValueBox="true" isIOBox="true" Value="-0.02, 0.85">
+          <Pad Id="FCLWF2O1tkfLeeDoDC4AXy" Comment="Heights" Bounds="4246,792,35,49" ShowValueBox="true" isIOBox="true" Value="-0.02, 0.85">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -487,9 +495,9 @@
               </p:TypeArguments>
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="CRkCDgUGv4sOgMqLLXZGrg" SlotId="RpeMo7J0QCBOSox3w2IbBl" Bounds="4338,815" />
-          <Pad Id="EEjDsdKt7NgMuzaBYm5nyk" SlotId="BB9LvMaxLVtNoN7hEnZxe7" Bounds="4376,840" />
-          <Node Bounds="4338,868,39,19" Id="G85o4FuxUA9OgV7KGlZuQK">
+          <Pad Id="CRkCDgUGv4sOgMqLLXZGrg" SlotId="RpeMo7J0QCBOSox3w2IbBl" Bounds="4182,762" />
+          <Pad Id="EEjDsdKt7NgMuzaBYm5nyk" SlotId="BB9LvMaxLVtNoN7hEnZxe7" Bounds="4220,787" />
+          <Node Bounds="4182,815,39,19" Id="G85o4FuxUA9OgV7KGlZuQK">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -499,7 +507,7 @@
             <Pin Id="SJ3WNei1B2wP5jni5eyHOH" Name="Input 2" Kind="InputPin" />
             <Pin Id="N9xIkO5RWbZPbebcb7c4Th" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="4241,1083,86,19" Id="RdbBg2S6b9JLPk0EKVhIHy">
+          <Node Bounds="4241,1083,165,19" Id="RdbBg2S6b9JLPk0EKVhIHy">
             <p:NodeReference LastCategoryFullName="VL.PolyTools" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawWireframe (Stride)" />
@@ -518,7 +526,7 @@
             <Pin Id="LvngQI1D2ZtLeI4sOZ6dcn" Name="Output" Kind="OutputPin" />
             <Pin Id="QRVtyybBDgZPsunZa1w7lg" Name="TangentRetrieveSuccess" Kind="OutputPin" />
           </Node>
-          <Node Bounds="4218,960,85,19" Id="I4g6Nhzwi5lMnNvPi1RGqk">
+          <Node Bounds="4300,966,85,19" Id="I4g6Nhzwi5lMnNvPi1RGqk">
             <p:NodeReference LastCategoryFullName="Stride.Materials" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PBRMaterial" />
@@ -580,7 +588,7 @@
                 </Node>
                 <ControlPoint Id="FKDGFImKuVxL6aIVe1yJTO" Bounds="1023,299" />
                 <Node Bounds="1017,348,96,19" Id="EKyp4UxELNEPcCYcZzYaKr">
-                  <p:NodeReference LastCategoryFullName="Polygon" LastDependency="VL.PolyTools.PolygonLERP.vl">
+                  <p:NodeReference LastCategoryFullName="Polygon" LastDependency="VL.PolyTools.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Category" Name="Polygon" />
                     <Choice Kind="OperationCallFlag" Name="LineSegmentPairs" />
@@ -1897,7 +1905,7 @@
             <Pin Id="K4KO4X4rii6LBF6UiwNpbg" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="SeA5F47VgEEMtDL3e3Pc07" SlotId="BB9LvMaxLVtNoN7hEnZxe7" Bounds="2266,978" />
-          <Node Bounds="2425,856,112,19" Id="Kr3K1S2OgsuOhzQhxsAknr">
+          <Node Bounds="2432,869,112,19" Id="Kr3K1S2OgsuOhzQhxsAknr">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo LERP between Polygons.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="EdgeMappingPreview" />
@@ -2422,7 +2430,7 @@
             <Pin Id="Gr4Se9R82eePlbgdMlDabb" Name="Input" Kind="StateInputPin" />
             <Pin Id="NaD4Q1NAgnfO19ShJOMFcA" Name="Count" Kind="OutputPin" />
           </Node>
-          <Node Bounds="185,504,65,26" Id="P87OP592CauNgcgNzJhZA6">
+          <Node Bounds="185,504,85,26" Id="P87OP592CauNgcgNzJhZA6">
             <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Polygon" />
@@ -2435,7 +2443,7 @@
             <Pin Id="UsRtU8ij7aBObuPTNzKw49" Name="Bounds" Kind="OutputPin" />
             <Pin Id="IkksZ8b8PGMPJeYShIAV1c" Name="SuccessFindBounds" Kind="OutputPin" />
           </Node>
-          <Node Bounds="279,507,65,26" Id="NeHyuhoNvEhL8UVvIesx4W">
+          <Node Bounds="279,507,85,26" Id="NeHyuhoNvEhL8UVvIesx4W">
             <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Polygon" />
@@ -2679,7 +2687,7 @@
             <Pin Id="TukEVzOYsTBOARmrPeHjlM" Name="SKPath" Kind="InputPin" />
             <Pin Id="TeHELDT5a2IOUVcadAePW8" Name="PolyPaths" Kind="OutputPin" />
           </Node>
-          <Node Bounds="11,227,95,26" Id="O4jCoclF5HOOkHYwkfPJVc">
+          <Node Bounds="11,227,105,26" Id="O4jCoclF5HOOkHYwkfPJVc">
             <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="PolyPath" />
@@ -2783,7 +2791,44 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <ControlPoint Id="PbKpjS0kf8lOJ2EJ5ePFpS" Bounds="4314,667" />
+          <ControlPoint Id="PbKpjS0kf8lOJ2EJ5ePFpS" Bounds="4297,671" />
+          <Node Bounds="4164,856,111,121" Id="Agq8LIbezg9NkSTpl8Vg4F">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+            </p:NodeReference>
+            <Pin Id="Ua3fXoLbPlFMrxmjBO5pGG" Name="Break" Kind="OutputPin" />
+            <Patch Id="GAG3HDdq1ptNs7TTYYLO23" ManuallySortedPins="true">
+              <Patch Id="UpXK3Hqc0DgL7mayCJpVoz" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="JItyjdlMV9dQO380R0nDJm" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="ACIB46jTosmNAZxfYPd1mk" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="4176,879,55,26" Id="AWgvi9AdGXfO5TCpWGJQhT">
+                <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="RecordType" Name="Polygon3D" />
+                  <Choice Kind="OperationCallFlag" Name="Create" />
+                </p:NodeReference>
+                <Pin Id="RriVAzdLPF6LcbAxKrp9a8" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="GUZNyWKRt2gMEkn3Sk4pwU" Name="Polygon" Kind="InputPin" />
+                <Pin Id="FrEMEjKH8WBPNeHvhlgEfX" Name="HeightMode" Kind="InputPin" />
+                <Pin Id="Gb1RIZ3sEwjMOadieyZwDK" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="4178,931,85,26" Id="TiRbs4WGEzzNMTYw8imeVT">
+                <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="RecordType" Name="Polygon3D" />
+                  <Choice Kind="OperationCallFlag" Name="SetHeightFixed" />
+                </p:NodeReference>
+                <Pin Id="AmrXR3cXT2HNEj7I3R7x3X" Name="Input" Kind="StateInputPin" />
+                <Pin Id="Fm5o8wYW4KtPQSNsxF2pEj" Name="Height" Kind="InputPin" />
+                <Pin Id="Ij9fyaKIp30M9zLho0h1Ft" Name="Output" Kind="StateOutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="PbRXK0laYDyPE0xFwaL4EK" Bounds="4184,862" Alignment="Top" />
+            <ControlPoint Id="RNKpfM5W4PiOjYd62wG9XN" Bounds="4244,862" Alignment="Top" />
+            <ControlPoint Id="Hi2vVHXdXOhQQzWunbuCcd" Bounds="4183,971" Alignment="Bottom" />
+          </Node>
         </Canvas>
         <Patch Id="ClV4RGQft6BN3Hm0iFTNef" Name="Create" />
         <Patch Id="L95dHPwvsG6OPHhbxUXn6k" Name="Update" />
@@ -2814,10 +2859,8 @@
         <Link Id="ToS9m2LZHMiOBOmfIecbyW" Ids="QvTF3iC56tfOVrPjaYP7JA,Ad4kjWXHAIYLPcoSIpUUhP" />
         <Link Id="QCQSTH3ItfIQR2Fld0K6AS" Ids="Kr7v090Fy8GOkS4QwbEwmQ,PxIkuaxDVkFLeryEXw5sWa" />
         <Link Id="K2gbbMEjxv2QYnXhviASR5" Ids="OkBX3WquB8TPTLfzWQQDFU,Tvu6P0g4MbMNHjJ6cevmZ1" />
-        <Link Id="PsQIak4mz6YMD6JgXWYclF" Ids="FCLWF2O1tkfLeeDoDC4AXy,DEd3FL1j788Nk0TdKii9pM" />
         <Link Id="U6jwgdAR34APxsApBKzk7U" Ids="EEjDsdKt7NgMuzaBYm5nyk,SJ3WNei1B2wP5jni5eyHOH" />
         <Link Id="CLIaQQPPoI7ORQ9H64HLk4" Ids="CRkCDgUGv4sOgMqLLXZGrg,V29acMdrvbRLgric94g7qF" />
-        <Link Id="EaM7tF33hxVPpfBjanA6QO" Ids="N9xIkO5RWbZPbebcb7c4Th,RvhSjoxqBsjOetodhFSREh" />
         <Link Id="KPCyUXkOWxpOUI3eoxOMgm" Ids="QvTF3iC56tfOVrPjaYP7JA,AHSHpPU4pVoP6xuPaOzpgx" />
         <Link Id="TUTmqmUqix4PyMFEu9bbvk" Ids="LvngQI1D2ZtLeI4sOZ6dcn,DwJsgMDVccKPdjVEDJRJhD" />
         <Link Id="GcRk3JhMCUdNiuKWuqhVAq" Ids="IHJclYxIMY2PMPSs302PCz,H9thesDzqrXQKPzCXRj76W" />
@@ -3033,6 +3076,13 @@
         <Link Id="IoMl6gqwWT6MxUkFvLDUHB" Ids="LlkQJrMi5DTQZlGZmbJh5K,N4eUSNlq5nMPejvDVcvqCu" />
         <Link Id="TvHPq8evaxTOEQvzLGwmU0" Ids="VczTBmHv073OQHhw9zfdNW,T5kE12nUT0YObI5mkPAWLe" />
         <Link Id="FUa16y2vfZWOTJu35yIb1s" Ids="FxOWDHEUKXOPKm7EVspRYk,KXrAlpVYdheN2Xjq0oM36f" />
+        <Link Id="RLpzaIvEoHkMoyFbLZf8AN" Ids="Gb1RIZ3sEwjMOadieyZwDK,AmrXR3cXT2HNEj7I3R7x3X" />
+        <Link Id="AVajEBQJsfDPeb9LEMRVjF" Ids="N9xIkO5RWbZPbebcb7c4Th,PbRXK0laYDyPE0xFwaL4EK" />
+        <Link Id="P1CnpvSJMicNHihFO4deXh" Ids="PbRXK0laYDyPE0xFwaL4EK,GUZNyWKRt2gMEkn3Sk4pwU" />
+        <Link Id="RPPK4Lhi3DON8Um8Qnwgbb" Ids="FCLWF2O1tkfLeeDoDC4AXy,RNKpfM5W4PiOjYd62wG9XN" />
+        <Link Id="FZXNdGfECKALDXczOwFLS1" Ids="RNKpfM5W4PiOjYd62wG9XN,Fm5o8wYW4KtPQSNsxF2pEj" />
+        <Link Id="BcA3Lk5OgQEMk4BTpFNqdC" Ids="Ij9fyaKIp30M9zLho0h1Ft,Hi2vVHXdXOhQQzWunbuCcd" />
+        <Link Id="LHo7VL7OmAOLZOyp5uWV3V" Ids="Hi2vVHXdXOhQQzWunbuCcd,NVZksGuOeyFNujzFw8Gg6b" />
       </Patch>
     </Node>
   </Patch>

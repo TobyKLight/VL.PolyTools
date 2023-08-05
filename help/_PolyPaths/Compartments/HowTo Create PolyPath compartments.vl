@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="NxZKYfHXH7LOK0JvR7AyRW" LanguageVersion="2021.4.10.1043" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="NxZKYfHXH7LOK0JvR7AyRW" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
   <Patch Id="BRldY97j8orNxbfcJ76rwS">
     <Canvas Id="Sb2Ie3BeZdXONUAVtfNgcc" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -56,27 +56,34 @@
       <Patch Id="N6l5ADraKIvNY8YBZHt3Cc">
         <Canvas Id="QLpTa9es1rqNlvNbHTj3p0" CanvasType="Group">
           <Node Bounds="444,2152,145,19" Id="IEHWoLcmdbfPSTvktrmnyn">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="PqLEP3R6R1OMphAHfiaBxK" Name="Bounds" Kind="InputPin" DefaultValue="853, 33, 661, 458" />
+            <Pin Id="PqLEP3R6R1OMphAHfiaBxK" Name="Bounds" Kind="InputPin" DefaultValue="852, 32, 660, 457" />
+            <Pin Id="RwCmD45JsOuMrkz64q8wlK" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HjLdTairrkjPNHMbp0O86Z" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
+            <Pin Id="ReZl7Le8Xc8LSQHj8SH2Au" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="PpQKjtq4p4ZNEh73JFdAlU" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="NRZAVq4HrJiQX7A0VARhWT" Name="Input" Kind="InputPin" />
             <Pin Id="PcQdFQj1qzENuKprhe6dd6" Name="Color" Kind="InputPin" />
             <Pin Id="N3gxQj6HO8CMV3GxdAhKwi" Name="Clear" Kind="InputPin" />
             <Pin Id="Dcuhm4V5guhOFYKJzCg9TY" Name="Space" Kind="InputPin" />
             <Pin Id="BDuZYV8MUsJNjsGkd0aqKI" Name="Show Cursor" Kind="InputPin" />
             <Pin Id="Em83xjNL0K2MCOlcyf8ElZ" Name="VSync" Kind="InputPin" />
+            <Pin Id="Rs4vArcpCPDOcIfgMG50G2" Name="Enable Keyboard Shortcuts" Kind="InputPin" IsHidden="true" />
             <Pin Id="TpGzzrcUq4OO3ridQNhKbZ" Name="Enabled" Kind="InputPin" />
+            <Pin Id="JGEiD8DbGKrO57bPmCSjKg" Name="Form Bounds Notifications" Kind="OutputPin" IsHidden="true" />
             <Pin Id="EoELTFnB4vFNAaRoT2daAW" Name="Form" Kind="OutputPin" />
             <Pin Id="GoHmsTq4u6CLY7tTD2HzK6" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="Sk1ijWcdxPMLsnvefP9y27" Name="Render Time" Kind="OutputPin" />
           </Node>
           <Node Bounds="467,2122,105,19" Id="TvcpYo6bKcVP3buNPHLsWO">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Group" />
             </p:NodeReference>
+            <Pin Id="RGZkHSMKm0hQVjbyNazBoI" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="GaKSf8LGayKLa4hlp4lurA" Name="Input" Kind="InputPin" />
             <Pin Id="LEjZlFstBocMXDyagYeI3h" Name="Input 2" Kind="InputPin" />
             <Pin Id="GpOn0ZmpbvFOUcHkTAAFjV" Name="Input 3" Kind="InputPin" />
@@ -86,10 +93,11 @@
             <Pin Id="NbMR08ulArnMVEmA99MaMQ" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="467,2060,85,19" Id="Ogg5DbRfkb1MMPF5WA32VI">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawPolyPath (Skia)" />
             </p:NodeReference>
+            <Pin Id="GQMeos4MgZWLnstD6i3VCx" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="OrMRs3bDwZ7LAwE1SZXVDn" Name="Input" Kind="InputPin" />
             <Pin Id="Ayezk48ednLMqUmeWN3aZl" Name="FillEnabled" Kind="InputPin" />
             <Pin Id="K98QmVMijAnP0ViTMOLedd" Name="FillPaint" Kind="InputPin" />
@@ -98,10 +106,11 @@
             <Pin Id="IbtH11E9GbzQC5I074SCYY" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="546,2033,105,19" Id="TPJtpaFw7IdNTARAtEKfSo">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Stroke" />
             </p:NodeReference>
+            <Pin Id="M2iid2NQgc3LFobsd022TW" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="UitUyd3SZNAQTuPKNiANeO" Name="Input" Kind="InputPin" />
             <Pin Id="TwjRY4Ric7INqQfMODGBQS" Name="Color" Kind="InputPin" />
             <Pin Id="GoqOy0EEHZCQbkpDjWvOQv" Name="Stroke Width" Kind="InputPin" />
@@ -111,20 +120,21 @@
             <Pin Id="FQpHm91UbLdP9PR12SlWWr" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="509,2000,45,19" Id="AtndjWzeGWhPlqOKFdzlmb">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Fill" />
               <CategoryReference Kind="Category" Name="Paint" NeedsToBeDirectParent="true">
                 <p:OuterCategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
               </CategoryReference>
             </p:NodeReference>
+            <Pin Id="L5RYDsFhSWjL0PgbZmqbtj" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Se4E2g2TgWqNKGwpYGnBW2" Name="Input" Kind="InputPin" />
             <Pin Id="KflqeBNdozMM7rp7Fgmzir" Name="Color" Kind="InputPin" DefaultValue="0, 0.1599997, 0.25, 1" />
             <Pin Id="ASidzgd0hFYNePZslk5vkT" Name="Shader" Kind="InputPin" />
             <Pin Id="IuxuWWxr7UPQMwjyhK77gq" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="420,163,78,19" Id="EUXpPBtE7OtM7Br9xJjFaz">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="FromSKPath (DiscreteShapes)" />
             </p:NodeReference>
@@ -132,17 +142,18 @@
             <Pin Id="RE0sBKe9TpTMfaqghuJuyH" Name="PolyPaths" Kind="OutputPin" />
           </Node>
           <Node Bounds="420,121,45,26" Id="Ru85Qcmg2x3MRdLwkAZORe">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Op" />
             </p:NodeReference>
             <Pin Id="Vj3wmotOHiQOkob8ulonXq" Name="Input" Kind="InputPin" />
             <Pin Id="IGvPH4f2VOMOOa6VeaQK35" Name="Other" Kind="InputPin" />
             <Pin Id="BzvfnK2i1t3P4Wmtc0bTLQ" Name="Op" Kind="InputPin" />
+            <Pin Id="QPHinpyX4inLfRrMtS48y2" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="QjC6HBuXMFcONj0wDI72mQ" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="420,207,56,26" Id="KhYqU5SYwZ5MHBi8BEeDhG">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SplitFirst" />
               <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -153,10 +164,10 @@
             <Pin Id="TEMHxW0vYloN93Vh0InEAI" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="421,52,94,26" Id="ItoxxbJ6UUAPuyKIev7HUw">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Paths" />
-              <Choice Kind="OperationCallFlag" Name="AddRoundedRect" />
+              <Choice Kind="OperationNode" Name="AddRoundRect" />
             </p:NodeReference>
             <Pin Id="Kg52hbpxTVBPiuX6Ru699q" Name="Input" Kind="InputPin" />
             <Pin Id="AR5Sde4WOoPL355TnSrYnX" Name="Rectangle" Kind="InputPin" />
@@ -165,7 +176,7 @@
             <Pin Id="CunqOUcmldkNFg8tWN87sH" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="447,22,61,19" Id="UkESvLhav9kLquLhZN7N9S">
-            <p:NodeReference LastCategoryFullName="2D.Rectangle" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="2D.Rectangle" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Rectangle (Join)" />
             </p:NodeReference>
@@ -175,7 +186,7 @@
             <Pin Id="Ctyw9UdWqsXPTdWEFsIUnr" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="526,53,105,19" Id="ORhtrYSusjvNmATofOh7At">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="AddStar" />
             </p:NodeReference>
@@ -190,7 +201,7 @@
           <Pad Id="OeM0bYz7s76LURRJnHZE4x" SlotId="NSlLYy1oAlAQcRss89G0I0" Bounds="473,258" />
           <Pad Id="I83OihgNl0gMTvsUo90ePs" SlotId="NSlLYy1oAlAQcRss89G0I0" Bounds="473,1936" />
           <Node Bounds="472,1416,116,26" Id="TJeOPdOqWh8LNTArzdyEyY">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="PolyPath" />
               <Choice Kind="OperationCallFlag" Name="AddCompartmentLine" />
@@ -202,7 +213,7 @@
             <Pin Id="Vt9adM7pj8QLtlDRdWO4Bi" Name="IndexOfNewLine" Kind="OutputPin" />
           </Node>
           <Pad Id="Ej8zULC0XiQLe1gTprNEsv" Comment="AddCompartmentLine" Bounds="583,1374,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -210,22 +221,23 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="677,1992,149,102" Id="P7XbLlHdqzhLHO7Lo3sRZj">
-            <p:NodeReference>
+          <Node Bounds="677,1992,189,102" Id="P7XbLlHdqzhLHO7Lo3sRZj">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
               <FullNameCategoryReference ID="Primitive" />
             </p:NodeReference>
             <Pin Id="E1cZlq6nMZhL90TTLgSuxz" Name="Condition" Kind="InputPin" />
             <ControlPoint Id="Sk2WRBsxT4MNJGGO4BCcaf" Bounds="692,2088" Alignment="Bottom" />
-            <ControlPoint Id="Sbl64TRI097NVldFrNWL8c" Bounds="692,1999" Alignment="Top" />
+            <ControlPoint Id="Sbl64TRI097NVldFrNWL8c" Bounds="692,1998" Alignment="Top" />
             <Patch Id="CLAIvN6dMiCPEDN8uFXUF6" ManuallySortedPins="true">
               <Patch Id="GSSTjrL2x8VNGeypMhpGW8" Name="Create" ManuallySortedPins="true" />
               <Patch Id="TOf4dvFrqywPB3kcwIV8dk" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="689,2053,125,19" Id="UwnD0lEqLuiNUMG5drSfKM">
-                <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastSymbolSource="VL.PolyTools.vl">
+              <Node Bounds="689,2053,165,19" Id="UwnD0lEqLuiNUMG5drSfKM">
+                <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastDependency="VL.PolyTools.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="DrawPolyPathsDebug (Skia)" />
                 </p:NodeReference>
+                <Pin Id="EFuT5GQWejEONlntVpCS74" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="Vmx3wFz0lFMMDkuoZAstZ8" Name="PolyPaths" Kind="InputPin" />
                 <Pin Id="QPk4uGbf11nPLj3UK8PauH" Name="ShowFill" Kind="InputPin" />
                 <Pin Id="HxZWaa6F6XbNTqvlwBn8I1" Name="ShowStroke" Kind="InputPin" />
@@ -238,7 +250,7 @@
                 <Pin Id="K8PrTlUTFQQMKWg8L8dB7l" Name="ShowTightPoints" Kind="InputPin" DefaultValue="False" />
               </Node>
               <Node Bounds="690,2017,65,19" Id="BI2J3MLSkL1OaxKvLHAdR9">
-                <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="FromValue" />
                   <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -250,7 +262,7 @@
           </Node>
           <ControlPoint Id="C1BbjJL1Xb9MrIGo6moBuC" Bounds="678,1991" />
           <Pad Id="O7e6SguHOkpQINWrcBSzU7" Comment="Condition" Bounds="677,1939,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -259,7 +271,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="530,1307,105,26" Id="Qd3RNS7NtsqMFz9LqUH67Y">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.CompartmentLine" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.CompartmentLine" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Join (MultiLine)" />
             </p:NodeReference>
@@ -274,11 +286,12 @@
             <Pin Id="MncUvuxE3a3M01UVNWLJlF" Name="DynamicEndPoint" Kind="OutputPin" />
           </Node>
           <Node Bounds="609,1216,89,26" Id="IZO0wi8OrvnQVHwsOAZeYr">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.ContourSamplePoint" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.ContourSamplePoint" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="ContourSamplePoint" />
               <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
+            <Pin Id="IhY0VTm8nmfQOGByXWnmWX" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="T0dDe9icKSqMLe8iaLrtfu" Name="ContourType" Kind="InputPin" DefaultValue="1" />
             <Pin Id="AySHk6Z8UxxNuO32p46IUu" Name="ContourIndex" Kind="InputPin" DefaultValue="0" />
             <Pin Id="JiLOzz7I34LPw39uTDBZx6" Name="EdgeIndex" Kind="InputPin" DefaultValue="4" />
@@ -286,11 +299,12 @@
             <Pin Id="K28YWB4rCwVL40SQ1AO8p0" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="631,1263,89,26" Id="Tg0fK28bcPJLSthYLTnkZ3">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.ContourSamplePoint" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.ContourSamplePoint" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="ContourSamplePoint" />
               <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
+            <Pin Id="OPSSVb86HNuNzCQDHAMxIW" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="MRfjwBays2XLg1eE7SJeXj" Name="ContourType" Kind="InputPin" DefaultValue="1" />
             <Pin Id="TAIwsqZxjlFLosOhKQqoSA" Name="ContourIndex" Kind="InputPin" DefaultValue="1" />
             <Pin Id="NURm0butRxIOQLsnYAPazj" Name="EdgeIndex" Kind="InputPin" DefaultValue="5" />
@@ -298,20 +312,20 @@
             <Pin Id="Cf9lXCWx4fGQDMHfrFV59o" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="JItnHyvF8rfLkyEnKHErJC" Comment="ProprtionalPosition" Bounds="695,1184,35,15" ShowValueBox="true" isIOBox="true" Value="0.85">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="M9sRwDoRsnQN4fL7d37g3U" Comment="ProprtionalPosition" Bounds="714,1227,35,15" ShowValueBox="true" isIOBox="true" Value="0.88">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="TkbfIc4F1t8P8Oq6llW3cj" Comment="MidPoints" Bounds="573,1158,72,49" ShowValueBox="true" isIOBox="true">
-            <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
-                <TypeReference LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                <TypeReference LastCategoryFullName="2D" LastDependency="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="Vector2" />
                 </TypeReference>
               </p:TypeArguments>
@@ -322,7 +336,7 @@
             </p:Value>
           </Pad>
           <Pad Id="L5zbOYeUdGYMfDTYGBNldN" Bounds="724,1948,155,35" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;check direction of paths here">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -333,7 +347,7 @@
           <Overlay Id="Q1lgtzyEvXdNztrmZQuR4K" Name="Add MultiLine CompartmentLine " Bounds="382,1076,510,372" />
           <Overlay Id="U1oTg7kfNHBNoke77EYdZF" Name="Add CompartmentLine from Manual Points" Bounds="379,277,498,246" />
           <Node Bounds="465,454,116,26" Id="CnqDPYcbSYJLBRk5SLhhdr">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="PolyPath" />
               <Choice Kind="OperationCallFlag" Name="AddCompartmentLine" />
@@ -345,7 +359,7 @@
             <Pin Id="CVnXogD3yCSMXoio5JdjSC" Name="IndexOfNewLine" Kind="OutputPin" />
           </Node>
           <Node Bounds="1068,1312,80,26" Id="EpoI4Y9frDDNgvG8dwkAq1">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.CompartmentLine" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.CompartmentLine" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="CompartmentLine" />
               <Choice Kind="OperationCallFlag" Name="Join (SKPath)" />
@@ -358,7 +372,7 @@
           </Node>
           <Overlay Id="MPzQyNsHwhpMWE5g01WIcj" Name="Join from a SKPath" Bounds="903,1080,475,366" />
           <Pad Id="CVylP1V0DkyLq8PBWNCXyy" Bounds="912,1131,444,150" ShowValueBox="true" isIOBox="true" Value="If you are a pro you can also supply an SKPath yourself.&#xD;&#xA;It should be a single contour within the fill of the parent shape or you could get unexpected behaviour. &#xD;&#xA;&#xD;&#xA;Like the other Join operations you can optionally provide ContourSamplePoints specifiying fixed intersections for start and end point. If so they will overwrite the first and last point in the SKPath you provide. ">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -367,7 +381,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="524,409,85,26" Id="ClX86qnHIsGMYq0FQO9ZnS">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.CompartmentLine" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.CompartmentLine" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="CompartmentLine" />
               <Choice Kind="OperationCallFlag" Name="Join (SingleLine)" />
@@ -382,17 +396,17 @@
             <Pin Id="HmLdTR34OmJOMxZ23ZC8S3" Name="DynamicEndPoint" Kind="OutputPin" />
           </Node>
           <Pad Id="OAnZTf012GJPFL4e73EzB6" Comment="FixedStartPoint" Bounds="545,324,35,28" ShowValueBox="true" isIOBox="true" Value="-0.04, 0.08">
-            <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="KlZFIR2TKIAOrWUXrPPNjQ" Comment="FixedEndPoint" Bounds="563,362,35,28" ShowValueBox="true" isIOBox="true" Value="0.12, -0.09">
-            <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="Cf3ImNFlCA8OdfP2DNDDQn" Comment="DoAdd" Bounds="632,402,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -402,7 +416,7 @@
           </Pad>
           <Overlay Id="AvZn5QFexmyN1JOwcu6fm5" Name="Add CompartmentLine that intersects with existing contours of the shape" Bounds="382,582,498,480" />
           <Node Bounds="472,1012,116,26" Id="Q4sSxCsYqbUPpv7lPii7Tr">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="PolyPath" />
               <Choice Kind="OperationCallFlag" Name="AddCompartmentLine" />
@@ -414,7 +428,7 @@
             <Pin Id="VFtumEPxjuvOpUgKTk14J0" Name="IndexOfNewLine" Kind="OutputPin" />
           </Node>
           <Node Bounds="528,967,85,26" Id="V8UPhBHdoe8LyyRd4SwSd3">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.CompartmentLine" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.CompartmentLine" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="CompartmentLine" />
               <Choice Kind="OperationCallFlag" Name="Join (SingleLine)" />
@@ -429,7 +443,7 @@
             <Pin Id="O66mV8tWrwVQAinLa4cQf8" Name="DynamicEndPoint" Kind="OutputPin" />
           </Node>
           <Pad Id="V7MCpJHThDWLxZhXjmzaST" Comment="DoAdd" Bounds="637,972,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -438,7 +452,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="A0F0He6hjAnMKTiPyNiCwl" Bounds="369,497,492,25" ShowValueBox="true" isIOBox="true" Value="Note it's up to you with your UI to specify a valid contourline within the shape. ">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -447,7 +461,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="S4ihxRVjP6kPXBGr4gjDzD" Bounds="384,543,492,25" ShowValueBox="true" isIOBox="true" Value="Press F9 to reset">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -456,11 +470,12 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="486,804,89,26" Id="BwLteThoC9FPOa5v716OPq">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.ContourSamplePoint" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.ContourSamplePoint" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="ContourSamplePoint" />
               <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
+            <Pin Id="LnDmLDOY2YkNCPee6kvvdJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="BNNxQ170GiLQNYNQUO1FcM" Name="ContourType" Kind="InputPin" />
             <Pin Id="NoB7gbR80yHNCXVi1Tt9gT" Name="ContourIndex" Kind="InputPin" />
             <Pin Id="RERRVeZJyNZQXRt3KetfxA" Name="EdgeIndex" Kind="InputPin" />
@@ -468,12 +483,12 @@
             <Pin Id="TmJE1Pp6AhxNowqdxqCq3a" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="RUHtxXg1cGyMlCIbFUbLT6" Comment="ProprtionalPosition" Bounds="572,790,35,15" ShowValueBox="true" isIOBox="true" Value="0.5">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="526,23,105,19" Id="HBXw50k6K9qLvWfBohMkWr">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="AddStar" />
             </p:NodeReference>
@@ -486,21 +501,22 @@
             <Pin Id="L12NU6Wz8aHNFmXf35rTg5" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="HM03C3bCr5TLiwYUcNiftk" Comment="ContourIndex" Bounds="514,757,35,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="OYsXV949r1QPNgos6L33jo" Comment="ContourType" Bounds="488,737,35,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Byte" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="609,931,89,26" Id="L5sbVTZS310MGaua6Agc1Q">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.ContourSamplePoint" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath.ContourSamplePoint" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="ContourSamplePoint" />
               <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
+            <Pin Id="U2tyeHOp3NSNlH0JaYjYkv" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="SMIuNjQQ0dNLu9xC9wzbSj" Name="ContourType" Kind="InputPin" />
             <Pin Id="E2g5oOGQ2wrPCVVVz9ZZyl" Name="ContourIndex" Kind="InputPin" />
             <Pin Id="Kf99WrGMVV8PWOeFaGtXZc" Name="EdgeIndex" Kind="InputPin" />
@@ -508,22 +524,22 @@
             <Pin Id="SESHIqzpiv3MenfGQAs98V" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="C94VzZuMmAJPgit9u2TBXR" Comment="ProprtionalPosition" Bounds="696,919,35,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="LpUmyFgWRwvLlpwzFPJOJF" Comment="ContourIndex" Bounds="641,878,35,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="OwACPzV4yjTLbyHq0Voo84" Comment="ContourType" Bounds="610,857,35,15" ShowValueBox="true" isIOBox="true" Value="1">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Byte" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="T48fnaZ2l9PPt9OzG3xcGp" Bounds="373,663,630,56" ShowValueBox="true" isIOBox="true" Value="Connect a 'ContourSamplePoint' node to the DynamicStartPoint or DynamicEndPoint &#xD;&#xA;pins to take over that point. The fixed point inputs will be overwritten. &#xD;&#xA;You can also use one dynamic point and one fixed point">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -532,7 +548,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="AzfmasxCRtlOcwULnlbv2t" Bounds="593,737,286,16" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Type 0 = outside contour, 1=hole contour 2=compartmentLine">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -541,7 +557,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="D9smH8pYtKYLtWDT6lUe9b" Bounds="761,877,125,36" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;try changing to 1 to specify the other hole contour">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -550,7 +566,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="ImcLdlsV5l8NHwbYtZOHLQ" Bounds="705,789,152,37" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Change to control where on the contour the point is sampled">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -558,8 +574,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="PhQnG0ZlwXNN0T4MTdBEtW" Bounds="380,1116,479,17" ShowValueBox="true" isIOBox="true" Value="As above but with midpoints pin, specify arbitary midpoints on a multiline">
-            <p:TypeAnnotation>
+          <Pad Id="PhQnG0ZlwXNN0T4MTdBEtW" Bounds="380,1116,479,19" ShowValueBox="true" isIOBox="true" Value="As above but with midpoints pin, specify arbitary midpoints on a multiline">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -569,7 +585,7 @@
           </Pad>
           <Overlay Id="QR7n3iWx0CcOC4FNXOfFHd" Name="Remove Compartment Line" Bounds="376,1485,510,280" />
           <Node Bounds="473,1681,133,26" Id="QT2cako9biFOD1NUw0sKIE">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastSymbolSource="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="RemoveCompartmentLine" />
             </p:NodeReference>
@@ -579,12 +595,12 @@
             <Pin Id="CZBS2cjhzBSO6Y3M3VDNp2" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="JticUsUKWfBM71TIM32GQC" Comment="Index" Bounds="540,1645,35,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="TQheRKuGq9vMk642sfvFGU" Comment="DoRemove" Bounds="602,1605,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -593,14 +609,41 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="BBuySRARfxTMXQ5QV9mDrk" Comment="EdgeIndex" Bounds="662,898,35,15" ShowValueBox="true" isIOBox="true" Value="1">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="UQIZ6HxCefvLfTWbsEtEBc" Comment="EdgeIndex" Bounds="544,775,35,15" ShowValueBox="true" isIOBox="true" Value="3">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="G1a8HbrdS5KOIstbuFrA9J" Bounds="687,419,87,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Press this">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FkAmA3Qlh9ALwy3MqQumwq" Bounds="698,988,87,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Press this">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EyOPESv7wqENJKVLpO76Uo" Bounds="630,1388,87,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Press this">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
           </Pad>
         </Canvas>
         <Patch Id="K8Wq7Dy6uP3OHf0jBIYGPm" Name="Create" ParticipatingElements="HKRJC4r6X11LFYVR02Ly9Q" />
@@ -661,7 +704,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="D7dKFsRvBQENnZ6SDN3nLw" Location="VL.CoreLib" Version="2021.4.10" />
-  <NugetDependency Id="H2MXWjgMElAL4YdWAgOOSc" Location="VL.Skia" Version="2021.4.10" />
+  <NugetDependency Id="D7dKFsRvBQENnZ6SDN3nLw" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
+  <NugetDependency Id="H2MXWjgMElAL4YdWAgOOSc" Location="VL.Skia" Version="2023.5.3-0088-gd2b84ddcc4" />
   <DocumentDependency Id="TQfly2aHhhaNF1LgoqEWIt" Location="../../../VL.PolyTools.vl" />
 </Document>
