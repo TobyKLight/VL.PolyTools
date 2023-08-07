@@ -67,7 +67,7 @@
               <Pin Id="B7GR6NQ5FK2Lei21KE38LY" Name="Break" Kind="OutputPin" />
               <ControlPoint Id="EEwSclgOAu6NxhWLzD3KVF" Bounds="1588,980" Alignment="Top" />
             </Node>
-            <ControlPoint Id="QFjEIOyMvOlLOXvAKsrWgX" Bounds="1251,1276" />
+            <ControlPoint Id="QFjEIOyMvOlLOXvAKsrWgX" Bounds="1259,1432" />
             <Pad Id="DtJBCzCLCw4PJmfbTOyczr" Bounds="837,358,345,233" ShowValueBox="true" isIOBox="true" Value="This stitches a spread of 3D polygons into a mesh.&#xD;&#xA;Each 3D polygon is an XZ 'face' inside a long Y axis column. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;It does not have to strictly be a column, it will do linear interpolation in the Y Axis. &#xD;&#xA;SO for example you can make a column that rotates into a donut if you specify enough faces to make the curves appropriately gentle. &#xD;&#xA;">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
@@ -200,6 +200,44 @@
               <Pin Id="JpP4omJ3jnrLjHvutLGN7n" Name="Output" Kind="StateOutputPin" />
               <Pin Id="JS2WXSByH6YMviB5QlyuKo" Name="Result" Kind="OutputPin" />
             </Node>
+            <Node Bounds="1055,1140,89,19" Id="VWKdm7j4dsUMmTaZJQfu5B">
+              <p:NodeReference LastCategoryFullName="3D.AlignedBox" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="AlignedBox" />
+                <Choice Kind="OperationCallFlag" Name="FromPointCloud" />
+              </p:NodeReference>
+              <Pin Id="UYPQ74vmRe6NGgIVkgu4sp" Name="Points" Kind="InputPin" />
+              <Pin Id="VKjRl11HpzNQYqAlF37wnd" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1054,933,83,26" Id="HY5UbVwxq1qLHi4kVed9TA">
+              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ArrayType" Name="MutableArray" />
+                <Choice Kind="OperationCallFlag" Name="FromSequence" />
+              </p:NodeReference>
+              <Pin Id="ArSC5bHSxoTQP76IXcMqbk" Name="Input" Kind="StateInputPin" />
+              <Pin Id="ToRCjiUxToOPcurJwzAEsR" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="Qw91edXPxApMCnPzNdGQpA" Bounds="1057,731" />
+            <Node Bounds="1251,1321,104,26" Id="IfhmZgSCTn4MnkfPfCC0xt">
+              <p:NodeReference LastCategoryFullName="Stride.API.Rendering.Mesh" LastDependency="VL.Stride.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="Mesh" />
+                <Choice Kind="OperationCallFlag" Name="SetBoundingSphere" />
+              </p:NodeReference>
+              <Pin Id="B2WlILvC5aWLdGVmsMt9nW" Name="Input" Kind="StateInputPin" />
+              <Pin Id="N4EEsaZUgEiPskqNq29GcG" Name="Value" Kind="InputPin" />
+              <Pin Id="JRv8sEu6fh7LN1fHdXKsBI" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="1055,1179,57,19" Id="D2U1WeIJaWPPcjAn441ODx">
+              <p:NodeReference LastCategoryFullName="3D.Sphere" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="Sphere" />
+                <Choice Kind="OperationCallFlag" Name="FromBox" />
+              </p:NodeReference>
+              <Pin Id="GJ7MvXj3aOrPT5szWpIaWj" Name="Box" Kind="InputPin" />
+              <Pin Id="PrSM455ibGINxQRohrCpz8" Name="Result" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <ProcessDefinition Id="MNiq3paIg03OD8WY4rvzeH">
             <Fragment Id="PyYCoCqQjHkOvtU00frJes" Patch="T8kHKSSRqRqLEw5Qvk6NGX" Enabled="true" />
@@ -208,7 +246,6 @@
           <Link Id="DCxiTtHjA9GNTJdEY5KCDO" Ids="BgGAh8GNTNYQORngrC7PIJ,Vyv215JFJ0GOqijyaTC3xC" />
           <Link Id="IPUM4oWkjnQNFLpCiMX6AR" Ids="EQwc0tiNFhZLjIBt1Ml4SY,MQdz40MDKapPkzZ5bi1He9" />
           <Link Id="GJ9gExUrsomMmwFoVDa1qI" Ids="MQdz40MDKapPkzZ5bi1He9,B8GpM28dugzOuuI3wcJAhX" />
-          <Link Id="TSeJF2EgajlO5KLFJh3whF" Ids="N1MX21cEhPgPBKRMfC8aOD,QFjEIOyMvOlLOXvAKsrWgX" />
           <Link Id="NwBqDNma2HPOBop52VsiM8" Ids="QFjEIOyMvOlLOXvAKsrWgX,BI8Z95v7n5iNpZLWetz12A" IsHidden="true" />
           <Link Id="Ma96rrsYuE9NSC2HJliC0i" Ids="Vu17CUrWjycMkjpM27ivLJ,HG3cnFE0EvQMAxZKyp9raw" />
           <Slot Id="DDC87G1E0RmOVfafRqyNWp" Name="TriIndiceSB" />
@@ -254,6 +291,13 @@
             <Pin Id="Tmeru21L8ZQQKPoar39Lfc" Name="AutoOriginCorrection" Kind="InputPin" Bounds="1354,494" />
             <Pin Id="BI8Z95v7n5iNpZLWetz12A" Name="Output" Kind="OutputPin" Bounds="1271,782" />
           </Patch>
+          <Link Id="NBwyJTdrpeHOKIRkyOhSKJ" Ids="VxpRMXBQLk5Pv66eWDmEYx,Qw91edXPxApMCnPzNdGQpA,ArSC5bHSxoTQP76IXcMqbk" />
+          <Link Id="ML6ltTCm7MqLnSYqYHBGXo" Ids="ToRCjiUxToOPcurJwzAEsR,UYPQ74vmRe6NGgIVkgu4sp" />
+          <Link Id="AvzIwv6NZz4Lechlkmd9oU" Ids="VKjRl11HpzNQYqAlF37wnd,E5byrl2lMPgMBDoTdshOgO" />
+          <Link Id="Qa1IRMdU4jAOXuWl0lTnAf" Ids="VKjRl11HpzNQYqAlF37wnd,GJ7MvXj3aOrPT5szWpIaWj" />
+          <Link Id="RiOSDQIZ9YJO0Ydgj2mYWG" Ids="N1MX21cEhPgPBKRMfC8aOD,B2WlILvC5aWLdGVmsMt9nW" />
+          <Link Id="OJB8JmPqF13P4g5pEI8PNo" Ids="JRv8sEu6fh7LN1fHdXKsBI,QFjEIOyMvOlLOXvAKsrWgX" />
+          <Link Id="TKezSDWdPMJLKRRfW4ITlx" Ids="PrSM455ibGINxQRohrCpz8,N4EEsaZUgEiPskqNq29GcG" />
         </Patch>
       </Node>
       <!--
