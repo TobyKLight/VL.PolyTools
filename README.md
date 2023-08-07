@@ -45,7 +45,7 @@ An extruded Polygon with Normal mapping
 Bonus see included 'SKPathUtils.vl' if you are looking for low level ways to extend SKPaths
 
 # Dependencies
-Made with vvvv Gamma 5.0
+Made with vvvv Gamma 5.3-0088
 
 com.angusj.Clipper -Version 6.4.2
 
@@ -67,6 +67,22 @@ credit https://github.com/speps/LibTessDotNet/graphs/contributors
 @Untone for help unlocking the SKPath verbs for use in vvvv gamma
 
 # Version History
+V1.2.1
+* !Breaking Change! Refactored categories for some of the Polygon3D nodes to make it clearer The actual nodes are still the same, you may have to double click red nodes in your apps and retype the names to recreate them.
+* !Breaking change! Bugfix on winding direction node. With the calculation method I was using winding direction is potentially flipped in some spaces where Y is inverted. Between Stride and Skia we have a mix of spaces where this might be true. There is now a 'YIncreasesDownward' pin on the WindingDirection and ForceClockwise/CounterClockwise nodes. Check the helppatch 'HowTo Calculate Winding Direction Of A Polygon' 
+* New Polygon2DPlus datatype, for a 2D polygon that is effectively annotated with a third dimension. The underlying 2D polygon can still be accessed and manipulated. 
+* Rearranged helppatches to make general geometric functions clearer
+* Added sample a point on a line 
+* New 3D functions for dynamic geometry to make 'polygon tubes', where each element of the tube can have a different polygon face. See the new helppatches in 3D category. These come in several flavors where you  
+* LERP (morph) between two polygons, see HowTo LERP between Polygons helppatch
+* Added sample a point on a polygon perimeter (previously only for PolyPath) 
+* Added DrawPolygonRadialLines to draw radial lines between origin and points 
+* Added DrawPolygonPointLabels to draw text labels at each point on a polygon  
+* Improved the TriangleContainsPoint helppatch  
+* Aspect changed on PolygonVisibility nodes to advanced. 
+* Added PointCount operation to Polygon datatype 
+
+
 V1.1.3 
 * Removed stride physics Raycast function now there is a native one shipped with vvvv 5.3 
 

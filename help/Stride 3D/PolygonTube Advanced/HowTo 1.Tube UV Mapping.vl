@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="AB8jQdbQ8eDQKOFI6my3Cl" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="MMT3kSbgPx3Nc1HR26SbM0" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
   <NugetDependency Id="BrIjxNtg3OcMkq0RhNkldB" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
   <Patch Id="GwcG9jAzx2oNVuFMXYpKGH">
     <Canvas Id="M9zeZAZap4aQcTWuQTvabV" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -23,16 +23,16 @@
             <Pin Id="URuayAIscmJQX0gE7yi8SX" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="S9U8qx02t0RMKJRZB30tff" Name="Polygons2DPlus" Kind="InputPin" />
             <Pin Id="LBYL1mAZ0JYORqa5vkSrOH" Name="ForceUseCompositeShapes" Kind="InputPin" />
-            <Pin Id="DNg6gW0VQRRLmStFg49Sz2" Name="UVCalcMode" Kind="InputPin" IsHidden="true" />
-            <Pin Id="SEcEjTPaxpQLhbzOKK8zbc" Name="UVUseQuadrants" Kind="InputPin" IsHidden="true" />
-            <Pin Id="JYXVJpA4eIHMrgVOxqhdXY" Name="SidesUVTransform" Kind="InputPin" IsHidden="true" />
-            <Pin Id="TKbHa01oP7rOVavgFN2V9J" Name="StartCapUVTransform" Kind="InputPin" IsHidden="true" />
-            <Pin Id="JfEqLhY3KbrMp7nygEveW1" Name="EndCapUVTransform" Kind="InputPin" IsHidden="true" />
+            <Pin Id="PHaRYzhzS7ZLYVuhOrInsh" Name="UVCalcMode" Kind="InputPin" />
+            <Pin Id="Vg87cc2UktLLq8Z1AHbrPO" Name="UVUseQuadrants" Kind="InputPin" />
+            <Pin Id="QdohlOO1aClNJCeo7LQwYQ" Name="SidesUVTransform" Kind="InputPin" />
+            <Pin Id="ApWf8yh4w9rNlKO5u3t6Rf" Name="StartCapUVTransform" Kind="InputPin" />
+            <Pin Id="BgcanMmxGt2LdWV8zZStuL" Name="EndCapUVTransform" Kind="InputPin" />
             <Pin Id="OE2WCuod8tdNcuHzG59RZS" Name="AutoRotationCorrection" Kind="InputPin" DefaultValue="False" />
             <Pin Id="T6qIBZS5KTKOU0g3v3A7nU" Name="AutoOriginCorrection" Kind="InputPin" />
             <Pin Id="TaVjCmsSL4gO6yLxa8iMJ1" Name="DoStartCap" Kind="InputPin" />
             <Pin Id="QXKQUcznZzPP8uMxJ8mST2" Name="DoEndCap" Kind="InputPin" />
-            <Pin Id="IlwcrqiFGbqPopa9ufDq0d" Name="GenerateTangents" Kind="InputPin" IsHidden="true" />
+            <Pin Id="ScqrJjZykSAPE0gB1ui7GW" Name="GenerateTangents" Kind="InputPin" />
             <Pin Id="Ag8igqQEjx2MQza2nI6eE2" Name="Transformation" Kind="InputPin" />
             <Pin Id="QOjuTd0Pu0XO8lwJXwmW3L" Name="Material" Kind="InputPin" />
             <Pin Id="JcNHMCHe2jxMtIcesnpEkH" Name="Is Shadow Caster" Kind="InputPin" />
@@ -141,15 +141,6 @@
           <Overlay Id="RchfMS0TZ1hNnevGZ4NJRv" Name="Generate 2D Polygons" Bounds="463,196,638,284" />
           <Overlay Id="VeyansciJuWPA2MBVhEwJP" Name="Make PolyTube" Bounds="506,864,929,647" />
           <Overlay Id="JulxAKeDv8CO45IRKtjeFn" Name="Render" Bounds="495,1570,644,372" />
-          <Pad Id="AHuQpd3RcqfPhoEUA4EvBT" Bounds="1118,121,517,643" ShowValueBox="true" isIOBox="true" Value="Each polygon can be thought of as a 'disc' in the tube. &#xD;&#xA;The secret sauce is that polygons can have different shapes AND point counts. &#xD;&#xA;This allows a wide variety of shapes to be achieved. For example a single point for polygon A plus a star for polygon B will create a star shaped cone. &#xD;&#xA;&#xD;&#xA;Only the outer polygon perimeter is used, holes are ignored. &#xD;&#xA;It calculates a composite shape to accomodate polygons with different numbers of points, see the helppatch 'how to lerp between polygons' for more info, it's not foolproof but will generate fairly good lerps without weird self-intersections with many shapes. &#xD;&#xA;You can use the options 'Auto Rotation Correction' and 'Auto Origin Correction' to compensate for differences in rotation and alignment between polygons. &#xD;&#xA;However this also means less control should you intentionally want to create twists and offsets. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;It regenerates these composite LERP shapes when the input polygons change so use caching to save performance. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;The polytube actually takes 3D polygons but this version is (2D+Y) which is simpler and lets you supply 2D polygons plus a Y height for each one.&#xD;&#xA;&#xD;&#xA;Note that if you use the PolyTube (3D) version it still expects polygons points to be roughly in a 'stack'.  Supplying 3D polygon points on completely different axes will cause self intersecting meshes.&#xD;&#xA;&#xD;&#xA;If you want to have full manual control then leave the option 'force composite shape' off  and supply polys with the same point count. The tube will map all polys 1 to 1 (so index 0 of shape A is connected to index 0 of shape B and then to index 0 of shape C and so on). ">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
           <Node Bounds="538,289,85,19" Id="QqhTKJt1ikBMMAKHBmn9tk">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -228,7 +219,7 @@
               <Pad Id="C0gckKC03hvNsEPsydVp4g" Comment="HighlightedPointUV" Bounds="798,1725,35,28" ShowValueBox="true" isIOBox="true" />
             </Patch>
           </Node>
-          <Pad Id="JZPwfM38lcZMbs5qwvYBOp" Comment="ShowWireframe" Bounds="586,1600,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="JZPwfM38lcZMbs5qwvYBOp" Comment="ShowWireframe" Bounds="586,1600,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -316,19 +307,55 @@
             <Pin Id="GOJ4ACLEW8cOGUnW89fCOE" Name="Count" Kind="InputPin" DefaultValue="21" />
             <Pin Id="O1cW0dCVkcWNyEPZ2pMser" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="DUpxBkHDhdpPDgp9ifErcu" Comment="PointToHighlight" Bounds="880,1627,35,15" ShowValueBox="true" isIOBox="true" Value="104">
+          <Pad Id="Ddzeeq7FooqPB0XUkbQPn1" Comment="UVCalcMode" Bounds="619,928,35,15" ShowValueBox="true" isIOBox="true" Value="2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="KN42g1Q6Y3AMS74AauCAFe" Bounds="1121,768,524,148" ShowValueBox="true" isIOBox="true" Value="Add to ducmentation that UV calc mode 0 is less seams with materials where UV coordinate doesn't matter, eg plain PBR material.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
+          <Node Bounds="858,1379,185,19" Id="DxfRhKgj7UbQKbTQlSvFDj">
+            <p:NodeReference LastCategoryFullName="Stride.Materials" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TextureMaterial" />
+            </p:NodeReference>
+            <Pin Id="LVzGJHwcWahLaXvHI2eSkh" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="OQN2vYpW9j2MCWBl9ta4qa" Name="Texture" Kind="InputPin" />
+            <Pin Id="HrjyXhMz78LO1znmJa1hCK" Name="Fallback Color" Kind="InputPin" />
+            <Pin Id="ThXrDtg4t0dQSXNPGSssng" Name="Texcoord Index" Kind="InputPin" />
+            <Pin Id="F5H06BHJU7gLgWgX86mNhH" Name="Filtering" Kind="InputPin" />
+            <Pin Id="TCVTWlD8145LLLLtvl5Hv8" Name="Address Mode U" Kind="InputPin" DefaultValue="Clamp" />
+            <Pin Id="FrLee5a55ZbP5XmzPZdn0A" Name="Address Mode V" Kind="InputPin" />
+            <Pin Id="CYyBcbgwmMrO01b6fXB2kF" Name="Scale" Kind="InputPin" />
+            <Pin Id="PLzVqTchtqWL7QEl1WsQfi" Name="Offset" Kind="InputPin" />
+            <Pin Id="MVD2vH36WeqLIfcWFZ9TRk" Name="Transparency" Kind="InputPin" />
+            <Pin Id="SaaCsctGOYZPdZW1BCktwI" Name="Cull Mode" Kind="InputPin" />
+            <Pin Id="Nkh3mT4pBWbO2lBFRdyWNJ" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="853,1327,105,19" Id="UBu0XIiuaWVLthMd7qV92h">
+            <p:NodeReference LastCategoryFullName="Stride.Assets" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FileTexture" />
+            </p:NodeReference>
+            <Pin Id="TiXAW19RVkYNoWpvpYK09T" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LCdJNCbLQqLNLBXGjkI1cm" Name="Path" Kind="InputPin" DefaultValue="..\..\..\..\..\Program Files\vvvv\vvvv_gamma_5.3-0088-gd2b84ddcc4\packs\VL.Stride.Runtime\help\Assets\UVChecker.png" />
+            <Pin Id="JzogKy2SAuaPJszcszEyxq" Name="Generate Mipmaps" Kind="InputPin" />
+            <Pin Id="VP56ZxiCElSPYVCboDlASP" Name="Is sRGB" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BN03zyipIJcQXq62fZEjem" Name="Premultiply Alpha" Kind="InputPin" />
+            <Pin Id="AoX0iC5bW5wPVUkjEi9Icu" Name="Compress" Kind="InputPin" />
+            <Pin Id="MIiQkveKEnaLpNy7y3vvtp" Name="Alpha Format" Kind="InputPin" />
+            <Pin Id="Fbt3o922KfULown0J0lRQ7" Name="Reload" Kind="InputPin" />
+            <Pin Id="TYeOcTWbKUiO4TF4HPDGEh" Name="Texture" Kind="OutputPin" />
+            <Pin Id="EEW6utOoJrzOqC9ZP7KlGK" Name="Is Loading" Kind="OutputPin" />
+            <Pin Id="SNfzIBAtQ19P183tWO5r3W" Name="Already Loaded" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Qx8ayySPMNIPmLaZerSaik" Comment="Path" Bounds="853,1283,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\HelpTextures\UVCheckerMap1024_Quadrants.png">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DUpxBkHDhdpPDgp9ifErcu" Comment="PointToHighlight" Bounds="880,1627,35,15" ShowValueBox="true" isIOBox="true" Value="104">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
           </Pad>
           <Overlay Id="HnUeT1MfzroMf1DyLclDI7" Name="Make 3D" Bounds="481,514,592,316" />
           <Pad Id="AP5qYQKaqgWM1ZFWyiE85N" Bounds="489,556,357,19" ShowValueBox="true" isIOBox="true" Value="see  helppatch 'Generate Polygon2DPlus Data'">
@@ -340,7 +367,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QlQLHkKA9UgQUdqQpoJMT5" Comment="FixedHeights" Bounds="772,563,35,80" ShowValueBox="true" isIOBox="true" Value="-0.27, 0.29, 0.6, 1.14">
+          <Pad Id="QlQLHkKA9UgQUdqQpoJMT5" Comment="FixedHeights" Bounds="787,571,35,80" ShowValueBox="true" isIOBox="true" Value="-0.27, 0.29, 0.6, 1.14">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -368,6 +395,96 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="GDdVhFPm7GFPqceeMUNIuz" Bounds="609,897,259,19" ShowValueBox="true" isIOBox="true" Value="Check these optional pins for UV mapping">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Tckzw4fisNPLjB8wi7RyJM" Bounds="730,928,633,139" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;UV Calc Mode&#xD;&#xA;0 = No UV mapping, use with uniform PBR textures as UV mapping modes add a minor seam that is needed for textures to repeat properly.&#xD;&#xA;1 = UV map sides in height space, use warp or mirror texture addressing mode.&#xD;&#xA;2 = UV map sides and stretch V space to the entire height. Requires some height to be set.&#xD;&#xA;3 = UV map sides linear spacing between input Polygons, useful when you are only using transforms. See the hellpatch 'HowTo Tube On Path UV mapping'">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KG399gA076vQKaWFp5591v" Comment="UVUseQuadrants" Bounds="637,1077,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LFTfBZpJ8zSPyGlIWNstQo" Bounds="691,1090,707,45" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Address UV map per quadrant. When enabled start cap is top left, end cap is top right and sides have the bottom left and right quadrants wrapped around.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="665,1150,85,19" Id="AdApHjlIRllQZYYRPp3Hcz">
+            <p:NodeReference LastCategoryFullName="2D.Transform" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Transform" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="2D" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="OperationCallFlag" Name="TransformSRT (Center)" />
+            </p:NodeReference>
+            <Pin Id="TfgIzwE5lGONJ4mek6HMmW" Name="Input" Kind="InputPin" />
+            <Pin Id="B5d5G3NJ1kXLxKQ5v1N603" Name="Scaling" Kind="InputPin" />
+            <Pin Id="OgX3GQuGLamLBIVeUeWLbe" Name="Rotation" Kind="InputPin" />
+            <Pin Id="VFftGYJzG6zNMqZvaxWPIB" Name="Translation" Kind="InputPin" />
+            <Pin Id="H3nSw2Lq1khO2leDT6bzOj" Name="Center" Kind="InputPin" />
+            <Pin Id="MPQiixJOPCQNmHIKZsMgfo" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="690,1177,85,19" Id="ICE9MSjJd4dNxeO3c1XvWE">
+            <p:NodeReference LastCategoryFullName="2D.Transform" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Transform" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="2D" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="OperationCallFlag" Name="TransformSRT (Center)" />
+            </p:NodeReference>
+            <Pin Id="EzBdoniOIHiPVWPpNpJP6s" Name="Input" Kind="InputPin" />
+            <Pin Id="M68IVRlsElwPFwzJp6lSD5" Name="Scaling" Kind="InputPin" />
+            <Pin Id="IB7wMJIr6eWNNuzH1hOlYi" Name="Rotation" Kind="InputPin" />
+            <Pin Id="FP5X1V4Yq0mO67Ds5g3B70" Name="Translation" Kind="InputPin" />
+            <Pin Id="Rzncje7UL6DOuInkw2hhhO" Name="Center" Kind="InputPin" />
+            <Pin Id="DIh4zX4nDdPQRSabG390bj" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="712,1207,85,19" Id="Vzztn30usSLLRgAoHiE4HF">
+            <p:NodeReference LastCategoryFullName="2D.Transform" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Transform" NeedsToBeDirectParent="true">
+                <p:OuterCategoryReference Kind="Category" Name="2D" NeedsToBeDirectParent="true" />
+              </CategoryReference>
+              <Choice Kind="OperationCallFlag" Name="TransformSRT (Center)" />
+            </p:NodeReference>
+            <Pin Id="QlLT2O2fr5tLZZ3kEQHUhw" Name="Input" Kind="InputPin" />
+            <Pin Id="OlUQ4qkkoHPQMUOpjfi3kB" Name="Scaling" Kind="InputPin" />
+            <Pin Id="KnCxcrfi03fQW1U7KAB9RL" Name="Rotation" Kind="InputPin" />
+            <Pin Id="DC5aM4IcAwKN5oJ2btUWMj" Name="Translation" Kind="InputPin" />
+            <Pin Id="U5r2YZ5EhapOimj1Tlzt1I" Name="Center" Kind="InputPin" />
+            <Pin Id="ANnPaGgq8mxPZ0rXGK2kw7" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="IRzAObUISUHLwtRvxvrStt" Bounds="806,1162,395,78" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Transforms for the UV space on the sides, top and bottom cap separately. &#xD;&#xA;Use Transform2D. You may need to use the (Center) version to set rotation as you like.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
           <Node Bounds="550,343,494,128" Id="EPrComqqCbpPZG6wSJ5QXs">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -377,11 +494,6 @@
             <Pin Id="CrSgkhCyZzgPEXzrdm0Jc2" Name="Force" Kind="InputPin" />
             <Pin Id="D09YMs1nB4aMt8WOsqarA5" Name="Dispose Cached Outputs" Kind="InputPin" />
             <Pin Id="RXaw8F3e7zdOzoQtoIpoAM" Name="Has Changed" Kind="OutputPin" />
-            <ControlPoint Id="Mx1JfvSNK5zLL1SHPK1os5" Bounds="564,465" Alignment="Bottom" />
-            <ControlPoint Id="QS44VylELtNQbBqyqqLQP8" Bounds="564,349" Alignment="Top" />
-            <ControlPoint Id="LbT18robzLKQOywpsTAJq4" Bounds="704,349" Alignment="Top" />
-            <ControlPoint Id="HtscY0Ph3AEPhrbjkvofNs" Bounds="874,349" Alignment="Top" />
-            <ControlPoint Id="OydY8JjHkcdOZojSAAfIpe" Bounds="987,349" Alignment="Top" />
             <Patch Id="SUIm96WQEWLQV6ujYQU33s" ManuallySortedPins="true">
               <Patch Id="Oef6kWoBqccQIRYK1hgA8c" Name="Create" ManuallySortedPins="true" />
               <Patch Id="H1v2MQSbc4DQL4PiyQ2VuK" Name="Then" ManuallySortedPins="true" />
@@ -397,7 +509,7 @@
                 <Pin Id="Tjgg4oTJ9OFLdqmRIHQE71" Name="Input 3" Kind="InputPin" />
                 <Pin Id="CvU2f3gwx2MPT2HUJXxK3S" Name="Input 4" Kind="InputPin" />
               </Node>
-              <Node Bounds="566,379,46,26" Id="N2SkHEPxOFwNOkVvUO2ZiH">
+              <Node Bounds="564,366,46,26" Id="N2SkHEPxOFwNOkVvUO2ZiH">
                 <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="Polygon" />
@@ -450,6 +562,11 @@
                 <Pin Id="FlCTsUU3feCOsQhV3F8ZYy" Name="SuccessFindBounds" Kind="OutputPin" />
               </Node>
             </Patch>
+            <ControlPoint Id="Mx1JfvSNK5zLL1SHPK1os5" Bounds="564,465" Alignment="Bottom" />
+            <ControlPoint Id="QS44VylELtNQbBqyqqLQP8" Bounds="564,349" Alignment="Top" />
+            <ControlPoint Id="LbT18robzLKQOywpsTAJq4" Bounds="704,349" Alignment="Top" />
+            <ControlPoint Id="HtscY0Ph3AEPhrbjkvofNs" Bounds="874,349" Alignment="Top" />
+            <ControlPoint Id="OydY8JjHkcdOZojSAAfIpe" Bounds="987,349" Alignment="Top" />
           </Node>
           <Node Bounds="548,314,54,19" Id="CoeUGlPEchpOk4dLIxbiZS">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
@@ -469,9 +586,6 @@
             <Pin Id="MR4WADKYLGmPfgUVdTPrqv" Name="Force" Kind="InputPin" />
             <Pin Id="FFtknVnltuHOONNb49dcjZ" Name="Dispose Cached Outputs" Kind="InputPin" />
             <Pin Id="DLDmDeuM6UOMcDrMSF78kf" Name="Has Changed" Kind="OutputPin" />
-            <ControlPoint Id="ACtat8SL7DYP8wxlznw0EX" Bounds="569,653" Alignment="Top" />
-            <ControlPoint Id="PqRfLs2ZVK2L1WutT92CaB" Bounds="569,804" Alignment="Bottom" />
-            <ControlPoint Id="Pu63z5hcRDBNFAu14c2Pop" Bounds="768,653" Alignment="Top" />
             <Patch Id="U39Z9QFIec1PANXd3lkiM8" ManuallySortedPins="true">
               <Patch Id="H08DdiC0N2HPqrNCCCBJxK" Name="Create" ManuallySortedPins="true" />
               <Patch Id="TpRPYeQqeeeLjxJeeKOSYe" Name="Then" ManuallySortedPins="true" />
@@ -517,83 +631,10 @@
                 </Patch>
               </Node>
             </Patch>
+            <ControlPoint Id="ACtat8SL7DYP8wxlznw0EX" Bounds="569,653" Alignment="Top" />
+            <ControlPoint Id="PqRfLs2ZVK2L1WutT92CaB" Bounds="569,804" Alignment="Bottom" />
+            <ControlPoint Id="Pu63z5hcRDBNFAu14c2Pop" Bounds="768,653" Alignment="Top" />
           </Node>
-          <Node Bounds="805,1391,85,19" Id="HdfX4FCTgFxQRg3wjFz7ti">
-            <p:NodeReference LastCategoryFullName="Stride.Materials" LastDependency="VL.Stride.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="PBRMaterial" />
-            </p:NodeReference>
-            <Pin Id="P0crjGjK22CNJPpB04YaqO" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="DBvBTNTdo0tOw4DMF4S9V2" Name="Color" Kind="InputPin" DefaultValue="1, 0.25000006, 0.4750002, 1" />
-            <Pin Id="RteHq8OudHqOVWJzp31Kfd" Name="Metalness" Kind="InputPin" DefaultValue="0.86" />
-            <Pin Id="VNV1I2dwNhFL44GJRRn0Jo" Name="Roughness" Kind="InputPin" DefaultValue="0.34" />
-            <Pin Id="RO6cT3yXhOeQTwDJbCIzQB" Name="Transparency" Kind="InputPin" />
-            <Pin Id="O4rRYhZUFH0QRqlTjimKtM" Name="Cull Mode" Kind="InputPin" />
-            <Pin Id="Ppcaf7Go2ctQZOIhLs43I4" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Pad Id="HIzpKbiULMUOeDheYFjaUu" Comment="ForceUseCompositeShapes" Bounds="604,938,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="FPj1zVJeenkMQI6QpkNPfh" Comment="AutoRotationCorrection" Bounds="645,961,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="JfNa218BopfQURvNslNdKX" Comment="AutoOriginCorrection" Bounds="672,1003,39,31" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="CbgHQZku8EzPu3YPCIslc5" Bounds="829,958,350,50" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;See the 'Lerp Between Polygons' helppatch for an explanation of these">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="NFX2eoeikWQNoIqOKWrh9s" Comment="DoStartCap" Bounds="710,1072,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="V14r4Yl2orhLNotJbX8rX4" Comment="DoEndCap" Bounds="739,1117,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="GmlGauYbE00OMWMLUfPHnW" Bounds="818,1087,230,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Enable/Disable start and end caps">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
         </Canvas>
         <Patch Id="PGZR2n27iQ1MYpmpZmTMim" Name="Create" />
         <Patch Id="K105ESvrXZLQV2gnjE9gUp" Name="Update" />
@@ -613,14 +654,22 @@
         <Link Id="PsduRN3H4SsQIfKzBZzP2r" Ids="DM9ZfHsnfHvQX8mceWrewl,HPc7Va5Y4x3N6RDHK3JTRb" />
         <Link Id="Q9YHSiHvoYnNxCujZgy7m1" Ids="RA6NpP5ajIoLO7Y3Nbfpxd,AwedwYFXXocPS3W1KaWyX6" />
         <Link Id="M41UexJbziiOS2FY8RWLDz" Ids="H2rdyjf0FJdQTEfPYmnUgY,KNjT6Cvx5RYNW3X0Kdqmqb" />
+        <Link Id="HaVAqoYM1wwL3nSYrLJZP2" Ids="Ddzeeq7FooqPB0XUkbQPn1,PHaRYzhzS7ZLYVuhOrInsh" />
+        <Link Id="DsGGtzEZ5laQNA5fsReZpm" Ids="TYeOcTWbKUiO4TF4HPDGEh,OQN2vYpW9j2MCWBl9ta4qa" />
         <Link Id="SDTzzkE0Ib9Mtzp7Ak8qLM" Ids="KXdr8vAm99YOo2NCiemHou,TSv0J6mC6VANVx6FRNcBC4" IsFeedback="true" />
         <Link Id="T3i0TLHEXJPPNX9K0KH86S" Ids="OGdRnzCQHXXNPdxxpDu1Ru,TSv0J6mC6VANVx6FRNcBC4" />
         <Link Id="QVctoKQiY4qNfGpkfqllx7" Ids="TSv0J6mC6VANVx6FRNcBC4,CK6tOlLcZ4cQOpSg8EQSAt" />
         <Link Id="Nm0kOA4eF6aPEV6eW0G2w9" Ids="G2Toy4T653rNlDL8ZSlwuJ,Tvgmh827C1oL7RyO8xaiOo" />
         <Link Id="LK9aEtxE9QoMUP62vKJQmO" Ids="G2Toy4T653rNlDL8ZSlwuJ,SaJNTbQBt4vNesRVx8MCop" />
         <Link Id="SeZmA27GQRjQWIodjh88Pw" Ids="G2Toy4T653rNlDL8ZSlwuJ,LcvAP50Lz91PoZKlyvh4NR" />
+        <Link Id="Kvwf1sF17OIOeoj9sBAc3e" Ids="Qx8ayySPMNIPmLaZerSaik,LCdJNCbLQqLNLBXGjkI1cm" />
         <Link Id="KPEuKS1v7JaPQdueyDDJzI" Ids="DFJdPnxEpV9PFCFVBCL1Ea,C0gckKC03hvNsEPsydVp4g" />
         <Link Id="VSLzaKxc87ePv55Vmc6sNs" Ids="DUpxBkHDhdpPDgp9ifErcu,Vbme2smnExsP0URkylH5Dc" />
+        <Link Id="NGUzuMtWwciNrWE7PhCggM" Ids="Nkh3mT4pBWbO2lBFRdyWNJ,QOjuTd0Pu0XO8lwJXwmW3L" />
+        <Link Id="KOQXoI9BED9Ol875oIe7XW" Ids="KG399gA076vQKaWFp5591v,Vg87cc2UktLLq8Z1AHbrPO" />
+        <Link Id="TMaBzNiVSxJNt0jSawCXMp" Ids="MPQiixJOPCQNmHIKZsMgfo,QdohlOO1aClNJCeo7LQwYQ" />
+        <Link Id="R7cootD0RAVPQRUXLd5ojv" Ids="DIh4zX4nDdPQRSabG390bj,ApWf8yh4w9rNlKO5u3t6Rf" />
+        <Link Id="HhrO22OelQfL4So7It0f78" Ids="ANnPaGgq8mxPZ0rXGK2kw7,BgcanMmxGt2LdWV8zZStuL" />
         <Link Id="UHIahu77A5nPECie3nEqm5" Ids="E0IvsGoNbhBQTk3g5M8Lvm,OFfnQlgp6T0MmLELJ7WGXe" />
         <Link Id="HR2stBMB2CiNayOFBElTnZ" Ids="VLmZc1li4yuPApnkbfyGDX,JBgdyJptSMJM7ITVNPEd84" />
         <Link Id="IZw1pBKuo1AK9yXRRraEeI" Ids="HD0HHhu1FUELmsKKU0jVxj,Tjgg4oTJ9OFLdqmRIHQE71" />
@@ -646,15 +695,9 @@
         <Link Id="VFLQOaHF5LtMsnfLoMyq2g" Ids="PqRfLs2ZVK2L1WutT92CaB,S9U8qx02t0RMKJRZB30tff" />
         <Link Id="RH2tFJzSCY3O8hpHd0nOdw" Ids="QlQLHkKA9UgQUdqQpoJMT5,Pu63z5hcRDBNFAu14c2Pop" />
         <Link Id="TXAnfiSiI6GQWfgHLswZ0k" Ids="Pu63z5hcRDBNFAu14c2Pop,SaCSMowLOFvNV7gah3eKfc" />
-        <Link Id="EAwY6QZnicjPeSTTWIIOea" Ids="Ppcaf7Go2ctQZOIhLs43I4,QOjuTd0Pu0XO8lwJXwmW3L" />
-        <Link Id="T4o8NP84xRLMJu1tyvTngi" Ids="HIzpKbiULMUOeDheYFjaUu,LBYL1mAZ0JYORqa5vkSrOH" />
-        <Link Id="PQ3OXyUIZzJMnWi4K37fCZ" Ids="FPj1zVJeenkMQI6QpkNPfh,OE2WCuod8tdNcuHzG59RZS" />
-        <Link Id="AFo2BfxJvvAPiQzsadn6RP" Ids="JfNa218BopfQURvNslNdKX,T6qIBZS5KTKOU0g3v3A7nU" />
-        <Link Id="Ljgp1ZLxTqBPC4fogp14Bs" Ids="NFX2eoeikWQNoIqOKWrh9s,TaVjCmsSL4gO6yLxa8iMJ1" />
-        <Link Id="HuPZloyF0sYNWIsihrrQcH" Ids="V14r4Yl2orhLNotJbX8rX4,QXKQUcznZzPP8uMxJ8mST2" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="QACxmqzuHfuP1JiIfbJNY6" Location="VL.Stride" Version="2023.5.3-0088-gd2b84ddcc4" />
-  <DocumentDependency Id="H8JgzIe6LyoLID4bAq6yB9" Location="../../VL.PolyTools.vl" />
+  <DocumentDependency Id="Hghyrpn6larOYup24MmAIX" Location="../../../VL.PolyTools.vl" />
 </Document>
