@@ -21,7 +21,7 @@
               <Choice Kind="ProcessAppFlag" Name="PolyTube" />
             </p:NodeReference>
             <Pin Id="URuayAIscmJQX0gE7yi8SX" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="S9U8qx02t0RMKJRZB30tff" Name="Polygon3D" Kind="InputPin" />
+            <Pin Id="S9U8qx02t0RMKJRZB30tff" Name="Polygons2DPlus" Kind="InputPin" />
             <Pin Id="LBYL1mAZ0JYORqa5vkSrOH" Name="ForceUseCompositeShapes" Kind="InputPin" />
             <Pin Id="PHaRYzhzS7ZLYVuhOrInsh" Name="UVCalcMode" Kind="InputPin" />
             <Pin Id="DFvb12WmB15MrX1rLuZcIW" Name="UVOffset" Kind="InputPin" DefaultValue="0, 0" />
@@ -35,6 +35,8 @@
             <Pin Id="TzKoHRe8mtlOI7s6nZPVgG" Name="Children" Kind="InputPin" />
             <Pin Id="SmaLAxoL2chQBsqV1CwdeB" Name="Name" Kind="InputPin" />
             <Pin Id="KLW1XcaVmg6LlO5HZvMO6J" Name="Enabled" Kind="InputPin" />
+            <Pin Id="TaVjCmsSL4gO6yLxa8iMJ1" Name="DoStartCap" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="QXKQUcznZzPP8uMxJ8mST2" Name="DoEndCap" Kind="InputPin" DefaultValue="True" />
             <Pin Id="G2Toy4T653rNlDL8ZSlwuJ" Name="Entity" Kind="OutputPin" />
           </Node>
           <Node Bounds="568,1513,225,19" Id="F6hJyfZ1CyUOB5uZEcbd4u">
@@ -126,7 +128,7 @@
             <Pin Id="Tjgg4oTJ9OFLdqmRIHQE71" Name="Input 3" Kind="InputPin" />
             <Pin Id="CvU2f3gwx2MPT2HUJXxK3S" Name="Input 4" Kind="InputPin" />
           </Node>
-          <Node Bounds="609,1009,85,19" Id="UUGZO7Zz7b0Mz5AzdDxHk4">
+          <Node Bounds="629,1005,85,19" Id="UUGZO7Zz7b0Mz5AzdDxHk4">
             <p:NodeReference LastCategoryFullName="Stride.Materials" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PBRMaterial" />
@@ -196,15 +198,6 @@
             <Pin Id="E0IvsGoNbhBQTk3g5M8Lvm" Name="Output" Kind="StateOutputPin" />
             <Pin Id="AANzwK1z4eyMfneBQbabdV" Name="SuccessFindBounds" Kind="OutputPin" />
           </Node>
-          <Pad Id="GKWek178uBmP1Ry46O6btH" Bounds="1819,236,309,23" ShowValueBox="true" isIOBox="true" Value="TODO Bounding box, bounding sphere, tangents">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
           <Node Bounds="709,285,85,19" Id="QrJEuTYWa5pP17dAmL2Pt6">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -407,7 +400,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="BZjLowpySnVMYduvmonumE" Bounds="1830,411,307,24" ShowValueBox="true" isIOBox="true" Value="TODO Fix node signatures">
+          <Pad Id="BZjLowpySnVMYduvmonumE" Bounds="1830,411,307,24" ShowValueBox="true" isIOBox="true" Value="TODO Fix node signatures pin order">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -416,7 +409,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HfQiKndendrLxAPenM5ltM" Bounds="1825,153,266,19" ShowValueBox="true" isIOBox="true" Value="then do 3d properly">
+          <Pad Id="Miu5QoOBvdsP5k1Wlns7gv" Bounds="1820,226,275,19" ShowValueBox="true" isIOBox="true" Value="do end caps triangulation">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -425,16 +418,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Miu5QoOBvdsP5k1Wlns7gv" Bounds="1823,209,275,19" ShowValueBox="true" isIOBox="true" Value="do end caps triangulation">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="UTlqwGbr6oTPS184kRTCBD" Bounds="1818,375,265,19" ShowValueBox="true" isIOBox="true" Value="do proper cache optimsiation">
+          <Pad Id="UTlqwGbr6oTPS184kRTCBD" Bounds="1828,377,265,19" ShowValueBox="true" isIOBox="true" Value="do proper cache optimsiation">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -469,16 +453,7 @@
             <Pin Id="GOJ4ACLEW8cOGUnW89fCOE" Name="Count" Kind="InputPin" DefaultValue="21" />
             <Pin Id="O1cW0dCVkcWNyEPZ2pMser" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="JqvL3BWJUf3NhBbTBrtoTw" Bounds="1831,262,455,45" ShowValueBox="true" isIOBox="true" Value="Move nodes into VL.Polytools so they can add dependency on the DynamicMesh with tangents node... ">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="JZu8LFj4LOsMeFHqumT3T5" Bounds="1828,327,455,45" ShowValueBox="true" isIOBox="true" Value="Then see if tangents fix bugs...&#xD;&#xA;and try it with a normal map">
+          <Pad Id="JZu8LFj4LOsMeFHqumT3T5" Bounds="1828,309,455,45" ShowValueBox="true" isIOBox="true" Value="Try tangents and normal mapping">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -536,7 +511,7 @@
             <Pin Id="EEW6utOoJrzOqC9ZP7KlGK" Name="Is Loading" Kind="OutputPin" />
             <Pin Id="SNfzIBAtQ19P183tWO5r3W" Name="Already Loaded" Kind="OutputPin" />
           </Node>
-          <Pad Id="Qx8ayySPMNIPmLaZerSaik" Comment="Path" Bounds="633,914,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\..\..\Program Files\vvvv\vvvv_gamma_5.3-0088-gd2b84ddcc4\packs\VL.Stride.Runtime\help\Assets\UVChecker.png">
+          <Pad Id="Qx8ayySPMNIPmLaZerSaik" Comment="Path" Bounds="633,914,140,15" ShowValueBox="true" isIOBox="true" Value="UVCheckerMap1024_Quadrants.png">
             <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
@@ -617,15 +592,6 @@
               </p:TypeArguments>
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="IherYVo8QCRLRpTcGXZDvd" Bounds="1822,180,266,19" ShowValueBox="true" isIOBox="true" Value="support other height modes?">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
           <Pad Id="Hz7YJyXg3c0ObdzvqO8JEP" Bounds="899,661,309,42" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;only height mode 1 (Y = UP) supported by polytubes for now">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -636,6 +602,15 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="B9vfi8H9MhLNdbwxP3YPfq" Bounds="530,262,459,26" ShowValueBox="true" isIOBox="true" Value="Note only uses polygon outer shape for Polygon Tube. Holes are ignored.&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CW8C0ALC2LlMXHC6ka8mkm" Bounds="1853,252,275,19" ShowValueBox="true" isIOBox="true" Value="do end caps UV modes">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

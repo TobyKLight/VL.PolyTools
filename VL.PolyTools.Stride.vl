@@ -10319,6 +10319,24 @@
               <ControlPoint Id="BYhTLaHRPEwOjl7etLxRD0" Bounds="2437,1074" Alignment="Bottom" />
             </Node>
             <Pad Id="UUeVRetOvExMLuGZxXsAii" SlotId="FhpyRyZUKdxOBZzd2RXmEl" Bounds="2432,1101" />
+            <Overlay Id="DvBpPmd4rxmPUFzhYVMJro" Name="SetPolygonFromOuterPoints" Bounds="2086,1168,820,443" />
+            <Pad Id="Rjc0ukKmIXqP57phCvbD5W" SlotId="MxSSyDvrNFkLECF0jslOOU" Bounds="2185,1343" />
+            <Node Bounds="2184,1279,46,26" Id="TkiFCMNufs8OhtQhupA8Iu">
+              <p:NodeReference LastCategoryFullName="PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="RecordType" Name="Polygon" />
+                <CategoryReference Kind="RecordType" Name="Polygon" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="PolyTools" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+                <Choice Kind="OperationCallFlag" Name="Create" />
+              </p:NodeReference>
+              <Pin Id="FqKFQYCHHDJNcig5qZDThv" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="HPsy1M3qFmdLWMTmPtr5K7" Name="OuterContour" Kind="InputPin" />
+              <Pin Id="IVWh1rgOoPYONHlLZPNME5" Name="HoleContours" Kind="InputPin" />
+              <Pin Id="PcVocf4vyFnQUZxkt9WKaT" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="LbUrp0QcIslObPlZuhNRut" Name="SuccessFindBounds" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="HwlOBV4qoPvL6maSrkLbpS" Bounds="2187,1240" />
           </Canvas>
           <ProcessDefinition Id="LsQ0KlmglSXOab5bxqZW0M" IsHidden="true">
             <Fragment Id="IJVYMc6k03hO5WQW8duxgU" Patch="SZd6dV7xUJBPM1fO3W08Rf" Enabled="true" />
@@ -10331,6 +10349,7 @@
             <Fragment Id="SiDJd0FiUvUN1MsE0h3OUQ" Patch="Lpn0q9GguiWM9kNAPd6MGB" />
             <Fragment Id="NCrSfT5ZkCVPr4vLTi0rvL" Patch="VzcbtAQ7xS7MeIUVn8AzmM" />
             <Fragment Id="IEcWaPm6CU3NCFtJqOikzl" Patch="PYWADz6ziFmODau8CV9hKe" />
+            <Fragment Id="PEnavzqVN8tPZb9dDPPRmg" Patch="NIFexrVvt1MOnVtHVIm4Ce" />
           </ProcessDefinition>
           <Slot Id="MxSSyDvrNFkLECF0jslOOU" Name="Polygon">
             <p:TypeAnnotation p:Type="TypeReference">
@@ -10556,6 +10575,12 @@
           <Link Id="LKTFqa78ih2QEhYdWJJ3Rf" Ids="K0KY50oeSj8Lmin19HwYGq,Aj2nVxJCNcsMccp0si8MXp" />
           <Link Id="P5wt7HK3eW2MpCjV0dMVNp" Ids="JyTRT8eFUOaMopOyMRolml,OHCRJVi1IbEPXiXpTMn2Iu" />
           <Link Id="TatbNI69AYBNOibctQHreg" Ids="FRzBUCww0oONDKa6GCxXbW,MFMCeabh53sLUH2BetG16t" />
+          <Link Id="Axiq5NXq5XNM6i2aFhwWGx" Ids="PcVocf4vyFnQUZxkt9WKaT,Rjc0ukKmIXqP57phCvbD5W" />
+          <Link Id="AFEiNQRivZ7NQT3ZZ4J7EO" Ids="HwlOBV4qoPvL6maSrkLbpS,HPsy1M3qFmdLWMTmPtr5K7" />
+          <Patch Id="NIFexrVvt1MOnVtHVIm4Ce" Name="SetPolygonFromOuterPoints">
+            <Pin Id="CryVKGp2mrrPYj410wruCh" Name="OuterContour" Kind="InputPin" />
+          </Patch>
+          <Link Id="GoVt2swG4dPMOW0pu9reDF" Ids="CryVKGp2mrrPYj410wruCh,HwlOBV4qoPvL6maSrkLbpS" IsHidden="true" />
         </Patch>
       </Node>
       <!--
