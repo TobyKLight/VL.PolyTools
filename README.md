@@ -13,10 +13,18 @@ Type
 
 # What kind of things does it do? 
 
-![image](https://user-images.githubusercontent.com/4467208/193471641-538d34a3-54cb-481e-b99e-4a1eda421d92.png)
-
+![image](https://github.com/TobyKLight/VL.PolyTools/assets/4467208/8f598eec-f057-40ab-8c57-2e13ff3787f6)
 Interactive Helppatches
 
+![PolyTubeStars](https://github.com/TobyKLight/VL.PolyTools/assets/4467208/5986ffa5-9d8d-4c73-aea9-80f3213ac98a)
+Polygon Tube
+
+
+![NormalMappedTube](https://github.com/TobyKLight/VL.PolyTools/assets/4467208/19301827-0490-49e9-a320-359cd1e0e48a)
+Polygon Tube with normal mapping
+
+![LerpDemo](https://github.com/TobyKLight/VL.PolyTools/assets/4467208/e7a47c1c-5f02-45af-bd93-1374cdacf694)
+Lerp between 2D Polygons in 2D and 3D
 
 ![VL PolyTools FOV Calc](https://user-images.githubusercontent.com/4467208/193471193-00f37121-4291-4f5e-96b8-f6f1b4862b12.gif)
 
@@ -81,7 +89,6 @@ V1.2.1
 * Improved the TriangleContainsPoint helppatch  
 * Aspect changed on PolygonVisibility nodes to advanced. 
 * Added PointCount operation to Polygon datatype 
-
 
 V1.1.3 
 * Removed stride physics Raycast function now there is a native one shipped with vvvv 5.3 
