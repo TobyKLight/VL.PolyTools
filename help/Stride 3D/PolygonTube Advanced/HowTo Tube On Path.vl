@@ -69,7 +69,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="BCGD34xPvHAPc2giXoexHt" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="ERiACIt0kUoL2zyS2951kb" Name="Bounds" Kind="InputPin" DefaultValue="0, 23.2, 1536, 800.8" />
+            <Pin Id="ERiACIt0kUoL2zyS2951kb" Name="Bounds" Kind="InputPin" DefaultValue="19.2, 49.6, 889.6, 513.6" />
             <Pin Id="VENYsSX8mq3MvkZZl8q2KZ" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="BY3QAr90FqzOZ83pLYlCXD" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="GRfVUKybwlFLtwI7Od4aKl" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -259,7 +259,7 @@
               </Node>
             </Patch>
           </Node>
-          <Pad Id="JZPwfM38lcZMbs5qwvYBOp" Comment="ShowWireframe" Bounds="767,2067,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="JZPwfM38lcZMbs5qwvYBOp" Comment="ShowWireframe" Bounds="767,2067,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -374,7 +374,7 @@
             <Pin Id="GOJ4ACLEW8cOGUnW89fCOE" Name="Count" Kind="InputPin" DefaultValue="21" />
             <Pin Id="O1cW0dCVkcWNyEPZ2pMser" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="Ddzeeq7FooqPB0XUkbQPn1" Comment="UVCalcMode" Bounds="715,1628,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="Ddzeeq7FooqPB0XUkbQPn1" Comment="UVCalcMode" Bounds="715,1628,35,15" ShowValueBox="true" isIOBox="true" Value="3">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -385,23 +385,23 @@
             </p:TypeAnnotation>
           </Pad>
           <Overlay Id="HnUeT1MfzroMf1DyLclDI7" Name="Make 3D" Bounds="480,1083,592,316" />
-          <Node Bounds="711,1208,191,127" Id="VygBwyXdFm9MZDE2uwWT38">
+          <Node Bounds="625,1205,191,127" Id="VygBwyXdFm9MZDE2uwWT38">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Primitive" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
             </p:NodeReference>
             <Pin Id="G1fT3FtVq1JLKm6NRNZIR7" Name="Break" Kind="OutputPin" />
-            <ControlPoint Id="EW7bsJjMyBTLHIfPspgqXp" Bounds="725,1214" Alignment="Top" />
-            <ControlPoint Id="OppIdXDHEP8NZMtCKyxpSj" Bounds="726,1329" Alignment="Bottom" />
+            <ControlPoint Id="EW7bsJjMyBTLHIfPspgqXp" Bounds="639,1211" Alignment="Top" />
+            <ControlPoint Id="OppIdXDHEP8NZMtCKyxpSj" Bounds="640,1326" Alignment="Bottom" />
             <Patch Id="UH99qXcepfsPozbn17YTgO" ManuallySortedPins="true">
               <Patch Id="SEZYYQnv5vGPDR1nnlco8y" Name="Create" ManuallySortedPins="true" />
               <Patch Id="BAPSc1omHGJNyB7813yVwt" Name="Update" ManuallySortedPins="true" />
               <Patch Id="Ee22jMHmi2mOgxmwg37cz4" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="725,1248,55,26" Id="TOCfg36b2IXOU3R1FFQHgO">
+              <Node Bounds="639,1245,69,26" Id="TOCfg36b2IXOU3R1FFQHgO">
                 <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="RecordType" Name="Polygon3D" />
+                  <CategoryReference Kind="RecordType" Name="Polygon2DPlus" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
                 </p:NodeReference>
                 <Pin Id="EwpmLfHkF96MPdEFi6v8dA" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -409,25 +409,25 @@
                 <Pin Id="JcwWEts2PTBMRjjD92BT2u" Name="HeightMode" Kind="InputPin" DefaultValue="1" />
                 <Pin Id="Qe4yTKHLcFILpTKiuTR5eo" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="Aov2oLW8fPCMh50gvhDiQq" Comment="HeightMode" Bounds="778,1236,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+              <Pad Id="Aov2oLW8fPCMh50gvhDiQq" Comment="HeightMode" Bounds="692,1233,35,15" ShowValueBox="true" isIOBox="true" Value="0">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Integer32" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="727,1289,64,26" Id="B20DziReveqMg1ulQPCtOw">
-                <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+              <Node Bounds="639,1284,77,26" Id="B20DziReveqMg1ulQPCtOw">
+                <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="RecordType" Name="Polygon3D" />
-                  <Choice Kind="OperationCallFlag" Name="Transform" />
+                  <CategoryReference Kind="RecordType" Name="Polygon2DPlus" />
+                  <Choice Kind="OperationCallFlag" Name="SetTransform" />
                 </p:NodeReference>
                 <Pin Id="NNIA9RKomRRMoRz9M2H04t" Name="Input" Kind="StateInputPin" />
                 <Pin Id="I3duFMYKbxRLD1Giq8kyjL" Name="Transform" Kind="InputPin" />
                 <Pin Id="ArxLVAFyu2CNIjTODOcE7n" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="K521AJYFr1TN3FtW1KhlXF" Bounds="786,1214" Alignment="Top" />
+            <ControlPoint Id="K521AJYFr1TN3FtW1KhlXF" Bounds="711,1211" Alignment="Top" />
           </Node>
-          <Pad Id="AP5qYQKaqgWM1ZFWyiE85N" Bounds="486,1117,262,19" ShowValueBox="true" isIOBox="true" Value="see  helppatch 'Generate 3D Polygons'">
+          <Pad Id="AP5qYQKaqgWM1ZFWyiE85N" Bounds="486,1117,262,19" ShowValueBox="true" isIOBox="true" Value="see  helppatch 'Generate 2DPlus Polygons'">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -799,7 +799,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="EMTbaR2j82hMyVbCak6jQv" Comment="Count" Bounds="688,511,35,15" ShowValueBox="true" isIOBox="true" Value="8">
+          <Pad Id="EMTbaR2j82hMyVbCak6jQv" Comment="Count" Bounds="740,378,35,15" ShowValueBox="true" isIOBox="true" Value="8">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -1017,7 +1017,7 @@
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="A6sUHJq51MbMl1tPGj3D4l" Comment="" Bounds="970,810,35,49" ShowValueBox="true" isIOBox="true" Value="0.31, 0.3">
+          <Pad Id="A6sUHJq51MbMl1tPGj3D4l" Comment="" Bounds="970,810,35,49" ShowValueBox="true" isIOBox="true" Value="0, 0">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -1027,7 +1027,7 @@
               </p:TypeArguments>
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="EgF0y92IcorMvmQ3IokR8d" Comment="" Bounds="1028,801,35,49" ShowValueBox="true" isIOBox="true" Value="10, 12">
+          <Pad Id="EgF0y92IcorMvmQ3IokR8d" Comment="" Bounds="1028,801,35,95" ShowValueBox="true" isIOBox="true" Value="12, 9, 6, 2, 15">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -1036,6 +1036,50 @@
                 </TypeReference>
               </p:TypeArguments>
             </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="704,1535,185,19" Id="HZZPWyfonubL4H6zkMsiyM">
+            <p:NodeReference LastCategoryFullName="Stride.Materials" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TextureMaterial" />
+            </p:NodeReference>
+            <Pin Id="BOpOYdfTk97LC2n65cYafg" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KA4Inp006AfNnX7S9rJMHO" Name="Texture" Kind="InputPin" />
+            <Pin Id="SuxSXldLqdEOZSzcxvzsAd" Name="Fallback Color" Kind="InputPin" />
+            <Pin Id="SFHjORPMQCeMqPTCvVMi2D" Name="Texcoord Index" Kind="InputPin" />
+            <Pin Id="Q79vo4uBzAmPdsVPcnBMpV" Name="Filtering" Kind="InputPin" />
+            <Pin Id="AFJPVGNwcnRLkqHezOmMGW" Name="Address Mode U" Kind="InputPin" />
+            <Pin Id="GbVjNHXOkYDPULEKAIbnHK" Name="Address Mode V" Kind="InputPin" />
+            <Pin Id="FeJBv9oaIolPp6NzfZMzwX" Name="Scale" Kind="InputPin" />
+            <Pin Id="NOdTCzxFkI6MXmvxoRHRJ4" Name="Offset" Kind="InputPin" />
+            <Pin Id="MYOOBWnGNFeM1yVEYtOULI" Name="Transparency" Kind="InputPin" />
+            <Pin Id="IJNJMAV53OFLQDb6wx8tyn" Name="Cull Mode" Kind="InputPin" />
+            <Pin Id="OVjEtXoJzLyPZtT9YFQSdQ" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="701,1508,105,19" Id="PbD3MqFKQsfMSqhXuR9nKx">
+            <p:NodeReference LastCategoryFullName="Stride.Assets" LastDependency="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FileTexture" />
+            </p:NodeReference>
+            <Pin Id="Ceg8ZOPdS3fLCT5raAGB5y" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="A84thPkWD02MLpIItimWPM" Name="Path" Kind="InputPin" DefaultValue="UVCheckerMap1024_Quadrants.png" />
+            <Pin Id="HzvajkequXsQLEoxWXr4bh" Name="Generate Mipmaps" Kind="InputPin" />
+            <Pin Id="DMlSZDLgn6NPU2gKzpYhEm" Name="Is sRGB" Kind="InputPin" IsHidden="true" />
+            <Pin Id="RxUrGMdVm12LheQEBS4Vdm" Name="Premultiply Alpha" Kind="InputPin" />
+            <Pin Id="TVzGz9OUBUOLpm0krnnwhx" Name="Compress" Kind="InputPin" />
+            <Pin Id="ARAsB9cU4LEMswWiBaIa8E" Name="Alpha Format" Kind="InputPin" />
+            <Pin Id="JBbO2FqOLZDLegnSLeQJmP" Name="Reload" Kind="InputPin" />
+            <Pin Id="Ih2wfSP6IbANLEwUlPe9tu" Name="Texture" Kind="OutputPin" />
+            <Pin Id="NVx9LkpkvWJLGxYFw5g4dF" Name="Is Loading" Kind="OutputPin" />
+            <Pin Id="QyqryhGPtDUO3gXF2PLSi8" Name="Already Loaded" Kind="OutputPin" />
+          </Node>
+          <Pad Id="CbH3UVBtnM0MqeYXpY1cvH" Bounds="1693,25,425,62" ShowValueBox="true" isIOBox="true" Value="What about case with tubes without height... where you want all the transforms to act on a Y=0 disc... but UVs need some kinda scaling.&#xD;&#xA;UV mode 3? ">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
           </Pad>
         </Canvas>
         <Patch Id="PGZR2n27iQ1MYpmpZmTMim" Name="Create" />
@@ -1066,7 +1110,6 @@
         <Link Id="B14ENj7bM3OO73UH72JU8C" Ids="EW7bsJjMyBTLHIfPspgqXp,VGfFHmir1ZlP1KFXCzDRMa" />
         <Link Id="Qgfsc9yaZh9ON3WoKytu3K" Ids="OppIdXDHEP8NZMtCKyxpSj,S9U8qx02t0RMKJRZB30tff" />
         <Link Id="CErncpvZGwCMaPdlkjbCRC" Ids="Aov2oLW8fPCMh50gvhDiQq,JcwWEts2PTBMRjjD92BT2u" />
-        <Link Id="TU3b4CFwPcuMKU1VkayYJn" Ids="V36f1HkHPVIMENx3SimWtT,QOjuTd0Pu0XO8lwJXwmW3L" />
         <Link Id="Up9WW08EohKPpeSjeD2xeI" Ids="R3REY8kiHzgOuw7ZXeiP7J,BY9EuYi8dtnPbs3y3jkxj4" />
         <Link Id="T340xpbUcbeN7PIzNDfzmy" Ids="BY9EuYi8dtnPbs3y3jkxj4,KKxW2nxw6uKMoBLsrna19H" />
         <Link Id="FpJOe05fdFLQWkYvCHypAd" Ids="PMR4bcjWhEOO2paTm8AACO,CabGjfGRCjNMPT9kbb1xQK" />
@@ -1142,6 +1185,8 @@
         <Link Id="GEMlfVGEOE9N5RrwyJJDOi" Ids="Sxp3z6WVjc8PL9uwgxpiVS,UYoYFwYA5jkOwFgjRK7W9Y" IsFeedback="true" />
         <Link Id="IXOri8TZIiKMnxJspmzziz" Ids="BB18OzOsXyrLi6dsqSkz9C,UYoYFwYA5jkOwFgjRK7W9Y" />
         <Link Id="Cg4a9tA0b5TO1xmCxl1w7E" Ids="UYoYFwYA5jkOwFgjRK7W9Y,Opx9Kt1RbwYLfKjyzGJxKF" />
+        <Link Id="LTTJYi7NSKFP9IOQTdOR8L" Ids="Ih2wfSP6IbANLEwUlPe9tu,KA4Inp006AfNnX7S9rJMHO" />
+        <Link Id="L6l2d79nfyyPKHRA7133it" Ids="OVjEtXoJzLyPZtT9YFQSdQ,QOjuTd0Pu0XO8lwJXwmW3L" />
       </Patch>
     </Node>
   </Patch>

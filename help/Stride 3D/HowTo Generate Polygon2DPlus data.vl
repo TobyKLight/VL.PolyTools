@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Jnq3iphjmLuP1CQwqUwQ17" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="Pv7tr4TodwGPy6qO5UpXPR" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
   <NugetDependency Id="MH4vpypJZ2EQA3PuUKs339" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
   <Patch Id="CQqzKaaCA9rOSEU9Awrh3s">
     <Canvas Id="GYNuFdzosAAMTWxb5287UJ" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -90,7 +90,7 @@
             <Pin Id="CFZ5m3rllEUOuIn7ziumGE" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="II36EIPDHiQMS7wm1vv4Bv" SlotId="P67roXXX9YzMZrZQIXjEMq" Bounds="800,442" />
-          <Overlay Id="Q5WhnEknNJkNZOUwxTewVe" Name="Creating a Polygon3D" Bounds="655,645,339,322" />
+          <Overlay Id="Q5WhnEknNJkNZOUwxTewVe" Name="Creating a Polygon2DPlus" Bounds="655,645,339,322" />
           <Node Bounds="241,1673,545,19" Id="LfzURz3imOHNdboaAO0UbX">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -171,7 +171,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Overlay Id="ErHYUx3IbshOWPOaSvwx7l" Name="Lights and render window" Bounds="158,1494,433,323" />
-          <Pad Id="Rs2QP6dvORSN21CvBWjotQ" Bounds="619,506,435,147" ShowValueBox="true" isIOBox="true" Value="The Polygon3D datatype takes a polygon and makes it... 3D. &#xD;&#xA;(3D In data only. You still have to bring it a 3D drawing node to draw it. )&#xD;&#xA;&#xD;&#xA;The purpose of this node is to allow you to work in 3D with shapes that are still mostly 2D and can be extracted back to their 2D form. In VL.Polytools this is used for dynamic modelling nodes like PolyTube as groups of 2D shapes are generally easier to model with than directly manipulating 3D meshes. ">
+          <Pad Id="Rs2QP6dvORSN21CvBWjotQ" Bounds="617,489,436,165" ShowValueBox="true" isIOBox="true" Value="The Polygon2DPlus datatype takes a polygon and annotates a third dimension. But it's not actaully 3D until you run the XYZ operation.&#xD;&#xA;(3D In data only. You still have to bring it a 3D drawing node to draw it. )&#xD;&#xA;&#xD;&#xA;The purpose of this node is to allow you to work in 3D with shapes that are still mostly 2D and can be extracted back to their 2D form. In VL.Polytools this is used for dynamic modelling nodes like PolyTube as groups of 2D shapes are generally easier to model with than directly manipulating 3D meshes. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -180,10 +180,10 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="781,861,55,26" Id="PBkSS3qbwVMQVf63mmml1a">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+          <Node Bounds="781,861,69,26" Id="PBkSS3qbwVMQVf63mmml1a">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
+              <CategoryReference Kind="RecordType" Name="Polygon2DPlus" NeedsToBeDirectParent="true" />
               <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
             <Pin Id="A4TTpNIntdgQMKhCi9SVAI" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -260,18 +260,19 @@
           </Pad>
           <Overlay Id="RBozJKY7lfHLSG4kQpumPj" Name="Splits" Bounds="2427,994,506,327" />
           <Pad Id="GaSQd7w0q3SM7khFoCgjyu" SlotId="DSvWs5S051pLG4lw9tMZz4" Bounds="2546,1064" />
-          <Node Bounds="2545,1086,65,26" Id="OthhhzamKNmNYDlSq4VFYV">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+          <Node Bounds="2545,1086,105,26" Id="OthhhzamKNmNYDlSq4VFYV">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
+              <CategoryReference Kind="RecordType" Name="Polygon2DPlus" NeedsToBeDirectParent="true" />
               <Choice Kind="OperationCallFlag" Name="Split" />
             </p:NodeReference>
             <Pin Id="EDMJhskQ5enOlIQf6baGLp" Name="Input" Kind="StateInputPin" />
-            <Pin Id="CmeauugxhSoMhEt1KwOxat" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="CmeauugxhSoMhEt1KwOxat" Name="Output" Kind="OutputPin" />
             <Pin Id="SAcIlWHvj2qN31bmTBU7gG" Name="Polygon" Kind="OutputPin" />
             <Pin Id="PWZWQXsa5BYLY36oRvVO5T" Name="ThirdDimDataOuterContour" Kind="OutputPin" />
             <Pin Id="LUsBl2TKm5BN4jY8WdjsPK" Name="ThirdDimDataHoleContours" Kind="OutputPin" />
             <Pin Id="RDTE2pxvIyVMD7pNhBgNWG" Name="HeightMode" Kind="OutputPin" />
+            <Pin Id="Vtg4Q89J968Lgd6C9J45XN" Name="Transform" Kind="OutputPin" />
           </Node>
           <Pad Id="QhcFoFmgT4yOYZ2BjhLV9b" Bounds="2615,1098,249,97" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;regular split, get your data back as Polygon and seperate spreads for the third dimension">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -282,14 +283,13 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="2545,1215,55,26" Id="Rx724dGgPBVM1VlC9ynr4x">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+          <Node Bounds="2545,1215,69,26" Id="Rx724dGgPBVM1VlC9ynr4x">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
-              <Choice Kind="OperationCallFlag" Name="SplitXYZ" />
+              <Choice Kind="OperationCallFlag" Name="XYZ" />
             </p:NodeReference>
             <Pin Id="K47VhMcRKK9PecYITDqaMK" Name="Input" Kind="StateInputPin" />
-            <Pin Id="CqOZv8o4F8tOaSQkrDPZ7z" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="RgcBl7RpVsnPag2QpTECks" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="VOXucY9pw5zNgRHYNbTL8t" Name="OuterContour" Kind="OutputPin" />
             <Pin Id="IDjC1UK6uxlLBcZrXnrZPr" Name="HoleContoursXYZ" Kind="OutputPin" />
             <Pin Id="JKLPAQw3NmQO0VE76xc0Lv" Name="HeightMode" Kind="OutputPin" />
@@ -307,11 +307,10 @@
           <Overlay Id="P2BJy141HMMOm7H8pUM6fq" Name="Case1 Set Height Simple" Bounds="570,992,420,407" />
           <Overlay Id="GYqVt8QIfDMOP9A3il3jCT" Name="Case3 Transform" Bounds="1431,991,420,407" />
           <Pad Id="NcdHCakxWObMWHPkK1YfpA" SlotId="DSvWs5S051pLG4lw9tMZz4" Bounds="1507,1080" />
-          <Node Bounds="1503,1340,64,26" Id="AtlnJHZlC1dOL2BS8vZbop">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+          <Node Bounds="1503,1340,77,26" Id="AtlnJHZlC1dOL2BS8vZbop">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
-              <Choice Kind="OperationCallFlag" Name="Transform" />
+              <Choice Kind="OperationCallFlag" Name="SetTransform" />
             </p:NodeReference>
             <Pin Id="QC0e3I6HRkfLIke7yTkNUC" Name="Input" Kind="StateInputPin" />
             <Pin Id="Uc1KOoOiBtNMmvf3Iv6ypZ" Name="Transform" Kind="InputPin" />
@@ -320,9 +319,8 @@
           <Overlay Id="U80z6ukp6ErLA8JKnboi1y" Name="Case4 Set Height AND Transform" Bounds="1860,990,533,407" />
           <Pad Id="T965SdY2TodMavUeZOShHm" SlotId="DSvWs5S051pLG4lw9tMZz4" Bounds="673,1188" />
           <Node Bounds="1070,1293,82,26" Id="V0Mllv4xM6wMyS0SJGIZaA">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
               <Choice Kind="OperationCallFlag" Name="SetHeights" />
             </p:NodeReference>
             <Pin Id="UlKz0VUCe0iQK3VWfypw7P" Name="Input" Kind="StateInputPin" />
@@ -332,9 +330,8 @@
           </Node>
           <Overlay Id="EoLUCioin5vLIIraoA4ujh" Name="Case2 Set All Heights " Bounds="999,989,420,407" />
           <Node Bounds="672,1216,85,26" Id="J1EK2yKLvxkQK73aSmvsCv">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
               <Choice Kind="OperationCallFlag" Name="SetHeightFixed" />
             </p:NodeReference>
             <Pin Id="JKRzkwB3zTJNwIpZHF9wx4" Name="Input" Kind="StateInputPin" />
@@ -346,7 +343,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="249,1535,145,19" Id="T0ivhhabNLDPgTzP0FtSy7">
+          <Node Bounds="249,1535,165,19" Id="T0ivhhabNLDPgTzP0FtSy7">
             <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OutlinePolygon (Stride)" />
@@ -360,6 +357,9 @@
             <Pin Id="RBdwQVQsNEdPxhccXGVKRB" Name="Children" Kind="InputPin" />
             <Pin Id="VfSF5KrBcwNOzmjebIksu9" Name="Name" Kind="InputPin" />
             <Pin Id="FRPuJrXja8YLkmUsuYUErg" Name="Enabled" Kind="InputPin" />
+            <Pin Id="U0WWZS8vbKlN6SB8nURk3f" Name="ShowStartingArrow" Kind="InputPin" />
+            <Pin Id="CTi1qe6nl17OXifvCXLBhZ" Name="ArrowSize" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HL531H0jm4ePIZJUdVmwNr" Name="ArrowColor" Kind="InputPin" IsHidden="true" />
             <Pin Id="PiUxQFN41ShL6cdlXBeOJh" Name="Entity" Kind="OutputPin" />
           </Node>
           <ControlPoint Id="TMr77D9QuJqMfgKxml64Th" Bounds="674,1381" />
@@ -375,18 +375,19 @@
           <Pad Id="Es1NZpQlvAOQaB4FsQwSqw" SlotId="DSvWs5S051pLG4lw9tMZz4" Bounds="1075,1114" />
           <Overlay Id="LonL8Nbjk2lOBKvSHx1K8p" Name="Manipulating 2D polygons and returning to 3D" Bounds="2952,990,563,482" />
           <Pad Id="Eanzb9pV59PNNgXIiogg1U" SlotId="DSvWs5S051pLG4lw9tMZz4" Bounds="3080,1075" />
-          <Node Bounds="3077,1097,65,26" Id="Mif2fGyPphALDXniszoLjH">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+          <Node Bounds="3077,1097,105,26" Id="Mif2fGyPphALDXniszoLjH">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
+              <CategoryReference Kind="RecordType" Name="Polygon2DPlus" NeedsToBeDirectParent="true" />
               <Choice Kind="OperationCallFlag" Name="Split" />
             </p:NodeReference>
             <Pin Id="C3H8YqHU25LOD3uclBdDk5" Name="Input" Kind="StateInputPin" />
-            <Pin Id="Me8YCYinD9QOJ5HZJdYKoL" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="ToRYyG5XFjmPvYX9c08lWj" Name="Output" Kind="OutputPin" />
             <Pin Id="PPsvyArSYXxPqVF7p1OY1D" Name="Polygon" Kind="OutputPin" />
             <Pin Id="Gr8pW2u2KXdMVZVuW4wzuk" Name="ThirdDimDataOuterContour" Kind="OutputPin" />
             <Pin Id="GJOwYyyezGcN8UlPxpT4Nd" Name="ThirdDimDataHoleContours" Kind="OutputPin" />
             <Pin Id="EDbNTAX8M2zLKRnVTs4B7L" Name="HeightMode" Kind="OutputPin" />
+            <Pin Id="TpxRqSgFCPHNndIK6rHP9E" Name="Transform" Kind="OutputPin" />
           </Node>
           <Pad Id="HdlfQtd4vjbOV0wa7LFzoG" Bounds="3201,1078,294,191" ShowValueBox="true" isIOBox="true" Value="do this if you want to manipulate your polygon back in 2D space and return it to 3d.&#xD;&#xA;&#xD;&#xA;Note If the point count changed in your 2D operations then the height spread in the new Polygon3D will also get a new pointcount to match. It will either fill or cut values from the original height spread.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -397,21 +398,10 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="3077,1185,64,26" Id="TEqF7JRJLZmNJVm2GyDWWl">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
+          <Node Bounds="3077,1279,69,26" Id="RtrcD8E2KuxNw5qCqxtKs9">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon" />
-              <Choice Kind="OperationCallFlag" Name="Transform" />
-            </p:NodeReference>
-            <Pin Id="Iyhv8F3XSecNRvIhQAPnpi" Name="Input" Kind="StateInputPin" />
-            <Pin Id="RqCkYdfbRnTQJffsuqpTxC" Name="Transformation" Kind="InputPin" />
-            <Pin Id="OiAazGnXa2UP8fzKYVYK1H" Name="TransformHoles" Kind="InputPin" />
-            <Pin Id="BqMVHNUFet4O64PA2KXPz3" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Node Bounds="3077,1279,55,26" Id="RtrcD8E2KuxNw5qCqxtKs9">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
+              <CategoryReference Kind="RecordType" Name="Polygon2DPlus" NeedsToBeDirectParent="true" />
               <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
             <Pin Id="AEHkmO5Qv0dL5LBKsNXO3I" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -419,10 +409,9 @@
             <Pin Id="Nlp0V7wI6f9P54W43EELne" Name="HeightMode" Kind="InputPin" />
             <Pin Id="CtwgqwBwNlHO6oox36qA5e" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="3077,1351,65,26" Id="NMYylPxFQHJPsUQPm0cYA2">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+          <Node Bounds="3077,1351,69,26" Id="NMYylPxFQHJPsUQPm0cYA2">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
               <Choice Kind="OperationCallFlag" Name="SetHeights" />
             </p:NodeReference>
             <Pin Id="N7NdIcovqKyMK0MqlMBG1a" Name="Input" Kind="StateInputPin" />
@@ -438,13 +427,12 @@
           <ControlPoint Id="BsyBXS3x2zmLbH0jAk54SF" Bounds="3148,1332" />
           <Overlay Id="TN8bznGU5A9QRf45Dv9JGL" Name="2D edit" Bounds="3039,1145,149,103" />
           <Node Bounds="1115,1130,71,26" Id="AWn3yLq0BsDN05CSwqbGEn">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
               <Choice Kind="OperationCallFlag" Name="PointCounts" />
             </p:NodeReference>
             <Pin Id="Mwc9mU2QaOcLLqKH7YdfRr" Name="Input" Kind="StateInputPin" />
-            <Pin Id="B0YpG0hbjQkLoGWs4oyrog" Name="Output" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="B0YpG0hbjQkLoGWs4oyrog" Name="Output" Kind="OutputPin" />
             <Pin Id="CkW1H5wEANiNnqzTWo6sFu" Name="OuterContourPointCount" Kind="OutputPin" />
             <Pin Id="IjR28TfbeItLB9tk66NXCZ" Name="HolesPointCounts" Kind="OutputPin" />
           </Node>
@@ -501,7 +489,7 @@
               </p:TypeArguments>
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="MTazG8BOS1DLrzA8eNX24d" Bounds="1512,1042,313,188" ShowValueBox="true" isIOBox="true" Value="Transform a Polygon in 3D, including holes.&#xD;&#xA;Note this transforms the polygon point data. (Eg If you split the poly after the transform you will have the permanently updated points)&#xD;&#xA;&#xD;&#xA;This is like 'editing' the actual shape. To just move the shape within the scene use the transform on the drawing entity (in this case OutlinePolygon). &#xD;&#xA;">
+          <Pad Id="MTazG8BOS1DLrzA8eNX24d" Bounds="1512,1042,313,188" ShowValueBox="true" isIOBox="true" Value="Sets a transform 'non destructively'. It's only applied to points when you run the final XYZ method. &#xD;&#xA;&#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -548,11 +536,10 @@
             <Pin Id="OihgystNsqLPwlK1MQgYxp" Name="On New Cycle" Kind="OutputPin" />
             <Pin Id="UN7SQNpIpxVNErxbZFLPln" Name="Cycles" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1942,1345,64,26" Id="SlxJHEzUdbBLQunJ5SSKC5">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+          <Node Bounds="1942,1345,77,26" Id="SlxJHEzUdbBLQunJ5SSKC5">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
-              <Choice Kind="OperationCallFlag" Name="Transform" />
+              <Choice Kind="OperationCallFlag" Name="SetTransform" />
             </p:NodeReference>
             <Pin Id="Qc9ywOOMktOLIX803ghQAN" Name="Input" Kind="StateInputPin" />
             <Pin Id="LCNkFoN8n3wNkFpKtZ61Iz" Name="Transform" Kind="InputPin" />
@@ -598,9 +585,8 @@
           </Node>
           <Pad Id="LzYrBfSTnysMpAr2U400D2" SlotId="DSvWs5S051pLG4lw9tMZz4" Bounds="1947,1063" />
           <Node Bounds="1943,1116,85,26" Id="QAQ9OITyCwCLFii1ZjoiMP">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
               <Choice Kind="OperationCallFlag" Name="SetHeightFixed" />
             </p:NodeReference>
             <Pin Id="R2xowxtOAU0OxGbUkBBfDI" Name="Input" Kind="StateInputPin" />
@@ -614,7 +600,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="SjhfqOWAe6nMU8cBmXemqo" Bounds="2100,1086,276,197" ShowValueBox="true" isIOBox="true" Value="This demonstrates issue you could run into by transforming points instead of entity. (see case3).&#xD;&#xA;&#xD;&#xA;Note here the rotation (correctly) rotates the 3D shape around its origin point. This may be unintuitive or confusing if you combine with final entity transforms as well.">
+          <Pad Id="SjhfqOWAe6nMU8cBmXemqo" Bounds="2100,1086,276,197" ShowValueBox="true" isIOBox="true" Value="&#xD;&#xA;&#xD;&#xA;Note if you set height AND transform then the rotation (correctly) rotates the 3D shape around its origin point. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -632,6 +618,20 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="3073,1196,85,19" Id="MCx4XMBJ0nBLvWzfZrbtVm">
+            <p:NodeReference LastCategoryFullName="PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Polygon" />
+              <Choice Kind="ProcessAppFlag" Name="Offset (Inflate Holes)" />
+            </p:NodeReference>
+            <Pin Id="S5fFiSlKsYBLG5q1JraRAU" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="D1kg1pkgi3GNNrzjc7JKdk" Name="Polygon" Kind="InputPin" />
+            <Pin Id="KELhh3UGgcKLz2qXWQLfQr" Name="Delta Outer" Kind="InputPin" />
+            <Pin Id="RP7hFhCdoP0OkJHtbzLZgF" Name="Delta Inner" Kind="InputPin" />
+            <Pin Id="GoLEnIZXTiiPt8JyPidxuJ" Name="Jointype" Kind="InputPin" />
+            <Pin Id="JYVeeFGcO4eQVgjQhURFAi" Name="Miter Limit" Kind="InputPin" />
+            <Pin Id="CNMuRCdliAUNUOdOViD7oI" Name="Polygon" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="FFe8F5Xj9ooLrkradwhxCU" Name="Create" />
         <Patch Id="BabPoRNkHpoPXEi8DIygW3" Name="Update" />
@@ -643,14 +643,14 @@
         <Link Id="ByeMH4GuplFQE9S32yvHef" Ids="F6MyyLh0j2ZL9N1a9D4lN1,GYCqa5UAXNhObrNwI7SOFP" />
         <Link Id="ShZ2z6Nk2BBPSszQ3z07dJ" Ids="NINJwRd9AUpLEWOQ27QP7Z,EH45YE7CA4YNYPVDNzkjSD" />
         <Link Id="Ah4RVeyddXKOVmj4dF6gky" Ids="CFZ5m3rllEUOuIn7ziumGE,KXjI6aVM9ZWQcn9RrOGVlF" />
-        <Slot Id="P67roXXX9YzMZrZQIXjEMq" Name="PolyA2D" />
+        <Slot Id="P67roXXX9YzMZrZQIXjEMq" Name="Poly2D" />
         <Link Id="CG0BQH1q9LON3kzsZNVlPt" Ids="QxScW1GKWtYOu2nKmZYKDs,II36EIPDHiQMS7wm1vv4Bv" />
         <Link Id="GB1Dl41Lz0qNvaWuuWu0KR" Ids="GsPzk54aSDuOb6UZp9stnj,KXWvRiCMEQaMELHrcC5l8l" />
         <Link Id="CFDrFuxPrtaP4n40ShOA9u" Ids="MGWemKlKRLdN7lKGs9k1sB,RSVhHHWO5EZMLv6CuKdrCR" />
         <Link Id="VAKMlNnLRiQPqC5tW6B9dz" Ids="RSXNQLXHnFZNOqbAGWdelJ,KoU4wFUe5PRNJcbKIVevVK" />
         <Link Id="R2hKKKxlMDzOyz7ldmm0uW" Ids="JvLzVGbobJ3N4CarUU2J1H,Tp3tUBLTrErL0fD2nf8Ohp" />
         <Link Id="LPBeGm0tgyWMAUzg0qM6zn" Ids="P8oDgDFjbShNUWqSl1PMUN,BkgR7hsLjZfOe6XF2iJWTW" />
-        <Slot Id="DSvWs5S051pLG4lw9tMZz4" Name="PolyA3D" />
+        <Slot Id="DSvWs5S051pLG4lw9tMZz4" Name="Poly2DPlus" />
         <Link Id="Vb6fLUvlDXfMhWm1AkhLG6" Ids="CECRSlPepmLMsSmiPgcFPp,IxYKgE3NB4wOZkR0jNtW7O" />
         <Link Id="FEyIwVOWYu4NSKprEQgRXB" Ids="RbsQmnfX9GILL02UI9ZgcO,RSz19baX7lfPjeGbPADndQ" />
         <Link Id="SJBazH4LSpCMWJzcPfjlMY" Ids="GaSQd7w0q3SM7khFoCgjyu,EDMJhskQ5enOlIQf6baGLp" />
@@ -663,8 +663,6 @@
         <Link Id="DcydsGEiTIWLgzO1H1aDe0" Ids="MEXrouJ4qdLM9daRHBhrgU,DoF259fra8dMqUJSLk1tlB" />
         <Link Id="S6rosR3eXrpMW0EbKACRw4" Ids="EnPs2oGwEYJNvwBC5SX95A,TMr77D9QuJqMfgKxml64Th,GOnrZsOp970QByklHlnDWf" />
         <Link Id="SdoypVBOL5UMqauqgjtr71" Ids="Eanzb9pV59PNNgXIiogg1U,C3H8YqHU25LOD3uclBdDk5" />
-        <Link Id="H60lASib3YROD47Ern8GgE" Ids="PPsvyArSYXxPqVF7p1OY1D,Iyhv8F3XSecNRvIhQAPnpi" />
-        <Link Id="FQbFs6uPl13NxMV4AZZTBl" Ids="BqMVHNUFet4O64PA2KXPz3,O5QkxFOQzB8PwKzg11Ems3" />
         <Link Id="H7Sfdi5H58EPRbA5A2MXp4" Ids="EDbNTAX8M2zLKRnVTs4B7L,UmRIiEnste7OxSO72KMuxl,DnmIeiuoMNRLZZKnnjMHWX,Nlp0V7wI6f9P54W43EELne" />
         <Link Id="KlHVjbQMyc9MC4Vx0UQO7F" Ids="CtwgqwBwNlHO6oox36qA5e,N7NdIcovqKyMK0MqlMBG1a" />
         <Link Id="I0C4M2N3rRoOKPLGTGGWeM" Ids="Gr8pW2u2KXdMVZVuW4wzuk,FP67G79h2AKMeniXwIurnl,BsyBXS3x2zmLbH0jAk54SF,JQe4Dg0RydFP6cST4MRzMq" />
@@ -691,6 +689,8 @@
         <Link Id="VE7cfIRam0eL4pdlC1Td7n" Ids="Ptf7F2iMd2DM3FbSEhszjC,GTXZ2vFuVUfM97B21r3H63,MqwJIp8D9FTO8fABGghXAj" />
         <Link Id="PVZscW6hIR2LhutFo4BmnC" Ids="DzEGZRGyf5HNgqUf17u1rV,TgpuLkjq9dmNGHauFZUVdB,RDB8apjSOU3OvSyOSr0tPk" />
         <Link Id="SLQbiOu2QGiPKcug81KqX0" Ids="Ak3N8kHDsRgPoptzqkmtU2,MirRAhysEpkMQP7cYr7aZ4" />
+        <Link Id="EviGRDp6hlxMtApkDxL3lP" Ids="PPsvyArSYXxPqVF7p1OY1D,D1kg1pkgi3GNNrzjc7JKdk" />
+        <Link Id="M3WSMYeGzwpOxhox0N6nWz" Ids="CNMuRCdliAUNUOdOViD7oI,O5QkxFOQzB8PwKzg11Ems3" />
       </Patch>
     </Node>
   </Patch>
