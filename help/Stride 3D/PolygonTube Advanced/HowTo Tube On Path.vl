@@ -41,7 +41,7 @@
       </p:NodeReference>
       <Patch Id="FRvutT31GSxLUAhItMmXKs">
         <Canvas Id="OcAMXjCoyBGPqx0s2fKT3u" CanvasType="Group">
-          <Node Bounds="641,1654,305,19" Id="ADUiQCsIC53NiwBqy0r7Jh">
+          <Node Bounds="641,1654,385,19" Id="ADUiQCsIC53NiwBqy0r7Jh">
             <p:NodeReference LastCategoryFullName="PolyTools.Stride" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="PolyTube" />
@@ -50,19 +50,21 @@
             <Pin Id="S9U8qx02t0RMKJRZB30tff" Name="Polygons2DPlus" Kind="InputPin" />
             <Pin Id="LBYL1mAZ0JYORqa5vkSrOH" Name="ForceUseCompositeShapes" Kind="InputPin" />
             <Pin Id="PHaRYzhzS7ZLYVuhOrInsh" Name="UVCalcMode" Kind="InputPin" />
-            <Pin Id="DFvb12WmB15MrX1rLuZcIW" Name="UVOffset" Kind="InputPin" DefaultValue="0, 0" />
-            <Pin Id="VqR80PinkCyLLiOOOPFIB0" Name="UVScale" Kind="InputPin" DefaultValue="1, 1" />
+            <Pin Id="IxS4ksC7BOfN5qeZbIgk5q" Name="UVUseQuadrants" Kind="InputPin" DefaultValue="True" />
             <Pin Id="OE2WCuod8tdNcuHzG59RZS" Name="AutoRotationCorrection" Kind="InputPin" />
             <Pin Id="T6qIBZS5KTKOU0g3v3A7nU" Name="AutoOriginCorrection" Kind="InputPin" />
+            <Pin Id="MZ0nrzwH5XkLIXmOBA5KTk" Name="DoStartCap" Kind="InputPin" />
+            <Pin Id="FjoVgXJKtsJNM1XyGJsPel" Name="DoEndCap" Kind="InputPin" />
             <Pin Id="Ag8igqQEjx2MQza2nI6eE2" Name="Transformation" Kind="InputPin" />
             <Pin Id="QOjuTd0Pu0XO8lwJXwmW3L" Name="Material" Kind="InputPin" />
-            <Pin Id="JcNHMCHe2jxMtIcesnpEkH" Name="Is Shadow Caster" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="JcNHMCHe2jxMtIcesnpEkH" Name="Is Shadow Caster" Kind="InputPin" />
             <Pin Id="TTrOeNBm2HBMK1U76yOnaY" Name="Components" Kind="InputPin" />
             <Pin Id="TzKoHRe8mtlOI7s6nZPVgG" Name="Children" Kind="InputPin" />
             <Pin Id="SmaLAxoL2chQBsqV1CwdeB" Name="Name" Kind="InputPin" />
             <Pin Id="KLW1XcaVmg6LlO5HZvMO6J" Name="Enabled" Kind="InputPin" />
-            <Pin Id="MZ0nrzwH5XkLIXmOBA5KTk" Name="DoStartCap" Kind="InputPin" DefaultValue="True" />
-            <Pin Id="FjoVgXJKtsJNM1XyGJsPel" Name="DoEndCap" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="Nr2CCp3xf78MDx1xFCnuw1" Name="StartCapUVTransform" Kind="InputPin" />
+            <Pin Id="ESSjCUgy6zTMoVS8gUr26V" Name="EndCapUVTransform" Kind="InputPin" />
+            <Pin Id="P9BHmSNk95bM7R5qfl6s4H" Name="SidesUVTransform" Kind="InputPin" />
             <Pin Id="G2Toy4T653rNlDL8ZSlwuJ" Name="Entity" Kind="OutputPin" />
           </Node>
           <Node Bounds="703,2452,225,19" Id="F6hJyfZ1CyUOB5uZEcbd4u">
@@ -71,7 +73,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="BCGD34xPvHAPc2giXoexHt" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="ERiACIt0kUoL2zyS2951kb" Name="Bounds" Kind="InputPin" DefaultValue="19.2, 49.6, 889.6, 513.6" />
+            <Pin Id="ERiACIt0kUoL2zyS2951kb" Name="Bounds" Kind="InputPin" DefaultValue="19.2, 49.6, 890.4, 513.6" />
             <Pin Id="VENYsSX8mq3MvkZZl8q2KZ" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="BY3QAr90FqzOZ83pLYlCXD" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="GRfVUKybwlFLtwI7Od4aKl" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -913,7 +915,7 @@
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="A6sUHJq51MbMl1tPGj3D4l" Comment="" Bounds="970,810,35,49" ShowValueBox="true" isIOBox="true" Value="0.03, 0">
+          <Pad Id="A6sUHJq51MbMl1tPGj3D4l" Comment="" Bounds="970,810,35,49" ShowValueBox="true" isIOBox="true" Value="0, 0">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -1043,6 +1045,15 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="QAdjrctE65cNQk8T0L5QHG" Bounds="798,1228,218,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Should be zero for tube on path">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="PGZR2n27iQ1MYpmpZmTMim" Name="Create" />
         <Patch Id="K105ESvrXZLQV2gnjE9gUp" Name="Update" ParticipatingElements="OYBd3Ut1CNzM4YpKB0Wc6O" />
@@ -1149,10 +1160,10 @@
         <Link Id="LlSJmyEveeENdmNLmblkWN" Ids="HWpmMoqH7k5LnEWZAI6dKG,SV9PomvGjuQQcmxbjsOWtK" />
         <Link Id="M5JNFT983twOQBdu1WJHHm" Ids="FGHJOxr2rXxNNQYCZP6d8M,DLpLZIsN2eUL98L5tWtztj" />
         <Link Id="SKvyvtMeyv0OEfGAg4Zwet" Ids="OB78kdfxcxtObylnIAEbxv,MQ67gKSyysCMC04GmDEQHc" />
-        <Link Id="KwRNFGrvlrZP61WJWb4lds" Ids="V36f1HkHPVIMENx3SimWtT,QOjuTd0Pu0XO8lwJXwmW3L" />
         <Link Id="SobFKwHL3WBNKhuILeWNcz" Ids="K50GrrrrPV5NTHjMIBYnaV,SCkCactaVQZNgBl6k4V12y" />
         <Link Id="QXlixGLeYbaPYftCWSyA11" Ids="JH4oMZe9psiL14kn0sbXul,RlorbBmP43MPCISSDdVq71" />
         <Link Id="OYBd3Ut1CNzM4YpKB0Wc6O" Ids="IMz91EbJxgcL1JfXdN8dLI,LCB3hYkFgk8Oct1nRo9VgP" />
+        <Link Id="LIvoTaJLW6pNEi2G42QzH0" Ids="OVjEtXoJzLyPZtT9YFQSdQ,QOjuTd0Pu0XO8lwJXwmW3L" />
       </Patch>
     </Node>
   </Patch>
