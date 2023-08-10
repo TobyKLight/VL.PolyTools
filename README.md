@@ -78,7 +78,10 @@ credit https://github.com/speps/LibTessDotNet/graphs/contributors
 @Untone for help unlocking the SKPath verbs for use in vvvv gamma
 
 # Version History
-V1.2.1
+V1.2.2 
+* Bugfixes with dependencies 
+
+V1.2.0
 * !Breaking Change! Refactored categories for some of the Polygon3D nodes to make it clearer The actual nodes are still the same, you may have to double click red nodes in your apps and retype the names to recreate them.
 * !Breaking change! Bugfix on winding direction node. With the calculation method I was using winding direction is potentially flipped in some spaces where Y is inverted. Between Stride and Skia we have a mix of spaces where this might be true. There is now a 'YIncreasesDownward' pin on the WindingDirection and ForceClockwise/CounterClockwise nodes. Check the helppatch 'HowTo Calculate Winding Direction Of A Polygon' 
 * New Polygon2DPlus datatype, for a 2D polygon that is effectively annotated with a third dimension. The underlying 2D polygon can still be accessed and manipulated. 
