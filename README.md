@@ -87,7 +87,7 @@ V1.2.0
 * New Polygon2DPlus datatype, for a 2D polygon that is effectively annotated with a third dimension. The underlying 2D polygon can still be accessed and manipulated. 
 * Rearranged helppatches to make general geometric functions clearer
 * Added sample a point on a line 
-* New 3D functions for dynamic geometry to make 'polygon tubes', where each element of the tube can have a different polygon face. See the new helppatches in 3D category. These come in several flavors where you  
+* New 3D functions for dynamic geometry to make 'polygon tubes', where each element of the tube can have a different polygon face. See the new helppatches in 3D category.
 * LERP (morph) between two polygons, see HowTo LERP between Polygons helppatch
 * Added sample a point on a polygon perimeter (previously only for PolyPath) 
 * Added DrawPolygonRadialLines to draw radial lines between origin and points 
