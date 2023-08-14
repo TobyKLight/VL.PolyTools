@@ -1451,6 +1451,7 @@
               <ControlPoint Id="U4DNc7tABN0LbYEhDFHSpP" Bounds="983,436" />
               <ControlPoint Id="EjQvQfgkMXHOPBmeS7ibc2" Bounds="1207,522" />
               <ControlPoint Id="MzAqBVxPHYgOLZkzBmSGms" Bounds="613,180" />
+              <ControlPoint Id="M0QxKym8Hk4OtL6UCsVxB7" Bounds="415,187" />
             </Canvas>
             <ProcessDefinition Id="UyGa4axrRSqLMAP4NfP6QJ">
               <Fragment Id="Opu4uoFyQLdQQdivBSIkq0" Patch="CVjcFHJed1APqXjIx5RwPD" Enabled="true" />
@@ -1488,6 +1489,7 @@
               <Pin Id="NWXTaBZu67aQHGCmCRHZbb" Name="Tangents Scalar" Kind="InputPin" />
               <Pin Id="O19hmvYiIrtPWkZF5ZyJWP" Name="Output" Kind="OutputPin" Bounds="370,434" />
               <Pin Id="O0Zizz1pa7wNY9IK5JiXKU" Name="TangentRetrieveSuccess" Kind="OutputPin" Bounds="1207,522" />
+              <Pin Id="KJh9DNQXC3MMyIIn3byKcY" Name="WireframeColor" Kind="InputPin" Bounds="323,173" />
             </Patch>
             <Link Id="RIWXCaaUD7vOzz5iqIUnm9" Ids="EP8trcP5N6YPQ7jYyvcxSq,Vtq3kIUH9PlPFEdKItjTdI" />
             <Link Id="GnLWGVYxJRxPbQPdfZ1usH" Ids="P8JqWgk02qeMq7LIOzOnKQ,L03DPJAIuLMLC11LLyrkxd" />
@@ -1516,6 +1518,8 @@
             <Link Id="VR8YhI1zf9NPrFl5eXV3fl" Ids="NWXTaBZu67aQHGCmCRHZbb,B5y2N6XmRPdQO5KywLVWlp" IsHidden="true" />
             <Link Id="Eiflz0cxTpXNvac03j4jNi" Ids="MzAqBVxPHYgOLZkzBmSGms,Kpas2lDfZsdLXFotcVVYm8" />
             <Link Id="CVHQzeyCij9O3Tc7TN8q4N" Ids="UJi6f5jLpySM9WdWlE3gz0,MzAqBVxPHYgOLZkzBmSGms" IsHidden="true" />
+            <Link Id="HUOm6RIGyPwOptu3i9389h" Ids="M0QxKym8Hk4OtL6UCsVxB7,LaY85bkXpudPxWNWvWIk3R" />
+            <Link Id="TmzxnggLmDOLyE4GxMUT3r" Ids="KJh9DNQXC3MMyIIn3byKcY,M0QxKym8Hk4OtL6UCsVxB7" IsHidden="true" />
           </Patch>
         </Node>
         <!--
@@ -1727,7 +1731,7 @@
           <Patch Id="KIyV2kj02N7NhNIDmp41Ot">
             <Canvas Id="NPbknq5X5hUPzZEIkih67k" CanvasType="Group">
               <ControlPoint Id="FjNTbW63cF4Pv5ObKvLGBa" Bounds="856,869" />
-              <Node Bounds="795,577,233,274" Id="N0hoYZYxYxqLhPgDgXCjRd">
+              <Node Bounds="795,577,253,274" Id="N0hoYZYxYxqLhPgDgXCjRd">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -1741,7 +1745,7 @@
                 <Patch Id="JBP3Wg3ESsMP3U0oZjdGQ1" ManuallySortedPins="true">
                   <Patch Id="UwagupEFdNxOcr9HYTaHL8" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="Fww2tkpt4nLOBQLu1vaXIL" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="847,686,169,86" Id="L45Js8e0BY0N5S5cQleu6J">
+                  <Node Bounds="847,686,189,86" Id="L45Js8e0BY0N5S5cQleu6J">
                     <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <CategoryReference Kind="Category" Name="Primitive" />
@@ -1755,7 +1759,7 @@
                       <Patch Id="OlyRhYCLJKuMn0HmJXqNPD" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="LZwFtrSwesoPwvp5jiil4Q" Name="Update" ManuallySortedPins="true" />
                       <Patch Id="OpjFK8b70psLcSptmnBEjv" Name="Dispose" ManuallySortedPins="true" />
-                      <Node Bounds="859,724,145,19" Id="Q4hFHbpMLU6N4M9v92TLcd">
+                      <Node Bounds="859,724,165,19" Id="Q4hFHbpMLU6N4M9v92TLcd">
                         <p:NodeReference LastCategoryFullName="PolyTools.Stride.Util" LastDependency="VL.PolyTools.Stride.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="ProcessAppFlag" Name="DrawWireframeMesh" />
@@ -1769,6 +1773,7 @@
                         <Pin Id="KmRAQ79vz3yPUOpiwIfdJT" Name="Normals Scalar" Kind="InputPin" />
                         <Pin Id="Q88PM2yqHnmOieGLJgkaYh" Name="Draw Tangents" Kind="InputPin" />
                         <Pin Id="Eh1vqMy6hIAOZ9hx84B0Do" Name="Tangents Scalar" Kind="InputPin" />
+                        <Pin Id="EfS2TlfyOz7OUFuIONBySh" Name="WireframeColor" Kind="InputPin" />
                         <Pin Id="A2taBmnFz4kNUK023NMmYk" Name="Output" Kind="OutputPin" />
                         <Pin Id="HwaSJwnOi73NFV3wVK1tlJ" Name="TangentRetrieveSuccess" Kind="OutputPin" />
                       </Node>
@@ -1884,7 +1889,7 @@
               <ControlPoint Id="P3wyGcHrKhQL79U46KZ1m5" Bounds="1092,484" />
               <ControlPoint Id="Lso0pczQZevOwGTduvnEli" Bounds="963,865" />
               <ControlPoint Id="I0Y0syEJrHwQFDUHjgn6g7" Bounds="1108,500" />
-              <ControlPoint Id="UTfd5V3LR02LR4yocnhdxz" Bounds="966,331" />
+              <ControlPoint Id="UTfd5V3LR02LR4yocnhdxz" Bounds="965,324" />
               <ControlPoint Id="Mk1aBgMwnAqLyXSUxVCEpp" Bounds="997,353" />
               <Pad Id="VNaGQYtoZaCQZAoudLdEwO" Bounds="1098,325,340,75" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Note that the transform cannot be retrieved from the entity unless its been drawn itself. In that case use override transform to feed transform direct to Draw Wireframe function">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -1896,6 +1901,7 @@
                 </p:ValueBoxSettings>
               </Pad>
               <ControlPoint Id="C2RRRKK8bjiPGHEAGiQh6s" Bounds="953,301" />
+              <ControlPoint Id="Cm4h4WcbVypLvObF5ObF6G" Bounds="1129,515" />
             </Canvas>
             <ProcessDefinition Id="HWQdGLUTA1wPszsztaetnh">
               <Fragment Id="LwGHn3DZHeeNxS09xAwRmn" Patch="IamoRDhUTflPoNLk6fagIo" Enabled="true" />
@@ -1963,7 +1969,10 @@
               <Pin Id="BwF5whehEAAL4d5OmIeslH" Name="Success" Kind="OutputPin" Bounds="731,618" />
               <Pin Id="Is0u7bvuW6AO5MCAsB9sXt" Name="Output" Kind="OutputPin" Bounds="861,623" />
               <Pin Id="BtR4n63mKq7Mf4RKMlm41u" Name="TangentRetrieveSuccess" Kind="OutputPin" Bounds="961,776" />
+              <Pin Id="QkB61DlWxYxP0xYkcbN4ov" Name="WireframeColor" Kind="InputPin" Bounds="1129,515" />
             </Patch>
+            <Link Id="IcAzXSQJnD1MEmHA9uFk4G" Ids="Cm4h4WcbVypLvObF5ObF6G,EfS2TlfyOz7OUFuIONBySh" />
+            <Link Id="AqZtfxyM4bFORoj6xIedGH" Ids="QkB61DlWxYxP0xYkcbN4ov,Cm4h4WcbVypLvObF5ObF6G" IsHidden="true" />
           </Patch>
         </Node>
         <!--
