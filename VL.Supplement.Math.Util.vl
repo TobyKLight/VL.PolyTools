@@ -445,6 +445,32 @@
           <Link Id="Fs0HzLyJsw8P5h7F9qNyLZ" Ids="MW1yppVccqhQBO0StFibus,QmfbMHPgnltPOdZJwWunwH" IsHidden="true" />
         </Patch>
       </Node>
+      <Canvas Id="LXIWAc5S2YjP81YXNudEoF" Name="Plane" Position="722,983">
+        <Overlay Id="FJLPDzmUwUKLAAuPQUmACB" Name="ToArray" Bounds="1035,830,213,189" />
+        <!--
+
+    ************************ ToArray ************************
+
+-->
+        <Node Name="ToArray" Bounds="1081,892,80,80" Id="Oon3TVwjVOLLFHKLnh6GdV">
+          <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="Q0YubvXZUOKPVVXkcDCT7M">
+            <Node Bounds="1095,920,52,26" AutoConnect="true" Id="FUTuEo8EES0N7sKBDnPu1s">
+              <p:NodeReference LastCategoryFullName="Stride.Core.Mathematics.Plane" LastDependency="Stride.Core.Mathematics.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="Plane" />
+                <Choice Kind="OperationCallFlag" Name="ToArray" />
+              </p:NodeReference>
+              <Pin Id="HMGHobRF5mgPCXMieEzx2b" Name="Input" Kind="StateInputPin" />
+              <Pin Id="QnCv6VnIaV4M54AM7zLhlW" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pin Id="Qjj6JssenRCPRNtJLH8vwE" Name="Input" Kind="InputPin" />
+            <Pin Id="QUmaCCOZxNJLxSd9AI55bo" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+      </Canvas>
     </Canvas>
     <!--
 
@@ -467,4 +493,5 @@
       </Patch>
     </Node>
   </Patch>
+  <NugetDependency Id="Bu75JoBRCgzOBXfnHVFri8" Location="Stride.Core.Mathematics" Version="4.1.0.1838" />
 </Document>

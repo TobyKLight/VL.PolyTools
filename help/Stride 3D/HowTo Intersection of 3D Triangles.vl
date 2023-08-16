@@ -36,7 +36,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="MOtQc9ob0SROLtBNrQCUo1" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="PpHAWpYmRaNMnhBoW69SDJ" Name="Bounds" Kind="InputPin" />
+            <Pin Id="PpHAWpYmRaNMnhBoW69SDJ" Name="Bounds" Kind="InputPin" DefaultValue="777.6, 60.8, 785.6, 432" />
             <Pin Id="VKVqcYwfeXxMn79mwFjMEP" Name="Bound to Document" Kind="InputPin" />
             <Pin Id="SUQZx4eqmR6MYr2PIJDbnC" Name="Dialog If Document Changed" Kind="InputPin" />
             <Pin Id="COi2plrIcTxQBCO9I4THgi" Name="Save Bounds" Kind="InputPin" />
@@ -659,148 +659,8 @@
             <Pin Id="MCOvNlhvKaZLMtbnOucCEL" Name="Tri1" Kind="OutputPin" />
             <Pin Id="CBMe3BSQUTlMFdGxd689mq" Name="Tri2" Kind="OutputPin" />
           </Node>
-          <!--
-
-    ************************ SingleTriangleEntity ************************
-
--->
-          <Node Name="SingleTriangleEntity" Bounds="202,942" Id="TzDbpUORqc4NURbmvnTK35">
-            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-              <Choice Kind="ContainerDefinition" Name="Process" />
-            </p:NodeReference>
-            <Patch Id="To2FZon6kibMhY639CphiX">
-              <Canvas Id="I0VO0tplitYPF9nfZc0Ws3" CanvasType="Group">
-                <Node Bounds="1462,794,125,19" Id="Qwz2zAAscOTQWTwM1cJGVs">
-                  <p:NodeReference LastCategoryFullName="Stride.Models.Meshes" LastDependency="VL.Stride.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="ProcessAppFlag" Name="DynamicMesh (Indexed)" />
-                  </p:NodeReference>
-                  <Pin Id="IiRy2ui8zGIL9eA83XuGuM" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="Tk3pS91XyvjMACNjCGZFzm" Name="Data" Kind="InputPin" />
-                  <Pin Id="V4bKWlJGM9ONTLj468DQF6" Name="Update Buffer" Kind="InputPin" />
-                  <Pin Id="DLLN4TGMEIgNL4wP6PyMoc" Name="Vertex Declaration" Kind="InputPin" />
-                  <Pin Id="Uq375IE9KIQOj4TO8azezq" Name="Topology" Kind="InputPin" DefaultValue="TriangleList" />
-                  <Pin Id="IrwO8JoQcEALUaJmUAyzE7" Name="Indices" Kind="InputPin" />
-                  <Pin Id="PgKbxcVnKgPPMkL0IF7TTQ" Name="Bounding Box" Kind="InputPin" />
-                  <Pin Id="Ro0d8lcGG4oN4ZX8P6qh3k" Name="Force Update" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="IQ3mxCEeI9XMzJLgkzGnNk" Name="SetBoundingBox" Kind="InputPin" />
-                  <Pin Id="IAKRivCIGh4Lb9IWcuDwx5" Name="Output" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="1442,872,145,19" Id="JlCI72YvCA8PUQ4S1Fw7Zr">
-                  <p:NodeReference LastCategoryFullName="Stride.Models" LastDependency="VL.Stride.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="ProcessAppFlag" Name="MeshEntity" />
-                  </p:NodeReference>
-                  <Pin Id="KfsQbilklxhPcc1xoG7jrw" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="LcW2Oixi5ZWP63RiPHzTy8" Name="Transformation" Kind="InputPin" />
-                  <Pin Id="KMTf86wHHdlMeFLgeR4mkO" Name="Mesh" Kind="InputPin" />
-                  <Pin Id="UOt6WlQy951NlIyUK8vANr" Name="Force Update" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="GoOulucccCCNaJrQRHgast" Name="Material" Kind="InputPin" />
-                  <Pin Id="EKSXuEk4U5wNheJhwhhkuJ" Name="Is Shadow Caster" Kind="InputPin" DefaultValue="False" />
-                  <Pin Id="FrJ4wustWWGOxZ41mlKoIT" Name="Components" Kind="InputPin" />
-                  <Pin Id="M0vamcikpr3Omt2Wbixsgb" Name="Children" Kind="InputPin" />
-                  <Pin Id="V2KKx6rJGTrOeAQjo3dvSH" Name="Name" Kind="InputPin" />
-                  <Pin Id="CUyTYFUKVM2NsLoVg6gglX" Name="Enabled" Kind="InputPin" DefaultValue="True" />
-                  <Pin Id="CHrbB2bVwvjMHZqWftE82a" Name="Entity" Kind="OutputPin" />
-                </Node>
-                <ControlPoint Id="JW8gGIMWqxwNz8fFYCJY7j" Bounds="1444,923" />
-                <Node Bounds="1511,699,92,19" Id="MMfmYLQZ6OiOS4ADKHNsfU">
-                  <p:NodeReference LastCategoryFullName="Stride.API.Graphics.VertexDeclaration" LastDependency="VL.Stride.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="ClassType" Name="VertexDeclaration" />
-                    <Choice Kind="ProcessAppFlag" Name="Pos3Norm3Tex2" />
-                  </p:NodeReference>
-                  <Pin Id="F9MvwDciQh2LXApvEqyBq0" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="RKsqHD0SqrkNcjy63ZBIDh" Name="Output" Kind="OutputPin" />
-                </Node>
-                <Node Bounds="1439,564,124,108" Id="KkWZHEzvkFRNSitka4ngA2">
-                  <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                    <CategoryReference Kind="Category" Name="Primitive" />
-                    <Choice Kind="ApplicationStatefulRegion" Name="Repeat" />
-                  </p:NodeReference>
-                  <Pin Id="E3q7cfN0H7MOrJHZGBcAmu" Name="Iteration Count" Kind="InputPin" DefaultValue="3" />
-                  <Pin Id="DAuPiEtuzKpNfUAg81BuJ0" Name="Break" Kind="OutputPin" />
-                  <ControlPoint Id="CHdKjS6RD4VP91iSyTMC0u" Bounds="1453,666" Alignment="Bottom" />
-                  <ControlPoint Id="P9LZ9Hs9iMhPzL2scMvtRo" Bounds="1456,570" Alignment="Top" />
-                  <Patch Id="OEVXxfyLhlgOWFmzD6bZ8G" ManuallySortedPins="true">
-                    <Patch Id="Uyr0cGKL1H4MBtWq1h4jcr" Name="Create" ManuallySortedPins="true" />
-                    <Patch Id="LyTqAYoO1vBM0KqsfZOZQq" Name="Update" ManuallySortedPins="true" />
-                    <Patch Id="KV25mp5wOx7NeaoNK8nWKr" Name="Dispose" ManuallySortedPins="true" />
-                    <Node Bounds="1452,620,99,26" Id="H0TcUVs00hBMM5ifi0jKvY">
-                      <p:NodeReference LastCategoryFullName="Stride.API.Graphics.VertexPos3Norm3Tex2" LastDependency="VL.Stride.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="ClassType" Name="VertexPos3Norm3Tex2" />
-                        <Choice Kind="OperationCallFlag" Name="Create" />
-                      </p:NodeReference>
-                      <Pin Id="Gf58C50MpiqMkuc3jM20mo" Name="Position" Kind="InputPin" />
-                      <Pin Id="TJpareAxzlTLUKTAK0XbAR" Name="Normal" Kind="InputPin" />
-                      <Pin Id="FL9X7TzmJ63QQhRbiXegnq" Name="Texture Coordinate" Kind="InputPin" DefaultValue="0, 0" />
-                      <Pin Id="LjljvqzpgYTOchO18vsvOl" Name="Output" Kind="StateOutputPin" />
-                    </Node>
-                  </Patch>
-                  <ControlPoint Id="Ba3IC1sQtizMfcaxosQg09" Bounds="1491,570" Alignment="Top" />
-                </Node>
-                <ControlPoint Id="M2cHeP54mwcNNt2EP0ayZk" Bounds="1452,466" />
-                <ControlPoint Id="EKczLxpiAfhLaFbBlCHmQ9" Bounds="1597,824" />
-                <Node Bounds="1487,514,95,19" Id="SJgFk565CMlOQMiJCTZCOi">
-                  <p:NodeReference LastCategoryFullName="Stride.Utils" LastDependency="VL.Stride.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="ProcessAppFlag" Name="GenerateNormals" />
-                  </p:NodeReference>
-                  <Pin Id="Vllq6fimZBcOi4gq8EvMlj" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="JNGLjAGTgoTMqkAd11JfMr" Name="Vertices" Kind="InputPin" />
-                  <Pin Id="TJSrpqOsu8LMZw8JrdTyYg" Name="Indices" Kind="InputPin" />
-                  <Pin Id="RsmNOMkc1riLqbVo3kGC3Z" Name="Is Triangle Strip" Kind="InputPin" DefaultValue="True" />
-                  <Pin Id="S2Ij3eSpcrTMO2LNSTuSFv" Name="Output" Kind="OutputPin" />
-                </Node>
-                <Pad Id="HPTq8poqDE6M9GnhmvlW3n" Comment="" Bounds="1648,420,35,65" ShowValueBox="true" isIOBox="true" Value="0, 1, 2">
-                  <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
-                    <Choice Kind="TypeFlag" Name="Spread" />
-                    <p:TypeArguments>
-                      <TypeReference>
-                        <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
-                        <CategoryReference Kind="Category" Name="Primitive" />
-                      </TypeReference>
-                    </p:TypeArguments>
-                  </p:TypeAnnotation>
-                </Pad>
-              </Canvas>
-              <Patch Id="KwnnpdqLNC1P6adps0bXrn" Name="Create" />
-              <Patch Id="M5RQbkKmISfNkt6WQ8IQFd" Name="Update">
-                <Pin Id="OshgqqOrUA0Ma92bJbFi7e" Name="Entity" Kind="OutputPin" Bounds="1443,923" />
-                <Pin Id="L6VsclbtsYfO1DVN0stGOb" Name="TriPositions" Kind="InputPin" Bounds="1452,466" />
-                <Pin Id="Pgmeu2KqXDoMC9USorUwtH" Name="Material" Kind="InputPin" Bounds="1597,824" />
-              </Patch>
-              <!--
-
-    ************************  ************************
-
--->
-              <ProcessDefinition Id="CgX6vZJelWeNLFuXvktVlF">
-                <Fragment Id="Vw4CUiVLdZNPJMPH38gEXg" Patch="KwnnpdqLNC1P6adps0bXrn" Enabled="true" />
-                <Fragment Id="J2YzIm1X2AWNzRCKTQI7QT" Patch="M5RQbkKmISfNkt6WQ8IQFd" Enabled="true" />
-              </ProcessDefinition>
-              <Link Id="GwGxXCdWA2MMu3Jw7gD2Rs" Ids="IAKRivCIGh4Lb9IWcuDwx5,KMTf86wHHdlMeFLgeR4mkO" />
-              <Link Id="VG1DcxBIqWdMWfjTfhN66i" Ids="CHrbB2bVwvjMHZqWftE82a,JW8gGIMWqxwNz8fFYCJY7j" />
-              <Link Id="HjTc97jS81CO08zGrwrufz" Ids="JW8gGIMWqxwNz8fFYCJY7j,OshgqqOrUA0Ma92bJbFi7e" IsHidden="true" />
-              <Link Id="LrlfmQjUXmmLiLhjQfLRfy" Ids="RKsqHD0SqrkNcjy63ZBIDh,DLLN4TGMEIgNL4wP6PyMoc" />
-              <Link Id="N6qoDCrPMSBQTyao8XUtw3" Ids="LjljvqzpgYTOchO18vsvOl,CHdKjS6RD4VP91iSyTMC0u" />
-              <Link Id="F7hFHDDdV9MMajOz6mXqqp" Ids="CHdKjS6RD4VP91iSyTMC0u,Tk3pS91XyvjMACNjCGZFzm" />
-              <Link Id="M6jyEM3BV12NoWp2iu2jDd" Ids="P9LZ9Hs9iMhPzL2scMvtRo,Gf58C50MpiqMkuc3jM20mo" />
-              <Link Id="QZMu3ItGi3NMAlN6WfVmmi" Ids="M2cHeP54mwcNNt2EP0ayZk,P9LZ9Hs9iMhPzL2scMvtRo" />
-              <Link Id="A8Afe8nly83OEn2jxpU3Q8" Ids="L6VsclbtsYfO1DVN0stGOb,M2cHeP54mwcNNt2EP0ayZk" IsHidden="true" />
-              <Link Id="MGrq6Jf3R3bOwkJQT19IYc" Ids="EKczLxpiAfhLaFbBlCHmQ9,GoOulucccCCNaJrQRHgast" />
-              <Link Id="FTI2LodPpvsMSbyhUvn6py" Ids="Pgmeu2KqXDoMC9USorUwtH,EKczLxpiAfhLaFbBlCHmQ9" IsHidden="true" />
-              <Link Id="E4NhdEX5IyoMWP5uVnrKKa" Ids="M2cHeP54mwcNNt2EP0ayZk,JNGLjAGTgoTMqkAd11JfMr" />
-              <Link Id="S3NL5GRxnt3Mks2J448xXf" Ids="S2Ij3eSpcrTMO2LNSTuSFv,Ba3IC1sQtizMfcaxosQg09" />
-              <Link Id="Ek5VnFD3prbQdjBF5li22N" Ids="Ba3IC1sQtizMfcaxosQg09,TJpareAxzlTLUKTAK0XbAR" />
-              <Link Id="RKQyw0OnzupO7HzFqywmgS" Ids="HPTq8poqDE6M9GnhmvlW3n,TJSrpqOsu8LMZw8JrdTyYg" />
-              <Link Id="UG41tfZUQh3NiNsW6cbdTm" Ids="HPTq8poqDE6M9GnhmvlW3n,IrwO8JoQcEALUaJmUAyzE7" />
-            </Patch>
-          </Node>
           <Node Bounds="503,917,106,19" Id="TUoWENRHjGROy53oEEy63y">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo Intersection of 3D Triangles.vl">
+            <p:NodeReference LastCategoryFullName="PolyTools.Mesh.Triangle" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SingleTriangleEntity" />
             </p:NodeReference>
@@ -834,7 +694,7 @@
           </Node>
           <Pad Id="KeNjcdLxcT6LdcxGleTPqh" SlotId="Cxp4sYIMWwtOuO70hi2VND" Bounds="849,875" />
           <Node Bounds="837,922,106,19" Id="Kloon95YXYtQHidS6Yfca2">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo Intersection of 3D Triangles.vl">
+            <p:NodeReference LastCategoryFullName="PolyTools.Mesh.Triangle" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SingleTriangleEntity" />
             </p:NodeReference>
