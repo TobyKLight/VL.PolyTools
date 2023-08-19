@@ -201,10 +201,11 @@
                 <Pin Id="JeYi5eHsiybMieQPSEEC2j" Name="UseOverrideTransform" Kind="InputPin" />
                 <Pin Id="QQHA15yZYKAQWP2lvlDJrR" Name="OverrideTransform" Kind="InputPin" />
                 <Pin Id="TqSHIWpAPLUMzzj8XRcaSs" Name="Cull Mode" Kind="InputPin" DefaultValue="None" />
-                <Pin Id="UhN61pChPkcM7tKKhF6EOt" Name="Draw Normals" Kind="InputPin" />
+                <Pin Id="UhN61pChPkcM7tKKhF6EOt" Name="Draw Normals" Kind="InputPin" DefaultValue="False" />
                 <Pin Id="NcgF8iSPaUhNbxEZjdKS0f" Name="Normals Scalar" Kind="InputPin" />
-                <Pin Id="TlmapxL1yR5LabcMUHOcT6" Name="Draw Tangents" Kind="InputPin" />
+                <Pin Id="TlmapxL1yR5LabcMUHOcT6" Name="Draw Tangents" Kind="InputPin" DefaultValue="False" />
                 <Pin Id="PhKMe78gEy8OyVVDnqDBdT" Name="Tangents Scalar" Kind="InputPin" />
+                <Pin Id="K4FWSlljCNAO3S5TIzNmek" Name="WireframeColor" Kind="InputPin" />
                 <Pin Id="Po2rKztakpoPalq7h37wWG" Name="Success" Kind="OutputPin" />
                 <Pin Id="NUxc6RkYyTMPG6Q5ofnl8w" Name="Output" Kind="OutputPin" />
                 <Pin Id="FTCuhkgJJfwPk4Ixpj3zmd" Name="TangentRetrieveSuccess" Kind="OutputPin" />
@@ -594,6 +595,15 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="Gs1WAYahVu9OKFpPclkWQ2" Comment="Force" Bounds="438,599,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="PGZR2n27iQ1MYpmpZmTMim" Name="Create" />
         <Patch Id="K105ESvrXZLQV2gnjE9gUp" Name="Update" />
@@ -652,6 +662,7 @@
         <Link Id="AFo2BfxJvvAPiQzsadn6RP" Ids="JfNa218BopfQURvNslNdKX,T6qIBZS5KTKOU0g3v3A7nU" />
         <Link Id="Ljgp1ZLxTqBPC4fogp14Bs" Ids="NFX2eoeikWQNoIqOKWrh9s,TaVjCmsSL4gO6yLxa8iMJ1" />
         <Link Id="HuPZloyF0sYNWIsihrrQcH" Ids="V14r4Yl2orhLNotJbX8rX4,QXKQUcznZzPP8uMxJ8mST2" />
+        <Link Id="VVFFdUt722kP8fqniSplo7" Ids="Gs1WAYahVu9OKFpPclkWQ2,MR4WADKYLGmPfgUVdTPrqv" />
       </Patch>
     </Node>
   </Patch>

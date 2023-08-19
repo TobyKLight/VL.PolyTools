@@ -246,26 +246,6 @@
           </Node>
           <Overlay Id="PDqsMP43QdeQdh8ql6ortz" Name="OutlinePolygons" Bounds="314,885,468,197" />
           <Overlay Id="GFKcxbmufEHLbWgRiK5xZy" Name="3D transform" Bounds="317,610,471,242" />
-          <Node Bounds="341,789,64,26" Id="SGDefoWQEbULoAtp2QXP38">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D.PolygonIn3D" LastDependency="VL.PolyTools.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
-              <Choice Kind="OperationCallFlag" Name="Transform" />
-            </p:NodeReference>
-            <Pin Id="NbaD9rfJ2irMDG8nm82lsV" Name="Input" Kind="StateInputPin" />
-            <Pin Id="CAI5q2QMREnMFsqHF2722T" Name="Transform" Kind="InputPin" />
-            <Pin Id="PP0ZMaPSBr6Nw4n1uwoMhm" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Node Bounds="570,789,64,26" Id="G9lnmAgHVRVMrAAH3FtiNd">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D.PolygonIn3D" LastDependency="VL.PolyTools.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
-              <Choice Kind="OperationCallFlag" Name="Transform" />
-            </p:NodeReference>
-            <Pin Id="GHHdwJdZFsgNgQfsbRm87O" Name="Input" Kind="StateInputPin" />
-            <Pin Id="IdqmztoXzjXMTKPWmLGQea" Name="Transform" Kind="InputPin" />
-            <Pin Id="Sv60fnSQEoHOdkVSQXmQTZ" Name="Output" Kind="StateOutputPin" />
-          </Node>
           <Node Bounds="401,754,80,19" Id="JXPBGQLKLwXMdyhBiYJY40">
             <p:NodeReference LastCategoryFullName="3D.Transform" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -401,10 +381,10 @@
             <Pin Id="V8hhhLWFHvuObJeXLx1FwT" Name="Count" Kind="InputPin" DefaultValue="8" />
             <Pin Id="CyiA22y49AwOZRYmdhpkM2" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="348,453,55,26" Id="DaaJHxq1tGLPrNNkrbp3BN">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+          <Node Bounds="348,453,69,26" Id="DaaJHxq1tGLPrNNkrbp3BN">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
+              <CategoryReference Kind="RecordType" Name="Polygon2DPlus" NeedsToBeDirectParent="true" />
               <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
             <Pin Id="H0HxMLy7aSgQWZxxIDFA6a" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -417,10 +397,10 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="570,457,55,26" Id="VuM368E7INbNVfe5lGjftl">
-            <p:NodeReference LastCategoryFullName="VL.PolyTools.Stride.Polygon3D" LastDependency="VL.PolyTools.vl">
+          <Node Bounds="570,457,69,26" Id="VuM368E7INbNVfe5lGjftl">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Polygon3D" />
+              <CategoryReference Kind="RecordType" Name="Polygon2DPlus" NeedsToBeDirectParent="true" />
               <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
             <Pin Id="N9t9i0s5rhsONsvQvVujpF" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -433,7 +413,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Ke65U0VQFmoOFXZ3KyKQXB" Comment="ShowStartingArrow" Bounds="918,842,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="Ke65U0VQFmoOFXZ3KyKQXB" Comment="ShowStartingArrow" Bounds="943,863,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -442,7 +422,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="B3evqbRLuRYO2fBgy8R3Nj" Bounds="961,856,352,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;optionally show arrow to indicate starting point of poly">
+          <Pad Id="B3evqbRLuRYO2fBgy8R3Nj" Bounds="986,877,352,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;optionally show arrow to indicate starting point of poly">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -451,7 +431,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KLz1QNjM48rNbXw51G9gJ7" Bounds="968,876,358,50" ShowValueBox="true" isIOBox="true" Value="usecase: understanding twist when comparing multiple polys">
+          <Pad Id="KLz1QNjM48rNbXw51G9gJ7" Bounds="993,897,358,50" ShowValueBox="true" isIOBox="true" Value="usecase: understanding twist when comparing multiple polys">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -460,17 +440,37 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Mnu62mZeBDrPQL5LCRbaVj" Comment="ArrowSize" Bounds="939,924,35,15" ShowValueBox="true" isIOBox="true" Value="0.1">
+          <Pad Id="Mnu62mZeBDrPQL5LCRbaVj" Comment="ArrowSize" Bounds="964,945,35,15" ShowValueBox="true" isIOBox="true" Value="0.1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="D9H5TgWJvFCM10LfbTp7r5" Comment="ArrowColor" Bounds="940,948,136,15" ShowValueBox="true" isIOBox="true" Value="1, 0, 0, 1">
+          <Pad Id="D9H5TgWJvFCM10LfbTp7r5" Comment="ArrowColor" Bounds="965,969,136,15" ShowValueBox="true" isIOBox="true" Value="1, 0, 0, 1">
             <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
           </Pad>
-          <Overlay Id="DGtsMYugkcRNrDW5ZNOzCP" Name="Optional pins: starting arrows" Bounds="829,752,539,255" />
+          <Overlay Id="DGtsMYugkcRNrDW5ZNOzCP" Name="Optional pins: starting arrows" Bounds="854,773,539,255" />
+          <Node Bounds="338,784,77,26" Id="L50tgFyyz12P9ev4tMYRPS">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Polygon2DPlus" />
+              <Choice Kind="OperationCallFlag" Name="SetTransform" />
+            </p:NodeReference>
+            <Pin Id="GCyGoj9A6MAOyQfH5naZMc" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Emzuqf8L0WVOq34NxJ6aM8" Name="Transform" Kind="InputPin" />
+            <Pin Id="OjlJkY5a0FEPb2dfS9L8YL" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="561,787,77,26" Id="GMA6D3lxVeFPLvKSgWriUu">
+            <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="RecordType" Name="Polygon2DPlus" />
+              <Choice Kind="OperationCallFlag" Name="SetTransform" />
+            </p:NodeReference>
+            <Pin Id="H6pT1Iier4fQMalVzvsCwU" Name="Input" Kind="StateInputPin" />
+            <Pin Id="IvdqBrOu36KNDT1ZZGp8tf" Name="Transform" Kind="InputPin" />
+            <Pin Id="Q3k3DtpK7SbLL1FTEcrk7U" Name="Output" Kind="StateOutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="ALFuIhNxZToPr5ClmW3Jq9" Name="Create" />
         <Patch Id="LKsHDl5yATTMKfYj21iy4U" Name="Update" />
@@ -485,12 +485,8 @@
         <Link Id="QLUzT4VKr3GNjVIUGKWbpl" Ids="Iyh4EviZSGNPmJk6ewpkCS,JyKOgPOOnZJNYwVgsFajNa" />
         <Link Id="NvHhTtndTgQO1VGQyGltXc" Ids="Hjml169CU8wOQ6DX0Kse0q,GzSp9NyIHAmMKfbdg1vLHb" />
         <Link Id="JTTrnvTdeExLgudkvv6AWO" Ids="SSdqqctXfj0MhkZq8SLB0G,LKJnMe1cE5yL0hbrCpClfQ" />
-        <Link Id="BX02NpK4MMqMbkL0XiNDEL" Ids="GABLApJTNLNPYnktX4x2jZ,CAI5q2QMREnMFsqHF2722T" />
-        <Link Id="To7ubY0g5msQRxb6xu3ZcW" Ids="OoBA0syHrh8ORM84UuUyEG,IdqmztoXzjXMTKPWmLGQea" />
-        <Link Id="Cl3498HtJy9POroLuTR8An" Ids="PP0ZMaPSBr6Nw4n1uwoMhm,DkDWGQxs8ddM7gHR5MXj1H" />
         <Link Id="TlffXtQ0jf8QbfuFm4u0wx" Ids="F2DTZy95DoEQBsiRqCclyP,DUiNzWg8N7nLlh0xa8uSWR" />
         <Link Id="TTAd3L4ajlvODFUB8UcT0y" Ids="Cri0i0Y23z9PuwRKAcQ69y,IrBylpuT41jMEmVfKpTpr5" />
-        <Link Id="Vh7AYTBNL5INqiTaSN25Gp" Ids="Sv60fnSQEoHOdkVSQXmQTZ,J0eVx4iU3hvLzlxLCFPSTB" />
         <Link Id="V4R4bvSb9dhOuIs6DQeUfs" Ids="U3I6FcehrUtM2V9Gvh9JEg,CHqLK7Lga4BOfM60SxMzOl" />
         <Link Id="Eoe4XwvEpMpL9hFVXzb62c" Ids="RNyNHCsZ3vYMSkdzoqfMaF,CPftIIxAPOZL8Dqo3B6bug" />
         <Link Id="NBSTjXiecurL1j5mmTkHWw" Ids="MfV0pPWftX5QMbLxQXJKbe,Swh9u4FTUFIOEjzcBEMnCE" />
@@ -503,10 +499,8 @@
         <Link Id="PetmjAEW8IWQTYfmznDuzT" Ids="PB4Du482eTjPDSwdNlOPGD,Lj9nApieZu2PURIWPwbrsO" />
         <Link Id="L556C0FqJNEM1EaPb3gkGn" Ids="CyiA22y49AwOZRYmdhpkM2,D7PBwSuwLCGPkPv4Rbmvuq" />
         <Link Id="RFrv4sDdK9ON3nILSD87zv" Ids="Owp2W2Ju7KQLhp2CT64TQ4,BL7KOpNGlTgLkZn383tfs9" />
-        <Link Id="FFKqSu8VWdONdoArXuTuMy" Ids="Q6belMX5VjPPApvHuEZHRX,NbaD9rfJ2irMDG8nm82lsV" />
         <Link Id="IAtrqm3B0kZOLWzUpASQlU" Ids="S51wnWl01gEMrHSqQXlIoe,BIIxOhMf0PoM6w8LwbvLNt" />
         <Link Id="LEPI9Gqgi4OQXWIDOhL0Cx" Ids="GphcQHeNVJmLA9sOMrDFv6,BLyedU1CT92P2V6K155Kiu" />
-        <Link Id="Hx5BiAZswFdOUIWe5SpAHb" Ids="VqlmBbovLqBLZ0zfkV3u3u,GHHdwJdZFsgNgQfsbRm87O" />
         <Link Id="P8lhgdq8gE0LcDvGiOMa9W" Ids="FDRdDm133ibL3RVrgPoEX0,U4TcUPk1jhNNCjaavknZZu" />
         <Link Id="MhhPZt4XQdhPwpmnfjxkuU" Ids="Ke65U0VQFmoOFXZ3KyKQXB,SH2QUqwqqJBOxqIQjUkfkc" />
         <Link Id="OSrUKZ79CQ4NwaBGftle9W" Ids="Ke65U0VQFmoOFXZ3KyKQXB,BasyCtce0sjMan53fit5C3" />
@@ -514,6 +508,12 @@
         <Link Id="VdAJUhzT9eeNSl37G0YClc" Ids="D9H5TgWJvFCM10LfbTp7r5,DbJs0ooKRHfLuk6qrflskr" />
         <Link Id="NRHb6OjRFV7OoaT9Fl9SGn" Ids="D9H5TgWJvFCM10LfbTp7r5,Qe3Beqd7BOiNi6dsdPV7tb" />
         <Link Id="KAzYe8a93frND9NyRXO8Hp" Ids="Mnu62mZeBDrPQL5LCRbaVj,NeROBHWCY6lNAPVUA29PJN" />
+        <Link Id="EaKfO1JcStNLjWeFLjTgLc" Ids="Q6belMX5VjPPApvHuEZHRX,GCyGoj9A6MAOyQfH5naZMc" />
+        <Link Id="DIEtnBtvHTgLBiCIAwFwTU" Ids="OjlJkY5a0FEPb2dfS9L8YL,DkDWGQxs8ddM7gHR5MXj1H" />
+        <Link Id="Gvue0EXdfgFPxgCIfPlI4v" Ids="GABLApJTNLNPYnktX4x2jZ,Emzuqf8L0WVOq34NxJ6aM8" />
+        <Link Id="NB4JvSn2HnBMGGgSxM2AOe" Ids="VqlmBbovLqBLZ0zfkV3u3u,H6pT1Iier4fQMalVzvsCwU" />
+        <Link Id="QUAjgfuteC8Of3mQ1KjtCI" Ids="Q3k3DtpK7SbLL1FTEcrk7U,J0eVx4iU3hvLzlxLCFPSTB" />
+        <Link Id="CqjXeMUDDbNL6zZb8UKqNp" Ids="OoBA0syHrh8ORM84UuUyEG,IvdqBrOu36KNDT1ZZGp8tf" />
       </Patch>
     </Node>
   </Patch>
