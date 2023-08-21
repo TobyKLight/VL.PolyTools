@@ -76,6 +76,8 @@
               <ControlPoint Id="NCcqS2WRfyeMiNqHFxpzDi" Bounds="1407,955" Alignment="Bottom" />
               <ControlPoint Id="FDh5Z5JonkCLYx1NJyrPbs" Bounds="1451,955" Alignment="Bottom" />
               <ControlPoint Id="SCvxHJrs1c4LgG2XcAYRGc" Bounds="1363,955" Alignment="Bottom" />
+              <ControlPoint Id="MuDL9pJo4SiM9EqDNS4ddL" Bounds="1415,383" Alignment="Top" />
+              <ControlPoint Id="LCOLFLF88rfNGtrAouBzyb" Bounds="1462,383" Alignment="Top" />
               <Patch Id="L3WgXTGwVLEMeNxtfrR8I4" ManuallySortedPins="true">
                 <Patch Id="I8NvNOOROj7MOK2v8VP9Dr" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="UhpIzn7F1hMO6NF5WMenj3" Name="Then" ManuallySortedPins="true" />
@@ -212,6 +214,7 @@
                           <Pin Id="EOurjG0cbg7NVPOVDlW5ez" Name="Debug_APointsOnBEdgesPass3" Kind="OutputPin" />
                           <Pin Id="MYyTuYTWkA2MmAjWyViMyt" Name="Pass3IterationCount" Kind="OutputPin" />
                           <Pin Id="Ft05C6EgMEkN2jIpOoFUqe" Name="IsNewPointInCompositeShape" Kind="OutputPin" />
+                          <Pin Id="VqSPoCmm050MPB2jcSeVc5" Name="IsNewPointSampleProportion" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="1090,871,45,19" Id="NVlEaSUXACIPdkV5mW6CEZ">
                           <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
@@ -240,8 +243,6 @@
                   </Patch>
                 </Node>
               </Patch>
-              <ControlPoint Id="MuDL9pJo4SiM9EqDNS4ddL" Bounds="1415,383" Alignment="Top" />
-              <ControlPoint Id="LCOLFLF88rfNGtrAouBzyb" Bounds="1462,383" Alignment="Top" />
             </Node>
             <Node Bounds="1004,997,226,182" Id="DrUcG3FC1GcNYHjVHc1HhQ">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -303,10 +304,10 @@
               <ControlPoint Id="HhbwO2vKsJINkIGUsjnKuu" Bounds="1215,1003" Alignment="Top" />
               <ControlPoint Id="GLiCgKifWAPO369k4eSU46" Bounds="1133,1173" Alignment="Bottom" />
             </Node>
-            <Pad Id="V4Zu6hCKMo5MnEDqQQZcej" Comment="" Bounds="1006,1171,35,59" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="V4Zu6hCKMo5MnEDqQQZcej" Comment="" Bounds="999,1199,35,23" ShowValueBox="true" isIOBox="true" />
             <Pad Id="JXMrThsKuEBLphobUjUY88" Comment="" Bounds="891,965,35,15" ShowValueBox="true" isIOBox="true" />
             <ControlPoint Id="KPecU9QOa9jMbM9FszjgMx" Bounds="1433,218" />
-            <Pad Id="PoousSRP3MuMRcyLDxcQmq" Bounds="1346,1222,295,59" ShowValueBox="true" isIOBox="true" Value="NOTE these debug outputs only function properly when A has the bigger point count">
+            <Pad Id="PoousSRP3MuMRcyLDxcQmq" Bounds="1556,1032,295,59" ShowValueBox="true" isIOBox="true" Value="NOTE these debug outputs only function properly when A has the bigger point count">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -358,7 +359,7 @@
             <ControlPoint Id="TmuEw5PlGCQOyGTuUezIvK" Bounds="1272,1737" />
             <Pad Id="McfAmqjQT59NLvJTb9B16x" SlotId="J98sqkVUM3dQQ4eFgMVHR6" Bounds="1389,1034" />
             <Pad Id="TwHAuOCAXEPME6KzMU5HeY" SlotId="J98sqkVUM3dQQ4eFgMVHR6" Bounds="1204,1479" />
-            <ControlPoint Id="DZOEoTu4LuwNeFXEZ9glmC" Bounds="1196,1676" />
+            <ControlPoint Id="DZOEoTu4LuwNeFXEZ9glmC" Bounds="1201,1691" />
             <Pad Id="UgRiP9OhIE1P4grzXJckdk" SlotId="TPq8dmgz3fGOWRfeecMpwF" Bounds="1380,283" />
             <Pad Id="JLBVVDIl8PDL9DMvSzUi5Z" SlotId="TPq8dmgz3fGOWRfeecMpwF" Bounds="1656,1720" />
             <ControlPoint Id="Aliu6fSH6w6MKTd3KAxqKD" Bounds="1654,1940" />
@@ -1698,10 +1699,13 @@
                           </p:ValueBoxSettings>
                         </Pad>
                       </Patch>
+                      <ControlPoint Id="Ey7YatNbhYZMeXDalRhxDX" Bounds="1976,3293" Alignment="Bottom" />
+                      <ControlPoint Id="RQBmKNxJrpFP3mOhWIGZuk" Bounds="1976,3180" Alignment="Top" />
                     </Node>
                     <ControlPoint Id="ScAjsIrwqlBNbrIAD33ddK" Bounds="1983,3063" />
                   </Patch>
                   <ControlPoint Id="HYHfeILOcjeNI6LvvCZe3L" Bounds="2050,3322" Alignment="Bottom" />
+                  <ControlPoint Id="MMza4hlKGFcNUypabXgV9i" Bounds="1987,3322" Alignment="Bottom" />
                 </Node>
                 <ControlPoint Id="Udx2uYG57BNN30xA3wYM4c" Bounds="1826,2768" />
                 <Node Bounds="1926,2793,44,26" Id="BQok58PCCbRNcthG8u8wZO">
@@ -1736,6 +1740,7 @@
                 </Node>
               </Patch>
               <ControlPoint Id="Ms6TNmCp7CGLprDOExznwQ" Bounds="2050,3342" Alignment="Bottom" />
+              <ControlPoint Id="AO7YLtA0fFWLWkUcvtTiIs" Bounds="1991,3342" Alignment="Bottom" />
             </Node>
             <Node Bounds="1445,1818,44,26" Id="HYK1Fqh3REsMOyoElA391J">
               <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
@@ -3119,6 +3124,16 @@
                 <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
               </p:ValueBoxSettings>
             </Pad>
+            <Node Bounds="1981,3369,47,19" Id="UfGmhAAzlhUNMD1ZEkk5lR">
+              <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Flatten" />
+              </p:NodeReference>
+              <Pin Id="Adzz3GAlPXjOtMp8fjORrn" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Qap73I4J29wPJs7LNvi5ow" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="Chm93SuIXFbN31zarSJUIa" Bounds="1986,3733" />
           </Canvas>
           <ProcessDefinition Aspects="Advanced" Id="AA0N3BruhFwPyHVQXy5zCy">
             <Fragment Id="EYY2pzv9u0RPgtPDNKqJC9" Patch="NQRUdkgmrQyMcTgPgQQvJm" Enabled="true" />
@@ -3368,6 +3383,7 @@
             </Pin>
             <Pin Id="HaGNPrnVzoqNlmDYDT5iAo" Name="AutoOriginCorrection" Kind="InputPin" DefaultValue="True" />
             <Pin Id="GdBlBzqP6gdP5AxqExaBZG" Name="IsNewPointInCompositeShape" Kind="OutputPin" Bounds="2054,3751" />
+            <Pin Id="QQuNGKWIBJwLTU4jcAVuJl" Name="IsNewPointSampleProportion" Kind="OutputPin" Bounds="1986,3733" />
           </Patch>
           <Link Id="PJQsk3MYPk5M0OHhGEmGHJ" Ids="Lo0rHdwmSfSNVchyCAv98x,BEbzPMvOq7ROQeJvAI5qj5" />
           <Link Id="HGGMfTaqDGaL9c4zTKOg13" Ids="Ef79iSMqriqNF4KpV7xjIE,JklBtelFMQMLx9sF5H8gr3" />
@@ -3388,6 +3404,13 @@
           <Link Id="RTQb9qDJ5EBN1TNQbdP7Tt" Ids="Ms6TNmCp7CGLprDOExznwQ,ArS8rTdpgQFQBsBmun55tC" />
           <Link Id="TD1ejbHJmAsMuPfmknDMsn" Ids="IXF0Nt7o4WAPpnGET8mZJU,A4vSAI6D19kQQcqvdOfJBL" />
           <Link Id="BqCsFIR6sx4LnhZhVyuyka" Ids="A4vSAI6D19kQQcqvdOfJBL,GdBlBzqP6gdP5AxqExaBZG" IsHidden="true" />
+          <Link Id="C6HBb6LQ4JFNYtMgJzfvkO" Ids="RQBmKNxJrpFP3mOhWIGZuk,Ey7YatNbhYZMeXDalRhxDX" IsFeedback="true" />
+          <Link Id="KiEAFDbAw5lNlecCBvPu72" Ids="L5Ts8RZaHzyLM9CWsQ2pfz,Ey7YatNbhYZMeXDalRhxDX" />
+          <Link Id="ApmnxqCMZfjN2axfy8gqwB" Ids="Ey7YatNbhYZMeXDalRhxDX,MMza4hlKGFcNUypabXgV9i" />
+          <Link Id="Sj2970hsUnSPJIKbjpUjdw" Ids="MMza4hlKGFcNUypabXgV9i,AO7YLtA0fFWLWkUcvtTiIs" />
+          <Link Id="FwFTGnQaJkfLUBPcW3on7l" Ids="AO7YLtA0fFWLWkUcvtTiIs,Adzz3GAlPXjOtMp8fjORrn" />
+          <Link Id="RIloYn5iPBoLaJepmXlZzs" Ids="Qap73I4J29wPJs7LNvi5ow,Chm93SuIXFbN31zarSJUIa" />
+          <Link Id="OKz9awTsJFiOHyEJ5UCj1g" Ids="Chm93SuIXFbN31zarSJUIa,QQuNGKWIBJwLTU4jcAVuJl" IsHidden="true" />
         </Patch>
       </Node>
       <Overlay Id="S8fGGjNHI3XO8V0OhUc7As" Name="Basic" Bounds="1133,536,643,80" />

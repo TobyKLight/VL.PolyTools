@@ -45,7 +45,7 @@
             <Pin Id="S9U8qx02t0RMKJRZB30tff" Name="Polygons2DPlus" Kind="InputPin" />
             <Pin Id="LBYL1mAZ0JYORqa5vkSrOH" Name="ForceUseCompositeShapes" Kind="InputPin" />
             <Pin Id="CsC8LwnGDJVMAbfcBCD9Lx" Name="UVCalcMode" Kind="InputPin" />
-            <Pin Id="SRWx9tNxYnNOXqJXXcOZC9" Name="UVUseQuadrants" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SRWx9tNxYnNOXqJXXcOZC9" Name="UVUseQuadrants" Kind="InputPin" />
             <Pin Id="Vza6aWARvBUPF954GR7Bk1" Name="SidesUVTransform" Kind="InputPin" IsHidden="true" />
             <Pin Id="Je6HyF6lhICOyc39zQcNq7" Name="StartCapUVTransform" Kind="InputPin" IsHidden="true" />
             <Pin Id="BsF81UKTMR3MSDb9sfnEFf" Name="EndCapUVTransform" Kind="InputPin" IsHidden="true" />
@@ -69,7 +69,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="BCGD34xPvHAPc2giXoexHt" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="ERiACIt0kUoL2zyS2951kb" Name="Bounds" Kind="InputPin" DefaultValue="782.4, 48, 543.2, 319.2" />
+            <Pin Id="ERiACIt0kUoL2zyS2951kb" Name="Bounds" Kind="InputPin" DefaultValue="-576, 56.8, 1536, 800.8" />
             <Pin Id="VENYsSX8mq3MvkZZl8q2KZ" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="BY3QAr90FqzOZ83pLYlCXD" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="GRfVUKybwlFLtwI7Od4aKl" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -326,7 +326,7 @@
                 <Pin Id="JcwWEts2PTBMRjjD92BT2u" Name="HeightMode" Kind="InputPin" DefaultValue="1" />
                 <Pin Id="Qe4yTKHLcFILpTKiuTR5eo" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="Aov2oLW8fPCMh50gvhDiQq" Comment="HeightMode" Bounds="685,1104,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+              <Pad Id="Aov2oLW8fPCMh50gvhDiQq" Comment="HeightMode" Bounds="685,1104,35,15" ShowValueBox="true" isIOBox="true" Value="1">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Integer32" />
                 </p:TypeAnnotation>
@@ -434,28 +434,6 @@
             <Pin Id="MEFzUpfqIhlNdqoeuyfBPw" Name="Enabled" Kind="InputPin" />
             <Pin Id="KkPgHDVAPR2LZor2NPVUY2" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="IMz91EbJxgcL1JfXdN8dLI" Comment="Control Points" Bounds="129,104,112,157" ShowValueBox="true" isIOBox="true">
-            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Spread" />
-              <p:TypeArguments>
-                <TypeReference>
-                  <Choice Kind="ImmutableTypeFlag" Name="Vector3" />
-                  <CategoryReference Kind="Category" Name="3D" />
-                </TypeReference>
-              </p:TypeArguments>
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:maxvisibleentries p:Type="Int32">20</p:maxvisibleentries>
-              <p:showentryindex p:Type="Boolean">true</p:showentryindex>
-              <p:showslider p:Type="Boolean">false</p:showslider>
-            </p:ValueBoxSettings>
-            <p:Value>
-              <Item>-1.8, 0, 0.12</Item>
-              <Item>-0.38, 0.97, -0.39</Item>
-              <Item>-1, 1.17, 0.88</Item>
-              <Item>-3.67, 1.67, -0.08</Item>
-            </p:Value>
-          </Pad>
           <Node Bounds="125,314,49,19" Id="EMSI5exMXwUOxQh6RX3kzI">
             <p:NodeReference LastCategoryFullName="Math.Curves" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -882,7 +860,7 @@
             <Pin Id="H5h0oI9S5ZdN8l6QFllGO0" Name="Inverse View" Kind="OutputPin" />
             <Pin Id="NxR5C3XrCIaNk2U3v4FHGS" Name="Camera Component" Kind="OutputPin" />
           </Node>
-          <Pad Id="QAdjrctE65cNQk8T0L5QHG" Bounds="791,1099,218,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Should be zero for tube on path">
+          <Pad Id="QAdjrctE65cNQk8T0L5QHG" Bounds="791,1099,218,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Should be 1 for tube on path">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -933,7 +911,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="PQ3e1oNWn20PxN5V8SA6rk" Bounds="792,1366,338,135" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Use mode 3 when mapping a structure like this because height data is not set for Polygon2DPLus, only transforms. So height data cannot be the basis for V mapping. Instead it divides the V space in the map linearly per input polygon.&#xD;&#xA; &#xD;&#xA;Note other modes wont work without that height dat.">
+          <Pad Id="PQ3e1oNWn20PxN5V8SA6rk" Bounds="792,1366,338,146" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Use mode 3 when mapping a structure like this because height data is not set for Polygon2DPLus, only transforms. So height data cannot be the basis for V mapping. Instead it divides the V space in the map linearly per input polygon.&#xD;&#xA; &#xD;&#xA;Note other modes like 2 wont work without that height data and will be stretched or black">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -977,14 +955,45 @@
             <Pin Id="HMYZSNEUAFTPtRTgj1jzkO" Name="Is Loading" Kind="OutputPin" />
             <Pin Id="RaZpjJFGc8KOYwnvrJPa8g" Name="Already Loaded" Kind="OutputPin" />
           </Node>
-          <Pad Id="Aa4gbrA76gTPB3T0DgpYtw" Comment="Path" Bounds="852,1509,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\HelpTextures\UVCheckerMap1024_Quadrants.png">
+          <Pad Id="Aa4gbrA76gTPB3T0DgpYtw" Comment="Path" Bounds="853,1526,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\HelpTextures\UVCheckerMap1024_Quadrants.png">
             <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Pad>
+          <Pad Id="UP3wwIyEDNUMxiMbmXhCr0" Comment="UVUseQuadrants" Bounds="707,1414,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RNaghJYWNAnNiZx95DQlbp" Comment="Control Points" Bounds="130,107,112,157" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="ImmutableTypeFlag" Name="Vector3" />
+                  <CategoryReference Kind="Category" Name="3D" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">20</p:maxvisibleentries>
+              <p:showentryindex p:Type="Boolean">true</p:showentryindex>
+              <p:showslider p:Type="Boolean">false</p:showslider>
+            </p:ValueBoxSettings>
+            <p:Value>
+              <Item>-1.8, 0, 0.12</Item>
+              <Item>-0.38, 0.97, -0.39</Item>
+              <Item>-1, 1.17, 0.88</Item>
+              <Item>-3.67, 1.67, -0.08</Item>
+            </p:Value>
+          </Pad>
         </Canvas>
         <Patch Id="PGZR2n27iQ1MYpmpZmTMim" Name="Create" />
-        <Patch Id="K105ESvrXZLQV2gnjE9gUp" Name="Update" ParticipatingElements="OYBd3Ut1CNzM4YpKB0Wc6O" />
+        <Patch Id="K105ESvrXZLQV2gnjE9gUp" Name="Update" ParticipatingElements="FuYRVcGV5F8OxefgTyPXVK" />
         <ProcessDefinition Id="GWreSLcVyugP6N9raUliq3">
           <Fragment Id="MVkazeLegpeLFkbbRTWAsL" Patch="PGZR2n27iQ1MYpmpZmTMim" Enabled="true" />
           <Fragment Id="KkSjxH8kUzdO3WFkuxtNBW" Patch="K105ESvrXZLQV2gnjE9gUp" Enabled="true" />
@@ -1079,12 +1088,13 @@
         <Link Id="SpFYVyEZFHFLd4NoQfe2l5" Ids="LCB3hYkFgk8Oct1nRo9VgP,RngmzIC0M9YOgja9MFgoJe" />
         <Link Id="SobFKwHL3WBNKhuILeWNcz" Ids="K50GrrrrPV5NTHjMIBYnaV,SCkCactaVQZNgBl6k4V12y" />
         <Link Id="QXlixGLeYbaPYftCWSyA11" Ids="JH4oMZe9psiL14kn0sbXul,RlorbBmP43MPCISSDdVq71" />
-        <Link Id="OYBd3Ut1CNzM4YpKB0Wc6O" Ids="IMz91EbJxgcL1JfXdN8dLI,LCB3hYkFgk8Oct1nRo9VgP" />
         <Link Id="VnqDLkDh133NT5vn4X40KU" Ids="T33wCEavyBZNTOsPQOldd1,MQ67gKSyysCMC04GmDEQHc" />
         <Link Id="DaU4IKOpQ0dOTuElQbCiCr" Ids="VrnNqPDEYwcLjneGYY1Vi8,CsC8LwnGDJVMAbfcBCD9Lx" />
         <Link Id="F3hhiejtA2yLecfd5UOI18" Ids="IEFBHrP3cwnPWRGuOhDvSX,EZDqtvnynOGQaxVufnAuas" />
         <Link Id="DPypkCZI4YHMUO0oivTsB0" Ids="Aa4gbrA76gTPB3T0DgpYtw,HxsD1HhG5PEMW9AyDJtAvv" />
         <Link Id="NgbMFlzSWLCLZgX590O97I" Ids="Tv1Hcyg3a7TLaCFf4imapA,QOjuTd0Pu0XO8lwJXwmW3L" />
+        <Link Id="GqxjnWXzsZxP89mxo2swJd" Ids="UP3wwIyEDNUMxiMbmXhCr0,SRWx9tNxYnNOXqJXXcOZC9" />
+        <Link Id="FuYRVcGV5F8OxefgTyPXVK" Ids="RNaghJYWNAnNiZx95DQlbp,LCB3hYkFgk8Oct1nRo9VgP" />
       </Patch>
     </Node>
   </Patch>
