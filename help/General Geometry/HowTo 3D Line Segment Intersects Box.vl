@@ -275,6 +275,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="LineSegmentIntersectsBox" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="Sa9sDRWdoz1LOnQgEyA3H7" Name="PointA" Kind="InputPin" />
             <Pin Id="Ra34Pz6skIlPnjvXXkHMUS" Name="PointB" Kind="InputPin" />
             <Pin Id="OX3W6lwxPfuOP00rETO4Zp" Name="Box" Kind="InputPin" />
@@ -285,16 +286,19 @@
             <Pin Id="I3I8lfWSpWiONP3yjwECnl" Name="IntersectionPoint2" Kind="OutputPin" />
             <Pin Id="DP6CY4If0o5MGKNwubh0qi" Name="ResultPointSpread" Kind="OutputPin" />
           </Node>
-          <Node Bounds="601,917,63,19" Id="EF7OSUpuQxHOaJ5VpwuT8h">
+          <Node Bounds="601,917,105,19" Id="EF7OSUpuQxHOaJ5VpwuT8h">
             <p:NodeReference LastCategoryFullName="Stride.Models" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Points (Material)" />
             </p:NodeReference>
             <Pin Id="MjiGzTbsv9aNxJgC5AqAIh" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="E6wi4UMAuukPP9C3NfEvJn" Name="Points" Kind="InputPin" />
             <Pin Id="DNe316npv1KNMlW29DFu6z" Name="Size" Kind="InputPin" DefaultValue="0.03, 0.03, 0.03" />
-            <Pin Id="PPrpB0knEMJOBigU0SVdGS" Name="LinePoints" Kind="InputPin" />
             <Pin Id="FMPnIpVr0IsNiqcaTjSpAO" Name="Material" Kind="InputPin" />
+            <Pin Id="HZrbzbtC88rOrZeYJBdyvV" Name="CrossShape" Kind="InputPin" />
+            <Pin Id="GwnVlEvbuE9OlTlJgpDpHH" Name="CrossShortSideMultiplier" Kind="InputPin" />
             <Pin Id="LpNWwtoAs8xNtlSNobkPIZ" Name="Entity" Kind="OutputPin" />
+            <Pin Id="PPrpB0knEMJOBigU0SVdGS" Name="LinePoints" Kind="InputPin" />
           </Node>
           <Node Bounds="655,888,77,19" Id="J5yuvpsJ86wPzAZP0bDzZO">
             <p:NodeReference LastCategoryFullName="Stride.Materials" LastDependency="VL.Stride.vl">
@@ -333,16 +337,19 @@
             <Pin Id="TNsEYQBD83QNLgIKOxl27S" Name="Debug_BoxVertices" Kind="OutputPin" />
           </Node>
           <Pad Id="DefACdROH8nOlB43iMRaWO" Comment="IsIntersect" Bounds="412,440,35,35" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="744,915,63,19" Id="SQVCUdxTY6CM2zCjhzYcGA">
+          <Node Bounds="744,915,105,19" Id="SQVCUdxTY6CM2zCjhzYcGA">
             <p:NodeReference LastCategoryFullName="Stride.Models" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Points (Material)" />
             </p:NodeReference>
             <Pin Id="OcgCyl1OyoPPWEFyD7K32V" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Ut0Aip7GONNOO4BCq9zT7n" Name="Points" Kind="InputPin" />
             <Pin Id="VbGkTg80GiQPUnevszdNeI" Name="Size" Kind="InputPin" DefaultValue="0.04, 0.04, 0.04" />
-            <Pin Id="Do46vI1pBOfLK8zTam7DMR" Name="LinePoints" Kind="InputPin" />
             <Pin Id="VFnKU9e87xXMASDxM6ifIm" Name="Material" Kind="InputPin" />
+            <Pin Id="Fv4frqiX8o6OxsgRr99R9F" Name="CrossShape" Kind="InputPin" />
+            <Pin Id="CQCLStRtzKFMGKSj9SoprS" Name="CrossShortSideMultiplier" Kind="InputPin" />
             <Pin Id="CusrNlTzOR3MsHOB2qf3n7" Name="Entity" Kind="OutputPin" />
+            <Pin Id="Do46vI1pBOfLK8zTam7DMR" Name="LinePoints" Kind="InputPin" />
           </Node>
           <Pad Id="LC9bi88BOUHPOZ9LWf03DR" Comment="IntersectionPoint1" Bounds="478,523,35,43" ShowValueBox="true" isIOBox="true" />
           <Pad Id="DzhQWYAfl2fOESgQijgKGc" Comment="IntersectionPoint2" Bounds="522,590,35,43" ShowValueBox="true" isIOBox="true" />

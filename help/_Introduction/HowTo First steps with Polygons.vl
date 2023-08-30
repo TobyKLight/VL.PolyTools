@@ -37,7 +37,7 @@
             <Pin Id="O7GVZYdh0o8Pmtn4lq3ymO" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="P41qypgEyd0OVSJX91Pwv5" Name="Render Time" Kind="OutputPin" />
           </Node>
-          <Pad Id="UYiDIyJNPjwO2PXzAuoFpl" Bounds="421,168,288,69" ShowValueBox="true" isIOBox="true" Value="1.Polygon is simply made of lists of points. There is one outer contour of points and multiple inner contours of holes. &#xD;&#xA;">
+          <Pad Id="UYiDIyJNPjwO2PXzAuoFpl" Bounds="421,168,500,37" ShowValueBox="true" isIOBox="true" Value="1.Polygon is simply made of lists of points. There is one outer contour of points and multiple inner contours of holes. &#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -59,7 +59,7 @@
             <Pin Id="PdgxSXxUfFBMXn1xcydHMT" Name="Subdivision Count" Kind="InputPin" DefaultValue="2" />
             <Pin Id="TA13s52VSs5NPpSmbVdQh5" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="443,585,46,26" Id="OMIW4gEpJ6aOxn1lSGjwX8">
+          <Node Bounds="443,585,46,19" Id="OMIW4gEpJ6aOxn1lSGjwX8">
             <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon" />
@@ -123,7 +123,7 @@
             <Pin Id="Gt9WKrz274mPV2JEnk8RJm" Name="StrokePaint" Kind="InputPin" />
             <Pin Id="ERLGIDFxUjZLGIAu1q6VGR" Name="Layer" Kind="OutputPin" />
           </Node>
-          <Pad Id="IZ3eU7mp9XQLJHfWf9LWZq" Bounds="547,786,485,65" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;no concept of 'closed'  in the polygon datatype itself. Nodes where it make sense have a 'close' pin like here.&#xD;&#xA;Note it can happen that operations effectively close a polygon. (In this case adding the holes did that, remove them and see the shape is not closed)&#xD;&#xA;&#xD;&#xA;Operations that only make sense with a fill (like fill paint, union, intersect) just assume the shape is closed and filled. &#xD;&#xA;">
+          <Pad Id="IZ3eU7mp9XQLJHfWf9LWZq" Bounds="547,786,500,61" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;no concept of 'closed'  in the polygon datatype itself. Nodes where it make sense have a 'close' pin like here.&#xD;&#xA;Note it can happen that operations effectively close a polygon. (In this case adding the holes did that, remove them and see the shape is not closed)&#xD;&#xA;&#xD;&#xA;Operations that only make sense with a fill (like fill paint, union, intersect) just assume the shape is closed and filled. &#xD;&#xA;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -176,14 +176,14 @@
               <Choice Kind="OperationCallFlag" Name="Create" />
               <CategoryReference Kind="RecordType" Name="Polygon" NeedsToBeDirectParent="true" />
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
             <Pin Id="Kx2yf17O7hCOHa6KHYmocN" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="SG6CRCP9qr1Oacp9ZzSpuV" Name="OuterContour" Kind="InputPin" />
             <Pin Id="KzNPTLEZfOVPnw7Wj1yDLE" Name="HoleContours" Kind="InputPin" />
             <Pin Id="Kj5gKSCKkwKLsfH7TbjojK" Name="Output" Kind="StateOutputPin" />
             <Pin Id="EeEOnXDZbW7MI8ZK0AFKE8" Name="SuccessFindBounds" Kind="OutputPin" />
           </Node>
-          <Pad Id="DO259agKPUEMsYKa5EW2hq" Bounds="418,416,284,39" ShowValueBox="true" isIOBox="true" Value="2. For a quick start use any node that generates 2D spreads ">
+          <Pad Id="DO259agKPUEMsYKa5EW2hq" Bounds="418,416,365,19" ShowValueBox="true" isIOBox="true" Value="2. For a quick start use any node that generates 2D spreads ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -205,7 +205,7 @@
               <Item>0, 0</Item>
             </p:Value>
           </Pad>
-          <Pad Id="TR3AV0Ecf0SNtv68pcq789" Comment="HoleContours" Bounds="635,238,122,81" ShowValueBox="true" isIOBox="true">
+          <Pad Id="TR3AV0Ecf0SNtv68pcq789" Comment="HoleContours" Bounds="635,238,45,81" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -228,7 +228,7 @@
               </Item>
             </p:Value>
           </Pad>
-          <Pad Id="V1aXlRNE658PDOwtfr6piJ" Bounds="727,498,185,43" ShowValueBox="true" isIOBox="true" Value="OR for a quick rectangle use FromRectangle&gt;&gt;">
+          <Pad Id="V1aXlRNE658PDOwtfr6piJ" Bounds="727,498,287,19" ShowValueBox="true" isIOBox="true" Value="OR for a quick rectangle use FromRectangle&gt;&gt;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -274,7 +274,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QNv4Uw9V52gLjPRUSI5sJl" Bounds="398,704,313,47" ShowValueBox="true" isIOBox="true" Value="3. Draw a polygon with DrawPolygon.&#xD;&#xA; ">
+          <Pad Id="QNv4Uw9V52gLjPRUSI5sJl" Bounds="398,704,230,37" ShowValueBox="true" isIOBox="true" Value="3. Draw a polygon with DrawPolygon.&#xD;&#xA; ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -283,7 +283,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="1146,720,65,26" Id="GXxXGKUXy2lOtVHBKwJix4">
+          <Node Bounds="1146,720,65,19" Id="GXxXGKUXy2lOtVHBKwJix4">
             <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon" />
@@ -296,7 +296,7 @@
             <Pin Id="KrM9A0kH33KMFwktLVulMz" Name="Bounds" Kind="OutputPin" />
             <Pin Id="EZ6bsdlupQDQUgvGGUXGX6" Name="SuccessFindBounds" Kind="OutputPin" />
           </Node>
-          <Pad Id="FKjLQAgjo2uQRUV03S54hM" Bounds="812,679,327,40" ShowValueBox="true" isIOBox="true" Value="OR use one of these other drawing methods, OR use Split (Polygon) to get the points and draw yourself">
+          <Pad Id="FKjLQAgjo2uQRUV03S54hM" Bounds="812,679,500,19" ShowValueBox="true" isIOBox="true" Value="OR use one of these other drawing methods, OR use Split (Polygon) to get the points and draw yourself">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -345,7 +345,7 @@
             <Pin Id="CXCIvBUwvZYMUSJVMqNnRs" Name="CustomHueSpread" Kind="InputPin" />
             <Pin Id="VTDFUAyiq15Ntrm6mIqXTU" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="Pvx2YN4Q36HMYdC7vdHsE9" Bounds="547,913,240,39" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;small gotcha, if you enable stroke without a stroke  SkiaPaint connected you will get the default SkiaPaint, which is a fill.  ">
+          <Pad Id="Pvx2YN4Q36HMYdC7vdHsE9" Bounds="547,913,496,13" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;small gotcha, if you enable stroke without a stroke  SkiaPaint connected you will get the default SkiaPaint, which is a fill.  ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

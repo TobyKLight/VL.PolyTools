@@ -310,7 +310,7 @@
             <Pin Id="AaQUKDOyaWhND75XNPXP5n" Name="PolyPaths" Kind="OutputPin" />
           </Node>
           <ControlPoint Id="DQHrwiCSGFnNqeSklRjQ4d" Bounds="621,254" />
-          <Node Bounds="301,556,56,26" Id="TymLnI9WGPyPOzGrfLFBWG">
+          <Node Bounds="301,556,56,19" Id="TymLnI9WGPyPOzGrfLFBWG">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SplitFirst" />
@@ -322,7 +322,7 @@
             <Pin Id="KEQMu1tdhlMMiZ82QTMwzr" Name="Result" Kind="OutputPin" />
           </Node>
           <ControlPoint Id="QvxRupwSs67PGCIdtBEpWv" Bounds="292,626" />
-          <Pad Id="LhfoqJFUrSpP3FzE3UA6WY" Bounds="395,448,239,210" ShowValueBox="true" isIOBox="true" Value="Notes&#xD;&#xA;1.Can result in multiple polypaths if the polygon has a hole contour so big it would split  the shape into multiple paths. &#xD;&#xA;To demonstrate increase the radius2 On the 'hole' star to 1.00 and reset the patch (F9).&#xD;&#xA;&#xD;&#xA;If you are sure the polygon will be a single discrete shape you can just use SplitFirst to extract the first shape . &#xD;&#xA;Otherwise you may need logic to handle this case of multiple polypaths.&#xD;&#xA;&#xD;&#xA;2. If a polygon represents only an unclosed line ensure it does not have any hole contours and FromPolygon should create the PolyPath correctly as an unclosed line.  If this is undesirable behaviour use the 'Close' option. ">
+          <Pad Id="LhfoqJFUrSpP3FzE3UA6WY" Bounds="395,448,500,98" ShowValueBox="true" isIOBox="true" Value="Notes&#xD;&#xA;1.Can result in multiple polypaths if the polygon has a hole contour so big it would split  the shape into multiple paths. &#xD;&#xA;To demonstrate increase the radius2 On the 'hole' star to 1.00 and reset the patch (F9).&#xD;&#xA;&#xD;&#xA;If you are sure the polygon will be a single discrete shape you can just use SplitFirst to extract the first shape . &#xD;&#xA;Otherwise you may need logic to handle this case of multiple polypaths.&#xD;&#xA;&#xD;&#xA;2. If a polygon represents only an unclosed line ensure it does not have any hole contours and FromPolygon should create the PolyPath correctly as an unclosed line.  If this is undesirable behaviour use the 'Close' option. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

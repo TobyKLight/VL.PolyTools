@@ -89,7 +89,7 @@
             <Pin Id="Juenkm5sqPVO47dWkinN51" Name="Enabled" Kind="InputPin" />
             <Pin Id="VfSSIX7olhsMadHWTi2Vfo" Name="Entity" Kind="OutputPin" />
           </Node>
-          <Pad Id="RO3xOuRgUXYO1zzkwbaAWm" Comment="Title" Bounds="348,1750,96,15" ShowValueBox="true" isIOBox="true" Value="3D points to 2D polygon plus transform">
+          <Pad Id="RO3xOuRgUXYO1zzkwbaAWm" Comment="Title" Bounds="348,1750,140,15" ShowValueBox="true" isIOBox="true" Value="3D points to 2D polygon plus transform">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -175,7 +175,7 @@
             <ControlPoint Id="MCtU21cNHpCP2DKymMzb6A" Bounds="248,378" Alignment="Top" />
             <ControlPoint Id="KUp6HsZtrh2LLow37tatu1" Bounds="254,477" Alignment="Bottom" />
           </Node>
-          <Node Bounds="283,271,44,26" Id="GJYCoeZCy0tPBH3BTn9Uma">
+          <Node Bounds="283,271,44,19" Id="GJYCoeZCy0tPBH3BTn9Uma">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -202,7 +202,7 @@
               <CategoryReference Kind="Category" Name="3D" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Oo76m3213twOq5U3SlhRfx" Bounds="214,85,387,113" ShowValueBox="true" isIOBox="true" Value="Simulating some points in 3D space. In this case transformed along a vector.&#xD;&#xA;&#xD;&#xA;As long as you can work out what that vector is you can use the method below to get it back to a Polygon2DPlus (And then back to 2D polygon if you wish)">
+          <Pad Id="Oo76m3213twOq5U3SlhRfx" Bounds="214,85,500,55" ShowValueBox="true" isIOBox="true" Value="Simulating some points in 3D space. In this case transformed along a vector.&#xD;&#xA;&#xD;&#xA;As long as you can work out what that vector is you can use the method below to get it back to a Polygon2DPlus (And then back to 2D polygon if you wish)">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -320,6 +320,7 @@
               <CategoryReference Kind="RecordType" Name="Polygon2DPlus" />
               <Choice Kind="OperationCallFlag" Name="Join (3DPointsAndVector)" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="U0AZRA6U6ClNfdq8Y6i1BG" Name="Input" Kind="StateInputPin" />
             <Pin Id="Sl11MnFZhv3OiSJYI5TYtC" Name="Points" Kind="InputPin" />
             <Pin Id="JHNbUbfWDUFQQ9G6mferxk" Name="LookFromA" Kind="InputPin" />
@@ -351,7 +352,7 @@
             <Pin Id="VNVQgEc7haLMxslBzMB5ax" Name="Enabled" Kind="InputPin" />
             <Pin Id="RlJQOVkHKqSOLFauVWYEio" Name="Entity" Kind="OutputPin" />
           </Node>
-          <Node Bounds="842,1299,85,26" Id="EgTbEkC1CgPOHoSu2KpWcf">
+          <Node Bounds="842,1299,85,19" Id="EgTbEkC1CgPOHoSu2KpWcf">
             <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon2DPlus" />
@@ -395,7 +396,7 @@
             <Pin Id="HIicdpxv0HRLTXave6FnRU" Name="Translation" Kind="InputPin" DefaultValue="1.24, 0, 0" />
             <Pin Id="DaSGmZA1yTuLeR7t2FWUaB" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="841,1339,65,26" Id="R8BX0nVab4oQHGLt6OpaKf">
+          <Node Bounds="841,1339,65,19" Id="R8BX0nVab4oQHGLt6OpaKf">
             <p:NodeReference LastCategoryFullName="PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Polygon" />
@@ -476,7 +477,7 @@
             <ControlPoint Id="HIou5FAAZ2vMqbx6rirBAy" Bounds="1018,1450" Alignment="Bottom" />
             <ControlPoint Id="I3n1uS28pWPOY8v7fLssT5" Bounds="1039,1376" Alignment="Top" />
           </Node>
-          <Node Bounds="1025,1304,44,26" Id="B4EdZDxr5eIONoCh08DwKB">
+          <Node Bounds="1025,1304,44,19" Id="B4EdZDxr5eIONoCh08DwKB">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -529,7 +530,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="QAM6yOQdu0lQEqIuNjLoVd" Bounds="449,901,195,87" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;The vector doesn't tell us how points are rotated around the axis of that vector, so with this can also specify">
+          <Pad Id="QAM6yOQdu0lQEqIuNjLoVd" Bounds="449,901,500,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;The vector doesn't tell us how points are rotated around the axis of that vector, so with this can also specify">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

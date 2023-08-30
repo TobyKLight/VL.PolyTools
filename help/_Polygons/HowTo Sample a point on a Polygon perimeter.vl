@@ -29,7 +29,7 @@
             <Pin Id="Ij4v75Jbf5tMCcslR4Rjzd" Name="Spike Count" Kind="InputPin" DefaultValue="9" />
             <Pin Id="Hs7B0yMm1r0N12lRaexDAT" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="630,367,46,26" Id="GqHmlKlt67vOMH5Pb8NpIc">
+          <Node Bounds="630,367,46,19" Id="GqHmlKlt67vOMH5Pb8NpIc">
             <p:NodeReference LastCategoryFullName="PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon" />
@@ -44,7 +44,7 @@
             <Pin Id="AnwlbCT0pMvOxPZXggwiKK" Name="Output" Kind="StateOutputPin" />
             <Pin Id="NCAuWDy9qV0MpoT810s1pY" Name="SuccessFindBounds" Kind="OutputPin" />
           </Node>
-          <Node Bounds="630,429,64,26" Id="NgdyM94ypqpP71KKld09Ow">
+          <Node Bounds="630,429,64,19" Id="NgdyM94ypqpP71KKld09Ow">
             <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon" />
@@ -216,6 +216,7 @@
               <CategoryReference Kind="RecordType" Name="Polygon" />
               <Choice Kind="OperationCallFlag" Name="SampleByLength" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="IsFbwfakAdgMoDP0bRKKQf" Name="Input" Kind="StateInputPin" />
             <Pin Id="O4Tnn8hrYvQPaGAzsC5qpz" Name="ContourIndex" Kind="InputPin" />
             <Pin Id="F1QAY6m2cF2MtVuM4e6hyt" Name="TargetLength" Kind="InputPin" />
@@ -247,7 +248,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="VxCnZiQi2EEOKG9qhsnbQw" Comment="Success" Bounds="960,682,35,35" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="630,517,60,26" Id="RyqUO1Z3tDiMKq27Z87SHG">
+          <Node Bounds="630,517,60,19" Id="RyqUO1Z3tDiMKq27Z87SHG">
             <p:NodeReference LastCategoryFullName="VL.PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon" />
@@ -282,7 +283,7 @@
             <Pin Id="LG2jFC2Fz9EPeFiJFyuXP0" Name="Input" Kind="InputPin" />
             <Pin Id="BKDF7JpxBpyNvUKs8WOCiU" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="EG7mOvfGQCuOHK28OfcGXx" Bounds="1116,504,181,69" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; 0 is outer perimeter, 1+ is hole perimeters">
+          <Pad Id="EG7mOvfGQCuOHK28OfcGXx" Bounds="1116,504,285,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; 0 is outer perimeter, 1+ is hole perimeters">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -300,7 +301,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="FDDU8pzePgwNdM2Y2vIxde" Bounds="1157,602,160,86" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Target length between 0 and total length of the contour">
+          <Pad Id="FDDU8pzePgwNdM2Y2vIxde" Bounds="1157,602,357,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Target length between 0 and total length of the contour">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -309,7 +310,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="B8jW9s9JLHgM0qGjQzcbPc" Bounds="1023,696,263,89" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Returns true if the length is within the total perimeter of the polygon. Will fail if length below 0 or above the total perimeter.">
+          <Pad Id="B8jW9s9JLHgM0qGjQzcbPc" Bounds="1023,696,500,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Returns true if the length is within the total perimeter of the polygon. Will fail if length below 0 or above the total perimeter.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -324,6 +325,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SampleByProportion" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="SAr3m3DqMMrMh96hqaWt2j" Name="Input" Kind="StateInputPin" />
             <Pin Id="MZnTLVcRtwgLKOn80ahMEH" Name="Closed" Kind="InputPin" />
             <Pin Id="V52RdOG4XZ9NneTQi1VHg2" Name="ContourIndex" Kind="InputPin" />
@@ -334,7 +336,7 @@
           </Node>
           <Pad Id="EjiqViFVMivQVAsQX8JN8p" SlotId="VQuX7hbXdDGLVLor4EB04H" Bounds="963,610" />
           <Pad Id="JtQPn6zVN3yMd1PuXmvAZ1" SlotId="VQuX7hbXdDGLVLor4EB04H" Bounds="1500,614" />
-          <Pad Id="C8tX3N700TnOlCcrgBBPJc" Bounds="1524,690,263,89" ShowValueBox="true" isIOBox="true" Value="No success pin, assumes that you can clamp the input value to the 0-1 range if you need to avoid erroneous output.">
+          <Pad Id="C8tX3N700TnOlCcrgBBPJc" Bounds="1524,690,500,19" ShowValueBox="true" isIOBox="true" Value="No success pin, assumes that you can clamp the input value to the 0-1 range if you need to avoid erroneous output.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -348,7 +350,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="FNqdt6WVZPQLlxeqd0aucr" Bounds="1727,583,150,56" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Target proportion between 0 and 1">
+          <Pad Id="FNqdt6WVZPQLlxeqd0aucr" Bounds="1727,583,236,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Target proportion between 0 and 1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -362,7 +364,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="VH1oe7ldQa2L2VtK9X7h0D" Bounds="1674,539,181,38" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; 0 is outer perimeter, 1+ is hole perimeters">
+          <Pad Id="VH1oe7ldQa2L2VtK9X7h0D" Bounds="1674,539,285,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; 0 is outer perimeter, 1+ is hole perimeters">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -380,7 +382,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Uh4EHFtYkbFNA1cgbRFJXH" Bounds="1613,496,250,38" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Include the last closed line in the proportional value or not. ">
+          <Pad Id="Uh4EHFtYkbFNA1cgbRFJXH" Bounds="1613,496,381,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Include the last closed line in the proportional value or not. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -389,7 +391,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="PiTTuUjGJ4QOaCKdj7TdSg" Bounds="751,561,93,61" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Note total perimeter length">
+          <Pad Id="PiTTuUjGJ4QOaCKdj7TdSg" Bounds="751,561,190,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Note total perimeter length">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

@@ -78,6 +78,21 @@ credit https://github.com/speps/LibTessDotNet/graphs/contributors
 @Untone for help unlocking the SKPath verbs for use in vvvv gamma
 
 # Version History
+
+V1.3.0 
+* !Breaking Changes! Re-categorisation of some nodes into new Line category. Some line related functions may have red nodes. Double click on them, clear their existing associations in the bottom right and search again for the name and you should find the same nodes.  
+* !Breaking Change! All polytubes need their input 'Polygon2DPlus' types to have heightmode=1 (Y=height). This is now consistent, was 0 on some old helppatches. 
+* Added 3D Triangle Intersection, see helppatch. 
+* Exposed RayIntersectsTriangle from Stride.Core.Mathematics 
+* Added a helppatch for Solving a Triangle in 3D and a node for finding the third point of a triangle if you know some constraints about the first two points. 
+* Added function for finding a 3D Line segment intersects a box with helppatch 
+* Added new dependency Geometry3Sharp https://github.com/gradientspace/geometry3Sharp. Currently only using this for a few intersections but has potential to do a lot more in this package. It's Boost 1.0 licence (like clipper). 
+* Added LinePoints utility drawing function for stride 
+* Added Plane (Plane) utility drawing function for stride, this takes a Plane mathematical struct as input, however note this has some limitations as the struct is infinite and we are drawing a finite plane. Basically just make it really big. 
+* Exposed Normal input on LibTessDotNet Triangulation nodes. Triangulation nodes are 2D but it can be necessary to set the face direction in 3D use. See the CalcTubeEndCaps process inside PolyTubes for an example usecase. 
+* Improved TransformsOnSpline and TransformOnLine nodeset where you specify either ForwardVectors or a single ForwardVector. See the "Tube On Path" helppatch for an explanation. This is less confusing for their usecases where the UpVector of the Spline/Line is the Y axis, and results in less weird singularity twists in tubes. The previous nodes are still included in obsolete category.  
+
+
 V1.2.2 
 * Bugfixes with dependencies 
 
@@ -147,10 +162,10 @@ V1.0.4
 
 V1.0.3
 
-*Helppatch improvements
-*Consistent GetBounds method for Polygon and PolyPath
-*Added Splitting Circles Example patch kindly contributed by ██ ██
-*Added option to Compartments to avoid including outer stroke
+* Helppatch improvements
+* Consistent GetBounds method for Polygon and PolyPath
+* Added Splitting Circles Example patch kindly contributed by ██ ██
+* Added option to Compartments to avoid including outer stroke
 
  
 

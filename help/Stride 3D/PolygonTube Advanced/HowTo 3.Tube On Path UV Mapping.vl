@@ -62,6 +62,7 @@
             <Pin Id="SmaLAxoL2chQBsqV1CwdeB" Name="Name" Kind="InputPin" />
             <Pin Id="KLW1XcaVmg6LlO5HZvMO6J" Name="Enabled" Kind="InputPin" />
             <Pin Id="G2Toy4T653rNlDL8ZSlwuJ" Name="Entity" Kind="OutputPin" />
+            <Pin Id="E7ODrMlq0bwOlF537uPKbv" Name="Debug_EndCapNormalArrows" Kind="OutputPin" IsHidden="true" />
           </Node>
           <Node Bounds="833,2401,225,19" Id="F6hJyfZ1CyUOB5uZEcbd4u">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
@@ -69,7 +70,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="BCGD34xPvHAPc2giXoexHt" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="ERiACIt0kUoL2zyS2951kb" Name="Bounds" Kind="InputPin" DefaultValue="-576, 56.8, 1536, 800.8" />
+            <Pin Id="ERiACIt0kUoL2zyS2951kb" Name="Bounds" Kind="InputPin" DefaultValue="356.8, 352.8, 740, 388" />
             <Pin Id="VENYsSX8mq3MvkZZl8q2KZ" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="BY3QAr90FqzOZ83pLYlCXD" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="GRfVUKybwlFLtwI7Od4aKl" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -498,11 +499,6 @@
             <Pin Id="DP12kOOt2HIK9bNQ95v7H9" Name="Output" Kind="OutputPin" />
           </Node>
           <Overlay Id="Kn7132DYPEnLRKqeSdMKHr" Name="Sample Path where we want polygons" Bounds="24,443,743,485" />
-          <Pad Id="N58WiFLsPcWMjOHSKvY1aa" Comment="LookAhead" Bounds="284,493,35,15" ShowValueBox="true" isIOBox="true" Value="0.01">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Float32" />
-            </p:TypeAnnotation>
-          </Pad>
           <Node Bounds="-157,2011,564,165" Id="F71e7nRqJnKOZXKnKj2u8C">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -748,20 +744,21 @@
             <Pin Id="Rn42ysqjYeeNheDdjY4L3p" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="PH2BIjrFWunMEfUXpmgiR6" SlotId="CHXJ6YYt27SP6m9i6lEfrq" Bounds="-628,2071" />
-          <Node Bounds="138,750,109,19" Id="UBqxJiohGJDP9gpNqT9q53">
+          <Node Bounds="138,750,125,19" Id="UBqxJiohGJDP9gpNqT9q53">
             <p:NodeReference LastCategoryFullName="PolyTools.Spline" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="TransformsOnSpline (SingleUpVector)" />
+              <Choice Kind="OperationCallFlag" Name="TransformsOnSpline (ForwardVectors)" />
             </p:NodeReference>
             <Pin Id="BCYVQwtDXwOPxZA1e8diUH" Name="Spline" Kind="InputPin" />
             <Pin Id="Im3rueibPKWPksvtrjQUcO" Name="SampleAtPoints" Kind="InputPin" />
             <Pin Id="CKmvyqw66KBLXggnDkQs8k" Name="LookAheadForAngle" Kind="InputPin" />
-            <Pin Id="SCkCactaVQZNgBl6k4V12y" Name="SetUpVectorToCentroid" Kind="InputPin" DefaultValue="True" />
-            <Pin Id="OQ1ze3pMsRiQdG0gZ44QfS" Name="Up Vector" Kind="InputPin" />
+            <Pin Id="AGZQuMa1zW3N4EwHhNgcjW" Name="DoChainForwardVectors" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="Ek805hJMTG6Nj30yIsxhUp" Name="ForwardVectors" Kind="InputPin" />
+            <Pin Id="Ro30PObstynNhOaPXuK47k" Name="AdditionalRotationForChainForwardMode" Kind="InputPin" />
             <Pin Id="Fp7XJDGPG1VPYs8BklGNX8" Name="Output" Kind="OutputPin" />
             <Pin Id="H33prq19FkTMHXI37qu3UO" Name="Debug_Positions" Kind="OutputPin" />
             <Pin Id="IDA4S2GvhEfPkIrlzs55s2" Name="Debug_LookAtPoints" Kind="OutputPin" />
-            <Pin Id="GeQB9jKKhMyLcOvu7WD8RB" Name="Debug_RelativeUpPoints" Kind="OutputPin" />
+            <Pin Id="CcMqX4FenztMi2MI19ThwP" Name="Debug_ForwardPoints" Kind="OutputPin" />
           </Node>
           <Pad Id="PwjV3apI8QlOrx0C2H3BZ0" SlotId="AXssa21B1rFO7UbbzGfBvh" Bounds="190,813" />
           <Pad Id="DwNP9aBVVtnNQcTDHtloP9" SlotId="TkA2pY2UFA1MFYLe1TQHrq" Bounds="223,831" />
@@ -787,7 +784,7 @@
               </p:TypeArguments>
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="DWEihAI5vrsPdDFjoCuA8s" SlotId="DNBg0IiVqM9L2SyrS5lHA8" Bounds="253,848" />
+          <Pad Id="DWEihAI5vrsPdDFjoCuA8s" SlotId="QlkJOVWjidSPHwN4ACu07R" Bounds="255,851" />
           <Pad Id="Bf71p4y0PspOVMcGIMBmKg" Comment="ShowsSamplePoint" Bounds="8,1887,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
@@ -797,7 +794,6 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Rjgqup44PxOOMgp2jLNO8g" SlotId="DNBg0IiVqM9L2SyrS5lHA8" Bounds="262,1957" />
           <Pad Id="GjR6xuw88bqP2xW3PX3wna" Comment="ShowLookAtArrow" Bounds="206,1891,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
@@ -808,20 +804,6 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="VosZkmV1WGbOeNGIVUG3JU" Comment="ShowUpVectors" Bounds="384,1940,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="IQGnRgnFfDDO4uCsoxNv7a" Comment="Up Vector" Bounds="311,704,35,43" ShowValueBox="true" isIOBox="true" Value="0, 0.05, 0">
-            <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Vector3" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="K50GrrrrPV5NTHjMIBYnaV" Comment="SetUpVectorToCentroid" Bounds="304,648,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -991,6 +973,7 @@
               <Item>-3.67, 1.67, -0.08</Item>
             </p:Value>
           </Pad>
+          <Pad Id="DvG97GBybgVPHTcJaVlcyg" SlotId="QlkJOVWjidSPHwN4ACu07R" Bounds="266,1976" />
         </Canvas>
         <Patch Id="PGZR2n27iQ1MYpmpZmTMim" Name="Create" />
         <Patch Id="K105ESvrXZLQV2gnjE9gUp" Name="Update" ParticipatingElements="FuYRVcGV5F8OxefgTyPXVK" />
@@ -1068,10 +1051,7 @@
         <Link Id="HELwE9FDtpOLkTmNVzS4pM" Ids="PpLsl6nyUEZPUtKajHY3kw,KgpPwZ5MJzyL1Jotg1nE9f" />
         <Link Id="De8qPvgK4khNqeBvkME7b5" Ids="LKP1hpLxl1WLzeX1KzYKFw,FCnOUyoa8YfNk8MAbB3fdS,Im3rueibPKWPksvtrjQUcO" />
         <Link Id="CY1wi1YLCJOPdbMwtHAk10" Ids="DP12kOOt2HIK9bNQ95v7H9,LKP1hpLxl1WLzeX1KzYKFw" />
-        <Slot Id="DNBg0IiVqM9L2SyrS5lHA8" Name="RelativeUpPoints" />
-        <Link Id="H9X2q4OaG0BNbEW4j3V1uV" Ids="GeQB9jKKhMyLcOvu7WD8RB,DWEihAI5vrsPdDFjoCuA8s" />
         <Link Id="U8GO1rPCX2TPGwTNF62RlD" Ids="Bf71p4y0PspOVMcGIMBmKg,RJe4yWsWEiyOsF4HOcPxkp" />
-        <Link Id="ONbvqtfHvavOnCAsz9CkKU" Ids="Rjgqup44PxOOMgp2jLNO8g,QEE7MIhGXfJPVqqnSYFJhc" />
         <Link Id="JUvZGtFgt9cNlspWrRf6Hc" Ids="GjR6xuw88bqP2xW3PX3wna,AH3Y0c48GpbLxj3eIfMvdb" />
         <Link Id="J7YthT8b0JBMkN7GPtMzkF" Ids="E2J9W6xKw96LxVRanuP0Ch,FKEakRa0c1oMwVBdAPVBwO" />
         <Link Id="RDDPoLOLuL8PjU7FCl8Lld" Ids="ON2xs34R3HmOj5uwV8FSEQ,UXhHAiUW8nZQdQ5xM6dJFr" />
@@ -1079,14 +1059,11 @@
         <Link Id="OGtZTVKkVHeQUkHITMXGWn" Ids="QEE7MIhGXfJPVqqnSYFJhc,AdnsmQuhf7vMOxCezmW91c" />
         <Link Id="NjEn57OfWTKM5VlEguvSr8" Ids="JntEWqb1XGtM6Xf9jKFeQl,BZghwMV9kyuPDZHxihHX9L" />
         <Link Id="EzUD5ngqYigLdyMVdnBDGa" Ids="VosZkmV1WGbOeNGIVUG3JU,RayFpX5thwULPAqpG5seOb" />
-        <Link Id="NNmEYhkfRHsLa9MwObAc5r" Ids="IQGnRgnFfDDO4uCsoxNv7a,OQ1ze3pMsRiQdG0gZ44QfS" />
         <Link Id="RXfrpipjb9ZQagvgozbRcG" Ids="G2Toy4T653rNlDL8ZSlwuJ,It1ccZG2VJ9PeczljVbWln" />
         <Link Id="GEMlfVGEOE9N5RrwyJJDOi" Ids="Sxp3z6WVjc8PL9uwgxpiVS,UYoYFwYA5jkOwFgjRK7W9Y" IsFeedback="true" />
         <Link Id="IXOri8TZIiKMnxJspmzziz" Ids="BB18OzOsXyrLi6dsqSkz9C,UYoYFwYA5jkOwFgjRK7W9Y" />
         <Link Id="Cg4a9tA0b5TO1xmCxl1w7E" Ids="UYoYFwYA5jkOwFgjRK7W9Y,Opx9Kt1RbwYLfKjyzGJxKF" />
-        <Link Id="RMk2FzPTRDYLJku2eaP2O0" Ids="N58WiFLsPcWMjOHSKvY1aa,CKmvyqw66KBLXggnDkQs8k" />
         <Link Id="SpFYVyEZFHFLd4NoQfe2l5" Ids="LCB3hYkFgk8Oct1nRo9VgP,RngmzIC0M9YOgja9MFgoJe" />
-        <Link Id="SobFKwHL3WBNKhuILeWNcz" Ids="K50GrrrrPV5NTHjMIBYnaV,SCkCactaVQZNgBl6k4V12y" />
         <Link Id="QXlixGLeYbaPYftCWSyA11" Ids="JH4oMZe9psiL14kn0sbXul,RlorbBmP43MPCISSDdVq71" />
         <Link Id="VnqDLkDh133NT5vn4X40KU" Ids="T33wCEavyBZNTOsPQOldd1,MQ67gKSyysCMC04GmDEQHc" />
         <Link Id="DaU4IKOpQ0dOTuElQbCiCr" Ids="VrnNqPDEYwcLjneGYY1Vi8,CsC8LwnGDJVMAbfcBCD9Lx" />
@@ -1095,6 +1072,9 @@
         <Link Id="NgbMFlzSWLCLZgX590O97I" Ids="Tv1Hcyg3a7TLaCFf4imapA,QOjuTd0Pu0XO8lwJXwmW3L" />
         <Link Id="GqxjnWXzsZxP89mxo2swJd" Ids="UP3wwIyEDNUMxiMbmXhCr0,SRWx9tNxYnNOXqJXXcOZC9" />
         <Link Id="FuYRVcGV5F8OxefgTyPXVK" Ids="RNaghJYWNAnNiZx95DQlbp,LCB3hYkFgk8Oct1nRo9VgP" />
+        <Link Id="MBoSZjB5ffpPtbEm6DoeJw" Ids="CcMqX4FenztMi2MI19ThwP,DWEihAI5vrsPdDFjoCuA8s" />
+        <Slot Id="QlkJOVWjidSPHwN4ACu07R" Name="ForwardHelperPoints" />
+        <Link Id="OqV8DS5gKEdLy6W7sOFZN1" Ids="DvG97GBybgVPHTcJaVlcyg,QEE7MIhGXfJPVqqnSYFJhc" />
       </Patch>
     </Node>
   </Patch>

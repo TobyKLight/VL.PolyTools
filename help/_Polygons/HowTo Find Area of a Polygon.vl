@@ -19,7 +19,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Area" />
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">Low</p:HelpFocus>
             <Pin Id="EjqAL2lCKUMMrZ6Rr2rZKz" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="TaucLTARGy1QNK2qmICOeJ" Name="Polygon" Kind="InputPin" />
             <Pin Id="Mt7peODs2WQMAXRhcwQpoh" Name="DoSelfDifferenceFirst" Kind="InputPin" DefaultValue="True" />
@@ -85,7 +85,7 @@
             <Pin Id="Nl6xNKhfgZiM8TIlHCmLS1" Name="Shader" Kind="InputPin" />
             <Pin Id="BEoabu3dfFLLs0g7K7DksG" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="NQNw6HoNIzaM9M6vwmdqYh" Comment="Area" Bounds="500,737,57,29" ShowValueBox="true" isIOBox="true">
+          <Pad Id="NQNw6HoNIzaM9M6vwmdqYh" Comment="Area" Bounds="500,737,50,29" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:fontsize p:Type="Int32">14</p:fontsize>
             </p:ValueBoxSettings>
@@ -213,7 +213,7 @@
             <Pin Id="BGZMZXEg4X1P3imazkrPT5" Name="Input 3" Kind="InputPin" />
             <Pin Id="DZT5yJdjcqNOyQyKmhOARM" Name="Input 4" Kind="InputPin" />
           </Node>
-          <Pad Id="R158vLEvxqsQNl2mF9nPkg" Comment="CASE" Bounds="500,594,53,25" ShowValueBox="true" isIOBox="true" Value="0">
+          <Pad Id="R158vLEvxqsQNl2mF9nPkg" Comment="CASE" Bounds="500,594,35,25" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -245,7 +245,7 @@
             <Pin Id="OggptzgZ8XsQWMIBk20Z2q" Name="Input" Kind="InputPin" />
             <Pin Id="Nzd4BQfsUp3OPRnpPCeG6c" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="Cp1wp7zeRDpLHjsmBuWE5C" Bounds="915,240,291,40" ShowValueBox="true" isIOBox="true" Value="This is an erroneous polygon setup where the hole rectangle bounds are actually extending outside the primary bounds.">
+          <Pad Id="Cp1wp7zeRDpLHjsmBuWE5C" Bounds="915,240,479,13" ShowValueBox="true" isIOBox="true" Value="This is an erroneous polygon setup where the hole rectangle bounds are actually extending outside the primary bounds.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -357,7 +357,7 @@
             <Pin Id="VabA9ar5rC2LUWcrJ8bLPk" Name="Input" Kind="InputPin" />
             <Pin Id="SnOGCFsC5kWOUjZjWsxxnU" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="Qt8vPY2xIlbQKPaFSw4pQ7" Comment="Hole Position" Bounds="1073,288,40,28" ShowValueBox="true" isIOBox="true" Value="-1, 0">
+          <Pad Id="Qt8vPY2xIlbQKPaFSw4pQ7" Comment="Hole Position" Bounds="1073,288,35,28" ShowValueBox="true" isIOBox="true" Value="-1, 0">
             <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
@@ -371,7 +371,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="BnUqmA5NHSuQW9b2jWdpkg" Bounds="574,680,732,39" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;The self difference check costs a little performance but will catch erroneous polygons where the hole coordinates extend outside the outerbounds.   &#xD;&#xA;Check it on case 2.&#xD;&#xA;You can turn it off to save some performance if you are sure your polygons are setup correctly (for instance if they are already the result of a difference operation)">
+          <Pad Id="BnUqmA5NHSuQW9b2jWdpkg" Bounds="574,680,500,37" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;The self difference check costs a little performance but will catch erroneous polygons where the hole coordinates extend outside the outerbounds.   &#xD;&#xA;Check it on case 2.&#xD;&#xA;You can turn it off to save some performance if you are sure your polygons are setup correctly (for instance if they are already the result of a difference operation)">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -381,7 +381,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="Uh6q3INIWK2P2A6LPORW6E" Name="Case3: Polypath flattened to polygon" Bounds="1242,148,332,403" />
-          <Node Bounds="1320,263,65,26" Id="LXTmwFShryEP1CFphhTzzS">
+          <Node Bounds="1320,263,65,19" Id="LXTmwFShryEP1CFphhTzzS">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="AddCircle" />
@@ -400,7 +400,7 @@
             <Pin Id="CrMZn5PSqItL9VSxZr3cZz" Name="SKPath" Kind="InputPin" />
             <Pin Id="IoP0lhEk6yLMkvHlEQhE9R" Name="PolyPaths" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1342,442,95,26" Id="Sdq4yeEEJRhMzJ0kBnaabK">
+          <Node Bounds="1342,442,95,19" Id="Sdq4yeEEJRhMzJ0kBnaabK">
             <p:NodeReference LastCategoryFullName="VL.PolyTools.PolyPath" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="FlattenToPolygon" />
@@ -416,12 +416,12 @@
             <Pin Id="I4A1t3RUdWwLaEzb2CUlUk" Name="PositionsInner" Kind="OutputPin" IsHidden="true" />
             <Pin Id="BWs1LehyPIdOqDxxoHi0w8" Name="TangentsInner" Kind="OutputPin" IsHidden="true" />
           </Node>
-          <Pad Id="CaWv4WxRompMZihoNQhDLz" Comment="Outer Radius" Bounds="1341,222,40,15" ShowValueBox="true" isIOBox="true" Value="1">
+          <Pad Id="CaWv4WxRompMZihoNQhDLz" Comment="Outer Radius" Bounds="1341,222,35,15" ShowValueBox="true" isIOBox="true" Value="1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="1346,334,45,26" Id="QXouF8GjhbuMtRAtxIsYwF">
+          <Node Bounds="1346,334,45,19" Id="QXouF8GjhbuMtRAtxIsYwF">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Op" />
@@ -432,7 +432,7 @@
             <Pin Id="O17Lwt1tbMrLcLpDetkNQw" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="McY7c2aKym6NXYTIkzv9B9" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1422,266,65,26" Id="LqHl9XVp63fNLe4N7FW1uZ">
+          <Node Bounds="1422,266,65,19" Id="LqHl9XVp63fNLe4N7FW1uZ">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="AddCircle" />
@@ -448,7 +448,7 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="1343,393,56,26" Id="I7wc67vms4tLYGhdzExsnO">
+          <Node Bounds="1343,393,56,19" Id="I7wc67vms4tLYGhdzExsnO">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SplitFirst" />
@@ -470,7 +470,7 @@
             </p:TypeAnnotation>
           </Pad>
           <ControlPoint Id="VoIjAjUEtmnQNmRX7MwoOW" Bounds="1343,534" />
-          <Pad Id="K9m94Z9upL7PY9gKGq3uR3" Bounds="1242,487,281,44" ShowValueBox="true" isIOBox="true" Value="Accuracy will be lost in the flattening of polypath to polygon. ">
+          <Pad Id="K9m94Z9upL7PY9gKGq3uR3" Bounds="1242,487,251,13" ShowValueBox="true" isIOBox="true" Value="Accuracy will be lost in the flattening of polypath to polygon. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -479,7 +479,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TFXvUocIJRBPEC9Jva2pi1" Bounds="585,588,263,35" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Switch cases here">
+          <Pad Id="TFXvUocIJRBPEC9Jva2pi1" Bounds="585,588,245,35" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Switch cases here">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
