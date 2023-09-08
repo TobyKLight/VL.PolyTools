@@ -74,6 +74,9 @@ https://www.nuget.org/packages/LibTessDotNet
 
 credit https://github.com/speps/LibTessDotNet/graphs/contributors
 
+Geometry3Sharp
+https://github.com/gradientspace/geometry3Sharp
+
 # Special Thanks
 @Untone for help unlocking the SKPath verbs for use in vvvv gamma
 
