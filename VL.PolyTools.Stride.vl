@@ -1288,12 +1288,12 @@
                 <Pin Id="KyDNJPgBmcNMTWYhWjGgT1" Name="Output" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="P8YITcSRlgfNf0Ktj3t6r8" Bounds="556,372" />
-              <ControlPoint Id="Mpzqtd3VQXQPncr6he0GLI" Bounds="436,583" />
+              <ControlPoint Id="Mpzqtd3VQXQPncr6he0GLI" Bounds="426,692" />
               <ControlPoint Id="Cy3WtkMbDnhOI6ue8fjrhQ" Bounds="342,415" />
               <ControlPoint Id="UVqRxs14MFYMl5w8toWPV2" Bounds="469,284" />
               <ControlPoint Id="SvjjqoKgNONLfDW7dxKAiX" Bounds="813,280" />
               <ControlPoint Id="ONGaur5fn1dLkOJk1z0S5o" Bounds="885,278" />
-              <Node Bounds="434,526,105,19" Id="GPipkMrePeCNiVN1CsW9gy">
+              <Node Bounds="424,635,105,19" Id="GPipkMrePeCNiVN1CsW9gy">
                 <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Group" />
@@ -9372,7 +9372,7 @@
               <Pin Id="U5LbCTwVuCjMfneFnuILG9" Name="Enabled" Kind="InputPin" />
               <Pin Id="FCC1twfHhuoLarUGchW7Fo" Name="Entity" Kind="OutputPin" />
             </Node>
-            <Node Bounds="928,413,55,26" Id="Faew5Qgm6mULC3Snf7YXNk">
+            <Node Bounds="928,413,69,26" Id="Faew5Qgm6mULC3Snf7YXNk">
               <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.Stride.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Polygon2DPlus" />
@@ -10889,7 +10889,7 @@
           <Patch Id="NIFexrVvt1MOnVtHVIm4Ce" Name="SetPolygonFromOuterPoints">
             <Pin Id="CryVKGp2mrrPYj410wruCh" Name="OuterContour" Kind="InputPin" />
           </Patch>
-          <Patch Id="LdnWSdvahoQOCDI4ZaAFfY" Name="Join (3DPointsAndVector)" ParticipatingElements="UEjcuZdVALVLVm31qgAPbi">
+          <Patch Id="LdnWSdvahoQOCDI4ZaAFfY" Summary="Special join method for reverse projecting 3D polygon to 2D" Remarks="This is useful when you already have a polygon in 3D space (a set of vector3 points) and you want to turn it back into a 2D polygon PLUS height data.&#xD;&#xA;Do this by supplying an A and B position that is used as both translation and normal as the 'facing' of the polygon to treat as the height data." Name="Join (3DPointsAndVector)" ParticipatingElements="UEjcuZdVALVLVm31qgAPbi">
             <Pin Id="Ruyp4rQWv6WOYYXJWXYjpc" Name="Points" Kind="InputPin">
               <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Spread" />

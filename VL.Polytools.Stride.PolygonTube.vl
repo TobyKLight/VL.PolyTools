@@ -72,6 +72,7 @@
               <Pin Id="GygFz7kyX3EQPFtz2ZNTyu" Name="TriIndiceSB" Kind="OutputPin" />
               <Pin Id="Fin9xzT9VFPOfJXIXMA7kh" Name="TriCount" Kind="OutputPin" />
               <Pin Id="G1Gkjp5PCCEOWgMnN38cPD" Name="NextAvailableGlobalIndice" Kind="OutputPin" />
+              <Pin Id="OomRUMGXyszMy3Ql73GKon" Name="Debug_TriIndicesPerSegment" Kind="OutputPin" />
             </Node>
             <Pad Id="ShsQVf9l3zJOsb2Rnix2Cv" SlotId="DDC87G1E0RmOVfafRqyNWp" Bounds="1459,212" />
             <Node Bounds="1457,167,66,26" Id="BPiAQ3QLRh9PNRU2WqpSEh">
@@ -430,6 +431,8 @@
               <Pin Id="REwMJostWFbMXL9q6XZ2tG" Name="Result" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="KFB73dQC0DwOPiTdOGkQq8" Bounds="1637,963" />
+            <ControlPoint Id="UCLX5p2SAHmMZS7QwNfP7A" Bounds="1504,527" />
+            <ControlPoint Id="GbfKaPU1HcvPWFDJQG2tap" Bounds="1392,1422" />
           </Canvas>
           <ProcessDefinition Id="MNiq3paIg03OD8WY4rvzeH">
             <Fragment Id="PyYCoCqQjHkOvtU00frJes" Patch="T8kHKSSRqRqLEw5Qvk6NGX" Enabled="true" />
@@ -507,6 +510,8 @@
             <Pin Id="BI8Z95v7n5iNpZLWetz12A" Name="Output" Kind="OutputPin" Bounds="1271,782" />
             <Pin Id="HtzcBqzlS90LYh825sYOez" Name="GenerateTangents" Kind="InputPin" Bounds="1241,1421" />
             <Pin Id="KEQ0KYSpoNrLSU1i3HjRDO" Name="Debug_EndCapNormalArrows" Kind="OutputPin" Bounds="1637,963" />
+            <Pin Id="T8ucCprqiABOzfxnp8jnBH" Name="DebugTriIndicesPerSegment" Kind="OutputPin" Bounds="1504,527" />
+            <Pin Id="Id7AnwMzCqkLtOU7IMsEdu" Name="Debug_VertexBuffer" Kind="OutputPin" Bounds="1393,1423" />
           </Patch>
           <Link Id="QIlxncvMFHzQbiosst2bKd" Ids="IWhbePCPxPWONROqbdT1Xg,T6qNJXcicyzL9C9cFWcpnv" IsFeedback="true" />
           <Link Id="IRigOVW2dynQX6dZJJ5HKd" Ids="IWhbePCPxPWONROqbdT1Xg,JSAZHJhD8h6ODJ6qx9AnQ0" />
@@ -594,6 +599,10 @@
           <Link Id="Riq1mlwnkKkMZ3KHEnWYgH" Ids="RVe9hQCKbJZP7stdlBfD3u,P3RkspgONGoNmFO52v5YT1" />
           <Link Id="Tiehne163FxLLoXD5Ckht4" Ids="REwMJostWFbMXL9q6XZ2tG,KFB73dQC0DwOPiTdOGkQq8" />
           <Link Id="DBBAaOD1N43NRdKOOybQE8" Ids="KFB73dQC0DwOPiTdOGkQq8,KEQ0KYSpoNrLSU1i3HjRDO" IsHidden="true" />
+          <Link Id="BI4OWh22tCIOYaoXAbrLoa" Ids="OomRUMGXyszMy3Ql73GKon,UCLX5p2SAHmMZS7QwNfP7A" />
+          <Link Id="NrfbSqAZ33fOujHDZMGguv" Ids="UCLX5p2SAHmMZS7QwNfP7A,T8ucCprqiABOzfxnp8jnBH" IsHidden="true" />
+          <Link Id="UHpCR2SLo3QOS0g0zt2U4u" Ids="MQdz40MDKapPkzZ5bi1He9,GbfKaPU1HcvPWFDJQG2tap" />
+          <Link Id="S85DVbuGksHMYo6sW1417H" Ids="GbfKaPU1HcvPWFDJQG2tap,Id7AnwMzCqkLtOU7IMsEdu" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -1726,7 +1735,7 @@
               <Pin Id="QGPkOOlJuX3PNAxJSbbaIU" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Pad Id="VdAuT9fs1kMLOPkfO3J9Zt" SlotId="B3lquExY7dBLLJaOrG7q4L" Bounds="1409,1466" />
-            <Node Bounds="1403,1478,66,26" Id="L0hSstHdc5fMUFgRLttxHu">
+            <Node Bounds="1406,1491,66,26" Id="L0hSstHdc5fMUFgRLttxHu">
               <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="SpreadBuilder" />
@@ -1745,7 +1754,7 @@
               <Pin Id="VWCiNihOXugNsAzNDA8mGE" Name="Item" Kind="InputPin" />
               <Pin Id="VRnrBxTslyjM7R6f0PByi0" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="1250,1843,429,214" Id="BqLaqZ3K0ICM4Ss6DrrU1a">
+            <Node Bounds="1250,1843,429,215" Id="BqLaqZ3K0ICM4Ss6DrrU1a">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -1754,13 +1763,13 @@
               <Pin Id="JwrcZYr4qWfNvE1UC3bzsG" Name="Break" Kind="OutputPin" />
               <ControlPoint Id="EOeoGuFy7UDNRS6SfqG84g" Bounds="1413,1849" Alignment="Top" />
               <ControlPoint Id="Fjn0FY5T3E0N9SkC4Srypv" Bounds="1269,1849" Name="Vertices" Alignment="Top" />
-              <ControlPoint Id="CU8F6aNqOgRP01ycvMVaeB" Bounds="1269,2051" Name="Vertices" Alignment="Bottom" />
+              <ControlPoint Id="CU8F6aNqOgRP01ycvMVaeB" Bounds="1269,2052" Name="Vertices" Alignment="Bottom" />
               <ControlPoint Id="DjOBApvfEcbPh8s1PnJm1u" Bounds="1462,1849" Name="IndicesFlat" Alignment="Top" />
-              <ControlPoint Id="U5lv3kK1w9FLNXwskxB9OE" Bounds="1463,2051" Name="IndicesFlat" Alignment="Bottom" />
+              <ControlPoint Id="U5lv3kK1w9FLNXwskxB9OE" Bounds="1463,2052" Name="IndicesFlat" Alignment="Bottom" />
               <ControlPoint Id="QvQJ0jHQAZoN3yhZGosDI5" Bounds="1582,1849" Name="NextStartingIndice" Alignment="Top" />
-              <ControlPoint Id="DpUsob1NtQyPrqYPjhpbsO" Bounds="1577,2051" Name="NextStartingIndice" Alignment="Bottom" />
+              <ControlPoint Id="DpUsob1NtQyPrqYPjhpbsO" Bounds="1577,2052" Name="NextStartingIndice" Alignment="Bottom" />
               <ControlPoint Id="Mh1NMfWyx6MQUF8FdAefWv" Bounds="1362,1849" Name="UVs" Alignment="Top" />
-              <ControlPoint Id="SejzPOWB3GbMEZS0zN6q1f" Bounds="1363,2051" Name="UVs" Alignment="Bottom" />
+              <ControlPoint Id="SejzPOWB3GbMEZS0zN6q1f" Bounds="1363,2052" Name="UVs" Alignment="Bottom" />
               <Patch Id="MZcgccCujCNPsdwTINIUKu" ManuallySortedPins="true">
                 <Patch Id="MeLcHf7n3ppPLmZYd5rQc1" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="Na5sbRvXRRHMDS9LB9L2R8" Name="Update" ManuallySortedPins="true" />
@@ -1793,7 +1802,7 @@
                   <Pin Id="LpPG6JFFB0eM7QBNgabFRd" Name="Items" Kind="InputPin" />
                   <Pin Id="J52uRzvEDrpLM9kMBTeVoF" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Node Bounds="1453,1962,66,26" Id="TtNETEsACqaLdVRb0iyq7U">
+                <Node Bounds="1464,1958,66,26" Id="TtNETEsACqaLdVRb0iyq7U">
                   <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="SpreadBuilder" />
@@ -1939,8 +1948,7 @@
               <Pin Id="Hiit3IFGbOdNZxT7vaaoyM" Name="Break" Kind="OutputPin" />
               <ControlPoint Id="LlCv9XfAT2RQY8iaYs6PJA" Bounds="1429,2517" Alignment="Top" />
               <ControlPoint Id="AkCi7K6xDbXOWdCLJDwLRL" Bounds="1432,2828" Alignment="Bottom" />
-              <ControlPoint Id="IXtdNeR7uWINbQTOhhU8aT" Bounds="1552,2828" Alignment="Bottom" />
-              <ControlPoint Id="MZ7fomkYuqpOFEZfMsMJvy" Bounds="1644,2828" Alignment="Bottom" />
+              <ControlPoint Id="KEhgI6v0TQHN3RLExjpKR7" Bounds="1607,2828" Alignment="Bottom" />
               <Patch Id="J87CiaZCVqNMHpo73GxTND" ManuallySortedPins="true">
                 <Patch Id="DxJ259EMyhIMaeLrlLozLm" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="A34skkOAKTjOML9fNRU3x0" Name="Update" ManuallySortedPins="true">
@@ -1995,12 +2003,13 @@
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ZipSideIndices" />
                   </p:NodeReference>
-                  <Pin Id="JM9fGVs0IffMIAvoR8Q2cg" Name="HasWrapAroundVertice" Kind="InputPin" />
                   <Pin Id="L7qaCfvbInAMu99BJzWL1F" Name="TriIndicesSB" Kind="InputPin" />
+                  <Pin Id="JM9fGVs0IffMIAvoR8Q2cg" Name="HasWrapAroundVertice" Kind="InputPin" />
                   <Pin Id="Mum73vwFja2On7vOXEmkYQ" Name="IndiceCount" Kind="InputPin" />
                   <Pin Id="C05bPYshuroO2jeaMFiwJB" Name="LowerGlobalIndices" Kind="InputPin" />
                   <Pin Id="SXA5rRtl6TAOVQbtL6tmti" Name="UpperGlobalIndices" Kind="InputPin" />
                   <Pin Id="PNlfxUZm70iLwTCEPQ6E7k" Name="TriIndicesSB" Kind="OutputPin" />
+                  <Pin Id="AlzhaKqyBKIP11GejBFfPM" Name="LocalIndicesThisSegment" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1442,2683,44,26" Id="Mzh6u49QMymMk0Aj3kwInt">
                   <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
@@ -2027,16 +2036,14 @@
     ************************ ZipSideIndices (Internal) ************************
 
 -->
-            <Node Name="ZipSideIndices (Internal)" Bounds="1999,2077,626,856" Id="AVXGGQJIWyHLZQ0GcRNTLM">
+            <Node Name="ZipSideIndices (Internal)" Bounds="1970,2120,655,864" Id="AVXGGQJIWyHLZQ0GcRNTLM">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
               <Patch Id="Rxfax8Ags09PWJuF39ZuH6">
                 <ControlPoint Id="SFa9N5mSY7nNdrpyUCwFD6" Bounds="2376,2151" />
                 <Link Id="EfvGi0KZ2fULgBMP7NnOWO" Ids="FZG6rpVlEm6N02GpEHOF7E,SFa9N5mSY7nNdrpyUCwFD6" IsHidden="true" />
-                <ControlPoint Id="Q1YY1qCbH5UL8WjzHbvN2s" Bounds="2086,2095" />
-                <Link Id="HAlby8s0AsFNRUwu7BwZvy" Ids="KvsagXBP0gBOK8GsfmOD7n,Q1YY1qCbH5UL8WjzHbvN2s" IsHidden="true" />
-                <ControlPoint Id="LwasadBDuLLL0O1MLL8X8f" Bounds="2072,2916" />
+                <ControlPoint Id="LwasadBDuLLL0O1MLL8X8f" Bounds="1988,2967" />
                 <Link Id="MJcrPyalRvnQYZyiBxmXgu" Ids="LwasadBDuLLL0O1MLL8X8f,A2tAlCgfZ1ML1WOkDkXCr7" IsHidden="true" />
                 <ControlPoint Id="AqtgPkNPKOjMh73mxaMVR5" Bounds="2137,2138" />
                 <Node Bounds="2134,2158,25,19" Id="HFrnnRFea7aO3QHRG4PlDq">
@@ -2265,7 +2272,6 @@
                 <Link Id="MoNHCuCaXBjMPGajkOJRB4" Ids="NxHjxgMQKI1LPGmmz3kr64,G821AVNp3MdPMIOuo09S0S" />
                 <Link Id="MSM68nFwgovMOurmbkilPp" Ids="GE0u64coaDnPYuDXOqeuVj,AlG9JTqEngRPlkmAdDxAyq" />
                 <Link Id="J1ATQqUhuyAMKrHlVwQ4Cb" Ids="CX8TDwQgtBQNHrP0FN3rWL,SFQMOjj02wgPGK5BevY4AR" IsFeedback="true" />
-                <Link Id="V5myCpSvOIeQdNYFpRoqFZ" Ids="Q1YY1qCbH5UL8WjzHbvN2s,CX8TDwQgtBQNHrP0FN3rWL" />
                 <Link Id="RJmYadZAnh9MvWEmT3wH6m" Ids="SFa9N5mSY7nNdrpyUCwFD6,JgIjjNII6a2MIGrNbMgjfj" />
                 <Link Id="D4Cou61DKPMOPoNtb2uqay" Ids="D4290MEwGrDLE2J0MQga1o,JmZtQB14c1NQct9FDs1ofR" />
                 <Link Id="LHJnkhUwMtLMw4J3OgJiVf" Ids="DNyLuVEJPC2Lem8gXwRyOj,Hgl7mxbyXtCQWOJJyKnECs" />
@@ -2476,8 +2482,39 @@
                 <Link Id="BuKW3jFXX5fNWvyUdOsweE" Ids="N9C3MKiRAOPNme3SKvd9rj,QEoQgifkfRcPGOEYKH9O3Z" />
                 <ControlPoint Id="Nd3PHV7UaqFMxlkZ8NR3ep" Bounds="2062,2529" />
                 <Link Id="RmqWk7zZGlzPHzsRBojwWY" Ids="AqYygFWT2BOLnDsWylcftp,Nd3PHV7UaqFMxlkZ8NR3ep" IsHidden="true" />
-                <Pin Id="AqYygFWT2BOLnDsWylcftp" Name="HasWrapAroundVertice" Kind="InputPin" />
+                <Node Bounds="2059,2539,37,19" Id="VQEw7LHw6Y8PhzjAmdjstZ">
+                  <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="NOT" />
+                  </p:NodeReference>
+                  <Pin Id="NZ90ElE9ogsQWBuZ8w26qf" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="OuQXUI8dnWHPsk1RRFg6S7" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Link Id="CelLwtMT1itNcL6Oyzf98o" Ids="Nd3PHV7UaqFMxlkZ8NR3ep,NZ90ElE9ogsQWBuZ8w26qf" />
+                <Pad Id="OYVEhEfNtZ6OxOlT4L4QQU" Bounds="2096,2552,510,46" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Only needed to wrap last triangles if does not have overlapping wrap around vertices (UV mode adds these)">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                  <p:ValueBoxSettings>
+                    <p:fontsize p:Type="Int32">9</p:fontsize>
+                    <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  </p:ValueBoxSettings>
+                </Pad>
+                <Link Id="HRgPqwLuzd2MopTMQgCb5v" Ids="DOCYdi8kE0COsumNZfJp1K,RqTqIX7U92OPbiV89qNJeS" />
+                <Link Id="O2Lltqg9EbSL7zI729phQc" Ids="OuQXUI8dnWHPsk1RRFg6S7,EBZMD49ZqgYOwQoOZhYvUA" />
+                <Node Bounds="1983,2906,66,26" Id="Atg0J6wZ82KMh5x3oWDF2J">
+                  <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="SpreadBuilder" />
+                    <Choice Kind="OperationCallFlag" Name="AddRange" />
+                  </p:NodeReference>
+                  <Pin Id="VBgMvPzIpcTND4q2XhwjMm" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="U8txIrheoBqOhNy2HB7Or1" Name="Items" Kind="InputPin" />
+                  <Pin Id="BTPRFC6HOdnOGiT8lcbiCB" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Link Id="EP2wAHFMw7xLD75A82logd" Ids="RqTqIX7U92OPbiV89qNJeS,U8txIrheoBqOhNy2HB7Or1" />
                 <Pin Id="KvsagXBP0gBOK8GsfmOD7n" Name="TriIndicesSB" Kind="InputPin" />
+                <Pin Id="AqYygFWT2BOLnDsWylcftp" Name="HasWrapAroundVertice" Kind="InputPin" />
                 <Pin Id="GrHVHDQfzKvPY4KCEuOj0j" Name="IndiceCount" Kind="InputPin">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="Integer32" />
@@ -2504,27 +2541,14 @@
                   </p:TypeAnnotation>
                 </Pin>
                 <Pin Id="A2tAlCgfZ1ML1WOkDkXCr7" Name="TriIndicesSB" Kind="OutputPin" />
-                <Node Bounds="2059,2539,37,19" Id="VQEw7LHw6Y8PhzjAmdjstZ">
-                  <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="NOT" />
-                  </p:NodeReference>
-                  <Pin Id="NZ90ElE9ogsQWBuZ8w26qf" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="OuQXUI8dnWHPsk1RRFg6S7" Name="Output" Kind="StateOutputPin" />
-                </Node>
-                <Link Id="CelLwtMT1itNcL6Oyzf98o" Ids="Nd3PHV7UaqFMxlkZ8NR3ep,NZ90ElE9ogsQWBuZ8w26qf" />
-                <Pad Id="OYVEhEfNtZ6OxOlT4L4QQU" Bounds="2096,2552,510,46" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;Only needed to wrap last triangles if does not have overlapping wrap around vertices (UV mode adds these)">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                    <Choice Kind="TypeFlag" Name="String" />
-                  </p:TypeAnnotation>
-                  <p:ValueBoxSettings>
-                    <p:fontsize p:Type="Int32">9</p:fontsize>
-                    <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-                  </p:ValueBoxSettings>
-                </Pad>
-                <Link Id="HRgPqwLuzd2MopTMQgCb5v" Ids="DOCYdi8kE0COsumNZfJp1K,RqTqIX7U92OPbiV89qNJeS" />
-                <Link Id="Bzq0OxS5ehSOHZv90eMQ32" Ids="RqTqIX7U92OPbiV89qNJeS,LwasadBDuLLL0O1MLL8X8f" />
-                <Link Id="O2Lltqg9EbSL7zI729phQc" Ids="OuQXUI8dnWHPsk1RRFg6S7,EBZMD49ZqgYOwQoOZhYvUA" />
+                <Link Id="T8FXGRMrlzNOBiTjLqQ6VJ" Ids="BTPRFC6HOdnOGiT8lcbiCB,LwasadBDuLLL0O1MLL8X8f" />
+                <ControlPoint Id="N97WOA2is4yM4twywOW28P" Bounds="1984,2841" />
+                <Link Id="KKqAoroc5dWNXZ2QhCAzZd" Ids="KvsagXBP0gBOK8GsfmOD7n,N97WOA2is4yM4twywOW28P" IsHidden="true" />
+                <Link Id="NAiMk2adJuFPvqHOJ5jL5X" Ids="N97WOA2is4yM4twywOW28P,VBgMvPzIpcTND4q2XhwjMm" />
+                <Link Id="HbCNzwDygkvOsrV3Wupv1z" Ids="RqTqIX7U92OPbiV89qNJeS,PCTwwbPL3yaOmbrjJgedWr" />
+                <ControlPoint Id="PCTwwbPL3yaOmbrjJgedWr" Bounds="2105,2916" />
+                <Pin Id="RGmxF7vVWJXLdk6YPeCgcZ" Name="LocalIndicesThisSegment" Kind="OutputPin" Bounds="2105,2916" />
+                <Link Id="Q7NNqYbLKwvQGqbTGk796z" Ids="PCTwwbPL3yaOmbrjJgedWr,RGmxF7vVWJXLdk6YPeCgcZ" IsHidden="true" />
               </Patch>
             </Node>
             <Node Bounds="1749,2295,25,19" Id="LgS1nZ3CLKzLWU92EoCpme">
@@ -3800,6 +3824,7 @@
             <ControlPoint Id="Gn0LXDNjYR4LrH3cwrnfoK" Bounds="1228,1103" />
             <ControlPoint Id="QNtnyLmJrL7M1TRQgIigLm" Bounds="1949,1149" />
             <ControlPoint Id="S8T4ygLV7PwPBehLKTo8RR" Bounds="1926,1129" />
+            <ControlPoint Id="GDOsTBt8otyQCxjzkgFnkr" Bounds="1612,2893" />
           </Canvas>
           <ProcessDefinition Aspects="Internal" Id="KOE4fF4Msy1QaMoOBCMO29">
             <Fragment Id="QJ7gqvckExTQO4iFx9N5ZI" Patch="KGufY5H3oW1PdAE3MFN9Ir" Enabled="true" />
@@ -3940,8 +3965,6 @@
           <Link Id="MRqDuKzH3XjPP781vOCaiu" Ids="Qur4VzX1o5qO5OzgQ6Aww1,SXA5rRtl6TAOVQbtL6tmti" />
           <Link Id="Gbiv0Fwy2M7P6wpbsV9r5V" Ids="SMvy8Q2FyBJOVa2WLA64Wx,C05bPYshuroO2jeaMFiwJB" />
           <Link Id="MrceoxdxkS6Ober6FlgU6q" Ids="Qur4VzX1o5qO5OzgQ6Aww1,HvCgBYp1jvsL1PS9ITLuUK" />
-          <Link Id="LHLw0YMu8dGOBmNgpMuPPE" Ids="ADngiTj0LzXPazbl3JdUUJ,IXtdNeR7uWINbQTOhhU8aT" />
-          <Link Id="UxfOx0hupJTOGUS0STWQsJ" Ids="Gj6BROpT87SMps3mHIknij,MZ7fomkYuqpOFEZfMsMJvy" />
           <Link Id="IgHiopzR4tAOE1lvhtB2Wg" Ids="OQ3Bk34fy3GLGvZllZDQX0,Q8hO3RAGcenNc3i6gZlRfy" />
           <Link Id="VABrGSVBA2rL1CRsE5OohK" Ids="LCiPDzMQ7RYN5vpM6DzCOK,FQCYtGEdoPnOmVlKarWHWz" />
           <Link Id="QYLoYcyjALUQEvZ97zFORU" Ids="IzcG34sYRyuOxirFxQ5hTc,MzvHdtjcSbHOlARyJCLqUT" />
@@ -4051,6 +4074,7 @@
             <Pin Id="JwNAfN0JgG5Oru77BxOJmy" Name="TriIndiceSB" Kind="OutputPin" Bounds="2231,964" />
             <Pin Id="VEgU17CHaZCPI1c6x4H20q" Name="TriCount" Kind="OutputPin" Bounds="2294,973" />
             <Pin Id="U2QED55UmQ4PeyLJPr038I" Name="NextAvailableGlobalIndice" Kind="OutputPin" Bounds="1751,2228" />
+            <Pin Id="Tw19zBfXYSwQD6EboqXgcU" Name="Debug_TriIndicesPerSegment" Kind="OutputPin" Bounds="1612,2893" />
           </Patch>
           <Link Id="UELmdDkadWoPvLIA0TGl6c" Ids="QNtnyLmJrL7M1TRQgIigLm,IzECHUeCqrhO91OVA7yege" />
           <Link Id="NTQSLqvNqO1QchKCUracgG" Ids="QNtnyLmJrL7M1TRQgIigLm,ThYFtEwa2pNLKMu1lNqjAV" />
@@ -4059,6 +4083,9 @@
           <Link Id="TkPt3alSPZ3OEuEEzoQ061" Ids="S8T4ygLV7PwPBehLKTo8RR,BmmDgS6wVbIOpRY5eZh83g" />
           <Link Id="H4orQ5Z7wF8QEMzRWa5Olx" Ids="U9HGOVxppg4Nwt9QGGMI9u,MhDeJy7NmWXQGGE7HpJKEj" />
           <Link Id="NDBzHnoLtMnLQ8UiABYrK1" Ids="U9HGOVxppg4Nwt9QGGMI9u,NN38CzjMDmfNtkER84gNUA" />
+          <Link Id="EqnzHzYwShgPW0Du1hphtr" Ids="KEhgI6v0TQHN3RLExjpKR7,GDOsTBt8otyQCxjzkgFnkr" />
+          <Link Id="PchTTuWbXgpMvTnpfMlV2u" Ids="GDOsTBt8otyQCxjzkgFnkr,Tw19zBfXYSwQD6EboqXgcU" IsHidden="true" />
+          <Link Id="ENH64k72c7PNlBKX7PpQ12" Ids="AlzhaKqyBKIP11GejBFfPM,KEhgI6v0TQHN3RLExjpKR7" />
         </Patch>
       </Node>
       <Overlay Id="PvwyioSnfSMOiVT0ojcPZc" Name="Entities" Bounds="1068,406,503,187" />
@@ -4127,6 +4154,7 @@
               <ControlPoint Id="FNO9Eupc097MSyphc0JVn9" Bounds="594,571" Alignment="Top" />
               <ControlPoint Id="Jk0huxybTHdLcQEWzbmNuK" Bounds="611,571" Alignment="Top" />
               <ControlPoint Id="GEFXNacFWcOOKuKOATPHYu" Bounds="630,571" Alignment="Top" />
+              <ControlPoint Id="PgACYqrq96mNLfHewEhgbv" Bounds="632,645" Alignment="Bottom" />
               <Patch Id="FmDmDEgBQDbM2p20BiHLPi" ManuallySortedPins="true">
                 <Patch Id="Ma1CwDCB8rxPvpmavaraen" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="Tn1XVOZ8hY8LXPL2iSB4Hq" Name="Then" ManuallySortedPins="true" />
@@ -4150,9 +4178,10 @@
                   <Pin Id="Dx2NQwKJTVHPvnaJFgCHC3" Name="GenerateTangents" Kind="InputPin" />
                   <Pin Id="GLC4jRqPntEPVi0HaNcyms" Name="Output" Kind="OutputPin" />
                   <Pin Id="CMNlebKnlK7PmVfYA6xgj7" Name="Debug_EndCapNormalArrows" Kind="OutputPin" />
+                  <Pin Id="Ayq4WSjuaP9PoV1bMbINOu" Name="DebugTriIndicesPerSegment" Kind="OutputPin" />
+                  <Pin Id="Gr8QAhK7HGKNSE5k9YL7Bn" Name="Debug_VertexBuffer" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="PgACYqrq96mNLfHewEhgbv" Bounds="632,645" Alignment="Bottom" />
             </Node>
             <Node Bounds="396,494,54,19" Id="MPzhy9zoxdmNpu8kQsru3U">
               <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
