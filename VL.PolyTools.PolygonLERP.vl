@@ -215,6 +215,8 @@
                           <Pin Id="MYyTuYTWkA2MmAjWyViMyt" Name="Pass3IterationCount" Kind="OutputPin" />
                           <Pin Id="Ft05C6EgMEkN2jIpOoFUqe" Name="IsNewPointInCompositeShape" Kind="OutputPin" />
                           <Pin Id="VqSPoCmm050MPB2jcSeVc5" Name="IsNewPointSampleProportion" Kind="OutputPin" />
+                          <Pin Id="LmTK7z5X2yXLRC9qE57lDP" Name="AIsReversed" Kind="OutputPin" />
+                          <Pin Id="NBqa69VxXd4OGmE0EsauOr" Name="BIsReversed" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="1090,871,45,19" Id="NVlEaSUXACIPdkV5mW6CEZ">
                           <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
@@ -3134,6 +3136,19 @@
               <Pin Id="Qap73I4J29wPJs7LNvi5ow" Name="Output" Kind="StateOutputPin" />
             </Node>
             <ControlPoint Id="Chm93SuIXFbN31zarSJUIa" Bounds="1986,3733" />
+            <ControlPoint Id="QOB6uQDFh6oLL3ey9MLrVk" Bounds="1767,149" />
+            <ControlPoint Id="FkXTK1vktFsQMvbUOTauke" Bounds="1848,147" />
+            <Node Bounds="1764,113,45,19" Id="U4L501SullpMre0PDBZPfq">
+              <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Swap" />
+              </p:NodeReference>
+              <Pin Id="V3EDoF5vkoLOLxKeJwljD0" Name="Condition" Kind="InputPin" />
+              <Pin Id="AxHqLZzNcahMSi8xypo5nx" Name="Input" Kind="InputPin" />
+              <Pin Id="PCj2IwewQjzOCEU6lqhrHx" Name="Input 2" Kind="InputPin" />
+              <Pin Id="FKEN4wBuiPCMw2j9sI3nqk" Name="Output" Kind="OutputPin" />
+              <Pin Id="CFWzGQ00g2ZOl9XBSue5mB" Name="Output 2" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <ProcessDefinition Aspects="Advanced" Id="AA0N3BruhFwPyHVQXy5zCy">
             <Fragment Id="EYY2pzv9u0RPgtPDNKqJC9" Patch="NQRUdkgmrQyMcTgPgQQvJm" Enabled="true" />
@@ -3384,6 +3399,8 @@
             <Pin Id="HaGNPrnVzoqNlmDYDT5iAo" Name="AutoOriginCorrection" Kind="InputPin" DefaultValue="True" />
             <Pin Id="GdBlBzqP6gdP5AxqExaBZG" Name="IsNewPointInCompositeShape" Kind="OutputPin" Bounds="2054,3751" />
             <Pin Id="QQuNGKWIBJwLTU4jcAVuJl" Name="IsNewPointSampleProportion" Kind="OutputPin" Bounds="1986,3733" />
+            <Pin Id="UsnUUVxI1iJO6vmexDdISp" Name="AIsReversed" Kind="OutputPin" Bounds="1531,118" />
+            <Pin Id="SDNCQwdNITeQIgXUZ5Jy0L" Name="BIsReversed" Kind="OutputPin" Bounds="1675,136" />
           </Patch>
           <Link Id="PJQsk3MYPk5M0OHhGEmGHJ" Ids="Lo0rHdwmSfSNVchyCAv98x,BEbzPMvOq7ROQeJvAI5qj5" />
           <Link Id="HGGMfTaqDGaL9c4zTKOg13" Ids="Ef79iSMqriqNF4KpV7xjIE,JklBtelFMQMLx9sF5H8gr3" />
@@ -3411,6 +3428,13 @@
           <Link Id="FwFTGnQaJkfLUBPcW3on7l" Ids="AO7YLtA0fFWLWkUcvtTiIs,Adzz3GAlPXjOtMp8fjORrn" />
           <Link Id="RIloYn5iPBoLaJepmXlZzs" Ids="Qap73I4J29wPJs7LNvi5ow,Chm93SuIXFbN31zarSJUIa" />
           <Link Id="OKz9awTsJFiOHyEJ5UCj1g" Ids="Chm93SuIXFbN31zarSJUIa,QQuNGKWIBJwLTU4jcAVuJl" IsHidden="true" />
+          <Link Id="DVH5oOZmb8wNOwBJE3f4JR" Ids="QOB6uQDFh6oLL3ey9MLrVk,UsnUUVxI1iJO6vmexDdISp" IsHidden="true" />
+          <Link Id="AukI5yZ5lkxLB70VbkuiCh" Ids="FkXTK1vktFsQMvbUOTauke,SDNCQwdNITeQIgXUZ5Jy0L" IsHidden="true" />
+          <Link Id="D2sY58I7tdpM9OwZ5vjunt" Ids="DrvALNjYupOOd3Isfqe7IV,AxHqLZzNcahMSi8xypo5nx" />
+          <Link Id="OVuISoJIJuwPiwXDi69lcy" Ids="OIBFJJNkJHpPz5To7ufheo,PCj2IwewQjzOCEU6lqhrHx" />
+          <Link Id="UWdfiKrifF4LJXK4RfuHNS" Ids="FKEN4wBuiPCMw2j9sI3nqk,QOB6uQDFh6oLL3ey9MLrVk" />
+          <Link Id="FexcebOTZOVM1hPoKqIEKd" Ids="CFWzGQ00g2ZOl9XBSue5mB,FkXTK1vktFsQMvbUOTauke" />
+          <Link Id="FjVCw60ApwJQOSTsFeyBep" Ids="ShCSUKP5ob1NGajEoYto9b,V3EDoF5vkoLOLxKeJwljD0" />
         </Patch>
       </Node>
       <Overlay Id="S8fGGjNHI3XO8V0OhUc7As" Name="Basic" Bounds="1133,536,643,80" />

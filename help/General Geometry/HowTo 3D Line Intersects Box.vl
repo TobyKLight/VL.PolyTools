@@ -273,7 +273,7 @@
           <Node Bounds="412,404,145,19" Id="B5F21TiBVIPPopQDdOvu3Q">
             <p:NodeReference LastCategoryFullName="PolyTools.Line" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="LineSegmentIntersectsBox" />
+              <Choice Kind="OperationCallFlag" Name="LineIntersectsBox" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="Sa9sDRWdoz1LOnQgEyA3H7" Name="PointA" Kind="InputPin" />
@@ -298,7 +298,6 @@
             <Pin Id="HZrbzbtC88rOrZeYJBdyvV" Name="CrossShape" Kind="InputPin" />
             <Pin Id="GwnVlEvbuE9OlTlJgpDpHH" Name="CrossShortSideMultiplier" Kind="InputPin" />
             <Pin Id="LpNWwtoAs8xNtlSNobkPIZ" Name="Entity" Kind="OutputPin" />
-            <Pin Id="PPrpB0knEMJOBigU0SVdGS" Name="LinePoints" Kind="InputPin" />
           </Node>
           <Node Bounds="655,888,77,19" Id="J5yuvpsJ86wPzAZP0bDzZO">
             <p:NodeReference LastCategoryFullName="Stride.Materials" LastDependency="VL.Stride.vl">
@@ -349,7 +348,6 @@
             <Pin Id="Fv4frqiX8o6OxsgRr99R9F" Name="CrossShape" Kind="InputPin" />
             <Pin Id="CQCLStRtzKFMGKSj9SoprS" Name="CrossShortSideMultiplier" Kind="InputPin" />
             <Pin Id="CusrNlTzOR3MsHOB2qf3n7" Name="Entity" Kind="OutputPin" />
-            <Pin Id="Do46vI1pBOfLK8zTam7DMR" Name="LinePoints" Kind="InputPin" />
           </Node>
           <Pad Id="LC9bi88BOUHPOZ9LWf03DR" Comment="IntersectionPoint1" Bounds="478,523,35,43" ShowValueBox="true" isIOBox="true" />
           <Pad Id="DzhQWYAfl2fOESgQijgKGc" Comment="IntersectionPoint2" Bounds="522,590,35,43" ShowValueBox="true" isIOBox="true" />
@@ -397,7 +395,6 @@
               <Item>0, 0, 0</Item>
             </p:Value>
           </Pad>
-          <ControlPoint Id="Tq0cMkh8ep3MgPpipW1LKn" Bounds="558,724" />
         </Canvas>
         <Patch Id="E1p2q9og7MOOwTbPc16plO" Name="Create" />
         <Patch Id="SOpNbbeNuVbPTePMDiNuT7" Name="Update" ParticipatingElements="DS76FbGjuWXPiSJpXue9Hb,BFZdXAA78pEO0Am1OeuIfT" />
@@ -439,7 +436,6 @@
         <Link Id="KP4NEHmTYvaOL37mGwVuPX" Ids="G4uzpXOMlFjNNck50cNJC2,Ca9Kg1G3Bd1OD7SKW0XMok" />
         <Link Id="ILPpZ4AdQJDMr6K7oJ3iVj" Ids="I2TpM8sNzhsN9o5BtxZKtQ,Czvp9MkCFLaOiPaoLPkUSy" />
         <Link Id="GCv4pzINnHHMoPJBS1wkLN" Ids="AcFflYZ3jRFMeeMyHO9RjK,CyTWi7hXQKmLhbfYMSpECQ" />
-        <Link Id="J2SevdXzlsNMxDxKN5ISiU" Ids="TNsEYQBD83QNLgIKOxl27S,PPrpB0knEMJOBigU0SVdGS" />
         <Link Id="BjNkSNn0TqhNY4coqegUFU" Ids="PM5VQoAqRkXOxZzNEszNvh,DefACdROH8nOlB43iMRaWO" />
         <Link Id="B8IjDleU6nVMw5FAzTmBGr" Ids="FGkwGwA4mkzO9ZvnK4LPUg,LC9bi88BOUHPOZ9LWf03DR" />
         <Link Id="F3ZwFV0rCHCMwTC0Q7HeHu" Ids="I3I8lfWSpWiONP3yjwECnl,DzhQWYAfl2fOESgQijgKGc" />
@@ -448,7 +444,8 @@
         <Link Id="KXR5Qfsv63gNL9MVFVvvOd" Ids="ONRTKaIclV6NWOyfzQc365,VFnKU9e87xXMASDxM6ifIm" />
         <Link Id="HXEenCNfPXdNxpRiPZmw1X" Ids="I3GhJrzfx5jLjdYsdP2qxe,L05TL0CfwK7QTfgOwcv9Ta" />
         <Link Id="Nqc4whjF8rNQChjbNl0i3Y" Ids="DP6CY4If0o5MGKNwubh0qi,CbhSvFovkGUMRUPpt7ixT7" />
-        <Link Id="CLrYJoSIAI2LovPiRHFYHK" Ids="CbhSvFovkGUMRUPpt7ixT7,Tq0cMkh8ep3MgPpipW1LKn,Do46vI1pBOfLK8zTam7DMR" />
+        <Link Id="GYVBC80hoYgNRr6jqRqogK" Ids="TNsEYQBD83QNLgIKOxl27S,E6wi4UMAuukPP9C3NfEvJn" />
+        <Link Id="Ff5rbknLQNPMA6ckwRsCHU" Ids="CbhSvFovkGUMRUPpt7ixT7,Ut0Aip7GONNOO4BCq9zT7n" />
       </Patch>
     </Node>
   </Patch>

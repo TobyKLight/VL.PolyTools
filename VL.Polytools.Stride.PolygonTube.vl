@@ -672,7 +672,7 @@
                   <Patch Id="BxIu8Gl4aVAQNqLej6DewH" ManuallySortedPins="true">
                     <Patch Id="JjZQCxazdrCPBjn70l4nBY" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="JoN5RBhalcJQQ77utXqIPU" Name="Then" ManuallySortedPins="true" />
-                    <Node Bounds="1449,819,225,19" Id="HjGPAbsiLmTOJMmH2CtA9Y">
+                    <Node Bounds="1449,819,265,19" Id="HjGPAbsiLmTOJMmH2CtA9Y">
                       <p:NodeReference LastCategoryFullName="Polygon" LastDependency="VL.PolyTools.PolygonLERP.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="CalcCompositePolygonPoints" />
@@ -694,6 +694,8 @@
                       <Pin Id="Uy5yZcBEIKNNsKm7iQeUuW" Name="Pass3IterationCount" Kind="OutputPin" />
                       <Pin Id="FZsl0AjZGd8L2WsJfddJlQ" Name="IsNewPointInCompositeShape" Kind="OutputPin" />
                       <Pin Id="U9HGOVxppg4Nwt9QGGMI9u" Name="IsNewPointSampleProportion" Kind="OutputPin" />
+                      <Pin Id="JE09Mm9ThwtO1Cs9KpORbL" Name="AIsReversed" Kind="OutputPin" />
+                      <Pin Id="SHZqiKLV8Q0Mw7E74pUuQX" Name="BIsReversed" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="1448,907,45,19" Id="SR329Am9DzvL8U98hd09Mt">
                       <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
@@ -782,7 +784,7 @@
                       <Pin Id="HXq6pFttwrdMp926iJd2Wf" Name="PointsOuterContour" Kind="OutputPin" />
                       <Pin Id="V0WlCfroWzMOh9m88GvF9D" Name="ThirdDimDataOuterContour" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1416,1002,264,26" Id="TAIeqlToY17QTSoLIS2th3">
+                    <Node Bounds="1413,997,264,26" Id="TAIeqlToY17QTSoLIS2th3">
                       <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="RecordType" Name="Polygon2DPlus" />
@@ -795,7 +797,7 @@
                       <Pin Id="AAeHE2RgAGLQWqqnrCngYb" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="TyFqxYrDSuAN2bo07Ohcwe" Name="NewThirdDimCount" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="1543,1039,264,26" Id="DCOjlVjI8NePY4GQDT8i5L">
+                    <Node Bounds="1555,1069,264,26" Id="DCOjlVjI8NePY4GQDT8i5L">
                       <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="RecordType" Name="Polygon2DPlus" />
@@ -807,6 +809,26 @@
                       <Pin Id="NN38CzjMDmfNtkER84gNUA" Name="IsNewSampleProportion" Kind="InputPin" />
                       <Pin Id="ObURKWWG3tVNLUyVfQDJxX" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="VIMEAsH6EZEOeGvYgjUGTg" Name="NewThirdDimCount" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="1413,953,108,26" Id="Ve9kRm9239FNnejF2gVpkA">
+                      <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="RecordType" Name="Polygon2DPlus" />
+                        <Choice Kind="OperationCallFlag" Name="ReverseHeightBuffer" />
+                      </p:NodeReference>
+                      <Pin Id="MdQ17EacJr8OpkXHxBNwaN" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="HBJfw1gqVSLLxuRtPF7ytI" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="R2FJ0ggpBlVMDA2ByZaRVU" Name="Apply" Kind="InputPin" />
+                    </Node>
+                    <Node Bounds="1555,1031,108,26" Id="AW7qtqSm1zxQAt7aXNbOYX">
+                      <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="RecordType" Name="Polygon2DPlus" />
+                        <Choice Kind="OperationCallFlag" Name="ReverseHeightBuffer" />
+                      </p:NodeReference>
+                      <Pin Id="CAA6uIu8Ti9NZ9sfjZxGO7" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="NoR9TFiGRWiQUgH4WTHUwp" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="NNoJjyJtD2GK9w8NMkllDS" Name="Apply" Kind="InputPin" />
                     </Node>
                   </Patch>
                 </Node>
@@ -4027,11 +4049,10 @@
           <Link Id="FSUpQIFX13HNeQLJ36BM36" Ids="SY0ibI1SamoOGkMuJ4HILZ,PfAJSqhJkNMO6kHKLlXgGF" />
           <Link Id="LlOtTN6iEhKOxaLfWE3Npb" Ids="IXLIAa2kQlVMhtArQJksUh,NYrHswYlssQM440qgJdiio" />
           <Link Id="RNw0QAwGlkkOIJ3QPM86uE" Ids="HXq6pFttwrdMp926iJd2Wf,P2XZTzbOlXDLLNb1YTbDY9" />
-          <Link Id="OTAvIWqAD1ELausZcuyZdh" Ids="M4eNcHgvUkTM7uel0Fl3Ew,UWepeU12fCyOihxZCBDFkx" />
+          <Link Id="OTAvIWqAD1ELausZcuyZdh" Ids="M4eNcHgvUkTM7uel0Fl3Ew,MdQ17EacJr8OpkXHxBNwaN" />
           <Link Id="OrtHNZ0m0DQQJ9qXSCEclc" Ids="Sfl2ssMavEqOqV4xeKVB7q,FZTEF2jTmO1O1NsvQfzBEG" />
           <Link Id="DDQ12rWZvRuMx7X7zjEdG1" Ids="AAeHE2RgAGLQWqqnrCngYb,NMNHt0cY7AgLNMnVUHvWL7" />
           <Link Id="KCTPZeKfGKVQVMS19uoJkS" Ids="DFaCK2vh8j4PCRVCFHu6Qb,T6qawJCuOvWLvZ9lb0tyQd" />
-          <Link Id="D6ymvxbGCAnPUgKrSVwvbT" Ids="BXmeMsEFiE2McxIBhn6z91,E686q9wU3RJO6HKvaCcd0R" />
           <Link Id="DS1sSlQM3tAQdnMNCvTJQD" Ids="ObURKWWG3tVNLUyVfQDJxX,EJT4N1wqtmOLVIhMgLkMEX" />
           <Link Id="FZytQqEFPC0NAuOnArov1P" Ids="NMNHt0cY7AgLNMnVUHvWL7,DB5UYTM6uIONMsChJhYgK8" />
           <Link Id="Tw9vW47UUgrPcerv2Mthni" Ids="EJT4N1wqtmOLVIhMgLkMEX,H3bfXlD3JpdMp1LRwHnPwc" />
@@ -4086,6 +4107,11 @@
           <Link Id="EqnzHzYwShgPW0Du1hphtr" Ids="KEhgI6v0TQHN3RLExjpKR7,GDOsTBt8otyQCxjzkgFnkr" />
           <Link Id="PchTTuWbXgpMvTnpfMlV2u" Ids="GDOsTBt8otyQCxjzkgFnkr,Tw19zBfXYSwQD6EboqXgcU" IsHidden="true" />
           <Link Id="ENH64k72c7PNlBKX7PpQ12" Ids="AlzhaKqyBKIP11GejBFfPM,KEhgI6v0TQHN3RLExjpKR7" />
+          <Link Id="NKbZSSUidHwN8EE1gSieuc" Ids="HBJfw1gqVSLLxuRtPF7ytI,UWepeU12fCyOihxZCBDFkx" />
+          <Link Id="OqQMP4a9WObLT1bj659ljR" Ids="JE09Mm9ThwtO1Cs9KpORbL,R2FJ0ggpBlVMDA2ByZaRVU" />
+          <Link Id="OybEBAZEj14OhoMfqgtsAm" Ids="BXmeMsEFiE2McxIBhn6z91,CAA6uIu8Ti9NZ9sfjZxGO7" />
+          <Link Id="Bat6efbq0GCLfQH8vQ6PJm" Ids="NoR9TFiGRWiQUgH4WTHUwp,E686q9wU3RJO6HKvaCcd0R" />
+          <Link Id="CNSa9VxbkopL4kqPbjkz6F" Ids="SHZqiKLV8Q0Mw7E74pUuQX,NNoJjyJtD2GK9w8NMkllDS" />
         </Patch>
       </Node>
       <Overlay Id="PvwyioSnfSMOiVT0ojcPZc" Name="Entities" Bounds="1068,406,503,187" />
