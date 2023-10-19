@@ -82,6 +82,17 @@ https://github.com/gradientspace/geometry3Sharp
 
 # Version History
 
+V1.4.0
+* !Breaking Change! Fixed error in the Polygon2DPlus Join method that takes 3D polygon points and a normal 
+* !Breaking Change! Renamed 'LineSegmentIntersectsBox' to just 'LineIntersectsBox' to make consistent with similar functions  
+* Added new function LineIntersectsRectangle and helppatch. 
+* Fixed bug TransformsOnLine where it didn't normalise internal direction vector 
+* Fixed Bug PolyTubeMesh where it would reverse the direction of 2D data but not 3D data.  
+* Improved debug out data on PolyTubeMesh 
+* Added new function and helppatch 'find if points are on a line' 
+* Added new function and helppatch 'Interpolate points in a triangle'
+* Added new function and helppatch 'Calculate normal of a line segment 2d'  
+
 V1.3.0 
 * !Breaking Changes! Re-categorisation of some nodes into new Line category. Some line related functions may have red nodes. Double click on them, clear their existing associations in the bottom right and search again for the name and you should find the same nodes.  
 * !Breaking Change! All polytubes need their input 'Polygon2DPlus' types to have heightmode=1 (Y=height). This is now consistent, was 0 on some old helppatches. 
