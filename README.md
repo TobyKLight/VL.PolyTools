@@ -82,6 +82,10 @@ https://github.com/gradientspace/geometry3Sharp
 
 # Version History
 
+V1.4.1 
+* Fixed a Polygon2DPlus helpatch 
+* Added new function RadialSort as a way to generate a polygon from unordered points, in simple cases. 
+
 V1.4.0
 * !Breaking Change! Fixed error in the Polygon2DPlus Join method that takes 3D polygon points and a normal 
 * !Breaking Change! Renamed 'LineSegmentIntersectsBox' to just 'LineIntersectsBox' to make consistent with similar functions  
