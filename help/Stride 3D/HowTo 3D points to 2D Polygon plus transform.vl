@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Qh4wHjeFdTmNuBK0RM5gPE" LanguageVersion="2023.5.3-0088-gd2b84ddcc4" Version="0.128">
-  <NugetDependency Id="CTibXyebTpBQEBDxqGNlh7" Location="VL.CoreLib" Version="2023.5.3-0088-gd2b84ddcc4" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Qh4wHjeFdTmNuBK0RM5gPE" LanguageVersion="2024.6.6" Version="0.128">
+  <NugetDependency Id="CTibXyebTpBQEBDxqGNlh7" Location="VL.CoreLib" Version="2024.6.6" />
   <Patch Id="InZTyC3zt5qPGph1O1ErY6">
     <Canvas Id="D1gF6GKpRFyOdWiLPXPCwV" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -21,7 +21,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <Pin Id="KKRTLinjtRfQFKbuOxuKxA" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="NxZHvGscd3oMsOHhJamxj4" Name="Bounds" Kind="InputPin" DefaultValue="798.4, 96, 785.6, 432" />
+            <Pin Id="NxZHvGscd3oMsOHhJamxj4" Name="Bounds" Kind="InputPin" DefaultValue="798, 96, 785.5, 432" />
             <Pin Id="GcIwPB3k2rWQMp1adXTVJC" Name="Bound to Document" Kind="InputPin" />
             <Pin Id="I2Y1RlCJa9fL3WXXJHDnhQ" Name="Dialog If Document Changed" Kind="InputPin" />
             <Pin Id="GZatWmy9d3FQKW0PKwlwSE" Name="Save Bounds" Kind="InputPin" />
@@ -36,6 +36,7 @@
             <Pin Id="USFiS5yBZ7aNxRjggurZRm" Name="Post Effects" Kind="InputPin" />
             <Pin Id="NveVpskbtQKLuQBVUrqCdB" Name="Enable Default Post Effects" Kind="InputPin" />
             <Pin Id="L6cYfIto9thOPYOtbmHRxb" Name="Render Group Mask" Kind="InputPin" />
+            <Pin Id="BDSFcNzx5kkQU6rRxzk5UJ" Name="Commands" Kind="InputPin" IsHidden="true" />
             <Pin Id="KhqAvQRdFV6M1xr6XgvnVd" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
             <Pin Id="Vbq8BX5rvUZPvGMkceaPjR" Name="Model Effect Name" Kind="InputPin" />
             <Pin Id="HSjkY11NP4xO0hs3MTzLLf" Name="Additional Scene Renderers" Kind="InputPin" />
@@ -175,7 +176,7 @@
             <ControlPoint Id="MCtU21cNHpCP2DKymMzb6A" Bounds="248,378" Alignment="Top" />
             <ControlPoint Id="KUp6HsZtrh2LLow37tatu1" Bounds="254,477" Alignment="Bottom" />
           </Node>
-          <Node Bounds="283,271,44,19" Id="GJYCoeZCy0tPBH3BTn9Uma">
+          <Node Bounds="283,271,44,26" Id="GJYCoeZCy0tPBH3BTn9Uma">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -314,7 +315,7 @@
             <Pin Id="ELi8f0p9LydN2fqtANaUJ2" Name="Translation" Kind="InputPin" DefaultValue="-1.79, 0, 0" />
             <Pin Id="SyYhrvBOfb8PEeKxD2jSsF" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="216,931,85,26" Id="LK3Ol0e8U6rMbIZhSN0lx9">
+          <Node Bounds="216,931,125,26" Id="LK3Ol0e8U6rMbIZhSN0lx9">
             <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon2DPlus" />
@@ -323,9 +324,8 @@
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="U0AZRA6U6ClNfdq8Y6i1BG" Name="Input" Kind="StateInputPin" />
             <Pin Id="Sl11MnFZhv3OiSJYI5TYtC" Name="Points" Kind="InputPin" />
-            <Pin Id="JHNbUbfWDUFQQ9G6mferxk" Name="LookFromA" Kind="InputPin" />
-            <Pin Id="TdYnDkAbqHIQKR7zcPKI2L" Name="LookToB" Kind="InputPin" />
-            <Pin Id="EV6suJQjJ1MOTF4roOmJHG" Name="RotationAroundAxis" Kind="InputPin" />
+            <Pin Id="I1oY3h1dm4YLkXo0zyMnwj" Name="LookToPoint" Kind="InputPin" />
+            <Pin Id="Acht139ogBVMk4tRHk3n0M" Name="ForwardHelper" Kind="InputPin" />
             <Pin Id="Dedjmx0jyaoLrLsuPzvJHM" Name="Output" Kind="OutputPin" />
           </Node>
           <Overlay Id="DIfQztFcslWPmFbXYpadXj" Name="Working out the direction vector" Bounds="192,564,543,256" />
@@ -352,7 +352,7 @@
             <Pin Id="VNVQgEc7haLMxslBzMB5ax" Name="Enabled" Kind="InputPin" />
             <Pin Id="RlJQOVkHKqSOLFauVWYEio" Name="Entity" Kind="OutputPin" />
           </Node>
-          <Node Bounds="842,1299,85,19" Id="EgTbEkC1CgPOHoSu2KpWcf">
+          <Node Bounds="842,1299,85,26" Id="EgTbEkC1CgPOHoSu2KpWcf">
             <p:NodeReference LastCategoryFullName="PolyTools.Stride.Polygon2DPlus" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Polygon2DPlus" />
@@ -396,7 +396,7 @@
             <Pin Id="HIicdpxv0HRLTXave6FnRU" Name="Translation" Kind="InputPin" DefaultValue="1.24, 0, 0" />
             <Pin Id="DaSGmZA1yTuLeR7t2FWUaB" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="841,1339,65,19" Id="R8BX0nVab4oQHGLt6OpaKf">
+          <Node Bounds="841,1339,65,26" Id="R8BX0nVab4oQHGLt6OpaKf">
             <p:NodeReference LastCategoryFullName="PolyTools.Polygon" LastDependency="VL.PolyTools.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Polygon" />
@@ -477,7 +477,7 @@
             <ControlPoint Id="HIou5FAAZ2vMqbx6rirBAy" Bounds="1018,1450" Alignment="Bottom" />
             <ControlPoint Id="I3n1uS28pWPOY8v7fLssT5" Bounds="1039,1376" Alignment="Top" />
           </Node>
-          <Node Bounds="1025,1304,44,19" Id="B4EdZDxr5eIONoCh08DwKB">
+          <Node Bounds="1025,1304,44,26" Id="B4EdZDxr5eIONoCh08DwKB">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -525,11 +525,6 @@
             <Pin Id="MMnUKtLNMtLOV7OyDN2u29" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="LXbk0lkHp2nMguiUxVDf1l" Comment="LookFromAPoint - probably the centroid (average) of your 3D points" Bounds="261,674,35,43" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="HOgmNTriM4KPSL2pRA6rMM" Comment="RotationAroundAxis" Bounds="297,905,35,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Float32" />
-            </p:TypeAnnotation>
-          </Pad>
           <Pad Id="QAM6yOQdu0lQEqIuNjLoVd" Bounds="449,901,500,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt;The vector doesn't tell us how points are rotated around the axis of that vector, so with this can also specify">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -583,7 +578,6 @@
         <Link Id="BolTNUuRaNfNhsY8px09Sm" Ids="Aq2ofIjHlIFLvbQLbjb45I,G5cdnpT0I7zMgNnonOuANb" />
         <Link Id="Rdwd469cDQvL4g24Vqzd51" Ids="KUp6HsZtrh2LLow37tatu1,Sl11MnFZhv3OiSJYI5TYtC" />
         <Link Id="VQUxYdU5b35MQH25wpvpif" Ids="Dedjmx0jyaoLrLsuPzvJHM,RtRWhoOh9VoLm2OBJyrt0u" />
-        <Link Id="AXXRj8smZOuMq53sCzhgcL" Ids="EOPkG1dkZFdQRxUM1G03fw,TdYnDkAbqHIQKR7zcPKI2L" />
         <Link Id="KSOn7H90dJRQalftRNpdEI" Ids="FpdF6M59fbaLSdDAIZq51v,EOPkG1dkZFdQRxUM1G03fw" />
         <Link Id="DNeQh8IswbaPFtmZZpc6h6" Ids="Dedjmx0jyaoLrLsuPzvJHM,E8ovTWJlqPSPwarcf2TaoN" />
         <Link Id="UtcMPJQZOA0Lg0XAaybER8" Ids="DaSGmZA1yTuLeR7t2FWUaB,Dg4S5rjzlRXPkZys9eHdLt" />
@@ -607,11 +601,11 @@
         <Link Id="BCcDc76egMULhFtcpXZ4bT" Ids="MMnUKtLNMtLOV7OyDN2u29,HxbvhQd7HzgPcKMCIaphUI" />
         <Link Id="CSmWQAL6psiLRSXUbk53WZ" Ids="MMnUKtLNMtLOV7OyDN2u29,VcI4ogS67dNMaT79FVO958" />
         <Link Id="AIO5pB7t3e4QEr8Uvt6g03" Ids="Bue4DjDudPUO7tOsHcMOHq,LXbk0lkHp2nMguiUxVDf1l" />
-        <Link Id="OdPt0jQ8PwoMKk6YWS56Jm" Ids="LXbk0lkHp2nMguiUxVDf1l,JHNbUbfWDUFQQ9G6mferxk" />
-        <Link Id="OGM1qCHpsTSPqfIOHKAjyQ" Ids="HOgmNTriM4KPSL2pRA6rMM,EV6suJQjJ1MOTF4roOmJHG" />
+        <Link Id="Vluh1hklrcgONtTbYFDKcL" Ids="EOPkG1dkZFdQRxUM1G03fw,I1oY3h1dm4YLkXo0zyMnwj" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="I5HxwgyC1s9MhJqecaZzQu" Location="VL.Stride" Version="2023.5.3-0088-gd2b84ddcc4" />
+  <NugetDependency Id="I5HxwgyC1s9MhJqecaZzQu" Location="VL.Stride" Version="2024.6.6" />
   <DocumentDependency Id="Q51hYAeupoIPkuhMciHZcx" Location="../../VL.PolyTools.vl" />
+  <NugetDependency Id="F4Upd4PEr6CPzWp1WaLhta" Location="VL.Stride.TextureFX" Version="2024.6.6" />
 </Document>

@@ -240,6 +240,30 @@
             <Pin Id="TG0bZXpiQ4QMgLvfcZmpJm" Name="Result" Kind="OutputPin" />
           </Node>
           <ControlPoint Id="ChafVwVFINcPBawqcyKsv2" Bounds="410,472" />
+          <Node Bounds="866,904,145,19" Id="CkBMps79dNqM6TQcLovCJQ">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.IO" LastDependency="VL.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SVGWriter" />
+            </p:NodeReference>
+            <Pin Id="JOxcXlYNHcqNK9282pKMzH" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="E4E5TVZZbrHPUGuewYtPrK" Name="Input" Kind="InputPin" />
+            <Pin Id="DJ7gZfDirprNF9JAkCeSum" Name="Path" Kind="InputPin" DefaultValue="..\..\..\..\..\Users\JACK_PEPSI\Downloads\test2.svg" />
+            <Pin Id="OmoK0YGP5e6NYVypqsgfiB" Name="Color" Kind="InputPin" />
+            <Pin Id="GGFNtds5yaiOBernlAL87a" Name="Enable Background" Kind="InputPin" />
+            <Pin Id="PO78KKOcSXsOaP48YAtgWY" Name="Space" Kind="InputPin" />
+            <Pin Id="N9IUpPzRXUONECec91L8Tj" Name="Width" Kind="InputPin" />
+            <Pin Id="LTLokPSzdNAM7RQzx5KiVP" Name="Height" Kind="InputPin" />
+            <Pin Id="VGhIr7yCRzyOp0tRJnzoBt" Name="Write" Kind="InputPin" />
+          </Node>
+          <Pad Id="Swuend03UZ6QHZcLx1wMlL" Comment="Write" Bounds="1006,858,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="CkQPr5pOomxO3GbFZSTIhY" Name="Create" />
         <Patch Id="NvHBBnynNRtLZaHCVqSVbo" Name="Update" />
@@ -270,6 +294,8 @@
         <Link Id="F56EEfpvlObNhEjJil94h7" Ids="COHM4pDmFy0MSNbwiy32ix,Mr8GxOlfTuEN7OhYPLzbLi" />
         <Link Id="PmKC9myLhnLMeCfdB2m6jd" Ids="TG0bZXpiQ4QMgLvfcZmpJm,ChafVwVFINcPBawqcyKsv2,SQkL3R3t72fO9pKV0L9ejv" />
         <Link Id="NMgLBljTcVKOi3q10RLK1G" Ids="M0QOwDOWYAdOChAhfx8pIi,TaZeyaz5bNJPs9T7m5TUen" />
+        <Link Id="N8vyWjsrduvPi8q0kdYqzR" Ids="EXdRcRrWRO6MBi4oVAunrz,E4E5TVZZbrHPUGuewYtPrK" />
+        <Link Id="HSsSic71W1VOCCrVVWQ5Wu" Ids="Swuend03UZ6QHZcLx1wMlL,VGhIr7yCRzyOp0tRJnzoBt" />
       </Patch>
     </Node>
   </Patch>
