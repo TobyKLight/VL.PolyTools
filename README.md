@@ -81,6 +81,9 @@ https://github.com/gradientspace/geometry3Sharp
 @Untone for help unlocking the SKPath verbs for use in vvvv gamma
 
 # Version History
+V1.4.2 
+* Fixed red nodes in helppatch 'Example SVG Path Extract', thanks @antokhio 
+
 
 V1.4.1 
 * Fixed a Polygon2DPlus helpatch 
